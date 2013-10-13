@@ -1,0 +1,3948 @@
+<?xml version="1.0"?>
+
+<!--
+ MiG-29 (9.12)
+ Sergey "Mercenary_Mercury" Salow, Octember 2011
+-->
+
+<PropertyList>
+
+ <path>MiG-29.ac</path>
+
+ <model>
+  <name>Cockpit</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Cockpit.xml</path>
+ </model>
+ <model>
+  <name>JetFlame</name>
+  <path>Aircraft/MiG-29_9-12/Models/JetFlame.xml</path>
+ </model>
+ <model>
+  <name>WingtipLampLeft</name>
+  <path>Aircraft/MiG-29_9-12/Models/Lights/WingtipLampLeft.xml</path>
+  <offsets>
+   <x-m> 4.29</x-m>
+   <y-m>-5.73</y-m>
+   <z-m>-0.26</z-m>
+  </offsets>
+ </model>
+ <model>
+  <name>WingtipLampRight</name>
+  <path>Aircraft/MiG-29_9-12/Models/Lights/WingtipLampRight.xml</path>
+  <offsets>
+   <x-m> 4.29</x-m>
+   <y-m> 5.73</y-m>
+   <z-m>-0.26</z-m>
+  </offsets>
+ </model>
+ <model>
+  <name>TailLamp</name>
+  <path>Aircraft/MiG-29_9-12/Models/Lights/TailLamp.xml</path>
+  <offsets>
+   <x-m> 7.301</x-m>
+   <y-m>-1.811</y-m>
+   <z-m> 2.165</z-m>
+  </offsets>
+ </model>
+ <model>
+  <name>Lights</name>
+  <path>Aircraft/MiG-29_9-12/Models/Lights/Lights.xml</path>
+ </model>
+
+ <model>
+  <name>Submodels</name>
+  <path>Aircraft/MiG-29_9-12/Models/Submodels/Submodels.xml</path>
+ </model>
+
+<!-- Engines smoke -->
+ <model>
+  <path>Aircraft/MiG-29_9-12/Models/Effects/smoke1.xml</path>
+  <offsets>
+   <x-m> 7.15814</x-m>
+   <y-m>-0.8401959</y-m>
+   <z-m>-0.4072564</z-m> 
+   <roll-deg>    0 </roll-deg>
+   <pitch-deg>   0 </pitch-deg>
+   <heading-deg> 0 </heading-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/MiG-29_9-12/Models/Effects/smoke2.xml</path>
+  <offsets>
+   <x-m> 7.15814</x-m>
+   <y-m> 0.8401959</y-m>
+   <z-m>-0.4072564</z-m> 
+   <roll-deg>    0 </roll-deg>
+   <pitch-deg>   0 </pitch-deg>
+   <heading-deg> 0 </heading-deg>
+  </offsets>
+ </model>
+ <!-- Contrail -->
+ <model>
+  <path>Aircraft/MiG-29_9-12/Models/Effects/contrail1.xml</path>
+  <offsets>
+   <x-m>19.15813</x-m>
+   <y-m>-1.3448122</y-m>
+   <z-m>-0.4072564</z-m> 
+   <roll-deg>    0 </roll-deg>
+   <pitch-deg>   0 </pitch-deg>
+   <heading-deg> 0 </heading-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/MiG-29_9-12/Models/Effects/contrail2.xml</path>
+  <offsets>
+   <x-m>19.15813</x-m>
+   <y-m> 1.3448122</y-m>
+   <z-m>-0.4072564</z-m> 
+   <roll-deg>    0 </roll-deg>
+   <pitch-deg>   0 </pitch-deg>
+   <heading-deg> 0 </heading-deg>
+  </offsets>
+ </model>
+<!-- Wingtip contrail -->
+ <model>
+  <path>Aircraft/MiG-29_9-12/Models/Effects/vapour.xml</path>
+  <offsets>
+   <x-m> 3.831</x-m>
+   <y-m>-5.64785</y-m>
+   <z-m>-0.2596062</z-m> 
+   <roll-deg>    0 </roll-deg>
+   <pitch-deg>   0 </pitch-deg>
+   <heading-deg> 0 </heading-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/MiG-29_9-12/Models/Effects/vapour.xml</path>
+  <offsets>
+   <x-m> 3.831</x-m>
+   <y-m> 5.64785</y-m>
+   <z-m>-0.2596062</z-m> 
+   <roll-deg>    0 </roll-deg>
+   <pitch-deg>   0 </pitch-deg>
+   <heading-deg> 0 </heading-deg>
+  </offsets>
+ </model>
+<!-- Tyre smoke -->
+ <model>
+  <path>Aircraft/Generic/Effects/tyre-smoke-nose.xml</path>
+  <name>tyre-smoke-n</name>
+  <offsets>
+   <x-m>-1.61047</x-m>
+   <y-m> 0.0</y-m>
+   <z-m>-2.05236</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/Generic/Effects/tyre-smoke-port.xml</path>
+  <name>tyre-smoke-p</name>
+  <offsets>
+   <x-m> 2.079</x-m>
+   <y-m>-1.65095</y-m>
+   <z-m>-2.01297</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/Generic/Effects/tyre-smoke-stbd.xml</path>
+  <name>tyre-smoke-s</name>
+  <offsets>
+   <x-m> 2.079</x-m>
+   <y-m> 1.65095</y-m>
+   <z-m>-2.01297</z-m>
+  </offsets>
+ </model>
+
+ <animation>
+  <type>range</type>
+  <object-name>Cockpit</object-name>
+  <min-m>0</min-m>
+  <max-m>50</max-m>
+ </animation>
+
+ <nasal>
+  <load>
+   var livery_update = aircraft.livery_update.new("Aircraft/MiG-29_9-12/Models/Liveries");
+   ##############################################################################
+   # The on-load Nasal is not executed when this file is loaded as the user
+   # aircraft.
+   ##############################################################################
+   var rplayer = cmdarg();
+   # Set up property aliases for animations.
+   rplayer.getNode("mig29/systems/CS/Canopy/pos-norm", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[0]"));
+   rplayer.getNode("mig29/systems/CS/Inlet/left-pos-norm", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[1]"));
+   rplayer.getNode("mig29/systems/CS/Inlet/right-pos-norm", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[2]"));
+   rplayer.getNode("mig29/systems/CS/LERX/pos-norm", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[3]"));
+   rplayer.getNode("mig29/systems/CS/Stabilator/left-pos-norm", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[5]"));
+   rplayer.getNode("mig29/systems/CS/Stabilator/right-pos-norm", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[6]"));
+   ##############################################################################
+  </load>
+  <unload>
+   livery_update.stop();
+  </unload>
+ </nasal>
+
+ <animation>
+  <type>material</type>
+  <object-name>Pitot</object-name>
+  <object-name>Radome</object-name>
+  <object-name>fuselage</object-name>
+  <object-name>lowerfusbox</object-name>
+  <object-name>DUALeft</object-name>
+  <object-name>DUARight</object-name>
+  <object-name>DUS</object-name>
+  <object-name>Antena</object-name>
+  <object-name>KOLS_Glass</object-name>
+  <object-name>KOLS</object-name>
+  <object-name>Tube</object-name>
+  <object-name>Fin_pitots.fwd</object-name>
+  <object-name>fuselage.piece</object-name>
+  <object-name>fuselage.piecein</object-name>
+  <object-name>Canopy</object-name>
+  <object-name>fwdnosegeardoor</object-name>
+  <object-name>nosegeardoorL</object-name>
+  <object-name>nosegeardoorR</object-name>
+  <object-name>LouversL1</object-name>
+  <object-name>LouversL2</object-name>
+  <object-name>LouversL3</object-name>
+  <object-name>LouversL4</object-name>
+  <object-name>LouversL5</object-name>
+  <object-name>LouversR1</object-name>
+  <object-name>LouversR2</object-name>
+  <object-name>LouversR3</object-name>
+  <object-name>LouversR4</object-name>
+  <object-name>LouversR5</object-name>
+  <object-name>UpperIntakeBoxL</object-name>
+  <object-name>UpperIntakeBoxR</object-name>
+  <object-name>leftfusbbox</object-name>
+  <object-name>rightfusbbox</object-name>
+  <object-name>leftfusbox</object-name>
+  <object-name>rightfusbox</object-name>
+  <object-name>IntakeScreenL</object-name>
+  <object-name>IntakeScreenR</object-name>
+  <object-name>fwdgeardoor.L</object-name>
+  <object-name>fwdgeardoor.R</object-name>
+  <object-name>reargeardoor.L</object-name>
+  <object-name>reargeardoor.R</object-name>
+  <object-name>reargeardoor2.L</object-name>
+  <object-name>reargeardoor2.R</object-name>
+  <object-name>Chaff_dispenserL</object-name>
+  <object-name>Chaff_dispenserR</object-name>
+  <object-name>Scoops</object-name>
+  <object-name>Eng_CoverL</object-name>
+  <object-name>Eng_CoverR</object-name>
+  <object-name>Stab_RootL</object-name>
+  <object-name>Stab_RootR</object-name>
+  <object-name>AirbrakeU</object-name>
+  <object-name>AirbrakeD</object-name>
+  <object-name>Parachute_container</object-name>
+  <object-name>Paracont_cover</object-name>
+  <property-base>sim/model/livery</property-base>
+  <texture-prop>texture-fuselage</texture-prop>
+  <texture>MiG-29_1.png</texture>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>Gear_jack_body</object-name>
+  <object-name>Gear_jack</object-name>
+  <object-name>Gear_strut</object-name>
+  <object-name>Gear_strut_fork</object-name>
+  <object-name>Nose_oleo</object-name>
+  <object-name>Nose_fork</object-name>
+  <object-name>Fork</object-name>
+  <object-name>Mud_grace_brace</object-name>
+  <object-name>Mud_guard</object-name>
+  <object-name>Nose_Gear_axle</object-name>
+  <object-name>Nose_wheel_L</object-name>
+  <object-name>Nose_wheel_R</object-name>
+  <object-name>FPK-250</object-name>
+  <object-name>FPK-250.G</object-name>
+  <object-name>FP-8.L</object-name>
+  <object-name>FP-8.R</object-name>
+  <object-name>FP-8.GL</object-name>
+  <object-name>FP-8.GR</object-name>
+  <object-name>LERXL</object-name>
+  <object-name>LERXR</object-name>
+  <object-name>WingL</object-name>
+  <object-name>WingR</object-name>
+  <object-name>AileronL</object-name>
+  <object-name>AileronR</object-name>
+  <object-name>FlapL</object-name>
+  <object-name>FlapR</object-name>
+  <object-name>Main_gear_strutL</object-name>
+  <object-name>Main_gear_strutR</object-name>
+  <object-name>Main_gr_oleoL</object-name>
+  <object-name>Main_gr_oleoR</object-name>
+  <object-name>Main_gr_compass_L</object-name>
+  <object-name>Main_gr_compass_R</object-name>
+  <object-name>Main_gr_compass_low_L</object-name>
+  <object-name>Main_gr_compass_low_R</object-name>
+  <object-name>Main_whell_L</object-name>
+  <object-name>Main_whell_R</object-name>
+  <object-name>Main_gr_jack_bodyL</object-name>
+  <object-name>Main_gr_jack_bodyR</object-name>
+  <object-name>Main_gr_jackL</object-name>
+  <object-name>Main_gr_jackR</object-name>
+  <object-name>Fin_pitots</object-name>
+  <object-name>FinL</object-name>
+  <object-name>FinR</object-name>
+  <object-name>RudderL</object-name>
+  <object-name>RudderR</object-name>
+  <object-name>Lower_podL</object-name>
+  <object-name>Lower_podR</object-name>
+  <object-name>upper_podL</object-name>
+  <object-name>upper_podR</object-name>
+  <object-name>StabL</object-name>
+  <object-name>StabR</object-name>
+  <object-name>Insignia</object-name>
+  <property-base>sim/model/livery</property-base>
+  <texture-prop>texture-wings</texture-prop>
+  <texture>MiG-29_1.png</texture>
+ </animation>
+
+ <effect>
+  <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/model-transparent</inherits-from>
+  <object-name>FrontGlass</object-name>
+  <object-name>CanopyGlass</object-name>
+  <object-name>KOLS_Glass</object-name>
+  <object-name>MiG-29.BNL1</object-name>
+  <object-name>MiG-29.BNL2</object-name>
+  <object-name>MiG-29.BNR1</object-name>
+  <object-name>MiG-29.BNR2</object-name>
+  <object-name>Insignia</object-name>
+ </effect>
+
+ <effect>
+  <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+  <object-name>KOLS_Glass</object-name>
+  <object-name>KOLS.M</object-name>
+ </effect>
+
+<!-- Rudders -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RudderL</object-name>
+  <property>surface-positions/rudder-pos-norm</property>
+  <factor>25</factor>
+  <axis>
+   <x1-m> 6.439</x1-m>
+   <y1-m>-1.691</y1-m>
+   <z1-m> 0.399</z1-m>
+   <x2-m> 6.785</x2-m>
+   <y2-m>-1.775</y2-m>
+   <z2-m> 1.661</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RudderR</object-name>
+  <property>surface-positions/rudder-pos-norm</property>
+  <factor>25</factor>
+  <axis>
+   <x1-m> 6.439</x1-m>
+   <y1-m> 1.691</y1-m>
+   <z1-m> 0.399</z1-m>
+   <x2-m> 6.785</x2-m>
+   <y2-m> 1.775</y2-m>
+   <z2-m> 1.661</z2-m>
+  </axis>
+ </animation>
+
+<!--Elevators-->
+
+ <animation>
+   <type>rotate</type>
+   <object-name>StabL</object-name>
+   <property>mig29/systems/CS/Stabilator/left-pos-norm</property>
+   <factor>-35</factor>
+   <axis>
+     <x1-m> 5.904</x1-m>
+     <y1-m>-1.738</y1-m>
+     <z1-m>-0.172</z1-m>
+     <x2-m> 5.904</x2-m>
+     <y2-m>-2.736</y2-m>
+     <z2-m>-0.24176</z2-m>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>StabR</object-name>
+   <property>mig29/systems/CS/Stabilator/right-pos-norm</property>
+   <factor>-35</factor>
+   <axis>
+     <x1-m> 5.904</x1-m>
+     <y1-m>-1.742</y1-m>
+     <z1-m>-0.24176</z1-m>
+     <x2-m> 5.904</x2-m>
+     <y2-m>-2.740</y2-m>
+     <z2-m>-0.172</z2-m>
+   </axis>
+ </animation>
+
+<!-- Ailerons -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>AileronL</object-name>
+  <property>surface-positions/left-aileron-pos-norm</property>
+  <factor>-20</factor>
+  <offset-deg>5</offset-deg>
+  <axis>
+   <x1-m> 4.136</x1-m>
+   <y1-m>-3.693</y1-m>
+   <z1-m>-0.144</z1-m>
+   <x2-m> 4.536</x2-m>
+   <y2-m>-4.946</y2-m>
+   <z2-m>-0.228</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>AileronR</object-name>
+  <property>surface-positions/right-aileron-pos-norm</property>
+  <factor>-20</factor>
+  <offset-deg>-5</offset-deg>
+  <axis>
+   <x1-m> 4.136</x1-m>
+   <y1-m> 3.693</y1-m>
+   <z1-m>-0.144</z1-m>
+   <x2-m> 4.536</x2-m>
+   <y2-m> 4.946</y2-m>
+   <z2-m>-0.228</z2-m>
+  </axis>
+ </animation>
+
+<!-- Flaps -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>FlapL</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>-25</factor>
+  <axis>
+   <x1-m> 3.468</x1-m>
+   <y1-m>-1.731</y1-m>
+   <z1-m>-0.008381</z1-m>
+   <x2-m> 4.075</x2-m>
+   <y2-m>-3.592</y2-m>
+   <z2-m>-0.136</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>FlapR</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>25</factor>
+  <axis>
+   <x1-m> 3.468</x1-m>
+   <y1-m> 1.731</y1-m>
+   <z1-m>-0.008381</z1-m>
+   <x2-m> 4.075</x2-m>
+   <y2-m> 3.592</y2-m>
+   <z2-m>-0.136</z2-m>
+  </axis>
+ </animation>
+
+<!-- Leading Edge Root Extensions -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LERXL</object-name>
+  <property>fdm/jsbsim/fcs/LERX-pos-norm</property>
+  <factor>20</factor>
+  <axis>
+   <x1-m> 0.615</x1-m>
+   <y1-m>-1.655</y1-m>
+   <z1-m> 0.03277</z1-m>
+   <x2-m> 3.347</x2-m>
+   <y2-m>-4.934</y2-m>
+   <z2-m>-0.205</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>LERXR</object-name>
+  <property>fdm/jsbsim/fcs/LERX-pos-norm</property>
+  <factor>-20</factor>
+  <axis>
+   <x1-m> 0.615</x1-m>
+   <y1-m> 1.655</y1-m>
+   <z1-m> 0.03277</z1-m>
+   <x2-m> 3.347</x2-m>
+   <y2-m> 4.934</y2-m>
+   <z2-m>-0.205</z2-m>
+  </axis>
+ </animation>
+
+<!-- Speed Brake -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>AirbrakeU</object-name>
+  <property>surface-positions/speedbrake-pos-norm</property>
+  <factor>-56</factor>
+  <axis>
+   <x1-m> 5.418</x1-m>
+   <y1-m>-0.315</y1-m>
+   <z1-m>-0.06732</z1-m>
+   <x2-m> 5.418</x2-m>
+   <y2-m> 0.315</y2-m>
+   <z2-m>-0.06732</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>AirbrakeD</object-name>
+  <property>surface-positions/speedbrake-pos-norm</property>
+  <factor>60</factor>
+  <axis>
+   <x1-m> 5.418</x1-m>
+   <y1-m>-0.296</y1-m>
+   <z1-m>-0.335</z1-m>
+   <x2-m> 5.418</x2-m>
+   <y2-m> 0.296</y2-m>
+   <z2-m>-0.335</z2-m>
+  </axis>
+ </animation>
+
+<!--  -->
+ <animation>
+  <type>rotate</type>
+  <object-name>Paracont_cover</object-name>
+  <property>fdm/jsbsim/fcs/parachute_reef_pos_norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>  0</dep></entry>
+   <entry><ind>0.2</ind><dep>180</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 6.397</x-m>
+   <y-m> 0.000</y-m>
+   <z-m>-0.350</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Nose gear -->
+        
+ <animation>
+  <type>select</type>
+  <object-name>Gear_Jack</object-name>
+  <object-name>Gear_strut</object-name>
+  <object-name>Nose_oleo</object-name>
+  <object-name>Fork</object-name>
+  <object-name>Gear_strut_fork</object-name>
+  <object-name>Nose_fork</object-name>
+  <object-name>Nose_tyre_L</object-name>
+  <object-name>Nose_tyre_R</object-name>
+  <object-name>Nose_wheel_L</object-name>
+  <object-name>Nose_wheel_R</object-name>
+  <object-name>Mud_guard</object-name>
+  <object-name>Mud_guard_brace</object-name>
+  <object-name>Nose_Gear_axle</object-name>
+  <object-name>FPK-250</object-name>
+  <object-name>FPK-250.G</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[0]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Gear_jack</object-name>
+  <object-name>Gear_strut</object-name>
+  <object-name>Nose_oleo</object-name>
+  <object-name>Fork</object-name>
+  <object-name>Gear_strut_fork</object-name>
+  <object-name>Nose_fork</object-name>
+  <object-name>Nose_tyre_L</object-name>
+  <object-name>Nose_tyre_R</object-name>
+  <object-name>Nose_wheel_L</object-name>
+  <object-name>Nose_wheel_R</object-name>
+  <object-name>Nose_Gear_axle</object-name>
+  <object-name>Mud_guard</object-name>
+  <object-name>Mud_guard_brace</object-name>
+  <object-name>FPK-250</object-name>
+  <object-name>FPK-250.G</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.00</ind><dep>80</dep></entry>
+   <entry><ind>0.15</ind><dep>80</dep></entry>
+   <entry><ind>1.00</ind><dep> 0</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-1.820</x-m>
+   <y-m> 0.000</y-m>
+   <z-m>-0.010</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>Gear_jack_body</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.15    </ind><dep>24.1</dep></entry><!--0,010625--><!--80-->
+   <entry><ind>0.160625</ind><dep>23.7</dep></entry><!--79-->
+   <entry><ind>0.17125 </ind><dep>23.4</dep></entry><!--78-->
+   <entry><ind>0.181875</ind><dep>23.0</dep></entry><!--77-->
+   <entry><ind>0.1925  </ind><dep>22.7</dep></entry><!--76-->
+   <entry><ind>0.203125</ind><dep>22.4</dep></entry><!--75-->
+   <entry><ind>0.21375 </ind><dep>22.1</dep></entry><!--74-->
+   <entry><ind>0.224375</ind><dep>21.7</dep></entry><!--73-->
+   <entry><ind>0.235   </ind><dep>21.4</dep></entry><!--72-->
+   <entry><ind>0.245625</ind><dep>21.0</dep></entry><!--71-->
+   <entry><ind>0.25625 </ind><dep>20.7</dep></entry><!--70-->
+   <entry><ind>0.266875</ind><dep>20.4</dep></entry><!--69-->
+   <entry><ind>0.2775  </ind><dep>20.0</dep></entry><!--68-->
+   <entry><ind>0.288125</ind><dep>19.7</dep></entry><!--67-->
+   <entry><ind>0.29875 </ind><dep>19.3</dep></entry><!--66-->
+   <entry><ind>0.309375</ind><dep>19.0</dep></entry><!--65-->
+   <entry><ind>0.32    </ind><dep>18.6</dep></entry><!--64-->
+   <entry><ind>0.330625</ind><dep>18.3</dep></entry><!--63-->
+   <entry><ind>0.34125 </ind><dep>18.0</dep></entry><!--62-->
+   <entry><ind>0.351875</ind><dep>17.6</dep></entry><!--61-->
+   <entry><ind>0.3625  </ind><dep>17.3</dep></entry><!--60-->
+   <entry><ind>0.373125</ind><dep>17.0</dep></entry><!--59-->
+   <entry><ind>0.38375 </ind><dep>16.6</dep></entry><!--58-->
+   <entry><ind>0.394375</ind><dep>16.3</dep></entry><!--57-->
+   <entry><ind>0.405   </ind><dep>15.9</dep></entry><!--56-->
+   <entry><ind>0.415625</ind><dep>15.6</dep></entry><!--55-->
+   <entry><ind>0.42625 </ind><dep>15.3</dep></entry><!--54-->
+   <entry><ind>0.436875</ind><dep>15.0</dep></entry><!--53-->
+   <entry><ind>0.4475  </ind><dep>14.6</dep></entry><!--52-->
+   <entry><ind>0.458125</ind><dep>14.3</dep></entry><!--51-->
+   <entry><ind>0.46875 </ind><dep>14.0</dep></entry><!--50-->
+   <entry><ind>0.479375</ind><dep>13.6</dep></entry><!--49-->
+   <entry><ind>0.49    </ind><dep>13.3</dep></entry><!--48-->
+   <entry><ind>0.500625</ind><dep>13.0</dep></entry><!--47-->
+   <entry><ind>0.51125 </ind><dep>12.7</dep></entry><!--46-->
+   <entry><ind>0.521875</ind><dep>12.3</dep></entry><!--45-->
+   <entry><ind>0.5325  </ind><dep>12.0</dep></entry><!--44-->
+   <entry><ind>0.543125</ind><dep>11.7</dep></entry><!--43-->
+   <entry><ind>0.55375 </ind><dep>11.4</dep></entry><!--42-->
+   <entry><ind>0.564375</ind><dep>11.1</dep></entry><!--41-->
+   <entry><ind>0.575   </ind><dep>10.8</dep></entry><!--40-->
+   <entry><ind>0.585625</ind><dep>10.4</dep></entry><!--39-->
+   <entry><ind>0.59625 </ind><dep>10.1</dep></entry><!--38-->
+   <entry><ind>0.606875</ind><dep> 9.8</dep></entry><!--37-->
+   <entry><ind>0.6175  </ind><dep> 9.5</dep></entry><!--36-->
+   <entry><ind>0.628125</ind><dep> 9.2</dep></entry><!--35-->
+   <entry><ind>0.63875 </ind><dep> 8.9</dep></entry><!--34-->
+   <entry><ind>0.649375</ind><dep> 8.6</dep></entry><!--33-->
+   <entry><ind>0.66    </ind><dep> 8.3</dep></entry><!--32-->
+   <entry><ind>0.670625</ind><dep> 8.0</dep></entry><!--31-->
+   <entry><ind>0.68125 </ind><dep> 7.7</dep></entry><!--30-->
+   <entry><ind>0.691875</ind><dep> 7.4</dep></entry><!--29-->
+   <entry><ind>0.7025  </ind><dep> 7.1</dep></entry><!--28-->
+   <entry><ind>0.713125</ind><dep> 6.8</dep></entry><!--27-->
+   <entry><ind>0.72375 </ind><dep> 6.5</dep></entry><!--26-->
+   <entry><ind>0.734375</ind><dep> 6.2</dep></entry><!--25-->
+   <entry><ind>0.745   </ind><dep> 6.0</dep></entry><!--24-->
+   <entry><ind>0.755625</ind><dep> 5.7</dep></entry><!--23-->
+   <entry><ind>0.76625 </ind><dep> 5.4</dep></entry><!--22-->
+   <entry><ind>0.776875</ind><dep> 4.9</dep></entry><!--21-->
+   <entry><ind>0.7875  </ind><dep> 4.9</dep></entry><!--20-->
+   <entry><ind>0.798125</ind><dep> 4.5</dep></entry><!--19-->
+   <entry><ind>0.80875 </ind><dep> 4.2</dep></entry><!--18-->
+   <entry><ind>0.819375</ind><dep> 3.9</dep></entry><!--17-->
+   <entry><ind>0.83    </ind><dep> 3.7</dep></entry><!--16-->
+   <entry><ind>0.840625</ind><dep> 3.4</dep></entry><!--15-->
+   <entry><ind>0.85125 </ind><dep> 3.2</dep></entry><!--14-->
+   <entry><ind>0.861875</ind><dep> 2.9</dep></entry><!--13-->
+   <entry><ind>0.8725  </ind><dep> 2.7</dep></entry><!--12-->
+   <entry><ind>0.883125</ind><dep> 2.4</dep></entry><!--11-->
+   <entry><ind>0.89375 </ind><dep> 2.2</dep></entry><!--10-->
+   <entry><ind>0.904375</ind><dep> 1.9</dep></entry><!-- 9-->
+   <entry><ind>0.915   </ind><dep> 1.7</dep></entry><!-- 8-->
+   <entry><ind>0.925625</ind><dep> 1.5</dep></entry><!-- 7-->
+   <entry><ind>0.93625 </ind><dep> 1.2</dep></entry><!-- 6-->
+   <entry><ind>0.946875</ind><dep> 1.0</dep></entry><!-- 5-->
+   <entry><ind>0.9575  </ind><dep> 0.8</dep></entry><!-- 4-->
+   <entry><ind>0.968125</ind><dep> 0.6</dep></entry><!-- 3-->
+   <entry><ind>0.97875 </ind><dep> 0.4</dep></entry><!-- 2-->
+   <entry><ind>0.989375</ind><dep> 0.2</dep></entry><!-- 1-->
+   <entry><ind>1.0     </ind><dep> 0.0</dep></entry><!-- 0-->
+  </interpolation>
+  <center>
+   <x-m>-3.349</x-m>
+   <y-m> 0.000</y-m>
+   <z-m>-0.082</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>Gear_jack</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.15    </ind><dep>55.93</dep></entry><!--80-->
+   <entry><ind>0.160625</ind><dep>55.28</dep></entry><!--79-->
+   <entry><ind>0.17125 </ind><dep>54.63</dep></entry><!--78-->
+   <entry><ind>0.181875</ind><dep>53.98</dep></entry><!--77-->
+   <entry><ind>0.1925  </ind><dep>53.33</dep></entry><!--76-->
+   <entry><ind>0.203125</ind><dep>52.7</dep></entry><!--75-->
+   <entry><ind>0.21375 </ind><dep>52.0</dep></entry><!--74-->
+   <entry><ind>0.224375</ind><dep>51.4</dep></entry><!--73-->
+   <entry><ind>0.235   </ind><dep>50.7</dep></entry><!--72-->
+   <entry><ind>0.245625</ind><dep>50.1</dep></entry><!--71-->
+   <entry><ind>0.25625 </ind><dep>49.4</dep></entry><!--70-->
+   <entry><ind>0.266875</ind><dep>48.7</dep></entry><!--69-->
+   <entry><ind>0.2775  </ind><dep>48.1</dep></entry><!--68-->
+   <entry><ind>0.288125</ind><dep>47.4</dep></entry><!--67-->
+   <entry><ind>0.29875 </ind><dep>46.8</dep></entry><!--66-->
+   <entry><ind>0.309375</ind><dep>46.1</dep></entry><!--65-->
+   <entry><ind>0.32    </ind><dep>45.5</dep></entry><!--64-->
+   <entry><ind>0.330625</ind><dep>44.8</dep></entry><!--63-->
+   <entry><ind>0.34125 </ind><dep>44.1</dep></entry><!--62-->
+   <entry><ind>0.351875</ind><dep>43.5</dep></entry><!--61-->
+   <entry><ind>0.3625  </ind><dep>42.8</dep></entry><!--60-->
+   <entry><ind>0.373125</ind><dep>42.1</dep></entry><!--59-->
+   <entry><ind>0.38375 </ind><dep>41.5</dep></entry><!--58-->
+   <entry><ind>0.394375</ind><dep>40.8</dep></entry><!--57-->
+   <entry><ind>0.405   </ind><dep>40.2</dep></entry><!--56-->
+   <entry><ind>0.415625</ind><dep>39.5</dep></entry><!--55-->
+   <entry><ind>0.42625 </ind><dep>38.8</dep></entry><!--54-->
+   <entry><ind>0.436875</ind><dep>38.1</dep></entry><!--53-->
+   <entry><ind>0.4475  </ind><dep>37.5</dep></entry><!--52-->
+   <entry><ind>0.458125</ind><dep>36.8</dep></entry><!--51-->
+   <entry><ind>0.46875 </ind><dep>36.1</dep></entry><!--50-->
+   <entry><ind>0.479375</ind><dep>35.5</dep></entry><!--49-->
+   <entry><ind>0.49    </ind><dep>34.8</dep></entry><!--48-->
+   <entry><ind>0.500625</ind><dep>34.1</dep></entry><!--47-->
+   <entry><ind>0.51125 </ind><dep>33.4</dep></entry><!--46-->
+   <entry><ind>0.521875</ind><dep>32.8</dep></entry><!--45-->
+   <entry><ind>0.5325  </ind><dep>32.1</dep></entry><!--44-->
+   <entry><ind>0.543125</ind><dep>31.4</dep></entry><!--43-->
+   <entry><ind>0.55375 </ind><dep>30.8</dep></entry><!--42-->
+   <entry><ind>0.564375</ind><dep>30.1</dep></entry><!--41-->
+   <entry><ind>0.575   </ind><dep>29.4</dep></entry><!--40-->
+   <entry><ind>0.585625</ind><dep>28.8</dep></entry><!--39-->
+   <entry><ind>0.59625 </ind><dep>28.1</dep></entry><!--38-->
+   <entry><ind>0.606875</ind><dep>27.4</dep></entry><!--37-->
+   <entry><ind>0.6175  </ind><dep>26.7</dep></entry><!--36-->
+   <entry><ind>0.628125</ind><dep>25.9</dep></entry><!--35-->
+   <entry><ind>0.63875 </ind><dep>25.2</dep></entry><!--34-->
+   <entry><ind>0.649375</ind><dep>24.5</dep></entry><!--33-->
+   <entry><ind>0.66    </ind><dep>23.8</dep></entry><!--32-->
+   <entry><ind>0.670625</ind><dep>23.1</dep></entry><!--31-->
+   <entry><ind>0.68125 </ind><dep>22.4</dep></entry><!--30-->
+   <entry><ind>0.691875</ind><dep>21.7</dep></entry><!--29-->
+   <entry><ind>0.7025  </ind><dep>21.0</dep></entry><!--28-->
+   <entry><ind>0.713125</ind><dep>20.3</dep></entry><!--27-->
+   <entry><ind>0.72375 </ind><dep>19.6</dep></entry><!--26-->
+   <entry><ind>0.734375</ind><dep>18.9</dep></entry><!--25-->
+   <entry><ind>0.745   </ind><dep>18.1</dep></entry><!--24-->
+   <entry><ind>0.755625</ind><dep>17.4</dep></entry><!--23-->
+   <entry><ind>0.76625 </ind><dep>16.7</dep></entry><!--22-->
+   <entry><ind>0.776875</ind><dep>16.0</dep></entry><!--21-->
+   <entry><ind>0.7875  </ind><dep>15.2</dep></entry><!--20-->
+   <entry><ind>0.798125</ind><dep>14.5</dep></entry><!--19-->
+   <entry><ind>0.80875 </ind><dep>13.8</dep></entry><!--18-->
+   <entry><ind>0.819375</ind><dep>13.1</dep></entry><!--17-->
+   <entry><ind>0.83    </ind><dep>12.3</dep></entry><!--16-->
+   <entry><ind>0.840625</ind><dep>11.6</dep></entry><!--15-->
+   <entry><ind>0.85125 </ind><dep>10.8</dep></entry><!--14-->
+   <entry><ind>0.861875</ind><dep>10.1</dep></entry><!--13-->
+   <entry><ind>0.8725  </ind><dep> 9.3</dep></entry><!--12-->
+   <entry><ind>0.883125</ind><dep> 8.6</dep></entry><!--11-->
+   <entry><ind>0.89375 </ind><dep> 7.8</dep></entry><!--10-->
+   <entry><ind>0.904375</ind><dep> 7.1</dep></entry><!-- 9-->
+   <entry><ind>0.915   </ind><dep> 6.3</dep></entry><!-- 8-->
+   <entry><ind>0.925625</ind><dep> 5.5</dep></entry><!-- 7-->
+   <entry><ind>0.93625 </ind><dep> 4.8</dep></entry><!-- 6-->
+   <entry><ind>0.946875</ind><dep> 4.0</dep></entry><!-- 5-->
+   <entry><ind>0.9575  </ind><dep> 3.2</dep></entry><!-- 4-->
+   <entry><ind>0.968125</ind><dep> 2.4</dep></entry><!-- 3-->
+   <entry><ind>0.97875 </ind><dep> 1.6</dep></entry><!-- 2-->
+   <entry><ind>0.989375</ind><dep> 0.8</dep></entry><!-- 1-->
+   <entry><ind>1.0     </ind><dep> 0.0</dep></entry><!-- 0-->
+  </interpolation>
+  <center>
+   <x-m>-1.86875</x-m>
+   <y-m> 0.0521171</y-m>
+   <z-m>-0.8378186</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>fwdnosegeardoor</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.15</ind><dep> 0.0</dep></entry>
+   <entry><ind>0.5 </ind><dep>10.0</dep></entry>
+   <entry><ind>1.0 </ind><dep>27.0</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.026</x-m>
+   <y-m> 0</y-m>
+   <z-m>-0.326</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>nosegeardoorL</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.00</ind><dep>  0</dep></entry>
+   <entry><ind>0.15</ind><dep>-80</dep></entry>
+   <entry><ind>1.00</ind><dep>-80</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-1.902</x1-m>
+   <y1-m>-0.307</y1-m>
+   <z1-m>-0.259</z1-m>
+   <x2-m> 0.117</x2-m>
+   <y2-m>-0.307</y2-m>
+   <z2-m>-0.285</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>nosegeardoorR</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.00</ind><dep> 0</dep></entry>
+   <entry><ind>0.15</ind><dep>80</dep></entry>
+   <entry><ind>1.00</ind><dep>80</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-1.902</x1-m>
+   <y1-m> 0.307</y1-m>
+   <z1-m>-0.259</z1-m>
+   <x2-m> 0.117</x2-m>
+   <y2-m> 0.307</y2-m>
+   <z2-m>-0.285</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Fork</object-name>
+  <object-name>Gear_strut_fork</object-name>
+  <object-name>Nose_fork</object-name>
+  <object-name>Nose_tyre_L</object-name>
+  <object-name>Nose_tyre_R</object-name>
+  <object-name>Nose_wheel_L</object-name>
+  <object-name>Nose_wheel_R</object-name>
+  <object-name>Mud_guard</object-name>
+  <object-name>Mud_guard_brace</object-name>
+  <object-name>Nose_Gear_axle</object-name>
+  <condition>
+   <less-than>
+    <property>position/altitude-agl-ft</property>
+    <value>50.0</value>
+   </less-than>
+  </condition>
+  <property>fdm/jsbsim/fcs/steer-pos-deg</property>
+  <factor>1</factor>
+  <axis>
+   <x1-m>-1.820</x1-m>
+   <y1-m> 0.000</y1-m>
+   <z1-m>-1.193</z1-m>
+   <x2-m>-1.820</x2-m>
+   <y2-m> 0.000</y2-m>
+   <z2-m>-1.692</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>Nose_oleo</object-name>
+  <object-name>Nose_tyre_L</object-name>
+  <object-name>Nose_tyre_R</object-name>
+  <object-name>Nose_wheel_L</object-name>
+  <object-name>Nose_wheel_R</object-name>
+  <object-name>Nose_Gear_axle</object-name>
+  <object-name>Mud_guard</object-name>
+  <property>gear/gear[0]/compression-norm</property>
+  <factor>0.3</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Fork</object-name>
+  <object-name>Nose_fork</object-name>
+  <property>gear/gear[0]/compression-norm</property>
+  <factor>13.333333333</factor>
+  <axis>
+   <x1-m>-1.901</x1-m>
+   <y1-m>-0.037</y1-m>
+   <z1-m>-1.20806</z1-m>
+   <x2-m>-1.901</x2-m>
+   <y2-m> 0.037</y2-m>
+   <z2-m>-1.20806</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>Fork</object-name>
+  <property>gear/gear[0]/compression-norm</property>
+  <factor>-13.333333333</factor>
+  <axis>
+   <x1-m>-1.95213</x1-m>
+   <y1-m>-0.037</y1-m>
+   <z1-m>-1.47099</z1-m>
+   <x2-m>-1.95213</x2-m>
+   <y2-m> 0.037</y2-m>
+   <z2-m>-1.47099</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Nose_tyre_L</object-name>
+  <object-name>Nose_tyre_R</object-name>
+  <object-name>Nose_wheel_L</object-name>
+  <object-name>Nose_wheel_R</object-name>
+  <property>gear/gear[0]/rollspeed-ms</property>
+  <factor>201.210793535</factor>
+  <axis>
+   <x1-m>-1.61046</x1-m>
+   <y1-m> 0.1430008</y1-m>
+   <z1-m>-1.77045</z1-m>
+   <x2-m>-1.61046</x2-m>
+   <y2-m>-0.1430008</y2-m>
+   <z2-m>-1.77045</z2-m>
+  </axis>
+ </animation>
+
+<!-- Left Gear -->
+
+ <animation>
+  <type>select</type>
+  <object-name>Main_gear_strutL</object-name>
+  <object-name>Main_gr_oleoL</object-name>
+  <object-name>Main_gr_jack_bodyL</object-name>
+  <object-name>Main_gr_jackL</object-name>
+  <object-name>Main_tyre_L</object-name>
+  <object-name>Main_wheel_L</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>fwdgeardoor.L</object-name>
+  <object-name>FP-8.L</object-name>
+  <object-name>FP-8.GL</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+   <entry><ind>  0</ind><dep>  0</dep></entry>
+   <entry><ind>0.3</ind><dep>150</dep></entry>
+   <entry><ind>1.0</ind><dep>150</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 0.416</x1-m>
+   <y1-m>-1.107</y1-m>
+   <z1-m>-0.552</z1-m>
+   <x2-m> 1.464</x2-m>
+   <y2-m>-1.153</y2-m>
+   <z2-m>-0.552</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>reargeardoor.L</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>  0</dep></entry>
+   <entry><ind>0.3</ind><dep>-60</dep></entry>
+   <entry><ind>1.0</ind><dep>-60</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 2.003</x1-m>
+   <y1-m>-1.638</y1-m>
+   <z1-m>-0.06473</z1-m>
+   <x2-m> 2.525</x2-m>
+   <y2-m>-1.603</y2-m>
+   <z2-m>-0.06381</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>reargear2door.L</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>  0</dep></entry>
+   <entry><ind>1.0</ind><dep>-30</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 3.48843</x1-m>
+   <y1-m>-1.48567</y1-m>
+   <z1-m>-0.1592083</z1-m>
+   <x2-m> 3.49124</x2-m>
+   <y2-m>-1.38178</y2-m>
+   <z2-m>-0.1920117</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>Main_gear_strutL</object-name>
+  <object-name>Main_gr_compass_L</object-name>
+  <object-name>Main_gr_compass_low_L</object-name>
+  <object-name>Main_gr_oleoL</object-name>
+  <object-name>Main_tyre_L</object-name>
+  <object-name>Main_wheel_L</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.15</ind><dep>115</dep></entry>
+   <entry><ind>1.00</ind><dep>  0</dep></entry>
+  </interpolation>
+  <axis>
+   <!--x1-m> 2.475</x1-m>
+   <y1-m>-1.309</y1-m>
+   <z1-m> 0.005</z1-m>
+   <x2-m> 2.315</x2-m>
+   <y2-m>-1.147</y2-m>
+   <z2-m>-0.205</z2-m-->
+
+   <!--x1-m> 2.445</x1-m>
+   <y1-m>-1.309</y1-m>
+   <z1-m>-0.065</z1-m>
+   <x2-m> 2.285</x2-m>
+   <y2-m>-1.147</y2-m>
+   <z2-m>-0.275</z2-m-->
+
+   <x1-m> 2.445</x1-m>
+   <y1-m>-1.329</y1-m>
+   <z1-m>-0.065</z1-m>
+   <x2-m> 2.285</x2-m>
+   <y2-m>-1.167</y2-m>
+   <z2-m>-0.275</z2-m>
+
+   <!--x1-m> 2.42539</x1-m>
+   <y1-m>-1.44856</y1-m>
+   <z1-m> 0.0051</z1-m>
+   <x2-m> 2.35497</x2-m>
+   <y2-m>-1.2475</y2-m>
+   <z2-m>-0.20291</z2-m-->
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Main_gr_jackL</object-name>
+  <object-name>Main_gr_jack_bodyL</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.15       </ind><dep>19.74</dep></entry><!--  0-->
+   <entry><ind>0.157391304</ind><dep>19.62</dep></entry><!--  1-->
+   <entry><ind>0.164782608</ind><dep>19.43</dep></entry><!--  2-->
+   <entry><ind>0.172173912</ind><dep>19.24</dep></entry><!--  3-->
+   <entry><ind>0.179565216</ind><dep>19.05</dep></entry><!--  4-->
+   <entry><ind>0.18695652 </ind><dep>18.86</dep></entry><!--  5-->
+   <entry><ind>0.194347824</ind><dep>18.67</dep></entry><!--  6-->
+   <entry><ind>0.201739128</ind><dep>18.47</dep></entry><!--  7-->
+   <entry><ind>0.209130432</ind><dep>18.28</dep></entry><!--  8-->
+   <entry><ind>0.216521736</ind><dep>18.08</dep></entry><!--  9-->
+   <entry><ind>0.22391304 </ind><dep>17.89</dep></entry><!-- 10-->
+   <entry><ind>0.231304344</ind><dep>17.69</dep></entry><!-- 11-->
+   <entry><ind>0.238695648</ind><dep>17.49</dep></entry><!-- 12-->
+   <entry><ind>0.246086952</ind><dep>17.29</dep></entry><!-- 13-->
+   <entry><ind>0.253478256</ind><dep>17.09</dep></entry><!-- 14-->
+   <entry><ind>0.26086956 </ind><dep>16.89</dep></entry><!-- 15-->
+   <entry><ind>0.268260864</ind><dep>16.68</dep></entry><!-- 16-->
+   <entry><ind>0.275652168</ind><dep>16.48</dep></entry><!-- 17-->
+   <entry><ind>0.283043472</ind><dep>16.27</dep></entry><!-- 18-->
+   <entry><ind>0.290434776</ind><dep>16.07</dep></entry><!-- 19-->
+   <entry><ind>0.29782608 </ind><dep>15.86</dep></entry><!-- 20-->
+   <entry><ind>0.305217384</ind><dep>15.66</dep></entry><!-- 21-->
+   <entry><ind>0.312608688</ind><dep>15.45</dep></entry><!-- 22-->
+   <entry><ind>0.319999992</ind><dep>15.24</dep></entry><!-- 23-->
+   <entry><ind>0.327391296</ind><dep>15.03</dep></entry><!-- 24-->
+   <entry><ind>0.3347826  </ind><dep>14.82</dep></entry><!-- 25-->
+   <entry><ind>0.342173904</ind><dep>14.61</dep></entry><!-- 26-->
+   <entry><ind>0.349565208</ind><dep>14.4 </dep></entry><!-- 27-->
+   <entry><ind>0.356956512</ind><dep>14.19</dep></entry><!-- 28-->
+   <entry><ind>0.364347816</ind><dep>13.98</dep></entry><!-- 29-->
+   <entry><ind>0.37173912 </ind><dep>13.77</dep></entry><!-- 30-->
+   <entry><ind>0.379130424</ind><dep>13.55</dep></entry><!-- 31-->
+   <entry><ind>0.386521728</ind><dep>13.34</dep></entry><!-- 32-->
+   <entry><ind>0.393913032</ind><dep>13.13</dep></entry><!-- 33-->
+   <entry><ind>0.401304336</ind><dep>12.91</dep></entry><!-- 34-->
+   <entry><ind>0.40869564 </ind><dep>12.7 </dep></entry><!-- 35-->
+   <entry><ind>0.416086944</ind><dep>12.5 </dep></entry><!-- 36-->
+   <entry><ind>0.423478248</ind><dep>12.3 </dep></entry><!-- 37-->
+   <entry><ind>0.430869552</ind><dep>12.1 </dep></entry><!-- 38-->
+   <entry><ind>0.438260856</ind><dep>11.8 </dep></entry><!-- 39-->
+   <entry><ind>0.44565216 </ind><dep>11.6 </dep></entry><!-- 40-->
+   <entry><ind>0.453043464</ind><dep>11.4 </dep></entry><!-- 41-->
+   <entry><ind>0.460434768</ind><dep>11.2 </dep></entry><!-- 42-->
+   <entry><ind>0.467826072</ind><dep>11.0 </dep></entry><!-- 43-->
+   <entry><ind>0.475217376</ind><dep>10.8 </dep></entry><!-- 44-->
+   <entry><ind>0.48260868 </ind><dep>10.6 </dep></entry><!-- 45-->
+   <entry><ind>0.489999984</ind><dep>10.3 </dep></entry><!-- 46-->
+   <entry><ind>0.497391288</ind><dep>10.1 </dep></entry><!-- 47-->
+   <entry><ind>0.504782592</ind><dep> 9.9 </dep></entry><!-- 48-->
+   <entry><ind>0.512173896</ind><dep> 9.7 </dep></entry><!-- 49-->
+   <entry><ind>0.5195652  </ind><dep> 9.5 </dep></entry><!-- 40-->
+   <entry><ind>0.526956504</ind><dep> 9.3 </dep></entry><!-- 51-->
+   <entry><ind>0.534347808</ind><dep> 9.1 </dep></entry><!-- 52-->
+   <entry><ind>0.541739112</ind><dep> 8.8 </dep></entry><!-- 53-->
+   <entry><ind>0.549130416</ind><dep> 8.6 </dep></entry><!-- 54-->
+   <entry><ind>0.55652172 </ind><dep> 8.4 </dep></entry><!-- 55-->
+   <entry><ind>0.563913024</ind><dep> 8.2 </dep></entry><!-- 56-->
+   <entry><ind>0.571304328</ind><dep> 8.0 </dep></entry><!-- 57-->
+   <entry><ind>0.578695632</ind><dep> 7.8 </dep></entry><!-- 58-->
+   <entry><ind>0.586086936</ind><dep> 7.6 </dep></entry><!-- 59-->
+   <entry><ind>0.59347824 </ind><dep> 7.4 </dep></entry><!-- 60-->
+   <entry><ind>0.600869544</ind><dep> 7.2 </dep></entry><!-- 61-->
+   <entry><ind>0.608260848</ind><dep> 7.0 </dep></entry><!-- 62-->
+   <entry><ind>0.615652152</ind><dep> 6.8 </dep></entry><!-- 63-->
+   <entry><ind>0.623043456</ind><dep> 6.6 </dep></entry><!-- 64-->
+   <entry><ind>0.63043476 </ind><dep> 6.4 </dep></entry><!-- 65-->
+   <entry><ind>0.637826064</ind><dep> 6.2 </dep></entry><!-- 66-->
+   <entry><ind>0.645217368</ind><dep> 6.0 </dep></entry><!-- 67-->
+   <entry><ind>0.652608672</ind><dep> 5.8 </dep></entry><!-- 68-->
+   <entry><ind>0.659999976</ind><dep> 5.6 </dep></entry><!-- 69-->
+   <entry><ind>0.66739128 </ind><dep> 5.4 </dep></entry><!-- 70-->
+   <entry><ind>0.674782584</ind><dep> 5.2 </dep></entry><!-- 71-->
+   <entry><ind>0.682173888</ind><dep> 5.0 </dep></entry><!-- 72-->
+   <entry><ind>0.689565192</ind><dep> 4.8 </dep></entry><!-- 73-->
+   <entry><ind>0.696956496</ind><dep> 4.6 </dep></entry><!-- 74-->
+   <entry><ind>0.7043478  </ind><dep> 4.4 </dep></entry><!-- 75-->
+   <entry><ind>0.711739104</ind><dep> 4.3 </dep></entry><!-- 76-->
+   <entry><ind>0.719130408</ind><dep> 4.1 </dep></entry><!-- 77-->
+   <entry><ind>0.726521712</ind><dep> 3.9 </dep></entry><!-- 78-->
+   <entry><ind>0.733913016</ind><dep> 3.7 </dep></entry><!-- 79-->
+   <entry><ind>0.74130432 </ind><dep> 3.6 </dep></entry><!-- 80-->
+   <entry><ind>0.748695624</ind><dep> 3.4 </dep></entry><!-- 81-->
+   <entry><ind>0.756086928</ind><dep> 3.2 </dep></entry><!-- 82-->
+   <entry><ind>0.763478232</ind><dep> 3.1 </dep></entry><!-- 83-->
+   <entry><ind>0.770869536</ind><dep> 2.9 </dep></entry><!-- 84-->
+   <entry><ind>0.77826084 </ind><dep> 2.7 </dep></entry><!-- 85-->
+   <entry><ind>0.785652144</ind><dep> 2.6 </dep></entry><!-- 86-->
+   <entry><ind>0.793043448</ind><dep> 2.4 </dep></entry><!-- 87-->
+   <entry><ind>0.800434752</ind><dep> 2.3 </dep></entry><!-- 88-->
+   <entry><ind>0.807826056</ind><dep> 2.1 </dep></entry><!-- 89-->
+   <entry><ind>0.81521736 </ind><dep> 2.0 </dep></entry><!-- 90-->
+   <entry><ind>0.822608664</ind><dep> 1.9 </dep></entry><!-- 91-->
+   <entry><ind>0.829999968</ind><dep> 1.7 </dep></entry><!-- 92-->
+   <entry><ind>0.837391272</ind><dep> 1.6 </dep></entry><!-- 93-->
+   <entry><ind>0.844782576</ind><dep> 1.5 </dep></entry><!-- 94-->
+   <entry><ind>0.85217388 </ind><dep> 1.3 </dep></entry><!-- 95-->
+   <entry><ind>0.859565184</ind><dep> 1.2 </dep></entry><!-- 96-->
+   <entry><ind>0.866956488</ind><dep> 1.1 </dep></entry><!-- 97-->
+   <entry><ind>0.874347792</ind><dep> 1.0 </dep></entry><!-- 98-->
+   <entry><ind>0.881739096</ind><dep> 0.9 </dep></entry><!-- 99-->
+   <entry><ind>0.8891304  </ind><dep> 0.8 </dep></entry><!--100-->
+   <entry><ind>0.896521704</ind><dep> 0.7 </dep></entry><!--101-->
+   <entry><ind>0.903913008</ind><dep> 0.6 </dep></entry><!--102-->
+   <entry><ind>0.911304312</ind><dep> 0.5 </dep></entry><!--103-->
+   <entry><ind>0.918695616</ind><dep> 0.5 </dep></entry><!--104-->
+   <entry><ind>0.92608692 </ind><dep> 0.4 </dep></entry><!--105-->
+   <entry><ind>0.933478224</ind><dep> 0.3 </dep></entry><!--106-->
+   <entry><ind>0.940869528</ind><dep> 0.2 </dep></entry><!--107-->
+   <entry><ind>0.948260832</ind><dep> 0.2 </dep></entry><!--108-->
+   <entry><ind>0.955652136</ind><dep> 0.1 </dep></entry><!--109-->
+   <entry><ind>0.96304344 </ind><dep> 0.1 </dep></entry><!--110-->
+   <entry><ind>0.970434744</ind><dep> 0.1 </dep></entry><!--111-->
+   <entry><ind>0.977826048</ind><dep> 0.0 </dep></entry><!--112-->
+   <entry><ind>0.985217352</ind><dep> 0.0 </dep></entry><!--113-->
+   <entry><ind>0.992608656</ind><dep> 0.0 </dep></entry><!--114-->
+   <entry><ind>1.0        </ind><dep> 0.0 </dep></entry><!--115-->
+  </interpolation>
+  <center>
+   <x-m> 3.58449</x-m>
+   <y-m>-1.49254</y-m>
+   <z-m>-0.0158195</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>Main_gr_jackL</object-name>
+  <object-name>Main_gr_jack_bodyL</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.15       </ind><dep> 6.042 </dep></entry><!--  0-->
+   <entry><ind>0.157391304</ind><dep> 6.197 </dep></entry><!--  1-->
+   <entry><ind>0.164782608</ind><dep> 6.349 </dep></entry><!--  2-->
+   <entry><ind>0.172173912</ind><dep> 6.499 </dep></entry><!--  3-->
+   <entry><ind>0.179565216</ind><dep> 6.647 </dep></entry><!--  4-->
+   <entry><ind>0.18695652 </ind><dep> 6.792 </dep></entry><!--  5-->
+   <entry><ind>0.194347824</ind><dep> 6.9355</dep></entry><!--  6-->
+   <entry><ind>0.201739128</ind><dep> 7.076 </dep></entry><!--  7-->
+   <entry><ind>0.209130432</ind><dep> 7.214 </dep></entry><!--  8-->
+   <entry><ind>0.216521736</ind><dep> 7.35  </dep></entry><!--  9-->
+   <entry><ind>0.22391304 </ind><dep> 7.483 </dep></entry><!-- 10-->
+   <entry><ind>0.231304344</ind><dep> 7.613 </dep></entry><!-- 11-->
+   <entry><ind>0.238695648</ind><dep> 7.741 </dep></entry><!-- 12-->
+   <entry><ind>0.246086952</ind><dep> 7.866 </dep></entry><!-- 13-->
+   <entry><ind>0.253478256</ind><dep> 7.99  </dep></entry><!-- 14-->
+   <entry><ind>0.26086956 </ind><dep> 8.11  </dep></entry><!-- 15-->
+   <entry><ind>0.268260864</ind><dep> 8.23  </dep></entry><!-- 16-->
+   <entry><ind>0.275652168</ind><dep> 8.34  </dep></entry><!-- 17-->
+   <entry><ind>0.283043472</ind><dep> 8.45  </dep></entry><!-- 18-->
+   <entry><ind>0.290434776</ind><dep> 8.55  </dep></entry><!-- 19-->
+   <entry><ind>0.29782608 </ind><dep> 8.65  </dep></entry><!-- 20-->
+   <entry><ind>0.305217384</ind><dep> 8.76  </dep></entry><!-- 21-->
+   <entry><ind>0.312608688</ind><dep> 8.86  </dep></entry><!-- 22-->
+   <entry><ind>0.319999992</ind><dep> 8.95  </dep></entry><!-- 23-->
+   <entry><ind>0.327391296</ind><dep> 9.05  </dep></entry><!-- 24-->
+   <entry><ind>0.3347826  </ind><dep> 9.14  </dep></entry><!-- 25-->
+   <entry><ind>0.342173904</ind><dep> 9.22  </dep></entry><!-- 26-->
+   <entry><ind>0.349565208</ind><dep> 9.31  </dep></entry><!-- 27-->
+   <entry><ind>0.356956512</ind><dep> 9.39  </dep></entry><!-- 28-->
+   <entry><ind>0.364347816</ind><dep> 9.47  </dep></entry><!-- 29-->
+   <entry><ind>0.37173912 </ind><dep> 9.54  </dep></entry><!-- 30-->
+   <entry><ind>0.379130424</ind><dep> 9.61  </dep></entry><!-- 31-->
+   <entry><ind>0.386521728</ind><dep> 9.68  </dep></entry><!-- 32-->
+   <entry><ind>0.393913032</ind><dep> 9.74  </dep></entry><!-- 33-->
+   <entry><ind>0.401304336</ind><dep> 9.8   </dep></entry><!-- 34-->
+   <entry><ind>0.40869564 </ind><dep> 9.86  </dep></entry><!-- 35-->
+   <entry><ind>0.416086944</ind><dep> 9.91  </dep></entry><!-- 36-->
+   <entry><ind>0.423478248</ind><dep> 9.96  </dep></entry><!-- 37-->
+   <entry><ind>0.430869552</ind><dep>10.01  </dep></entry><!-- 38-->
+   <entry><ind>0.438260856</ind><dep>10.05  </dep></entry><!-- 39-->
+   <entry><ind>0.44565216 </ind><dep>10.09  </dep></entry><!-- 40-->
+   <entry><ind>0.453043464</ind><dep>10.12  </dep></entry><!-- 41-->
+   <entry><ind>0.460434768</ind><dep>10.15  </dep></entry><!-- 42-->
+   <entry><ind>0.467826072</ind><dep>10.18  </dep></entry><!-- 43-->
+   <entry><ind>0.475217376</ind><dep>10.2   </dep></entry><!-- 44-->
+   <entry><ind>0.48260868 </ind><dep>10.22  </dep></entry><!-- 45-->
+   <entry><ind>0.489999984</ind><dep>10.23  </dep></entry><!-- 46-->
+   <entry><ind>0.497391288</ind><dep>10.24  </dep></entry><!-- 47-->
+   <entry><ind>0.504782592</ind><dep>10.25  </dep></entry><!-- 48-->
+   <entry><ind>0.512173896</ind><dep>10.25  </dep></entry><!-- 49-->
+   <entry><ind>0.5195652  </ind><dep>10.25  </dep></entry><!-- 40-->
+   <entry><ind>0.526956504</ind><dep>10.24  </dep></entry><!-- 51-->
+   <entry><ind>0.534347808</ind><dep>10.23  </dep></entry><!-- 52-->
+   <entry><ind>0.541739112</ind><dep>10.22  </dep></entry><!-- 53-->
+   <entry><ind>0.549130416</ind><dep>10.2   </dep></entry><!-- 54-->
+   <entry><ind>0.55652172 </ind><dep>10.18  </dep></entry><!-- 55-->
+   <entry><ind>0.563913024</ind><dep>10.15  </dep></entry><!-- 56-->
+   <entry><ind>0.571304328</ind><dep>10.12  </dep></entry><!-- 57-->
+   <entry><ind>0.578695632</ind><dep>10.08  </dep></entry><!-- 58-->
+   <entry><ind>0.586086936</ind><dep>10.04  </dep></entry><!-- 59-->
+   <entry><ind>0.59347824 </ind><dep>10.0   </dep></entry><!-- 60-->
+   <entry><ind>0.600869544</ind><dep> 9.95  </dep></entry><!-- 61-->
+   <entry><ind>0.608260848</ind><dep> 9.9   </dep></entry><!-- 62-->
+   <entry><ind>0.615652152</ind><dep> 9.84  </dep></entry><!-- 63-->
+   <entry><ind>0.623043456</ind><dep> 9.78  </dep></entry><!-- 64-->
+   <entry><ind>0.63043476 </ind><dep> 9.71  </dep></entry><!-- 65-->
+   <entry><ind>0.637826064</ind><dep> 9.63  </dep></entry><!-- 66-->
+   <entry><ind>0.645217368</ind><dep> 9.56  </dep></entry><!-- 67-->
+   <entry><ind>0.652608672</ind><dep> 9.48  </dep></entry><!-- 68-->
+   <entry><ind>0.659999976</ind><dep> 9.39  </dep></entry><!-- 69-->
+   <entry><ind>0.66739128 </ind><dep> 9.3   </dep></entry><!-- 70-->
+   <entry><ind>0.674782584</ind><dep> 9.2   </dep></entry><!-- 71-->
+   <entry><ind>0.682173888</ind><dep> 9.1   </dep></entry><!-- 72-->
+   <entry><ind>0.689565192</ind><dep> 8.99  </dep></entry><!-- 73-->
+   <entry><ind>0.696956496</ind><dep> 8.88  </dep></entry><!-- 74-->
+   <entry><ind>0.7043478  </ind><dep> 8.76  </dep></entry><!-- 75-->
+   <entry><ind>0.711739104</ind><dep> 8.64  </dep></entry><!-- 76-->
+   <entry><ind>0.719130408</ind><dep> 8.52  </dep></entry><!-- 77-->
+   <entry><ind>0.726521712</ind><dep> 8.38  </dep></entry><!-- 78-->
+   <entry><ind>0.733913016</ind><dep> 8.25  </dep></entry><!-- 79-->
+   <entry><ind>0.74130432 </ind><dep> 8.11  </dep></entry><!-- 80-->
+   <entry><ind>0.748695624</ind><dep> 7.96  </dep></entry><!-- 81-->
+   <entry><ind>0.756086928</ind><dep> 7.808 </dep></entry><!-- 82-->
+   <entry><ind>0.763478232</ind><dep> 7.651 </dep></entry><!-- 83-->
+   <entry><ind>0.770869536</ind><dep> 7.489 </dep></entry><!-- 84-->
+   <entry><ind>0.77826084 </ind><dep> 7.322 </dep></entry><!-- 85-->
+   <entry><ind>0.785652144</ind><dep> 7.15  </dep></entry><!-- 86-->
+   <entry><ind>0.793043448</ind><dep> 6.972 </dep></entry><!-- 87-->
+   <entry><ind>0.800434752</ind><dep> 6.7894</dep></entry><!-- 88-->
+   <entry><ind>0.807826056</ind><dep> 6.602 </dep></entry><!-- 89-->
+   <entry><ind>0.81521736 </ind><dep> 6.409 </dep></entry><!-- 90-->
+   <entry><ind>0.822608664</ind><dep> 6.211 </dep></entry><!-- 91-->
+   <entry><ind>0.829999968</ind><dep> 6.008 </dep></entry><!-- 92-->
+   <entry><ind>0.837391272</ind><dep> 5.8   </dep></entry><!-- 93-->
+   <entry><ind>0.844782576</ind><dep> 5.59  </dep></entry><!-- 94-->
+   <entry><ind>0.85217388 </ind><dep> 5.37  </dep></entry><!-- 95-->
+   <entry><ind>0.859565184</ind><dep> 5.14  </dep></entry><!-- 96-->
+   <entry><ind>0.866956488</ind><dep> 4.92  </dep></entry><!-- 97-->
+   <entry><ind>0.874347792</ind><dep> 4.68  </dep></entry><!-- 98-->
+   <entry><ind>0.881739096</ind><dep> 4.44  </dep></entry><!-- 99-->
+   <entry><ind>0.8891304  </ind><dep> 4.2   </dep></entry><!--100-->
+   <entry><ind>0.896521704</ind><dep> 3.95  </dep></entry><!--101-->
+   <entry><ind>0.903913008</ind><dep> 3.7   </dep></entry><!--102-->
+   <entry><ind>0.911304312</ind><dep> 3.44  </dep></entry><!--103-->
+   <entry><ind>0.918695616</ind><dep> 3.18  </dep></entry><!--104-->
+   <entry><ind>0.92608692 </ind><dep> 2.91  </dep></entry><!--105-->
+   <entry><ind>0.933478224</ind><dep> 2.64  </dep></entry><!--106-->
+   <entry><ind>0.940869528</ind><dep> 2.37  </dep></entry><!--107-->
+   <entry><ind>0.948260832</ind><dep> 2.08  </dep></entry><!--108-->
+   <entry><ind>0.955652136</ind><dep> 1.8   </dep></entry><!--109-->
+   <entry><ind>0.96304344 </ind><dep> 1.51  </dep></entry><!--110-->
+   <entry><ind>0.970434744</ind><dep> 1.22  </dep></entry><!--111-->
+   <entry><ind>0.977826048</ind><dep> 0.92  </dep></entry><!--112-->
+   <entry><ind>0.985217352</ind><dep> 0.62  </dep></entry><!--113-->
+   <entry><ind>0.992608656</ind><dep> 0.31  </dep></entry><!--114-->
+   <entry><ind>1.0        </ind><dep> 0.0   </dep></entry><!--115-->
+  </interpolation>
+  <center>
+   <x-m> 3.58449</x-m>
+   <y-m>-1.49254</y-m>
+   <z-m>-0.0158195</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Main_gr_jackL</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.15</ind><dep>0.04</dep></entry>
+   <entry><ind>1.0</ind><dep>0.0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-185.60091</x1-m>
+   <y1-m>  20.16318</y1-m>
+   <z1-m> 462.30002</z1-m>
+   <x2-m>-185.36305</x2-m>
+   <y2-m> 22.14898</y2-m>
+   <z2-m> 462.30002</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Main_tyre_L</object-name>
+  <object-name>Main_wheel_L</object-name>
+  <property>gear/gear[1]/rollspeed-ms</property>
+  <factor>136.418552265</factor>
+  <axis>
+   <x1-m> 2.079</x1-m>
+   <y1-m>-1.5611</y1-m>
+   <z1-m>-1.60577</z1-m>
+   <x2-m> 2.079</x2-m>
+   <y2-m>-1.77875</y2-m>
+   <z2-m>-1.59322</z2-m>
+  </axis>
+ </animation>
+
+<!-- Right Gear -->
+
+ <animation>
+  <type>select</type>
+  <object-name>Main_gear_strutR</object-name>
+  <object-name>Main_gr_oleoR</object-name>
+  <object-name>Main_gr_jack_bodyR</object-name>
+  <object-name>Main_gr_jackR</object-name>
+  <object-name>Main_tyre_R</object-name>
+  <object-name>Main_wheel_R</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>fwdgeardoor.R</object-name>
+  <object-name>FP-8.R</object-name>
+  <object-name>FP-8.GR</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+   <entry><ind>  0</ind><dep>   0</dep></entry>
+   <entry><ind>0.3</ind><dep>-150</dep></entry>
+   <entry><ind>1.0</ind><dep>-150</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 0.416</x1-m>
+   <y1-m> 1.107</y1-m>
+   <z1-m>-0.552</z1-m>
+   <x2-m> 1.464</x2-m>
+   <y2-m> 1.153</y2-m>
+   <z2-m>-0.552</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>reargeardoor.R</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep> 0</dep></entry>
+   <entry><ind>0.3</ind><dep>60</dep></entry>
+   <entry><ind>1.0</ind><dep>60</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 2.003</x1-m>
+   <y1-m> 1.638</y1-m>
+   <z1-m>-0.06473</z1-m>
+   <x2-m> 2.525</x2-m>
+   <y2-m> 1.603</y2-m>
+   <z2-m>-0.06381</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>reargear2door.R</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>  0</dep></entry>
+   <entry><ind>1.0</ind><dep>-30</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 3.49124</x1-m>
+   <y1-m> 1.3864</y1-m>
+   <z1-m>-0.1920117</z1-m>
+   <x2-m> 3.48843</x2-m>
+   <y2-m> 1.49028</y2-m>
+   <z2-m>-0.1592083</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>Main_gear_strutR</object-name>
+  <object-name>Main_gr_compass_R</object-name>
+  <object-name>Main_gr_compass_low_R</object-name>
+  <object-name>Main_gr_oleoR</object-name>
+  <object-name>Main_tyre_R</object-name>
+  <object-name>Main_wheel_R</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.15</ind><dep>-115</dep></entry>
+   <entry><ind>1.00</ind><dep>   0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 2.475</x1-m>
+   <y1-m> 1.309</y1-m>
+   <z1-m> 0.005</z1-m>
+   <x2-m> 2.315</x2-m>
+   <y2-m> 1.147</y2-m>
+   <z2-m>-0.205</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Main_gr_jackR</object-name>
+  <object-name>Main_gr_jack_bodyR</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.15       </ind><dep>19.74</dep></entry><!--  0-->
+   <entry><ind>0.157391304</ind><dep>19.62</dep></entry><!--  1-->
+   <entry><ind>0.164782608</ind><dep>19.43</dep></entry><!--  2-->
+   <entry><ind>0.172173912</ind><dep>19.24</dep></entry><!--  3-->
+   <entry><ind>0.179565216</ind><dep>19.05</dep></entry><!--  4-->
+   <entry><ind>0.18695652 </ind><dep>18.86</dep></entry><!--  5-->
+   <entry><ind>0.194347824</ind><dep>18.67</dep></entry><!--  6-->
+   <entry><ind>0.201739128</ind><dep>18.47</dep></entry><!--  7-->
+   <entry><ind>0.209130432</ind><dep>18.28</dep></entry><!--  8-->
+   <entry><ind>0.216521736</ind><dep>18.08</dep></entry><!--  9-->
+   <entry><ind>0.22391304 </ind><dep>17.89</dep></entry><!-- 10-->
+   <entry><ind>0.231304344</ind><dep>17.69</dep></entry><!-- 11-->
+   <entry><ind>0.238695648</ind><dep>17.49</dep></entry><!-- 12-->
+   <entry><ind>0.246086952</ind><dep>17.29</dep></entry><!-- 13-->
+   <entry><ind>0.253478256</ind><dep>17.09</dep></entry><!-- 14-->
+   <entry><ind>0.26086956 </ind><dep>16.89</dep></entry><!-- 15-->
+   <entry><ind>0.268260864</ind><dep>16.68</dep></entry><!-- 16-->
+   <entry><ind>0.275652168</ind><dep>16.48</dep></entry><!-- 17-->
+   <entry><ind>0.283043472</ind><dep>16.27</dep></entry><!-- 18-->
+   <entry><ind>0.290434776</ind><dep>16.07</dep></entry><!-- 19-->
+   <entry><ind>0.29782608 </ind><dep>15.86</dep></entry><!-- 20-->
+   <entry><ind>0.305217384</ind><dep>15.66</dep></entry><!-- 21-->
+   <entry><ind>0.312608688</ind><dep>15.45</dep></entry><!-- 22-->
+   <entry><ind>0.319999992</ind><dep>15.24</dep></entry><!-- 23-->
+   <entry><ind>0.327391296</ind><dep>15.03</dep></entry><!-- 24-->
+   <entry><ind>0.3347826  </ind><dep>14.82</dep></entry><!-- 25-->
+   <entry><ind>0.342173904</ind><dep>14.61</dep></entry><!-- 26-->
+   <entry><ind>0.349565208</ind><dep>14.4 </dep></entry><!-- 27-->
+   <entry><ind>0.356956512</ind><dep>14.19</dep></entry><!-- 28-->
+   <entry><ind>0.364347816</ind><dep>13.98</dep></entry><!-- 29-->
+   <entry><ind>0.37173912 </ind><dep>13.77</dep></entry><!-- 30-->
+   <entry><ind>0.379130424</ind><dep>13.55</dep></entry><!-- 31-->
+   <entry><ind>0.386521728</ind><dep>13.34</dep></entry><!-- 32-->
+   <entry><ind>0.393913032</ind><dep>13.13</dep></entry><!-- 33-->
+   <entry><ind>0.401304336</ind><dep>12.91</dep></entry><!-- 34-->
+   <entry><ind>0.40869564 </ind><dep>12.7 </dep></entry><!-- 35-->
+   <entry><ind>0.416086944</ind><dep>12.5 </dep></entry><!-- 36-->
+   <entry><ind>0.423478248</ind><dep>12.3 </dep></entry><!-- 37-->
+   <entry><ind>0.430869552</ind><dep>12.1 </dep></entry><!-- 38-->
+   <entry><ind>0.438260856</ind><dep>11.8 </dep></entry><!-- 39-->
+   <entry><ind>0.44565216 </ind><dep>11.6 </dep></entry><!-- 40-->
+   <entry><ind>0.453043464</ind><dep>11.4 </dep></entry><!-- 41-->
+   <entry><ind>0.460434768</ind><dep>11.2 </dep></entry><!-- 42-->
+   <entry><ind>0.467826072</ind><dep>11.0 </dep></entry><!-- 43-->
+   <entry><ind>0.475217376</ind><dep>10.8 </dep></entry><!-- 44-->
+   <entry><ind>0.48260868 </ind><dep>10.6 </dep></entry><!-- 45-->
+   <entry><ind>0.489999984</ind><dep>10.3 </dep></entry><!-- 46-->
+   <entry><ind>0.497391288</ind><dep>10.1 </dep></entry><!-- 47-->
+   <entry><ind>0.504782592</ind><dep> 9.9 </dep></entry><!-- 48-->
+   <entry><ind>0.512173896</ind><dep> 9.7 </dep></entry><!-- 49-->
+   <entry><ind>0.5195652  </ind><dep> 9.5 </dep></entry><!-- 40-->
+   <entry><ind>0.526956504</ind><dep> 9.3 </dep></entry><!-- 51-->
+   <entry><ind>0.534347808</ind><dep> 9.1 </dep></entry><!-- 52-->
+   <entry><ind>0.541739112</ind><dep> 8.8 </dep></entry><!-- 53-->
+   <entry><ind>0.549130416</ind><dep> 8.6 </dep></entry><!-- 54-->
+   <entry><ind>0.55652172 </ind><dep> 8.4 </dep></entry><!-- 55-->
+   <entry><ind>0.563913024</ind><dep> 8.2 </dep></entry><!-- 56-->
+   <entry><ind>0.571304328</ind><dep> 8.0 </dep></entry><!-- 57-->
+   <entry><ind>0.578695632</ind><dep> 7.8 </dep></entry><!-- 58-->
+   <entry><ind>0.586086936</ind><dep> 7.6 </dep></entry><!-- 59-->
+   <entry><ind>0.59347824 </ind><dep> 7.4 </dep></entry><!-- 60-->
+   <entry><ind>0.600869544</ind><dep> 7.2 </dep></entry><!-- 61-->
+   <entry><ind>0.608260848</ind><dep> 7.0 </dep></entry><!-- 62-->
+   <entry><ind>0.615652152</ind><dep> 6.8 </dep></entry><!-- 63-->
+   <entry><ind>0.623043456</ind><dep> 6.6 </dep></entry><!-- 64-->
+   <entry><ind>0.63043476 </ind><dep> 6.4 </dep></entry><!-- 65-->
+   <entry><ind>0.637826064</ind><dep> 6.2 </dep></entry><!-- 66-->
+   <entry><ind>0.645217368</ind><dep> 6.0 </dep></entry><!-- 67-->
+   <entry><ind>0.652608672</ind><dep> 5.8 </dep></entry><!-- 68-->
+   <entry><ind>0.659999976</ind><dep> 5.6 </dep></entry><!-- 69-->
+   <entry><ind>0.66739128 </ind><dep> 5.4 </dep></entry><!-- 70-->
+   <entry><ind>0.674782584</ind><dep> 5.2 </dep></entry><!-- 71-->
+   <entry><ind>0.682173888</ind><dep> 5.0 </dep></entry><!-- 72-->
+   <entry><ind>0.689565192</ind><dep> 4.8 </dep></entry><!-- 73-->
+   <entry><ind>0.696956496</ind><dep> 4.6 </dep></entry><!-- 74-->
+   <entry><ind>0.7043478  </ind><dep> 4.4 </dep></entry><!-- 75-->
+   <entry><ind>0.711739104</ind><dep> 4.3 </dep></entry><!-- 76-->
+   <entry><ind>0.719130408</ind><dep> 4.1 </dep></entry><!-- 77-->
+   <entry><ind>0.726521712</ind><dep> 3.9 </dep></entry><!-- 78-->
+   <entry><ind>0.733913016</ind><dep> 3.7 </dep></entry><!-- 79-->
+   <entry><ind>0.74130432 </ind><dep> 3.6 </dep></entry><!-- 80-->
+   <entry><ind>0.748695624</ind><dep> 3.4 </dep></entry><!-- 81-->
+   <entry><ind>0.756086928</ind><dep> 3.2 </dep></entry><!-- 82-->
+   <entry><ind>0.763478232</ind><dep> 3.1 </dep></entry><!-- 83-->
+   <entry><ind>0.770869536</ind><dep> 2.9 </dep></entry><!-- 84-->
+   <entry><ind>0.77826084 </ind><dep> 2.7 </dep></entry><!-- 85-->
+   <entry><ind>0.785652144</ind><dep> 2.6 </dep></entry><!-- 86-->
+   <entry><ind>0.793043448</ind><dep> 2.4 </dep></entry><!-- 87-->
+   <entry><ind>0.800434752</ind><dep> 2.3 </dep></entry><!-- 88-->
+   <entry><ind>0.807826056</ind><dep> 2.1 </dep></entry><!-- 89-->
+   <entry><ind>0.81521736 </ind><dep> 2.0 </dep></entry><!-- 90-->
+   <entry><ind>0.822608664</ind><dep> 1.9 </dep></entry><!-- 91-->
+   <entry><ind>0.829999968</ind><dep> 1.7 </dep></entry><!-- 92-->
+   <entry><ind>0.837391272</ind><dep> 1.6 </dep></entry><!-- 93-->
+   <entry><ind>0.844782576</ind><dep> 1.5 </dep></entry><!-- 94-->
+   <entry><ind>0.85217388 </ind><dep> 1.3 </dep></entry><!-- 95-->
+   <entry><ind>0.859565184</ind><dep> 1.2 </dep></entry><!-- 96-->
+   <entry><ind>0.866956488</ind><dep> 1.1 </dep></entry><!-- 97-->
+   <entry><ind>0.874347792</ind><dep> 1.0 </dep></entry><!-- 98-->
+   <entry><ind>0.881739096</ind><dep> 0.9 </dep></entry><!-- 99-->
+   <entry><ind>0.8891304  </ind><dep> 0.8 </dep></entry><!--100-->
+   <entry><ind>0.896521704</ind><dep> 0.7 </dep></entry><!--101-->
+   <entry><ind>0.903913008</ind><dep> 0.6 </dep></entry><!--102-->
+   <entry><ind>0.911304312</ind><dep> 0.5 </dep></entry><!--103-->
+   <entry><ind>0.918695616</ind><dep> 0.5 </dep></entry><!--104-->
+   <entry><ind>0.92608692 </ind><dep> 0.4 </dep></entry><!--105-->
+   <entry><ind>0.933478224</ind><dep> 0.3 </dep></entry><!--106-->
+   <entry><ind>0.940869528</ind><dep> 0.2 </dep></entry><!--107-->
+   <entry><ind>0.948260832</ind><dep> 0.2 </dep></entry><!--108-->
+   <entry><ind>0.955652136</ind><dep> 0.1 </dep></entry><!--109-->
+   <entry><ind>0.96304344 </ind><dep> 0.1 </dep></entry><!--110-->
+   <entry><ind>0.970434744</ind><dep> 0.1 </dep></entry><!--111-->
+   <entry><ind>0.977826048</ind><dep> 0.0 </dep></entry><!--112-->
+   <entry><ind>0.985217352</ind><dep> 0.0 </dep></entry><!--113-->
+   <entry><ind>0.992608656</ind><dep> 0.0 </dep></entry><!--114-->
+   <entry><ind>1.0        </ind><dep> 0.0 </dep></entry><!--115-->
+  </interpolation>
+  <center>
+   <x-m> 3.58449</x-m>
+   <y-m> 1.49254</y-m>
+   <z-m>-0.0158195</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>Main_gr_jackR</object-name>
+  <object-name>Main_gr_jack_bodyR</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.15       </ind><dep> 6.042 </dep></entry><!--  0-->
+   <entry><ind>0.157391304</ind><dep> 6.197 </dep></entry><!--  1-->
+   <entry><ind>0.164782608</ind><dep> 6.349 </dep></entry><!--  2-->
+   <entry><ind>0.172173912</ind><dep> 6.499 </dep></entry><!--  3-->
+   <entry><ind>0.179565216</ind><dep> 6.647 </dep></entry><!--  4-->
+   <entry><ind>0.18695652 </ind><dep> 6.792 </dep></entry><!--  5-->
+   <entry><ind>0.194347824</ind><dep> 6.9355</dep></entry><!--  6-->
+   <entry><ind>0.201739128</ind><dep> 7.076 </dep></entry><!--  7-->
+   <entry><ind>0.209130432</ind><dep> 7.214 </dep></entry><!--  8-->
+   <entry><ind>0.216521736</ind><dep> 7.35  </dep></entry><!--  9-->
+   <entry><ind>0.22391304 </ind><dep> 7.483 </dep></entry><!-- 10-->
+   <entry><ind>0.231304344</ind><dep> 7.613 </dep></entry><!-- 11-->
+   <entry><ind>0.238695648</ind><dep> 7.741 </dep></entry><!-- 12-->
+   <entry><ind>0.246086952</ind><dep> 7.866 </dep></entry><!-- 13-->
+   <entry><ind>0.253478256</ind><dep> 7.99  </dep></entry><!-- 14-->
+   <entry><ind>0.26086956 </ind><dep> 8.11  </dep></entry><!-- 15-->
+   <entry><ind>0.268260864</ind><dep> 8.23  </dep></entry><!-- 16-->
+   <entry><ind>0.275652168</ind><dep> 8.34  </dep></entry><!-- 17-->
+   <entry><ind>0.283043472</ind><dep> 8.45  </dep></entry><!-- 18-->
+   <entry><ind>0.290434776</ind><dep> 8.55  </dep></entry><!-- 19-->
+   <entry><ind>0.29782608 </ind><dep> 8.65  </dep></entry><!-- 20-->
+   <entry><ind>0.305217384</ind><dep> 8.76  </dep></entry><!-- 21-->
+   <entry><ind>0.312608688</ind><dep> 8.86  </dep></entry><!-- 22-->
+   <entry><ind>0.319999992</ind><dep> 8.95  </dep></entry><!-- 23-->
+   <entry><ind>0.327391296</ind><dep> 9.05  </dep></entry><!-- 24-->
+   <entry><ind>0.3347826  </ind><dep> 9.14  </dep></entry><!-- 25-->
+   <entry><ind>0.342173904</ind><dep> 9.22  </dep></entry><!-- 26-->
+   <entry><ind>0.349565208</ind><dep> 9.31  </dep></entry><!-- 27-->
+   <entry><ind>0.356956512</ind><dep> 9.39  </dep></entry><!-- 28-->
+   <entry><ind>0.364347816</ind><dep> 9.47  </dep></entry><!-- 29-->
+   <entry><ind>0.37173912 </ind><dep> 9.54  </dep></entry><!-- 30-->
+   <entry><ind>0.379130424</ind><dep> 9.61  </dep></entry><!-- 31-->
+   <entry><ind>0.386521728</ind><dep> 9.68  </dep></entry><!-- 32-->
+   <entry><ind>0.393913032</ind><dep> 9.74  </dep></entry><!-- 33-->
+   <entry><ind>0.401304336</ind><dep> 9.8   </dep></entry><!-- 34-->
+   <entry><ind>0.40869564 </ind><dep> 9.86  </dep></entry><!-- 35-->
+   <entry><ind>0.416086944</ind><dep> 9.91  </dep></entry><!-- 36-->
+   <entry><ind>0.423478248</ind><dep> 9.96  </dep></entry><!-- 37-->
+   <entry><ind>0.430869552</ind><dep>10.01  </dep></entry><!-- 38-->
+   <entry><ind>0.438260856</ind><dep>10.05  </dep></entry><!-- 39-->
+   <entry><ind>0.44565216 </ind><dep>10.09  </dep></entry><!-- 40-->
+   <entry><ind>0.453043464</ind><dep>10.12  </dep></entry><!-- 41-->
+   <entry><ind>0.460434768</ind><dep>10.15  </dep></entry><!-- 42-->
+   <entry><ind>0.467826072</ind><dep>10.18  </dep></entry><!-- 43-->
+   <entry><ind>0.475217376</ind><dep>10.2   </dep></entry><!-- 44-->
+   <entry><ind>0.48260868 </ind><dep>10.22  </dep></entry><!-- 45-->
+   <entry><ind>0.489999984</ind><dep>10.23  </dep></entry><!-- 46-->
+   <entry><ind>0.497391288</ind><dep>10.24  </dep></entry><!-- 47-->
+   <entry><ind>0.504782592</ind><dep>10.25  </dep></entry><!-- 48-->
+   <entry><ind>0.512173896</ind><dep>10.25  </dep></entry><!-- 49-->
+   <entry><ind>0.5195652  </ind><dep>10.25  </dep></entry><!-- 40-->
+   <entry><ind>0.526956504</ind><dep>10.24  </dep></entry><!-- 51-->
+   <entry><ind>0.534347808</ind><dep>10.23  </dep></entry><!-- 52-->
+   <entry><ind>0.541739112</ind><dep>10.22  </dep></entry><!-- 53-->
+   <entry><ind>0.549130416</ind><dep>10.2   </dep></entry><!-- 54-->
+   <entry><ind>0.55652172 </ind><dep>10.18  </dep></entry><!-- 55-->
+   <entry><ind>0.563913024</ind><dep>10.15  </dep></entry><!-- 56-->
+   <entry><ind>0.571304328</ind><dep>10.12  </dep></entry><!-- 57-->
+   <entry><ind>0.578695632</ind><dep>10.08  </dep></entry><!-- 58-->
+   <entry><ind>0.586086936</ind><dep>10.04  </dep></entry><!-- 59-->
+   <entry><ind>0.59347824 </ind><dep>10.0   </dep></entry><!-- 60-->
+   <entry><ind>0.600869544</ind><dep> 9.95  </dep></entry><!-- 61-->
+   <entry><ind>0.608260848</ind><dep> 9.9   </dep></entry><!-- 62-->
+   <entry><ind>0.615652152</ind><dep> 9.84  </dep></entry><!-- 63-->
+   <entry><ind>0.623043456</ind><dep> 9.78  </dep></entry><!-- 64-->
+   <entry><ind>0.63043476 </ind><dep> 9.71  </dep></entry><!-- 65-->
+   <entry><ind>0.637826064</ind><dep> 9.63  </dep></entry><!-- 66-->
+   <entry><ind>0.645217368</ind><dep> 9.56  </dep></entry><!-- 67-->
+   <entry><ind>0.652608672</ind><dep> 9.48  </dep></entry><!-- 68-->
+   <entry><ind>0.659999976</ind><dep> 9.39  </dep></entry><!-- 69-->
+   <entry><ind>0.66739128 </ind><dep> 9.3   </dep></entry><!-- 70-->
+   <entry><ind>0.674782584</ind><dep> 9.2   </dep></entry><!-- 71-->
+   <entry><ind>0.682173888</ind><dep> 9.1   </dep></entry><!-- 72-->
+   <entry><ind>0.689565192</ind><dep> 8.99  </dep></entry><!-- 73-->
+   <entry><ind>0.696956496</ind><dep> 8.88  </dep></entry><!-- 74-->
+   <entry><ind>0.7043478  </ind><dep> 8.76  </dep></entry><!-- 75-->
+   <entry><ind>0.711739104</ind><dep> 8.64  </dep></entry><!-- 76-->
+   <entry><ind>0.719130408</ind><dep> 8.52  </dep></entry><!-- 77-->
+   <entry><ind>0.726521712</ind><dep> 8.38  </dep></entry><!-- 78-->
+   <entry><ind>0.733913016</ind><dep> 8.25  </dep></entry><!-- 79-->
+   <entry><ind>0.74130432 </ind><dep> 8.11  </dep></entry><!-- 80-->
+   <entry><ind>0.748695624</ind><dep> 7.96  </dep></entry><!-- 81-->
+   <entry><ind>0.756086928</ind><dep> 7.808 </dep></entry><!-- 82-->
+   <entry><ind>0.763478232</ind><dep> 7.651 </dep></entry><!-- 83-->
+   <entry><ind>0.770869536</ind><dep> 7.489 </dep></entry><!-- 84-->
+   <entry><ind>0.77826084 </ind><dep> 7.322 </dep></entry><!-- 85-->
+   <entry><ind>0.785652144</ind><dep> 7.15  </dep></entry><!-- 86-->
+   <entry><ind>0.793043448</ind><dep> 6.972 </dep></entry><!-- 87-->
+   <entry><ind>0.800434752</ind><dep> 6.7894</dep></entry><!-- 88-->
+   <entry><ind>0.807826056</ind><dep> 6.602 </dep></entry><!-- 89-->
+   <entry><ind>0.81521736 </ind><dep> 6.409 </dep></entry><!-- 90-->
+   <entry><ind>0.822608664</ind><dep> 6.211 </dep></entry><!-- 91-->
+   <entry><ind>0.829999968</ind><dep> 6.008 </dep></entry><!-- 92-->
+   <entry><ind>0.837391272</ind><dep> 5.8   </dep></entry><!-- 93-->
+   <entry><ind>0.844782576</ind><dep> 5.59  </dep></entry><!-- 94-->
+   <entry><ind>0.85217388 </ind><dep> 5.37  </dep></entry><!-- 95-->
+   <entry><ind>0.859565184</ind><dep> 5.14  </dep></entry><!-- 96-->
+   <entry><ind>0.866956488</ind><dep> 4.92  </dep></entry><!-- 97-->
+   <entry><ind>0.874347792</ind><dep> 4.68  </dep></entry><!-- 98-->
+   <entry><ind>0.881739096</ind><dep> 4.44  </dep></entry><!-- 99-->
+   <entry><ind>0.8891304  </ind><dep> 4.2   </dep></entry><!--100-->
+   <entry><ind>0.896521704</ind><dep> 3.95  </dep></entry><!--101-->
+   <entry><ind>0.903913008</ind><dep> 3.7   </dep></entry><!--102-->
+   <entry><ind>0.911304312</ind><dep> 3.44  </dep></entry><!--103-->
+   <entry><ind>0.918695616</ind><dep> 3.18  </dep></entry><!--104-->
+   <entry><ind>0.92608692 </ind><dep> 2.91  </dep></entry><!--105-->
+   <entry><ind>0.933478224</ind><dep> 2.64  </dep></entry><!--106-->
+   <entry><ind>0.940869528</ind><dep> 2.37  </dep></entry><!--107-->
+   <entry><ind>0.948260832</ind><dep> 2.08  </dep></entry><!--108-->
+   <entry><ind>0.955652136</ind><dep> 1.8   </dep></entry><!--109-->
+   <entry><ind>0.96304344 </ind><dep> 1.51  </dep></entry><!--110-->
+   <entry><ind>0.970434744</ind><dep> 1.22  </dep></entry><!--111-->
+   <entry><ind>0.977826048</ind><dep> 0.92  </dep></entry><!--112-->
+   <entry><ind>0.985217352</ind><dep> 0.62  </dep></entry><!--113-->
+   <entry><ind>0.992608656</ind><dep> 0.31  </dep></entry><!--114-->
+   <entry><ind>1.0        </ind><dep> 0.0   </dep></entry><!--115-->
+  </interpolation>
+  <center>
+   <x-m> 3.58449</x-m>
+   <y-m> 1.49254</y-m>
+   <z-m>-0.0158195</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Main_gr_jackR</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+   <entry><ind>0.15</ind><dep>-0.04</dep></entry>
+   <entry><ind>1.0 </ind><dep> 0.0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-185.60091</x1-m>
+   <y1-m> -20.16318</y1-m>
+   <z1-m> 462.30002</z1-m>
+   <x2-m>-185.36305</x2-m>
+   <y2-m> -22.14898</y2-m>
+   <z2-m> 462.30002</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Main_tyre_R</object-name>
+  <object-name>Main_wheel_R</object-name>
+  <property>gear/gear[2]/rollspeed-ms</property>
+  <factor>136.418552265</factor>
+  <axis>
+   <x1-m> 2.079</x1-m>
+   <y1-m> 1.77567</y1-m>
+   <z1-m>-1.5934</z1-m>
+   <x2-m> 2.079</x2-m>
+   <y2-m> 1.55803</y2-m>
+   <z2-m>-1.60595</z2-m>
+  </axis>
+ </animation>
+
+<!-- Intake louver animations -->
+          
+ <animation>
+  <type>rotate</type>
+  <object-name>LouversL1</object-name>
+  <property>fdm/jsbsim/systems/intake/pos-left</property>
+  <interpolation>
+   <entry><ind>1.4</ind><dep>60</dep></entry>
+   <entry><ind>1.2</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-1.80300</x1-m>
+   <y1-m>-1.09000</y1-m>
+   <z1-m> 0.15739</z1-m>
+   <x2-m>-1.80300</x2-m>
+   <y2-m>-0.55640</y2-m>
+   <z2-m> 0.41686</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>LouversL2</object-name>
+  <property>fdm/jsbsim/systems/intake/pos-left</property>
+  <interpolation>
+   <entry><ind>1.4</ind><dep>60</dep></entry>
+   <entry><ind>1.2</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-1.49100</x1-m>
+   <y1-m>-1.09900</y1-m>
+   <z1-m> 0.18418</z1-m>
+   <x2-m>-1.49400</x2-m>
+   <y2-m>-0.55747</y2-m>
+   <z2-m> 0.41852</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>LouversL3</object-name>
+  <property>fdm/jsbsim/systems/intake/pos-left</property>
+  <interpolation>
+   <entry><ind>1.4</ind><dep>60</dep></entry>
+   <entry><ind>1.2</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-1.24900</x1-m>
+   <y1-m>-1.09900</y1-m>
+   <z1-m> 0.19359</z1-m>
+   <x2-m>-1.24900</x2-m>
+   <y2-m>-0.55655</y2-m>
+   <z2-m> 0.41245</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>LouversL4</object-name>
+  <property>fdm/jsbsim/systems/intake/pos-left</property>
+  <interpolation>
+   <entry><ind>1.4</ind><dep>60</dep></entry>
+   <entry><ind>1.2</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-1.13100</x1-m>
+   <y1-m>-1.09900</y1-m>
+   <z1-m> 0.19825</z1-m>
+   <x2-m>-1.03100</x2-m>
+   <y2-m>-0.55658</y2-m>
+   <z2-m> 0.40869</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>LouversL5</object-name>
+  <property>fdm/jsbsim/systems/intake/pos-left</property>
+  <interpolation>
+   <entry><ind>1.4</ind><dep>60</dep></entry>
+   <entry><ind>1.2</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-0.80079</x1-m>
+   <y1-m>-1.09900</y1-m>
+   <z1-m> 0.20232</z1-m>
+   <x2-m>-0.80079</x2-m>
+   <y2-m>-0.55661</y2-m>
+   <z2-m> 0.40212</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LouversR1</object-name>
+  <property>fdm/jsbsim/systems/intake/pos-right</property>
+  <interpolation>
+   <entry><ind>1.4</ind><dep>60</dep></entry>
+   <entry><ind>1.2</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-1.80300</x1-m>
+   <y1-m> 0.56102</y1-m>
+   <z1-m> 0.41686</z1-m>
+   <x2-m>-1.80300</x2-m>
+   <y2-m> 1.09400</y2-m>
+   <z2-m> 0.15739</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>LouversR2</object-name>
+  <property>fdm/jsbsim/systems/intake/pos-right</property>
+  <interpolation>
+   <entry><ind>1.4</ind><dep>60</dep></entry>
+   <entry><ind>1.2</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-1.494</x1-m>
+   <y1-m> 0.56112</y1-m>
+   <z1-m> 0.41622</z1-m>
+   <x2-m>-1.49100</x2-m>
+   <y2-m> 1.10500</y2-m>
+   <z2-m> 0.18649</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>LouversR3</object-name>
+  <property>fdm/jsbsim/systems/intake/pos-right</property>
+  <interpolation>
+   <entry><ind>1.4</ind><dep>60</dep></entry>
+   <entry><ind>1.2</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-1.24900</x1-m>
+   <y1-m> 0.56116</y1-m>
+   <z1-m> 0.41245</z1-m>
+   <x2-m>-1.24900</x2-m>
+   <y2-m> 1.10500</y2-m>
+   <z2-m> 0.19591</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>LouversR4</object-name>
+  <property>fdm/jsbsim/systems/intake/pos-right</property>
+  <interpolation>
+   <entry><ind>1.4</ind><dep>60</dep></entry>
+   <entry><ind>1.2</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-1.03100</x1-m>
+   <y1-m> 0.56119</y1-m>
+   <z1-m> 0.40869</z1-m>
+   <x2-m>-1.03100</x2-m>
+   <y2-m> 1.10500</y2-m>
+   <z2-m> 0.20059</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>LouversR5</object-name>
+  <property>fdm/jsbsim/systems/intake/pos-right</property>
+  <interpolation>
+   <entry><ind>1.4</ind><dep>60</dep></entry>
+   <entry><ind>1.2</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-0.80079</x1-m>
+   <y1-m> 0.56112</y1-m>
+   <z1-m> 0.40212</z1-m>
+   <x2-m>-0.80078</x2-m>
+   <y2-m> 1.10500</y2-m>
+   <z2-m> 0.205467</z2-m>
+  </axis>
+ </animation>
+
+<!-- Intake Screens -->
+
+ <animation>
+  <type>rotate</type>
+   <object-name>IntakeScreenL</object-name>
+   <property>fdm/jsbsim/systems/intake/pos-left</property>
+  <interpolation>
+   <entry><ind>1.438679245</ind><dep> 0.0</dep></entry>
+   <entry><ind>0.0        </ind><dep>30.5</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-1.73108</x1-m>
+   <y1-m>-0.3707924</y1-m>
+   <z1-m>-0.3042883</z1-m>
+   <x2-m>-1.75956</x2-m>
+   <y2-m>-0.9556049</y2-m>
+   <z2-m>-0.2132096</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+   <object-name>IntakeScreenR</object-name>
+   <property>fdm/jsbsim/systems/intake/pos-right</property>
+  <interpolation>
+   <entry><ind>1.438679245</ind><dep> 0.0</dep></entry>
+   <entry><ind>0.0        </ind><dep>30.5</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-1.75956</x1-m>
+   <y1-m> 0.9556049</y1-m>
+   <z1-m>-0.2132096</z1-m>
+   <x2-m>-1.73108</x2-m>
+   <y2-m> 0.3707924</y2-m>
+   <z2-m>-0.3042883</z2-m>
+  </axis>
+ </animation>
+
+<!-- Canopy animation -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>CanopyGlass</object-name>
+  <object-name>Canopy</object-name>
+  <object-name>MirrorL.K</object-name>
+  <object-name>MirrorL.Case</object-name>
+  <object-name>MirrorL.Rt</object-name>
+  <object-name>MirrorL.M</object-name>
+  <object-name>MirrorC.K</object-name>
+  <object-name>MirrorC.Case</object-name>
+  <object-name>MirrorC.Rt</object-name>
+  <object-name>MirrorC.M</object-name>
+  <object-name>MirrorR.K</object-name>
+  <object-name>MirrorR.Case</object-name>
+  <object-name>MirrorR.Rt</object-name>
+  <object-name>MirrorR.M</object-name>
+  <property>fdm/jsbsim/fcs/canopy-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>5</dep></entry>
+   <entry><ind>1.0</ind><dep>35</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-1.912</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.962</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Зеркала -->
+ <animation>
+  <type>rotate</type>
+  <object-name>MirrorL.Case</object-name>
+  <object-name>MirrorL.Rt</object-name>
+  <object-name>MirrorL.M</object-name>
+  <property>mig29/o/sv1</property>
+  <factor>15</factor>
+  <axis>
+   <x1-m>-3.826</x1-m>
+   <y1-m>-0.31 </y1-m>
+   <z1-m> 1.041</z1-m>
+   <x2-m>-3.826</x2-m>
+   <y2-m>-0.31</y2-m>
+   <z2-m> 1.051</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>MirrorC.Case</object-name>
+  <object-name>MirrorC.Rt</object-name>
+  <object-name>MirrorC.M</object-name>
+  <property>mig29/o/sv1</property>
+  <factor>8</factor>
+  <center>
+   <x-m>-3.911</x-m>
+   <y-m> 0.0  </y-m>
+   <z-m> 1.206</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>MirrorR.Case</object-name>
+  <object-name>MirrorR.Rt</object-name>
+  <object-name>MirrorR.M</object-name>
+  <property>mig29/o/sv1</property>
+  <factor>15</factor>
+  <axis>
+   <x1-m>-3.826</x1-m>
+   <y1-m> 0.31 </y1-m>
+   <z1-m> 1.051</z1-m>
+   <x2-m>-3.826</x2-m>
+   <y2-m> 0.31</y2-m>
+   <z2-m> 1.041</z2-m>
+  </axis>
+ </animation>
+
+
+<!-- Бортовой номер -->
+
+ <animation>
+  <type>material</type>
+  <object-name>MiG-29.BNL1</object-name>
+  <object-name>MiG-29.BNL2</object-name>
+  <object-name>MiG-29.BNR1</object-name>
+  <object-name>MiG-29.BNR2</object-name>
+  <texture-prop>mig29/systems/BN/T</texture-prop>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>MiG-29.BNL1</object-name>
+  <object-name>MiG-29.BNR1</object-name>
+  <property>mig29/systems/BN/N1</property>
+  <factor>0.0908203125</factor>
+  <step>1</step>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>textranslate</type>
+  <object-name>MiG-29.BNL2</object-name>
+  <object-name>MiG-29.BNR2</object-name>
+  <property>mig29/systems/BN/N2</property>
+  <factor>0.0908203125</factor>
+  <step>1</step>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Nozzles animation -->
+<!-- Left -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL01</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.840</y1-m>
+   <z1-m> 0.133</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.735</y2-m>
+   <z2-m> 0.122</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL02</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.736</y1-m>
+   <z1-m> 0.122</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.635</y2-m>
+   <z2-m> 0.09195</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL03</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.636</y1-m>
+   <z1-m> 0.09210</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.543</y2-m>
+   <z2-m> 0.04265</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL04</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.544</y1-m>
+   <z1-m> 0.04287</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.462</y2-m>
+   <z2-m>-0.02368</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL05</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.463</y1-m>
+   <z1-m>-0.02340</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.396</y2-m>
+   <z2-m>-0.104</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL06</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.396</y1-m>
+   <z1-m>-0.104</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.347</y2-m>
+   <z2-m>-0.197</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL07</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.347</y1-m>
+   <z1-m>-0.196</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.317</y2-m>
+   <z2-m>-0.297</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL08</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.317</y1-m>
+   <z1-m>-0.296</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.306</y2-m>
+   <z2-m>-0.401</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL09</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.306</y1-m>
+   <z1-m>-0.400</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.317</y2-m>
+   <z2-m>-0.505</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL10</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.317</y1-m>
+   <z1-m>-0.504</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.347</y2-m>
+   <z2-m>-0.605</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL11</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.347</y1-m>
+   <z1-m>-0.604</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.396</y2-m>
+   <z2-m>-0.697</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL12</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.396</y1-m>
+   <z1-m>-0.697</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.463</y2-m>
+   <z2-m>-0.778</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL13</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.462</y1-m>
+   <z1-m>-0.777</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.544</y2-m>
+   <z2-m>-0.844</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL14</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.543</y1-m>
+   <z1-m>-0.844</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.636</y2-m>
+   <z2-m>-0.893</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL15</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.635</y1-m>
+   <z1-m>-0.893</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.736</y2-m>
+   <z2-m>-0.923</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL16</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.735</y1-m>
+   <z1-m>-0.923</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.840</y2-m>
+   <z2-m>-0.934</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL17</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.839</y1-m>
+   <z1-m>-0.934</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.944</y2-m>
+   <z2-m>-0.923</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL18</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.943</y1-m>
+   <z1-m>-0.923</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-1.044</y2-m>
+   <z2-m>-0.893</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL19</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-1.043</y1-m>
+   <z1-m>-0.893</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-1.136</y2-m>
+   <z2-m>-0.844</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL20</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-1.136</y1-m>
+   <z1-m>-0.844</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-1.217</y2-m>
+   <z2-m>-0.777</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL21</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-1.216</y1-m>
+   <z1-m>-0.778</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-1.283</y2-m>
+   <z2-m>-0.697</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL22</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-1.283</y1-m>
+   <z1-m>-0.697</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-1.332</y2-m>
+   <z2-m>-0.604</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL23</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-1.332</y1-m>
+   <z1-m>-0.605</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-1.362</y2-m>
+   <z2-m>-0.504</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL24</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-1.362</y1-m>
+   <z1-m>-0.505</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-1.373</y2-m>
+   <z2-m>-0.400</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL25</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-1.373</y1-m>
+   <z1-m>-0.401</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-1.362</y2-m>
+   <z2-m>-0.296</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL26</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-1.362</y1-m>
+   <z1-m>-0.297</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-1.332</y2-m>
+   <z2-m>-0.196</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL27</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-1.332</y1-m>
+   <z1-m>-0.197</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-1.283</y2-m>
+   <z2-m>-0.104</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL28</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-1.283</y1-m>
+   <z1-m>-0.104</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-1.216</y2-m>
+   <z2-m>-0.02340</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL29</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-1.217</y1-m>
+   <z1-m>-0.02368</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-1.136</y2-m>
+   <z2-m> 0.04287</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL30</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-1.136</y1-m>
+   <z1-m> 0.04265</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-1.043</y2-m>
+   <z2-m> 0.0921</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL31</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-1.044</y1-m>
+   <z1-m> 0.09195</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.943</y2-m>
+   <z2-m> 0.122</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleL32</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m>-0.944</y1-m>
+   <z1-m> 0.122</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m>-0.839</y2-m>
+   <z2-m> 0.133</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI01</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-0.90976</y1-m>
+   <z1-m> 0.02994</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-0.77064</y2-m>
+   <z2-m> 0.02994</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI02</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-0.77125</y1-m>
+   <z1-m> 0.03003</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-0.63894</y2-m>
+   <z2-m>-0.01296</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI03</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-0.63950</y1-m>
+   <z1-m>-0.01267</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-0.52695</y2-m>
+   <z2-m>-0.09445</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI04</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-0.52739</y1-m>
+   <z1-m>-0.09401</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-0.44561</y2-m>
+   <z2-m>-0.20656</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI05</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-0.44590</y1-m>
+   <z1-m>-0.20600</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-0.40291</y2-m>
+   <z2-m>-0.33831</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI06</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-0.40300</y1-m>
+   <z1-m>-0.33770</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-0.40300</y2-m>
+   <z2-m>-0.47682</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI07</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-0.40291</y1-m>
+   <z1-m>-0.47620</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-0.44590</y2-m>
+   <z2-m>-0.60851</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI08</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-0.44561</y1-m>
+   <z1-m>-0.60796</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-0.52739</y2-m>
+   <z2-m>-0.72051</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI09</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-0.52695</y1-m>
+   <z1-m>-0.72007</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-0.63950</y2-m>
+   <z2-m>-0.80184</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI10</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-0.63894</y1-m>
+   <z1-m>-0.80156</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-0.77125</y2-m>
+   <z2-m>-0.84455</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI11</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-0.77064</y1-m>
+   <z1-m>-0.84455</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-0.90976</y2-m>
+   <z2-m>-0.84455</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI12</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-0.90914</y1-m>
+   <z1-m>-0.84455</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-1.04145</y2-m>
+   <z2-m>-0.80156</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI13</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-1.04090</y1-m>
+   <z1-m>-0.80184</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-1.15345</y2-m>
+   <z2-m>-0.72007</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI14</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-1.15301</y1-m>
+   <z1-m>-0.72051</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-1.23478</y2-m>
+   <z2-m>-0.60796</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI15</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-1.23450</y1-m>
+   <z1-m>-0.60851</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-1.27749</y2-m>
+   <z2-m>-0.47620</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI16</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-1.27739</y1-m>
+   <z1-m>-0.47682</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-1.27739</y2-m>
+   <z2-m>-0.33770</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI17</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-1.27749</y1-m>
+   <z1-m>-0.33831</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-1.23450</y2-m>
+   <z2-m>-0.20600</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI18</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-1.23478</y1-m>
+   <z1-m>-0.20656</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-1.15301</y2-m>
+   <z2-m>-0.09400</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI19</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-1.15345</y1-m>
+   <z1-m>-0.09445</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-1.04090</y2-m>
+   <z2-m>-0.01267</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleLI20</object-name>
+  <property>engines/engine[0]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>16</dep></entry>
+   <entry><ind>1.0</ind><dep> 1</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m>-1.04145</y1-m>
+   <z1-m>-0.01296</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m>-0.90914</y2-m>
+   <z2-m> 0.03003</z2-m>
+  </axis>
+ </animation>
+
+<!-- Right -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR01</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.84399</y1-m>
+   <z1-m> 0.13260</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.94838</y2-m>
+   <z2-m> 0.12232</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR02</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.94799</y1-m>
+   <z1-m> 0.12240</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 1.04800</y2-m>
+   <z2-m> 0.09195</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR03</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 1.04800</y1-m>
+   <z1-m> 0.09210</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 1.14100</y2-m>
+   <z2-m> 0.04265</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR04</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 1.14000</y1-m>
+   <z1-m> 0.04287</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 1.22100</y2-m>
+   <z2-m>-0.02368</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR05</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 1.22100</y1-m>
+   <z1-m>-0.02340</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 1.28800</y2-m>
+   <z2-m>-0.10449</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR06</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 1.28700</y1-m>
+   <z1-m>-0.10416</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 1.33700</y2-m>
+   <z2-m>-0.19667</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR07</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 1.33700</y1-m>
+   <z1-m>-0.19631</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 1.36700</y2-m>
+   <z2-m>-0.29669</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR08</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 1.367</y1-m>
+   <z1-m>-0.29630</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 1.37700</y2-m>
+   <z2-m>-0.4007</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR09</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 1.37700</y1-m>
+   <z1-m>-0.40030</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 1.36700</y2-m>
+   <z2-m>-0.50470</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR10</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 1.36700</y1-m>
+   <z1-m>-0.50431</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 1.33700</y2-m>
+   <z2-m>-0.60469</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR11</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 1.33700</y1-m>
+   <z1-m>-0.60433</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 1.28700</y2-m>
+   <z2-m>-0.69684</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR12</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 1.28800</y1-m>
+   <z1-m>-0.69651</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 1.22100</y2-m>
+   <z2-m>-0.77760</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR13</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 1.22100</y1-m>
+   <z1-m>-0.77732</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 1.14000</y2-m>
+   <z2-m>-0.84387</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR14</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 1.1410</y1-m>
+   <z1-m>-0.84365</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 1.04800</y2-m>
+   <z2-m>-0.89310</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR15</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 1.04800</y1-m>
+   <z1-m>-0.89295</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.94800</y2-m>
+   <z2-m>-0.92340</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR16</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.94838</y1-m>
+   <z1-m>-0.92332</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.84399</y2-m>
+   <z2-m>-0.93361</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR17</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.84438</y1-m>
+   <z1-m>-0.93361</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.73999</y2-m>
+   <z2-m>-0.92332</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR18</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.74037</y1-m>
+   <z1-m>-0.92340</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.63999</y2-m>
+   <z2-m>-0.89295</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR19</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.64035</y1-m>
+   <z1-m>-0.89310</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.54784</y2-m>
+   <z2-m>-0.84365</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR20</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.54817</y1-m>
+   <z1-m>-0.84387</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.46708</y2-m>
+   <z2-m>-0.77732</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR21</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.46736</y1-m>
+   <z1-m>-0.77760</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.40081</y2-m>
+   <z2-m>-0.69651</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR22</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.40103</y1-m>
+   <z1-m>-0.69684</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.35158</y2-m>
+   <z2-m>-0.60433</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR23</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.35173</y1-m>
+   <z1-m>-0.60469</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.32128</y2-m>
+   <z2-m>-0.50431</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR24</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.32136</y1-m>
+   <z1-m>-0.50470</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.31108</y2-m>
+   <z2-m>-0.40030</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR25</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.31108</y1-m>
+   <z1-m>-0.40070</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.32136</y2-m>
+   <z2-m>-0.29630</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR26</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.32128</y1-m>
+   <z1-m>-0.29669</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.35173</y2-m>
+   <z2-m>-0.19631</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR27</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.35158</y1-m>
+   <z1-m>-0.19667</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.40103</y2-m>
+   <z2-m>-0.10416</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR28</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.40081</y1-m>
+   <z1-m>-0.10449</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.46736</y2-m>
+   <z2-m>-0.02340</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR29</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.46708</y1-m>
+   <z1-m>-0.02368</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.54817</y2-m>
+   <z2-m> 0.04287</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR30</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.54784</y1-m>
+   <z1-m> 0.04265</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.64035</y2-m>
+   <z2-m> 0.09210</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR31</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.63999</y1-m>
+   <z1-m> 0.09195</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.74037</y2-m>
+   <z2-m> 0.12240</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleR32</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>12</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.376</x1-m>
+   <y1-m> 0.73999</y1-m>
+   <z1-m> 0.12232</z1-m>
+   <x2-m> 6.376</x2-m>
+   <y2-m> 0.84438</y2-m>
+   <z2-m> 0.13260</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI01</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 0.77525</y1-m>
+   <z1-m> 0.02994</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 0.91437</y2-m>
+   <z2-m> 0.02994</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI02</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 0.91376</y1-m>
+   <z1-m> 0.03003</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 1.04600</y2-m>
+   <z2-m>-0.01296</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI03</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 1.04600</y1-m>
+   <z1-m>-0.01267</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 1.15800</y2-m>
+   <z2-m>-0.09445</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI04</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 1.15800</y1-m>
+   <z1-m>-0.09401</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 1.23900</y2-m>
+   <z2-m>-0.20656</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI05</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 1.23900</y1-m>
+   <z1-m>-0.20600</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 1.28200</y2-m>
+   <z2-m>-0.33831</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI06</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 1.28200</y1-m>
+   <z1-m>-0.33770</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 1.28200</y2-m>
+   <z2-m>-0.47682</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI07</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 1.28200</y1-m>
+   <z1-m>-0.47620</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 1.23900</y2-m>
+   <z2-m>-0.60851</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI08</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 1.23900</y1-m>
+   <z1-m>-0.60796</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 1.15800</y2-m>
+   <z2-m>-0.72051</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI09</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 1.15800</y1-m>
+   <z1-m>-0.72007</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 1.04600</y2-m>
+   <z2-m>-0.80184</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI10</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 1.04600</y1-m>
+   <z1-m>-0.80156</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 0.91376</y2-m>
+   <z2-m>-0.84455</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI11</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 0.91437</y1-m>
+   <z1-m>-0.84455</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 0.77525</y2-m>
+   <z2-m>-0.84455</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI12</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 0.77587</y1-m>
+   <z1-m>-0.84455</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 0.64356</y2-m>
+   <z2-m>-0.80156</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI13</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 0.64411</y1-m>
+   <z1-m>-0.80184</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 0.53156</y2-m>
+   <z2-m>-0.72007</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI14</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 0.53200</y1-m>
+   <z1-m>-0.72051</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 0.45023</y2-m>
+   <z2-m>-0.60796</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI15</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 0.45051</y1-m>
+   <z1-m>-0.60851</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 0.40752</y2-m>
+   <z2-m>-0.47620</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI16</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 0.40762</y1-m>
+   <z1-m>-0.47682</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 0.40762</y2-m>
+   <z2-m>-0.33770</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI17</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 0.40752</y1-m>
+   <z1-m>-0.33831</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 0.45051</y2-m>
+   <z2-m>-0.20600</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI18</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 0.45023</y1-m>
+   <z1-m>-0.20656</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 0.53200</y2-m>
+   <z2-m>-0.09401</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI19</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 0.53156</y1-m>
+   <z1-m>-0.09445</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 0.64411</y2-m>
+   <z2-m>-0.01267</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>NozzleRI20</object-name>
+  <property>engines/engine[1]/nozzle-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>15</dep></entry>
+   <entry><ind>1.0</ind><dep> 0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m> 6.57626</x1-m>
+   <y1-m> 0.64356</y1-m>
+   <z1-m>-0.01296</z1-m>
+   <x2-m> 6.57626</x2-m>
+   <y2-m> 0.77587</y2-m>
+   <z2-m> 0.03003</z2-m>
+  </axis>
+ </animation>
+
+<!-- Анимация флюггеров ДУА -->
+ <animation>
+  <type>rotate</type>
+  <object-name>DUALeft</object-name>
+  <property>orientation/alpha-deg</property>
+  <center>
+   <x-m>-5.56011</x-m>
+   <y-m>-0.4509276</y-m>
+   <z-m> 0.0970668</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>DUARight</object-name>
+  <property>orientation/alpha-deg</property>
+  <center>
+   <x-m>-5.56011</x-m>
+   <y-m> 0.4509276</y-m>
+   <z-m> 0.0970668</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+
+ <animation>
+  <type>select</type>
+  <object-name>Canopy</object-name>
+  <object-name>CanopyGlass</object-name>
+  <object-name>MirrorL.K</object-name>
+  <object-name>MirrorL.Case</object-name>
+  <object-name>MirrorL.Rt</object-name>
+  <object-name>MirrorL.M</object-name>
+  <object-name>MirrorC.K</object-name>
+  <object-name>MirrorC.Case</object-name>
+  <object-name>MirrorC.Rt</object-name>
+  <object-name>MirrorC.M</object-name>
+  <object-name>MirrorR.K</object-name>
+  <object-name>MirrorR.Case</object-name>
+  <object-name>MirrorR.Rt</object-name>
+  <object-name>MirrorR.M</object-name>
+  <condition>
+   <not>
+    <and>
+     <equals>
+      <property>fdm/jsbsim/fcs/canopy-emerg-cmd</property>
+      <value>1</value>
+     </equals>
+     <equals>
+      <property>fdm/jsbsim/fcs/canopy-pos-norm</property>
+      <value>1</value>
+     </equals>
+    </and>
+   </not>
+  </condition>
+ </animation>
+
+</PropertyList>

@@ -1,0 +1,808 @@
+<?xml version="1.0"?>
+
+<!--
+ MiG-29 (9.12) Jet Flame
+ Sergey "Mercenary_Mercury" Salow, June 2012
+-->
+
+<PropertyList>
+
+<path>JetFlame.ac</path>
+
+ <effect>
+  <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/model-transparent</inherits-from>
+  <object-name>JetFlameCL</object-name>
+  <object-name>JetFlameL01</object-name>
+  <object-name>JetFlameL02</object-name>
+  <object-name>JetFlameL03</object-name>
+  <object-name>JetFlameL04</object-name>
+  <object-name>JetFlameL05</object-name>
+  <object-name>JetFlameL06</object-name>
+  <object-name>JetFlameL07</object-name>
+  <object-name>JetFlameL08</object-name>
+  <object-name>JetFlameL09</object-name>
+  <object-name>JetFlameL10</object-name>
+  <object-name>JetFlameL11</object-name>
+  <object-name>JetFlameL12</object-name>
+  <object-name>JetFlameL13</object-name>
+  <object-name>JetFlameL14</object-name>
+  <object-name>JetFlameL15</object-name>
+  <object-name>JetFlameL16</object-name>
+  <object-name>JetFlameL17</object-name>
+  <object-name>JetFlameL18</object-name>
+  <object-name>JetFlameL19</object-name>
+  <object-name>JetFlameL20</object-name>
+  <object-name>JetFlameCR</object-name>
+  <object-name>JetFlameR01</object-name>
+  <object-name>JetFlameR02</object-name>
+  <object-name>JetFlameR03</object-name>
+  <object-name>JetFlameR04</object-name>
+  <object-name>JetFlameR05</object-name>
+  <object-name>JetFlameR06</object-name>
+  <object-name>JetFlameR07</object-name>
+  <object-name>JetFlameR08</object-name>
+  <object-name>JetFlameR09</object-name>
+  <object-name>JetFlameR10</object-name>
+  <object-name>JetFlameR11</object-name>
+  <object-name>JetFlameR12</object-name>
+  <object-name>JetFlameR13</object-name>
+  <object-name>JetFlameR14</object-name>
+  <object-name>JetFlameR15</object-name>
+  <object-name>JetFlameR16</object-name>
+  <object-name>JetFlameR17</object-name>
+  <object-name>JetFlameR18</object-name>
+  <object-name>JetFlameR19</object-name>
+  <object-name>JetFlameR20</object-name>
+ </effect>
+
+<!-- Left -->
+
+<animation>
+ <type>textranslate</type>
+ <object-name>JetFlameCL</object-name>
+ <object-name>JetFlameL01</object-name>
+ <object-name>JetFlameL02</object-name>
+ <object-name>JetFlameL03</object-name>
+ <object-name>JetFlameL04</object-name>
+ <object-name>JetFlameL05</object-name>
+ <object-name>JetFlameL06</object-name>
+ <object-name>JetFlameL07</object-name>
+ <object-name>JetFlameL08</object-name>
+ <object-name>JetFlameL09</object-name>
+ <object-name>JetFlameL10</object-name>
+ <object-name>JetFlameL11</object-name>
+ <object-name>JetFlameL12</object-name>
+ <object-name>JetFlameL13</object-name>
+ <object-name>JetFlameL14</object-name>
+ <object-name>JetFlameL15</object-name>
+ <object-name>JetFlameL16</object-name>
+ <object-name>JetFlameL17</object-name>
+ <object-name>JetFlameL18</object-name>
+ <object-name>JetFlameL19</object-name>
+ <object-name>JetFlameL20</object-name>
+ <property>mig29/systems/engines/jetflameleft-pos</property>
+ <factor>0.5</factor>
+ <axis>
+  <x>-1</x>
+  <y> 0</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL01</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-0.90976</y1-m>
+  <z1-m> 0.02994</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-0.77064</y2-m>
+  <z2-m> 0.02994</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL02</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-0.77125</y1-m>
+  <z1-m> 0.03003</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-0.63894</y2-m>
+  <z2-m>-0.01296</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL03</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-0.63950</y1-m>
+  <z1-m>-0.01267</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-0.52695</y2-m>
+  <z2-m>-0.09445</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL04</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-0.52739</y1-m>
+  <z1-m>-0.09401</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-0.44561</y2-m>
+  <z2-m>-0.20656</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL05</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-0.44590</y1-m>
+  <z1-m>-0.20600</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-0.40291</y2-m>
+  <z2-m>-0.33831</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL06</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-0.40300</y1-m>
+  <z1-m>-0.33770</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-0.40300</y2-m>
+  <z2-m>-0.47682</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL07</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-0.40291</y1-m>
+  <z1-m>-0.47620</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-0.44590</y2-m>
+  <z2-m>-0.60851</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL08</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-0.44561</y1-m>
+  <z1-m>-0.60796</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-0.52739</y2-m>
+  <z2-m>-0.72051</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL09</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-0.52695</y1-m>
+  <z1-m>-0.72007</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-0.63950</y2-m>
+  <z2-m>-0.80184</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL10</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-0.63894</y1-m>
+  <z1-m>-0.80156</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-0.77125</y2-m>
+  <z2-m>-0.84455</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL11</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-0.77064</y1-m>
+  <z1-m>-0.84455</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-0.90976</y2-m>
+  <z2-m>-0.84455</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL12</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-0.90914</y1-m>
+  <z1-m>-0.84455</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-1.04145</y2-m>
+  <z2-m>-0.80156</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL13</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-1.04090</y1-m>
+  <z1-m>-0.80184</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-1.15345</y2-m>
+  <z2-m>-0.72007</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL14</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-1.15301</y1-m>
+  <z1-m>-0.72051</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-1.23478</y2-m>
+  <z2-m>-0.60796</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL15</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-1.23450</y1-m>
+  <z1-m>-0.60851</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-1.27749</y2-m>
+  <z2-m>-0.47620</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL16</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-1.27739</y1-m>
+  <z1-m>-0.47682</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-1.27739</y2-m>
+  <z2-m>-0.33770</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL17</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-1.27749</y1-m>
+  <z1-m>-0.33831</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-1.23450</y2-m>
+  <z2-m>-0.20600</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL18</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-1.23478</y1-m>
+  <z1-m>-0.20656</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-1.15301</y2-m>
+  <z2-m>-0.09400</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL19</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-1.15345</y1-m>
+  <z1-m>-0.09445</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-1.04090</y2-m>
+  <z2-m>-0.01267</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameL20</object-name>
+ <property>engines/engine[0]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m>-1.04145</y1-m>
+  <z1-m>-0.01296</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m>-0.90914</y2-m>
+  <z2-m> 0.03003</z2-m>
+ </axis>
+</animation>
+
+<!-- Right -->
+
+<animation>
+ <type>textranslate</type>
+ <object-name>JetFlameCR</object-name>
+ <object-name>JetFlameR01</object-name>
+ <object-name>JetFlameR02</object-name>
+ <object-name>JetFlameR03</object-name>
+ <object-name>JetFlameR04</object-name>
+ <object-name>JetFlameR05</object-name>
+ <object-name>JetFlameR06</object-name>
+ <object-name>JetFlameR07</object-name>
+ <object-name>JetFlameR08</object-name>
+ <object-name>JetFlameR09</object-name>
+ <object-name>JetFlameR10</object-name>
+ <object-name>JetFlameR11</object-name>
+ <object-name>JetFlameR12</object-name>
+ <object-name>JetFlameR13</object-name>
+ <object-name>JetFlameR14</object-name>
+ <object-name>JetFlameR15</object-name>
+ <object-name>JetFlameR16</object-name>
+ <object-name>JetFlameR17</object-name>
+ <object-name>JetFlameR18</object-name>
+ <object-name>JetFlameR19</object-name>
+ <object-name>JetFlameR20</object-name>
+ <property>mig29/systems/engines/jetflameright-pos</property>
+ <factor>0.5</factor>
+ <axis>
+  <x>-1</x>
+  <y> 0</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR01</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 0.77525</y1-m>
+  <z1-m> 0.02994</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 0.91437</y2-m>
+  <z2-m> 0.02994</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR02</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 0.91376</y1-m>
+  <z1-m> 0.03003</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 1.04600</y2-m>
+  <z2-m>-0.01296</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR03</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 1.04600</y1-m>
+  <z1-m>-0.01267</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 1.15800</y2-m>
+  <z2-m>-0.09445</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR04</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 1.15800</y1-m>
+  <z1-m>-0.09401</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 1.23900</y2-m>
+  <z2-m>-0.20656</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR05</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 1.23900</y1-m>
+  <z1-m>-0.20600</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 1.28200</y2-m>
+  <z2-m>-0.33831</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR06</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 1.28200</y1-m>
+  <z1-m>-0.33770</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 1.28200</y2-m>
+  <z2-m>-0.47682</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR07</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 1.28200</y1-m>
+  <z1-m>-0.47620</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 1.23900</y2-m>
+  <z2-m>-0.60851</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR08</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 1.23900</y1-m>
+  <z1-m>-0.60796</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 1.15800</y2-m>
+  <z2-m>-0.72051</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR09</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 1.15800</y1-m>
+  <z1-m>-0.72007</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 1.04600</y2-m>
+  <z2-m>-0.80184</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR10</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 1.04600</y1-m>
+  <z1-m>-0.80156</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 0.91376</y2-m>
+  <z2-m>-0.84455</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR11</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 0.91437</y1-m>
+  <z1-m>-0.84455</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 0.77525</y2-m>
+  <z2-m>-0.84455</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR12</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 0.77587</y1-m>
+  <z1-m>-0.84455</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 0.64356</y2-m>
+  <z2-m>-0.80156</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR13</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 0.64411</y1-m>
+  <z1-m>-0.80184</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 0.53156</y2-m>
+  <z2-m>-0.72007</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR14</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 0.53200</y1-m>
+  <z1-m>-0.72051</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 0.45023</y2-m>
+  <z2-m>-0.60796</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR15</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 0.45051</y1-m>
+  <z1-m>-0.60851</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 0.40752</y2-m>
+  <z2-m>-0.47620</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR16</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 0.40762</y1-m>
+  <z1-m>-0.47682</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 0.40762</y2-m>
+  <z2-m>-0.33770</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR17</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 0.40752</y1-m>
+  <z1-m>-0.33831</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 0.45051</y2-m>
+  <z2-m>-0.20600</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR18</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 0.45023</y1-m>
+  <z1-m>-0.20656</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 0.53200</y2-m>
+  <z2-m>-0.09401</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR19</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 0.53156</y1-m>
+  <z1-m>-0.09445</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 0.64411</y2-m>
+  <z2-m>-0.01267</z2-m>
+ </axis>
+</animation>
+<animation>
+ <type>rotate</type>
+ <object-name>JetFlameR20</object-name>
+ <property>engines/engine[1]/nozzle-pos-norm</property>
+ <interpolation>
+  <entry><ind>0.0</ind><dep>15</dep></entry>
+  <entry><ind>1.0</ind><dep> 0</dep></entry>
+ </interpolation>
+ <axis>
+  <x1-m> 6.57626</x1-m>
+  <y1-m> 0.64356</y1-m>
+  <z1-m>-0.01296</z1-m>
+  <x2-m> 6.57626</x2-m>
+  <y2-m> 0.77587</y2-m>
+  <z2-m> 0.03003</z2-m>
+ </axis>
+</animation>
+
+</PropertyList>
