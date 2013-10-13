@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>dac.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>dac.case</object-name>
+  <object-name>dac.baselever1</object-name>
+  <object-name>dac.baselever2</object-name>
+  <object-name>dac.lever1</object-name>
+  <object-name>dac.lever2</object-name>
+  <object-name>dac.basebutton</object-name>
+  <object-name>dac.button</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>dac.PTA</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-R-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>dac.lever1</object-name>
+  <property>mig29/controls/ARK-19/daln-blizhn</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.001</x-m>
+   <y-m>0.0135</y-m>
+   <z-m>0.035</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>dac.button</object-name>
+  <property>mig29/controls/BVP/emerg_release</property>
+  <factor>-0.002</factor>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>dac.lever2</object-name>
+  <property>mig29/controls/BVP/threat</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep>  0</dep></entry>
+   <entry><ind>2</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.000</x-m>
+   <y-m>-0.015</y-m>
+   <z-m>-0.0734</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>dac.cz1</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/ARK-19/daln-blizhn</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>dac.cz2</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/ARK-19/daln-blizhn</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>dac.cz3</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/BVP/emerg_release</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/BVP/emerg_release</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>dac.cz4</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/BVP/threat</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>dac.cz5</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/BVP/threat</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>dac.cz6</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/BVP/threat</property>
+    <value>2</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>dac.case</object-name>
+  <object-name>dac.baselever1</object-name>
+  <object-name>dac.baselever2</object-name>
+  <object-name>dac.lever1</object-name>
+  <object-name>dac.lever2</object-name>
+  <object-name>dac.basebutton</object-name>
+  <object-name>dac.button</object-name>
+  <property>mig29/systems/cockpitlighting/texturep</property>
+  <factor>0.5</factor>
+  <step>1</step>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

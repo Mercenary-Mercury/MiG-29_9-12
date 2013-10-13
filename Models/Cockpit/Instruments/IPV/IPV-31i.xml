@@ -1,0 +1,1437 @@
+<?xml version="1.0"?>
+
+<!-- Индикатор прямого видения - индикаторная часть -->
+<!-- 2012, Сергей "Mercenary_Mercury" Салов -->
+
+<PropertyList>
+
+ <path>IPV-31i.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>prk</object-name>
+  <object-name>bankline</object-name>
+  <object-name>headline</object-name>
+  <object-name>leftline</object-name>
+  <object-name>rightline</object-name>
+  <object-name>headmarker</object-name>
+  <object-name>IPV-31i.gr1</object-name>
+  <object-name>IPV-31i.gr2</object-name>
+  <object-name>IPV-31i.gr3</object-name>
+  <object-name>IPV-31i.Siluet</object-name>
+  <object-name>IPV-31i.Pitch</object-name>
+  <object-name>IPV-31i.PitchV1</object-name>
+  <object-name>IPV-31i.PitchV2</object-name>
+  <object-name>IPV-31i.PitchV3</object-name>
+  <object-name>IPV-31i.PitchV4</object-name>
+  <object-name>IPV-31i.PitchV5</object-name>
+  <object-name>IPV-31i.PitchV6</object-name>
+  <object-name>IPV-31i.PitchV7</object-name>
+  <object-name>IPV-31i.PitchV8</object-name>
+  <object-name>IPV-31i.PitchV9</object-name>
+  <object-name>IPV-31i.PitchN1</object-name>
+  <object-name>IPV-31i.PitchN2</object-name>
+  <object-name>IPV-31i.PitchN3</object-name>
+  <object-name>IPV-31i.PitchN4</object-name>
+  <object-name>IPV-31i.PitchN5</object-name>
+  <object-name>IPV-31i.PitchN6</object-name>
+  <object-name>IPV-31i.PitchN7</object-name>
+  <object-name>IPV-31i.PitchN8</object-name>
+  <object-name>IPV-31i.PitchN9</object-name>
+  <object-name>IPV-31i.PitchP0</object-name>
+  <object-name>IPV-31i.PitchP00</object-name>
+  <object-name>IPV-31i.PitchP10</object-name>
+  <object-name>IPV-31i.PitchP20</object-name>
+  <object-name>IPV-31i.PitchP30</object-name>
+  <object-name>IPV-31i.PitchP40</object-name>
+  <object-name>IPV-31i.PitchP50</object-name>
+  <object-name>IPV-31i.PitchP60</object-name>
+  <object-name>IPV-31i.PitchP70</object-name>
+  <object-name>IPV-31i.PitchP80</object-name>
+  <object-name>IPV-31i.PitchP90</object-name>
+  <object-name>IPV-31i.PitchP-10</object-name>
+  <object-name>IPV-31i.PitchP-20</object-name>
+  <object-name>IPV-31i.PitchP-30</object-name>
+  <object-name>IPV-31i.PitchP-40</object-name>
+  <object-name>IPV-31i.PitchP-50</object-name>
+  <object-name>IPV-31i.PitchP-60</object-name>
+  <object-name>IPV-31i.PitchP-70</object-name>
+  <object-name>IPV-31i.PitchP-80</object-name>
+  <object-name>IPV-31i.PitchP-90</object-name>
+  <object-name>IPV-31i.PH1</object-name>
+  <object-name>IPV-31i.PH2</object-name>
+  <object-name>IPV-31i.PH3</object-name>
+  <object-name>IPV-31i.PH4</object-name>
+  <object-name>IPV-31i.PH5</object-name>
+  <object-name>IPV-31i.PH6</object-name>
+  <object-name>IPV-31i.PS1</object-name>
+  <object-name>IPV-31i.PS2</object-name>
+  <object-name>IPV-31i.PS3</object-name>
+  <object-name>IPV-31i.PS4</object-name>
+  <object-name>IPV-31i.PA1</object-name>
+  <object-name>IPV-31i.PA2</object-name>
+  <object-name>IPV-31i.PA3</object-name>
+  <object-name>IPV-31i.PA4</object-name>
+  <object-name>IPV-31i.PA5</object-name>
+  <object-name>IPV-31i.PAR</object-name>
+  <object-name>IPV-31i.VM</object-name>
+  <object-name>IPV-31i.MKG</object-name>
+  <object-name>IPV-31i.VSM</object-name>
+  <object-name>sdline</object-name>
+  <object-name>IPV-31i.SMarker</object-name>
+  <object-name>adline</object-name>
+  <object-name>IPV-31i.PK</object-name>
+  <object-name>IPV-31i.PG</object-name>
+  <object-name>IPV-31i.PDd1</object-name>
+  <object-name>IPV-31i.PDd2</object-name>
+  <object-name>IPV-31i.PDd3</object-name>
+  <object-name>IPV-31i.PDd4</object-name>
+  <object-name>IPV-31i.PDdzpt</object-name>
+  <emission>
+   <red>1.0</red>
+   <green>1.0</green>
+   <blue>1.0</blue>
+   <factor-prop>mig29/controls/IPV/bright-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.Siluet</object-name>
+  <object-name>IPV-31i.Pitch</object-name>
+  <object-name>prk</object-name>
+  <object-name>bankline</object-name>
+  <object-name>leftline</object-name>
+  <object-name>rightline</object-name>
+  <object-name>sdline</object-name>
+  <object-name>IPV-31i.SMarker</object-name>
+  <object-name>headmarker</object-name>
+  <object-name>headline</object-name>
+  <object-name>IPV-31i.VSM</object-name>
+  <object-name>IPV-31i.gr1</object-name>
+  <object-name>IPV-31i.PH1</object-name>
+  <object-name>IPV-31i.PH2</object-name>
+  <object-name>IPV-31i.PVS1</object-name>
+  <condition>
+   <equals>
+    <property>mig29/systems/SEI-31/ind-on</property>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Индикация крена -->
+ <animation>
+  <type>rotate</type>
+  <object-name>IPV-31i.Siluet</object-name>
+  <property>mig29/instrumentation/KPP/roll-indicated-deg</property>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+<!-- Индикация тангажа -->
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.Pitch</object-name>
+  <property>mig29/instrumentation/SEI-31/indicated_tangage_L</property>
+  <factor>0.001375</factor>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+<!-- Блок индикации числового значения тангажа -->
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.PitchV1</object-name>
+  <object-name>IPV-31i.PitchV2</object-name>
+  <object-name>IPV-31i.PitchV3</object-name>
+  <object-name>IPV-31i.PitchV4</object-name>
+  <object-name>IPV-31i.PitchV5</object-name>
+  <object-name>IPV-31i.PitchV6</object-name>
+  <object-name>IPV-31i.PitchV7</object-name>
+  <object-name>IPV-31i.PitchV8</object-name>
+  <object-name>IPV-31i.PitchV9</object-name>
+  <object-name>IPV-31i.PitchN1</object-name>
+  <object-name>IPV-31i.PitchN2</object-name>
+  <object-name>IPV-31i.PitchN3</object-name>
+  <object-name>IPV-31i.PitchN4</object-name>
+  <object-name>IPV-31i.PitchN5</object-name>
+  <object-name>IPV-31i.PitchN6</object-name>
+  <object-name>IPV-31i.PitchN7</object-name>
+  <object-name>IPV-31i.PitchN8</object-name>
+  <object-name>IPV-31i.PitchN9</object-name>
+  <object-name>IPV-31i.PitchP0</object-name>
+  <object-name>IPV-31i.PitchP00</object-name>
+  <object-name>IPV-31i.PitchP10</object-name>
+  <object-name>IPV-31i.PitchP20</object-name>
+  <object-name>IPV-31i.PitchP30</object-name>
+  <object-name>IPV-31i.PitchP40</object-name>
+  <object-name>IPV-31i.PitchP50</object-name>
+  <object-name>IPV-31i.PitchP60</object-name>
+  <object-name>IPV-31i.PitchP70</object-name>
+  <object-name>IPV-31i.PitchP80</object-name>
+  <object-name>IPV-31i.PitchP90</object-name>
+  <object-name>IPV-31i.PitchP-10</object-name>
+  <object-name>IPV-31i.PitchP-20</object-name>
+  <object-name>IPV-31i.PitchP-30</object-name>
+  <object-name>IPV-31i.PitchP-40</object-name>
+  <object-name>IPV-31i.PitchP-50</object-name>
+  <object-name>IPV-31i.PitchP-60</object-name>
+  <object-name>IPV-31i.PitchP-70</object-name>
+  <object-name>IPV-31i.PitchP-80</object-name>
+  <object-name>IPV-31i.PitchP-90</object-name>
+  <factor>0.001375</factor>
+  <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP00</object-name>
+  <object-name>IPV-31i.PitchP0</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>17</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-17</value>
+    </greater-than>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP10</object-name>
+  <object-name>IPV-31i.PitchV1</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>27</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-7</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP20</object-name>
+  <object-name>IPV-31i.PitchV2</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>37</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>3</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP30</object-name>
+  <object-name>IPV-31i.PitchV3</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>47</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>13</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP40</object-name>
+  <object-name>IPV-31i.PitchV4</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>57</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>23</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP50</object-name>
+  <object-name>IPV-31i.PitchV5</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>67</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>33</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP60</object-name>
+  <object-name>IPV-31i.PitchV6</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>77</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>43</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP70</object-name>
+  <object-name>IPV-31i.PitchV7</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>87</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>53</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP80</object-name>
+  <object-name>IPV-31i.PitchV8</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>97</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>63</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP90</object-name>
+  <object-name>IPV-31i.PitchV9</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>107</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>73</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP-10</object-name>
+  <object-name>IPV-31i.PitchN1</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>7</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-27</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP-20</object-name>
+  <object-name>IPV-31i.PitchN2</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-3</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-37</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP-30</object-name>
+  <object-name>IPV-31i.PitchN3</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-13</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-47</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP-40</object-name>
+  <object-name>IPV-31i.PitchN4</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-23</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-57</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP-50</object-name>
+  <object-name>IPV-31i.PitchN5</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-33</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-67</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP-60</object-name>
+  <object-name>IPV-31i.PitchN6</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-43</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-77</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP-70</object-name>
+  <object-name>IPV-31i.PitchN7</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-53</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-87</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP-80</object-name>
+  <object-name>IPV-31i.PitchN8</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-63</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-97</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PitchP-90</object-name>
+  <object-name>IPV-31i.PitchN9</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <and>
+    <less-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-73</value>
+    </less-than>
+    <greater-than>
+     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <value>-107</value>
+    </greater-than>
+   </and>
+   </and>
+  </condition>
+ </animation>
+
+<!-- Индикация скорости -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PS1</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <greater-than-equals>
+     <property>mig29/instrumentation/US-1600/airspeed-kmh</property>
+     <value>1000</value>
+    </greater-than-equals>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PS2</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <greater-than-equals>
+     <property>mig29/instrumentation/US-1600/airspeed-kmh</property>
+     <value>100</value>
+    </greater-than-equals>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PS3</object-name>
+  <condition>
+   <equals>
+    <property>mig29/systems/SEI-31/ind-on</property>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PS4</object-name>
+  <condition>
+   <equals>
+    <property>mig29/systems/SEI-31/ind-on</property>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PS1</object-name>
+  <property>mig29/instrumentation/SEI-31/indicated_airspeed</property>
+  <factor>0.0001</factor>
+  <step>1000</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PS2</object-name>
+  <property>mig29/instrumentation/SEI-31/indicated_airspeed</property>
+  <factor>0.001</factor>
+  <step>100</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PS3</object-name>
+  <property>mig29/instrumentation/SEI-31/indicated_airspeed</property>
+  <factor>0.01</factor>
+  <step>10</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PS4</object-name>
+  <property>mig29/instrumentation/SEI-31/indicated_airspeed</property>
+  <factor>0.1</factor>
+  <step>1</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+<!-- Индикация высоты -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PA1</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <greater-than-equals>
+     <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+     <value>10000</value>
+    </greater-than-equals>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PA2</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <greater-than-equals>
+     <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+     <value>1000</value>
+    </greater-than-equals>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PA3</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <greater-than-equals>
+     <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+     <value>100</value>
+    </greater-than-equals>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PA4</object-name>
+  <condition>
+   <equals>
+    <property>mig29/systems/SEI-31/ind-on</property>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PA5</object-name>
+  <condition>
+   <equals>
+    <property>mig29/systems/SEI-31/ind-on</property>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PA1</object-name>
+  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <factor>0.00001</factor>
+  <step>10000</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PA2</object-name>
+  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <factor>0.0001</factor>
+  <step>1000</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PA3</object-name>
+  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <factor>0.001</factor>
+  <step>100</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PA4</object-name>
+  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <factor>0.01</factor>
+  <step>10</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PA5</object-name>
+  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <factor>0.1</factor>
+  <step>1</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PAR</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/instrumentation/SEI-31/R</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.PA2</object-name>
+  <property>mig29/systems/SEI-31/sda10000</property>
+  <factor>0.0035</factor>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.PA3</object-name>
+  <property>mig29/systems/SEI-31/sda1000</property>
+  <factor>0.0035</factor>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.PA4</object-name>
+  <object-name>IPV-31i.PA5</object-name>
+  <object-name>IPV-31i.PAR</object-name>
+  <property>mig29/systems/SEI-31/sda100</property>
+  <factor>0.0035</factor>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+<!--Индекс изменения скорости-->
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.SMarker</object-name>
+  <property>mig29/instrumentation/SEI-31/RIS</property>
+  <factor>0.00325</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Индикация гироскопического курса -->
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.gr1</object-name>
+  <object-name>IPV-31i.PH1</object-name>
+  <object-name>IPV-31i.PH2</object-name>
+  <property>mig29/systems/SEI-31/heading1</property>
+  <factor>0.0015</factor>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.gr2</object-name>
+  <object-name>IPV-31i.PH3</object-name>
+  <object-name>IPV-31i.PH4</object-name>
+  <property>mig29/systems/SEI-31/heading2</property>
+  <factor>0.0015</factor>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.gr3</object-name>
+  <object-name>IPV-31i.PH5</object-name>
+  <object-name>IPV-31i.PH6</object-name>
+  <property>mig29/systems/SEI-31/heading3</property>
+  <factor>0.0015</factor>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+<!--animation>
+ <type>translate</type>
+ <object-name>IPV-31i.gr4</object-name>
+ <property>mig29/instrumentation/ILS-31/gr4</property>
+ <factor>0.0025</factor>
+ <axis>
+  <x> 0</x>
+  <y>-1</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>translate</type>
+ <object-name>IPV-31i.gr5</object-name>
+ <property>mig29/instrumentation/ILS-31/gr5</property>
+ <factor>0.0025</factor>
+ <axis>
+  <x> 0</x>
+  <y>-1</y>
+  <z> 0</z>
+ </axis>
+</animation-->
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PH1</object-name>
+  <property>mig29/systems/SEI-31/heading1_num</property>
+  <factor>0.01</factor>
+  <step>10</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PH2</object-name>
+  <property>mig29/systems/SEI-31/heading1_num</property>
+  <factor>0.1</factor>
+  <step>1</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PH3</object-name>
+  <property>mig29/systems/SEI-31/heading2_num</property>
+  <factor>0.01</factor>
+  <step>10</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PH4</object-name>
+  <property>mig29/systems/SEI-31/heading2_num</property>
+  <factor>0.1</factor>
+  <step>1</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PH5</object-name>
+  <property>mig29/systems/SEI-31/heading3_num</property>
+  <factor>0.01</factor>
+  <step>10</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PH6</object-name>
+  <property>mig29/systems/SEI-31/heading3_num</property>
+  <factor>0.1</factor>
+  <step>1</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.gr2</object-name>
+  <object-name>IPV-31i.PH3</object-name>
+  <object-name>IPV-31i.PH4</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <less-than>
+     <property>mig29/systems/SEI-31/heading2</property>
+     <value>10</value>
+    </less-than>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.gr3</object-name>
+  <object-name>IPV-31i.PH5</object-name>
+  <object-name>IPV-31i.PH6</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <greater-than>
+     <property>mig29/systems/SEI-31/heading3</property>
+     <value>-10</value>
+    </greater-than>
+   </and>
+  </condition>
+ </animation>
+
+ <!--animation>
+  <type>select</type>
+  <object-name>IPV-31i.VertLineAoA</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/instrumentation/ILS-31/m</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation-->
+
+<!-- Визирная метка -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.VM</object-name>
+  <condition>
+   <and>
+   <equals>
+    <property>mig29/systems/SEI-31/ind-on</property>
+    <value>1</value>
+   </equals>
+   <greater-than>
+    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <value>0</value>
+   </greater-than>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.VM</object-name>
+  <property>mig29/instrumentation/SEI-31/VisorMetkaG</property>
+  <factor>0.02225</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.VM</object-name>
+  <property>mig29/instrumentation/SEI-31/VisorMetkaV</property>
+  <factor>0.02225</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Метка отклонения от курсоглиссады -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.MKG</object-name>
+  <condition>
+   <and>
+   <equals>
+    <property>mig29/systems/SEI-31/ind-on</property>
+    <value>1</value>
+   </equals>
+   <equals>
+    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <value>2</value>
+   </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.MKG</object-name>
+  <property>mig29/instrumentation/SEI-31/MetkaK</property>
+  <factor>0.02225</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.MKG</object-name>
+  <property>mig29/instrumentation/SEI-31/MetkaG</property>
+  <factor>0.02225</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Готовность датчика курса -->
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PK</object-name>
+  <condition>
+   <and>
+   <equals>
+    <property>mig29/systems/SEI-31/ind-on</property>
+    <value>1</value>
+   </equals>
+   <equals>
+    <property>mig29/instrumentation/SEI-31/K</property>
+    <value>1</value>
+   </equals>
+   <equals>
+    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <value>2</value>
+   </equals>
+   </and>
+  </condition>
+ </animation>
+
+<!-- Готовность датчика глиссады -->
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PG</object-name>
+  <condition>
+   <and>
+   <equals>
+    <property>mig29/systems/SEI-31/ind-on</property>
+    <value>1</value>
+   </equals>
+   <equals>
+    <property>mig29/instrumentation/SEI-31/G</property>
+    <value>1</value>
+   </equals>
+   <equals>
+    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <value>2</value>
+   </equals>
+   </and>
+  </condition>
+ </animation>
+
+<!-- Дальность до ППМ/аэродрома -->
+
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PDd1</object-name>
+  <condition>
+   <and>
+   <equals>
+    <property>mig29/systems/SEI-31/ind-on</property>
+    <value>1</value>
+   </equals>
+   <greater-than-equals>
+    <property>mig29/instrumentation/SEI-31/PPM_Aer_dist</property>
+    <value>100</value>
+   </greater-than-equals>
+   <greater-than>
+    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <value>0</value>
+   </greater-than>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PDd2</object-name>
+  <condition>
+   <and>
+   <equals>
+    <property>mig29/systems/SEI-31/ind-on</property>
+    <value>1</value>
+   </equals>
+   <greater-than-equals>
+    <property>mig29/instrumentation/SEI-31/PPM_Aer_dist</property>
+    <value>10</value>
+   </greater-than-equals>
+   <greater-than>
+    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <value>0</value>
+   </greater-than>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PDd3</object-name>
+  <object-name>IPV-31i.PDd4</object-name>
+  <object-name>IPV-31i.PDdzpt</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <greater-than>
+     <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+     <value>0</value>
+    </greater-than>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PDd1</object-name>
+  <property>mig29/instrumentation/SEI-31/PPM_Aer_dist_100</property>
+  <factor>0.1</factor>
+  <step>1</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PDd2</object-name>
+  <property>mig29/instrumentation/SEI-31/PPM_Aer_dist_10</property>
+  <factor>0.1</factor>
+  <step>1</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PDd3</object-name>
+  <property>mig29/instrumentation/SEI-31/PPM_Aer_dist_1</property>
+  <factor>0.1</factor>
+  <step>1</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PDd4</object-name>
+  <property>mig29/instrumentation/SEI-31/PPM_Aer_dist_0</property>
+  <factor>0.1</factor>
+  <step>1</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+<!-- Боевые элементы -->
+
+<!-- Ракурс цели -->
+ <!--animation>
+  <type>select</type>
+  <object-name>IPV-31i.RC</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/instrumentation/SEI-31/m</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>IPV-31i.RC</object-name>
+  <property>mig29/instrumentation/SEI-31/rc</property>
+  <factor>1</factor>
+  <center>
+   <x-m> 0.0</x-m>
+   <y-m>-0.055</y-m>
+   <z-m>-0.036</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation-->
+
+</PropertyList>

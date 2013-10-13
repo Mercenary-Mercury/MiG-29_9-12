@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+
+<!-- Индикатор положения шасси, отклоняемых носков крыла, закрылков и тормозных щитков - ИП-52 -->
+<!-- 2011, Сергей "Mercenary_Mercury" Салов -->
+
+<PropertyList>
+
+ <path>IP-52.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>face</object-name>
+  <object-name>cp</object-name>
+  <object-name>slats</object-name>
+  <object-name>flaps1</object-name>
+  <object-name>flaps2</object-name>
+  <object-name>speedbrake</object-name>
+  <object-name>gearnose</object-name>
+  <object-name>gearleft</object-name>
+  <object-name>gearright</object-name>
+  <object-name>siluet</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>screws</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>IP-52.cp</object-name>
+  <object-name>IP-52.gearnose</object-name>
+  <object-name>IP-52.gearleft</object-name>
+  <object-name>IP-52.gearright</object-name>
+  <object-name>IP-52.speedbrake</object-name>
+  <object-name>IP-52.slats</object-name>
+  <object-name>IP-52.flaps1</object-name>
+  <object-name>IP-52.flaps2</object-name>
+  <emission>
+   <red>  1.0</red>
+   <green>1.0</green>
+   <blue> 1.0</blue>
+   <factor-prop>mig29/systems/cockpitlighting/annunciators-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IP-52.cp</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <equals>
+      <property>mig29/instrumentation/IP-52/rl</property>
+      <value>1</value>
+     </equals>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IP-52.gearnose</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <equals>
+      <property>/gear/gear[0]/position-norm</property>
+       <value>1</value>
+     </equals>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IP-52.gearleft</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>/gear/gear[1]/position-norm</property>
+      <value>1</value>
+     </equals>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IP-52.gearright</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <equals>
+      <property>/gear/gear[2]/position-norm</property>
+      <value>1</value>
+     </equals>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IP-52.speedbrake</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <greater-than>
+      <property>/surface-positions/speedbrake-pos-norm</property>
+      <value>0</value>
+     </greater-than>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IP-52.slats</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <greater-than>
+      <property>fdm/jsbsim/fcs/LERX-pos-norm</property>
+      <value>0</value>
+     </greater-than>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IP-52.flaps1</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <greater-than>
+      <property>/surface-positions/flap-pos-norm</property>
+      <value>0</value>
+     </greater-than>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>IP-52.flaps2</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+      <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <equals>
+      <property>/surface-positions/flap-pos-norm</property>
+      <value>1</value>
+     </equals>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+</PropertyList>

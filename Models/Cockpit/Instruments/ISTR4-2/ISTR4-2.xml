@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+
+<!-- Индикатор системы топливомерно-расхомерной - ИСТР4-2 -->
+<!-- 2011, Сергей "Mercenary_Mercury" Салов -->
+
+<PropertyList>
+
+ <path>ISTR4-2.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>ISTR4-2.DC1</object-name>
+  <object-name>ISTR4-2.DC2</object-name>
+  <object-name>ISTR4-2.DC3</object-name>
+  <object-name>ISTR4-2.scale</object-name>
+  <object-name>ISTR4-2.tape</object-name>
+  <object-name>ISTR4-2.Rscale</object-name>
+  <object-name>ISTR4-2.tankmarker1</object-name>
+  <object-name>ISTR4-2.tankmarker3</object-name>
+  <object-name>ISTR4-2.tankmarkerKr</object-name>
+  <object-name>ISTR4-2.tankmarkerPTB</object-name>
+  <object-name>ISTR4-2.PTZ</object-name>
+  <object-name>ISTR4-2.PT2</object-name>
+  <object-name>ISTR4-2.whiteline</object-name>
+  <object-name>ISTR4-2.redline</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>ISTR4-2.screws</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>ISTR4-2.LampOPT</object-name>
+  <object-name>ISTR4-2.LampTEK</object-name>
+  <object-name>ISTR4-2.LampT</object-name>
+  <object-name>ISTR4-2.LampR</object-name>
+  <emission>
+   <red>  1.0</red>
+   <green>1.0</green>
+   <blue> 1.0</blue>
+   <factor-prop>mig29/systems/cockpitlighting/annunciators-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <effect>
+  <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/model-transparent</inherits-from>
+  <object-name>frontglass</object-name>
+ </effect>
+
+ <animation>
+  <type>select</type>
+  <object-name>ISTR4-2.tankPTB</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <less-than>
+      <property>fdm/jsbsim/systems/fuel/csPTB</property>
+      <value>2</value>
+     </less-than>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>ISTR4-2.tankKr</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <and>
+      <less-than>
+       <property>fdm/jsbsim/systems/fuel/csKrL</property>
+       <value>2</value>
+      </less-than>
+      <less-than>
+       <property>fdm/jsbsim/systems/fuel/csKrP</property>
+       <value>2</value>
+      </less-than>
+     </and>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>ISTR4-2.tank3</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <less-than>
+      <property>fdm/jsbsim/systems/fuel/csN3</property>
+      <value>2</value>
+     </less-than>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>ISTR4-2.tank1</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <less-than>
+      <property>fdm/jsbsim/systems/fuel/csN1</property>
+      <value>2</value>
+     </less-than>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>ISTR4-2.tape</object-name>
+  <property>mig29/instrumentation/ISTR4-2/total-fuel-kg-t</property>
+  <factor>0.0001245</factor>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>ISTR4-2.Rscale</object-name>
+  <property>/mig29/instrumentation/ISTR4-2/tank-2-kg</property>
+  <factor>0.000896661931817</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>ISTR4-2.LampOPT</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <equals>
+      <property>mig29/controls/ISTR4/OPT-TEK</property>
+      <value>0</value>
+     </equals>
+    </or>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ISTR4-2.LampTEK</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <equals>
+      <property>mig29/controls/ISTR4/OPT-TEK</property>
+      <value>1</value>
+     </equals>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>ISTR4-2.LampT</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <equals>
+      <property>mig29/controls/ISTR4/T-R</property>
+      <value>0</value>
+     </equals>
+    </or>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ISTR4-2.LampR</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <equals>
+      <property>mig29/controls/ISTR4/T-R</property>
+      <value>1</value>
+     </equals>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>ISTR4-2.lever1</object-name>
+  <property>mig29/controls/ISTR4/OPT-TEK</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+   <center>
+   <x-m> 0.001</x-m>
+   <y-m>-0.175</y-m>
+   <z-m> 0.040</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>ISTR4-2.lever2</object-name>
+  <property>mig29/controls/ISTR4/T-R</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.001</x-m>
+   <y-m> 0.000</y-m>
+   <z-m>-0.059</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>ISTR4-2.DC1</object-name>
+  <property>fdm/jsbsim/systems/fuel/tek</property>
+  <factor>0.0001</factor>
+  <step>1000.0</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>textranslate</type>
+  <object-name>ISTR4-2.DC2</object-name>
+  <property>fdm/jsbsim/systems/fuel/tek</property>
+  <factor>0.001</factor>
+  <step>100.0</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>textranslate</type>
+  <object-name>ISTR4-2.DC3</object-name>
+  <property>fdm/jsbsim/systems/fuel/tek</property>
+  <factor>0.01</factor>
+  <step>10.0</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>ISTR4-2.cz1</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>/mig29/controls/ISTR4/OPT-TEK</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>ISTR4-2.cz2</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>/mig29/controls/ISTR4/OPT-TEK</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>ISTR4-2.cz3</object-name>
+  <visible>false</visible>
+  <action>
+  <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>/mig29/controls/ISTR4/T-R</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+ <type>pick</type>
+  <object-name>ISTR4-2.cz4</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>/mig29/controls/ISTR4/T-R</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+
+</PropertyList>

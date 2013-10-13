@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!-- Указатель числа М и истинной воздушной скорости
+     Октябрь 2011, Сергей "Mercenary_Mercury" Салов -->
+
+ <path>UMS-2.5.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>UMS-2.5.needle1</object-name>
+  <object-name>UMS-2.5.needle2</object-name>
+  <object-name>face</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>screws</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>shader</type>
+  <shader>chrome</shader>
+  <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <object-name>glass</object-name>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>UMS-2.5.needle1</object-name>
+  <property>fdm/jsbsim/systems/instrumentation/UMS/Mach</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>  0</dep></entry>
+   <entry><ind>3.0</ind><dep>360</dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>UMS-2.5.needle2</object-name>
+  <property>fdm/jsbsim/systems/instrumentation/UMS/TAS-kmh</property>
+  <interpolation>
+   <entry><ind>   0</ind><dep>  0</dep></entry>
+   <entry><ind>3000</ind><dep>360</dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

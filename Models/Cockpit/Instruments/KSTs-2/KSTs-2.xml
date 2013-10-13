@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+<!-- Кнопка Сигнальная Центральная - КСЦ-2 -->
+<!-- 2011, Сергей "Mercenary_Mercury" Салов -->
+
+<PropertyList>
+
+ <path>KSTs-2.ac</path>
+
+ <effect>
+  <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/model-transparent</inherits-from>
+  <object-name>KSTs-2.glass</object-name>
+ </effect>
+
+ <animation>
+  <type>material</type>
+  <object-name>KSTs-2.glass</object-name>
+  <emission>
+   <red>  0.5859375</red>
+   <green>0.1796875</green>
+   <blue> 0.1796875</blue>
+   <factor-prop>mig29/instrumentation/KSTs/signal</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>KSTs-2.S</object-name>
+  <condition>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <and>
+     <equals>
+       <property>mig29/systems/IG2Hz5</property>
+      <value>1</value>
+     </equals>
+     <equals>
+      <property>mig29/instrumentation/KSTs/signal</property>
+      <value>1</value>
+     </equals>
+    </and>
+   </or>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+   <object-name>KSTs-2.cz1</object-name>
+   <visible>false</visible>
+   <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-toggle</command>
+      <property>mig29/controls/KSTs</property>
+    </binding>
+   </action>
+ </animation>
+
+</PropertyList>

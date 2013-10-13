@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>R-862.ac</path>
+
+<animation>
+ <type>material</type>
+ <object-name>R-862.pu1</object-name>
+ <object-name>R-862.pu2</object-name>
+ <object-name>R-862.baselever1</object-name>
+ <object-name>R-862.baselever2</object-name>
+ <object-name>R-862.baselever3</object-name>
+ <object-name>R-862.lever1</object-name>
+ <object-name>R-862.lever2</object-name>
+ <object-name>R-862.lever3</object-name>
+ <object-name>R-862.knob</object-name>
+ <object-name>R-862.nc</object-name>
+ <object-name>R-862.cs</object-name>
+ <object-name>R-862.v</object-name>
+ <emission>
+  <red>0.8</red>
+  <green>0.8</green>
+  <blue>0.8</blue>
+  <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+ </emission>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>R-862.lever1</object-name>
+ <property>mig29/instrumentation/R-862/AP</property>
+ <interpolation>
+  <entry><ind>0</ind><dep>-20</dep></entry>
+  <entry><ind>1</ind><dep>20</dep></entry>
+ </interpolation>
+ <center>
+  <x-m>-0.032</x-m>
+  <y-m>-0.018</y-m>
+  <z-m> 0.000</z-m>
+ </center>
+ <axis>
+  <x> 0</x>
+  <y>-1</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>R-862.APLamp</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/instrumentation/R-862/APsignal</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>R-862.lever2</object-name>
+ <property>mig29/instrumentation/R-862/RK</property>
+ <interpolation>
+  <entry><ind>0</ind><dep>-20</dep></entry>
+  <entry><ind>1</ind><dep>20</dep></entry>
+ </interpolation>
+ <center>
+  <x-m>-0.042</x-m>
+  <y-m>-0.000</y-m>
+  <z-m> 0.000</z-m>
+ </center>
+ <axis>
+  <x> 0</x>
+  <y>-1</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>R-862.lever3</object-name>
+ <property>mig29/instrumentation/R-862/PSh</property>
+ <interpolation>
+  <entry><ind>0</ind><dep>-20</dep></entry>
+  <entry><ind>1</ind><dep>20</dep></entry>
+ </interpolation>
+ <center>
+  <x-m>-0.032</x-m>
+  <y-m> 0.018</y-m>
+  <z-m> 0.000</z-m>
+ </center>
+ <axis>
+  <x> 0</x>
+  <y>-1</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>R-862.knob</object-name>
+ <property>mig29/instrumentation/R-862/volume</property>
+ <factor>350</factor>
+ <center>
+  <x-m>-0.012</x-m>
+  <y-m> 0.000</y-m>
+  <z-m> 0.000</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>0</y>
+  <z>1</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>R-862.cs</object-name>
+ <property>mig29/instrumentation/R-862/channel</property>
+ <factor>50</factor>
+ <center>
+  <x-m>0.075</x-m>
+  <y-m>0.000</y-m>
+  <z-m>0.000</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>0</y>
+  <z>1</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>textranslate</type>
+ <object-name>R-862.nc</object-name>
+ <property>mig29/instrumentation/R-862/channel</property>
+ <factor>0.05</factor>
+ <step>1.0</step>
+ <axis>
+  <x>1</x>
+  <y>0</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>R-862.cz1</object-name>
+ <visible>false</visible> 
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/instrumentation/R-862/AP</property>
+   <value>1</value>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>R-862.cz2</object-name>
+ <visible>false</visible> 
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/instrumentation/R-862/AP</property>
+   <value>0</value>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>R-862.cz3</object-name>
+ <visible>false</visible> 
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/instrumentation/R-862/RK</property>
+   <value>1</value>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>R-862.cz4</object-name>
+ <visible>false</visible> 
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/instrumentation/R-862/RK</property>
+   <value>0</value>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>R-862.cz5</object-name>
+ <visible>false</visible> 
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/instrumentation/R-862/PSh</property>
+   <value>1</value>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>R-862.cz6</object-name>
+ <visible>false</visible> 
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/instrumentation/R-862/PSh</property>
+   <value>0</value>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>R-862.cz7</object-name>
+ <visible>false</visible> 
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-adjust</command>
+   <property>mig29/instrumentation/R-862/volume</property>
+   <step>-0.05</step>
+   <min>0.0</min>
+   <max>1.0</max>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>R-862.cz8</object-name>
+ <visible>false</visible> 
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-adjust</command>
+   <property>mig29/instrumentation/R-862/volume</property>
+   <step>0.05</step>
+   <min>0.0</min>
+   <max>1.0</max>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>R-862.cz11</object-name>
+ <visible>false</visible> 
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-adjust</command>
+   <property>mig29/instrumentation/R-862/channel</property>
+   <step>-1</step>
+   <min>0</min>
+   <max>19</max>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>R-862.cz12</object-name>
+ <visible>false</visible> 
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-adjust</command>
+   <property>mig29/instrumentation/R-862/channel</property>
+   <step>1</step>
+   <min>0</min>
+   <max>19</max>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>textranslate</type>
+ <object-name>R-862.case</object-name>
+ <object-name>R-862.baselever1</object-name>
+ <object-name>R-862.baselever2</object-name>
+ <object-name>R-862.baselever3</object-name>
+ <object-name>R-862.lever1</object-name>
+ <object-name>R-862.lever2</object-name>
+ <object-name>R-862.lever3</object-name>
+ <object-name>R-862.knob</object-name>
+ <object-name>R-862.nc</object-name>
+ <object-name>R-862.cs</object-name>
+ <object-name>R-862.v</object-name>
+ <property>mig29/systems/cockpitlighting/texturep</property>
+ <factor>0.5</factor>
+ <step>1</step>
+ <axis>
+  <x>0</x>
+  <y>1</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+</PropertyList>

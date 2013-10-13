@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+
+<!-- Индикатор комбинированный гидрогазовый - ИКГ-1 -->
+<!-- 2011, Сергей "Mercenary_Mercury" Салов -->
+
+<PropertyList>
+
+ <path>IKG-1.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>IKG-1.needle1</object-name>
+  <object-name>IKG-1.needle2</object-name>
+  <object-name>IKG-1.needle3</object-name>
+  <object-name>IKG-1.needle4</object-name>
+  <object-name>Seg1</object-name>
+  <object-name>Seg2</object-name>
+  <object-name>Seg3</object-name>
+  <object-name>Seg4</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>screws</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <effect>
+  <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/model-transparent</inherits-from>
+  <object-name>glass</object-name>
+ </effect>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>IKG-1.needle1</object-name>
+  <!--property>mig29/instrumentation/IKG/general</property-->
+  <property>fdm/jsbsim/hs/hs1-pressure</property>
+  <interpolation>
+   <entry><ind>  0</ind><dep> 0.0</dep></entry>
+   <entry><ind>210</ind><dep>36.8</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.06</x-m>
+   <y-m> 0.00</y-m>
+   <z-m> 0.00</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>IKG-1.needle2</object-name>
+  <!--property>mig29/instrumentation/IKG/booster</property-->
+  <property>fdm/jsbsim/hs/hs2-pressure</property>
+  <interpolation>
+   <entry><ind>  0</ind><dep> 0.0</dep></entry>
+   <entry><ind>210</ind><dep>36.8</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.06</x-m>
+   <y-m> 0.00</y-m>
+   <z-m> 0.00</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>IKG-1.needle3</object-name>
+  <property>mig29/instrumentation/IKG/main</property>
+  <interpolation>
+   <entry><ind>  0</ind><dep> 0.0</dep></entry>
+   <entry><ind>260</ind><dep>36.8</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.06</x-m>
+   <y-m> 0.00</y-m>
+   <z-m> 0.00</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>IKG-1.needle4</object-name>
+  <property>mig29/instrumentation/IKG/emergency</property>
+  <interpolation>
+   <entry><ind>  0</ind><dep> 0.0</dep></entry>
+    <entry><ind>260</ind><dep>36.8</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.06</x-m>
+   <y-m> 0.00</y-m>
+   <z-m> 0.00</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

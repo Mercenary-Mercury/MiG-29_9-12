@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<!-- Вольтметр постоянного тока -->
+<!-- 2011, Сергей "Mercenary_Mercury" Салов -->
+
+<PropertyList>
+
+ <path>Voltmetr.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>face2</object-name>
+  <object-name>Voltmetr.needle</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>screws</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>shader</type>
+  <shader>chrome</shader>
+  <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <object-name>Voltmetr.glass</object-name>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Voltmetr.needle</object-name>
+  <property>mig29/instrumentation/electrical/v27</property>
+  <min>0</min>
+  <max>30</max>
+  <factor>8</factor>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<!-- Индикатор тахометра электрический - ИТЭ-2 -->
+<!-- 2011, Сергей "Mercenary_Mercury" Салов -->
+
+<PropertyList>
+
+ <path>ITE-2.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>ITE-2.needle1</object-name>
+  <object-name>ITE-2.needle2</object-name>
+  <object-name>ITE-2.face</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>screws</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>shader</type>
+  <shader>chrome</shader>
+  <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <object-name>glass</object-name>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>ITE-2.needle1</object-name>
+  <property>engines/engine[0]/n2</property>
+  <interpolation>
+   <entry><ind>  0</ind><dep> 46.95</dep></entry>
+   <entry><ind>100</ind><dep>360.0 </dep></entry>
+   <entry><ind>110</ind><dep>391.3 </dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>ITE-2.needle2</object-name>
+  <property>engines/engine[1]/n2</property>
+  <interpolation>
+   <entry><ind>  0</ind><dep> 46.95</dep></entry>
+   <entry><ind>100</ind><dep>360.0 </dep></entry>
+   <entry><ind>110</ind><dep>391.3 </dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

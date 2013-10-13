@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>pvi.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>pvi.case</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>pvi.PTA</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-R-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>pvi.case</object-name>
+  <property>mig29/systems/cockpitlighting/texturep</property>
+  <factor>0.5</factor>
+  <step>1</step>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

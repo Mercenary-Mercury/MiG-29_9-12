@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>puok.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>puok.case</object-name>
+  <object-name>puok.knob1</object-name>
+  <object-name>puok.knob2</object-name>
+  <object-name>puok.knob3</object-name>
+  <object-name>puok.knob4</object-name>
+  <object-name>puok.pls</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>puok.PTA</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-R-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>puok.knob1</object-name>
+  <property>mig29/controls/lighting/tablo-norm</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>  0</dep></entry>
+   <entry><ind>1</ind><dep>350</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.030</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.011</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>puok.knob2</object-name>
+  <property>mig29/controls/lighting/map-norm</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>  0</dep></entry>
+   <entry><ind>1</ind><dep>350</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.030</x-m>
+   <y-m>0.000</y-m>
+   <z-m>0.011</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>puok.knob3</object-name>
+  <property>mig29/controls/lighting/panel-norm</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-45</dep></entry>
+   <entry><ind>1</ind><dep> 45</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.045</x-m>
+   <y-m> 0.000</y-m>
+   <z-m>-0.035</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>puok.knob4</object-name>
+  <property>mig29/controls/lighting/instruments-norm</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-45</dep></entry>
+   <entry><ind>1</ind><dep> 45</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.020</x-m>
+   <y-m> 0.000</y-m>
+   <z-m>-0.035</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>puok.cz1</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/lighting/tablo-norm</property>
+    <step>-0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>puok.cz2</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/lighting/tablo-norm</property>
+    <step>0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>puok.cz3</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/lighting/map-norm</property>
+    <step>-0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>puok.cz4</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/lighting/map-norm</property>
+    <step>0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>puok.cz5</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/lighting/panel-norm</property>
+    <step>-0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>puok.cz6</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/lighting/panel-norm</property>
+    <step>0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>puok.cz7</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/lighting/instruments-norm</property>
+    <step>-0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>puok.cz8</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/lighting/instruments-norm</property>
+    <step>0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>puok.case</object-name>
+  <object-name>puok.knob1</object-name>
+  <object-name>puok.knob2</object-name>
+  <object-name>puok.knob3</object-name>
+  <object-name>puok.knob4</object-name>
+  <object-name>puok.pls</object-name>
+  <property>mig29/systems/cockpitlighting/texturep</property>
+  <factor>0.5</factor>
+  <step>1</step>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

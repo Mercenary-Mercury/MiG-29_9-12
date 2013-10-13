@@ -1,0 +1,443 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>PSR-31.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>PSR-31.case</object-name>
+  <object-name>PSR-31.baselever1</object-name>
+  <object-name>PSR-31.baselever2</object-name>
+  <object-name>PSR-31.baselever3</object-name>
+  <object-name>PSR-31.baselever4</object-name>
+  <object-name>PSR-31.lever1</object-name>
+  <object-name>PSR-31.lever2</object-name>
+  <object-name>PSR-31.lever3</object-name>
+  <object-name>PSR-31.lever4</object-name>
+  <object-name>PSR-31.knob1</object-name>
+  <object-name>PSR-31.knob2</object-name>
+  <object-name>PSR-31.knob3</object-name>
+  <object-name>PSR-31.screws</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>PSR-31.PTA</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-R-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PSR-31.lever1</object-name>
+  <property>mig29/controls/OEPrNK/main</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-15</dep></entry>
+   <entry><ind>1</ind><dep> 15</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.000</x-m>
+   <y-m>-0.0625</y-m>
+   <z-m>-0.0190</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PSR-31.lever2</object-name>
+  <property>mig29/controls/OEPrNK/zone</property>
+  <interpolation>
+   <entry><ind>-1</ind><dep>-20</dep></entry>
+   <entry><ind> 0</ind><dep>  0</dep></entry>
+   <entry><ind> 1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.000</x-m>
+   <y-m>-0.03675</y-m>
+   <z-m>-0.0375</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PSR-31.lever3</object-name>
+  <property>mig29/controls/OEPrNK/podgot</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-15</dep></entry>
+   <entry><ind>1</ind><dep> 15</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.000</x-m>
+   <y-m> 0.0029</y-m>
+   <z-m>-0.032</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PSR-31.lever4</object-name>
+  <property>mig29/controls/OEPrNK/kompl</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-15</dep></entry>
+   <entry><ind>1</ind><dep> 15</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.000</x-m>
+   <y-m>0.0008</y-m>
+   <z-m>0.0125</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PSR-31.knob1</object-name>
+  <property>mig29/controls/OEPrNK/usiltp_yarkshl</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>  0</dep></entry>
+   <entry><ind>1</ind><dep>360</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.020</x-m>
+   <y-m>-0.0284</y-m>
+   <z-m>-0.0081</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PSR-31.knob2</object-name>
+  <property>mig29/controls/OEPrNK/base</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-135</dep></entry>
+   <entry><ind>1</ind><dep>   0</dep></entry>
+   <entry><ind>2</ind><dep> 135</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.020</x-m>
+   <y-m>0.051</y-m>
+   <z-m>0.019</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PSR-31.knob3</object-name>
+  <property>mig29/controls/OEPrNK/modes</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-15</dep></entry>
+   <entry><ind>1</ind><dep> 15</dep></entry>
+   <entry><ind>2</ind><dep> 45</dep></entry>
+   <entry><ind>3</ind><dep> 75</dep></entry>
+   <entry><ind>4</ind><dep>105</dep></entry>
+   <entry><ind>5</ind><dep>145</dep></entry>
+   <entry><ind>6</ind><dep>175</dep></entry>
+   <entry><ind>7</ind><dep>205</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.020</x-m>
+   <y-m> 0.047</y-m>
+   <z-m>-0.025</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz01</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/OEPrNK/main</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz02</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/OEPrNK/main</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz09</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/OEPrNK/zone</property>
+    <value>-1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz10</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/OEPrNK/zone</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz11</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/OEPrNK/zone</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz05</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/OEPrNK/kompl</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz06</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/OEPrNK/kompl</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz12</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/OEPrNK/podgot</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz13</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/OEPrNK/podgot</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz03</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/OEPrNK/usiltp_yarkshl</property>
+    <step>-0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz04</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/OEPrNK/usiltp_yarkshl</property>
+    <step>0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz07</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/OEPrNK/base</property>
+    <step>-1</step>
+    <min>0</min>
+    <max>2</max>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz08</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/OEPrNK/base</property>
+    <step>1</step>
+    <min>0</min>
+    <max>2</max>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz14</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/OEPrNK/modes</property>
+    <step>-1</step>
+    <min>0</min>
+    <max>7</max>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PSR-31.cz15</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/OEPrNK/modes</property>
+    <step>1</step>
+    <min>0</min>
+    <max>7</max>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>PSR-31.case</object-name>
+  <object-name>PSR-31.baselever1</object-name>
+  <object-name>PSR-31.baselever2</object-name>
+  <object-name>PSR-31.baselever3</object-name>
+  <object-name>PSR-31.baselever4</object-name>
+  <object-name>PSR-31.lever1</object-name>
+  <object-name>PSR-31.lever2</object-name>
+  <object-name>PSR-31.lever3</object-name>
+  <object-name>PSR-31.lever4</object-name>
+  <object-name>PSR-31.knob1</object-name>
+  <object-name>PSR-31.knob2</object-name>
+  <object-name>PSR-31.knob3</object-name>
+  <object-name>PSR-31.screws</object-name>
+  <property>mig29/systems/cockpitlighting/texturep</property>
+  <factor>0.5</factor>
+  <step>1</step>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

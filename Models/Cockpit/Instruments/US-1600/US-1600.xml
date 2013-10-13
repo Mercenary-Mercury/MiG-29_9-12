@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<!-- Указатель воздушной скорости - УС-1600-1 -->
+<!-- 2011, Сергей "Mercenary_Mercury" Салов -->
+
+<PropertyList>
+
+ <path>US-1600.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>US-1600.needle</object-name>
+  <object-name>face</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>screws</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>shader</type>
+  <shader>chrome</shader>
+  <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <object-name>US-1600.glass</object-name>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>US-1600.needle</object-name>
+  <property>mig29/instrumentation/US-1600/airspeed-kmh</property>
+  <interpolation>
+   <entry><ind>   0</ind><dep>  0</dep></entry>
+   <entry><ind>1000</ind><dep>360</dep></entry>
+   <entry><ind>1600</ind><dep>576</dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>US-1600.Sign</object-name>
+  <condition>
+   <or>
+    <equals>
+     <property>mig29/instrumentation/US-1600/airspeed-kmh</property>
+     <value>1000</value>
+    </equals>
+    <greater-than>
+     <property>mig29/instrumentation/US-1600/airspeed-kmh</property>
+     <value>1000</value>
+    </greater-than>
+   </or>
+  </condition>
+ </animation>
+
+</PropertyList>

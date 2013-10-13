@@ -1,0 +1,436 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>evp.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>evp.case</object-name>
+  <object-name>evp.o2</object-name>
+  <object-name>evp.baselever1</object-name>
+  <object-name>evp.baselever2</object-name>
+  <object-name>evp.baselever3</object-name>
+  <object-name>evp.baselever4</object-name>
+  <object-name>evp.baselever5</object-name>
+  <object-name>evp.baselever6</object-name>
+  <object-name>evp.baselever7</object-name>
+  <object-name>evp.lever1</object-name>
+  <object-name>evp.lever2</object-name>
+  <object-name>evp.lever3</object-name>
+  <object-name>evp.lever4</object-name>
+  <object-name>evp.lever5</object-name>
+  <object-name>evp.lever6</object-name>
+  <object-name>evp.lever7</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>/mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>evp.PTA</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>/mig29/systems/cockpitlighting/panel-R-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <!-- Аккумулятор, бортовое питание, аэродромное питание -->
+ <animation>
+  <type>rotate</type>
+  <object-name>evp.lever1</object-name>
+  <property>/mig29/switches/Akkum-Bort-Aerodrom</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.010</x-m>
+   <y-m>0.000</y-m>
+   <z-m>0.015</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- Генератор постоянного тока -->
+ <animation>
+  <type>rotate</type>
+  <object-name>evp.lever2</object-name>
+  <property>/mig29/switches/generator-1</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.015</x-m>
+   <y-m> 0.000</y-m>
+   <z-m>-0.015</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- Генератор переменного тока -->
+ <animation>
+  <type>rotate</type>
+  <object-name>evp.lever3</object-name>
+  <property>/mig29/switches/generator-2</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.010</x-m>
+   <y-m> 0.000</y-m>
+   <z-m>-0.015</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- ПТО - Преобразователь трехфазный-однофазный -->
+ <animation>
+  <type>rotate</type>
+  <object-name>evp.lever4</object-name>
+  <property>/mig29/switches/PTO</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.035</x-m>
+   <y-m> 0.000</y-m>
+   <z-m>-0.015</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- Двигательные системы -->
+ <animation>
+  <type>rotate</type>
+  <object-name>evp.lever5</object-name>
+  <property>/mig29/switches/engine_systems</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.015</x-m>
+   <y-m> 0.000</y-m>
+   <z-m>-0.045</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- Топливный насос -->
+ <animation>
+  <type>rotate</type>
+  <object-name>evp.lever6</object-name>
+  <property>/mig29/switches/fuel_pump</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.010</x-m>
+   <y-m> 0.000</y-m>
+   <z-m>-0.045</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- СПП -->
+ <animation>
+  <type>rotate</type>
+  <object-name>evp.lever7</object-name>
+  <property>/mig29/switches/SPP</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.035</x-m>
+   <y-m> 0.000</y-m>
+   <z-m>-0.045</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>evp.cz01</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/switches/Akkum-Bort-Aerodrom", 1.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>evp.cz02</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/switches/Akkum-Bort-Aerodrom", 0.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>evp.cz03</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/switches/generator-1", 1.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>evp.cz04</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/switches/generator-1", 0.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>evp.cz05</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/switches/generator-2", 1.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>evp.cz06</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/switches/generator-2", 0.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>evp.cz07</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/switches/PTO", 1.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>evp.cz08</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/switches/PTO", 0.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>evp.cz09</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/switches/engine_systems", 1.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>evp.cz10</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/switches/engine_systems", 0.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>evp.cz11</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/switches/fuel_pump", 1.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>evp.cz12</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/switches/fuel_pump", 0.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>evp.cz13</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/switches/SPP", 1.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>evp.cz14</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/switches/SPP", 0.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>evp.case</object-name>
+  <object-name>evp.o2</object-name>
+  <object-name>evp.baselever1</object-name>
+  <object-name>evp.baselever2</object-name>
+  <object-name>evp.baselever3</object-name>
+  <object-name>evp.baselever4</object-name>
+  <object-name>evp.baselever5</object-name>
+  <object-name>evp.baselever6</object-name>
+  <object-name>evp.baselever7</object-name>
+  <object-name>evp.lever1</object-name>
+  <object-name>evp.lever2</object-name>
+  <object-name>evp.lever3</object-name>
+  <object-name>evp.lever4</object-name>
+  <object-name>evp.lever5</object-name>
+  <object-name>evp.lever6</object-name>
+  <object-name>evp.lever7</object-name>
+  <property>/mig29/systems/cockpitlighting/texturep</property>
+  <factor>0.5</factor>
+  <step>1</step>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

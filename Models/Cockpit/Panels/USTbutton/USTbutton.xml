@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>USTbutton.ac</path>
+
+<animation>
+ <type>material</type>
+ <object-name>USTbutton.case</object-name>
+ <object-name>USTbutton.basebutton</object-name>
+ <object-name>USTbutton.button</object-name>
+ <emission>
+  <red>0.8</red>
+  <green>0.8</green>
+  <blue>0.8</blue>
+  <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+ </emission>
+</animation>
+
+<animation>
+ <type>translate</type>
+ <object-name>USTbutton.button</object-name>
+ <property>mig29/controls/Ekran/call</property>
+ <factor>0.004</factor>
+ <axis>
+  <x>-1</x>
+  <y>0</y>
+  <z>0</z>
+ </axis>
+</animation>>
+
+<animation>
+ <type>pick</type>
+ <object-name>USTbutton.cz1</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/Ekran/call</property>
+   <value>1</value>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/Ekran/call</property>
+    <value>0</value>
+   </binding>
+  </mod-up>
+ </action>
+</animation>
+
+<animation>
+ <type>textranslate</type>
+ <object-name>USTbutton.case</object-name>
+ <object-name>USTbutton.basebutton</object-name>
+ <object-name>USTbutton.button</object-name>
+ <property>mig29/systems/cockpitlighting/texturep</property>
+ <factor>0.5</factor>
+ <step>1</step>
+ <axis>
+  <x>0</x>
+  <y>1</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+</PropertyList>

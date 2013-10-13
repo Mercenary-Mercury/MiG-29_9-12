@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>ZT.ac</path>
+
+<animation>
+ <type>material</type>
+ <object-name>ZT.bezel</object-name>
+ <object-name>ZT.face</object-name>
+ <object-name>ZT.Knob</object-name>
+ <object-name>ZT.screws</object-name>
+ <emission>
+  <red>0.8</red>
+  <green>0.8</green>
+  <blue>0.8</blue>
+  <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+ </emission>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>ZT.Knob</object-name>
+ <property>mig29/controls/ccs/ct</property>
+ <interpolation>
+  <entry><ind>10</ind><dep>-120</dep></entry>
+  <entry><ind>30</ind><dep> 120</dep></entry>
+ </interpolation>
+ <axis>
+  <x>-1</x>
+  <y> 0</y>
+  <z> 0</z>
+ </axis>
+</animation>>
+
+<animation>
+ <type>pick</type>
+ <object-name>ZT.cz1</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-adjust</command>
+   <property>mig29/controls/ccs/ct</property>
+   <step>-1</step>
+   <min>10</min>
+   <max>30</max>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>ZT.cz2</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-adjust</command>
+   <property>mig29/controls/ccs/ct</property>
+   <step>1</step>
+   <min>10</min>
+   <max>30</max>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>textranslate</type>
+ <object-name>ZT.bezel</object-name>
+ <object-name>ZT.face</object-name>
+ <object-name>ZT.Knob</object-name>
+ <object-name>ZT.screws</object-name>
+ <property>mig29/systems/cockpitlighting/texturep</property>
+ <factor>0.5</factor>
+ <step>1</step>
+ <axis>
+  <x>1</x>
+  <y>0</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+</PropertyList>

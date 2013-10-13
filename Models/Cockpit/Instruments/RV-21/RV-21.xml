@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+
+<!-- Радиовысотомер - РВ-21 -->
+<!-- 2011, Сергей "Mercenary_Mercury" Салов -->
+
+<PropertyList>
+
+ <path>RV-21.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>scale</object-name>
+  <object-name>RV-21.Needle</object-name>
+  <object-name>RV-21.DAM</object-name>
+  <object-name>RV-21.blenker</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>screws</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+<!--
+<animation>
+ <type>shader</type>
+ <shader>chrome</shader>
+ <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+ <object-name>RV-21.glass</object-name>
+</animation>
+-->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RV-21.Needle</object-name>
+  <property>mig29/instrumentation/RV-21/indicated-altitude-m</property>
+  <interpolation>
+   <entry><ind>  -5</ind><dep>-5.375</dep></entry>  <!--   -5 -->
+   <entry><ind>   0</ind><dep> 0.0  </dep></entry>  <!--    0 -->
+   <entry><ind>  20</ind><dep>21.5  </dep></entry>  <!--   20 -->
+   <entry><ind>  40</ind><dep>43.0  </dep></entry>  <!--   40 -->
+   <entry><ind>  60</ind><dep>64.5  </dep></entry>  <!--   60 -->
+   <entry><ind>  80</ind><dep>86.0  </dep></entry>  <!--   80 -->
+   <entry><ind> 100</ind><dep>107.5 </dep></entry>  <!--  100 -->
+   <entry><ind> 150</ind><dep>161.25</dep></entry>  <!--  150 -->
+   <entry><ind> 175</ind><dep>177.0 </dep></entry>  <!--  175 -->
+   <entry><ind> 200</ind><dep>191.0 </dep></entry>  <!--  200 -->
+   <entry><ind> 250</ind><dep>209.4 </dep></entry>  <!--  250 -->
+   <entry><ind> 300</ind><dep>225.0 </dep></entry>  <!--  300 -->
+   <entry><ind> 400</ind><dep>247.0 </dep></entry>  <!--  400 -->
+   <entry><ind> 500</ind><dep>267.5 </dep></entry>  <!--  500 -->
+   <entry><ind> 600</ind><dep>274.0 </dep></entry>  <!--  600 -->
+   <entry><ind> 700</ind><dep>283.5 </dep></entry>  <!--  700 -->
+   <entry><ind> 800</ind><dep>290.3 </dep></entry>  <!--  800 -->
+   <entry><ind> 900</ind><dep>295.5 </dep></entry>  <!--  900 -->
+   <entry><ind>1000</ind><dep>300.5 </dep></entry>  <!-- 1000 -->
+   <entry><ind>1250</ind><dep>309.5 </dep></entry>  <!-- 1250 -->
+   <entry><ind>1500</ind><dep>315.5 </dep></entry>  <!-- 1500 -->
+   <entry><ind>1501</ind><dep>315.55</dep></entry>
+   <entry><ind>1502</ind><dep>320.6 </dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RV-21.DAM</object-name>
+  <property>mig29/instrumentation/RV-21/DAMarker</property>
+  <interpolation>
+   <entry><ind>   0</ind><dep>  0.0</dep>></entry>
+   <entry><ind>  20</ind><dep> 21.5</dep></entry>
+   <entry><ind>  40</ind><dep> 43.0</dep></entry>
+   <entry><ind>  60</ind><dep> 64.5</dep></entry>
+   <entry><ind>  80</ind><dep> 86.0</dep></entry>
+   <entry><ind> 100</ind><dep>107.5</dep></entry>
+   <entry><ind> 150</ind><dep>161.25</dep></entry>
+   <entry><ind> 200</ind><dep>191.0</dep></entry>
+   <entry><ind> 300</ind><dep>225.0</dep></entry>
+   <entry><ind> 400</ind><dep>247.0</dep></entry>
+   <entry><ind> 500</ind><dep>267.5</dep></entry>
+   <entry><ind> 600</ind><dep>274.0</dep></entry>
+   <entry><ind>1250</ind><dep>300.5</dep></entry>
+   <entry><ind>1500</ind><dep>315.5</dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RV-21.Knob</object-name>
+  <object-name>RV-21.KnobL</object-name>
+  <property>mig29/instrumentation/RV-21/DAMarker</property>
+  <factor>10</factor>
+  <center>
+   <x-m> 0.000</x-m>
+   <y-m> 0.030</y-m>
+   <z-m>-0.030</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RV-21.Button</object-name>
+  <property>mig29/controls/RV-21/test</property>
+  <factor>0.005</factor>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>RV-21.KnobL</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <and>
+      <equals>
+       <property>mig29/instrumentation/RV-21/danger_altitude</property>
+       <value>1</value>
+      </equals>
+      <equals>
+       <property>controls/gear/gear-down</property>
+       <value>0</value>
+      </equals>
+     </and>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>RV-21.blenker</object-name>
+  <condition>
+   <or>
+    <equals>
+     <property>mig29/instrumentation/RV-21/serviceable</property>
+     <value>false</value>
+    </equals>
+    <greater-than>
+     <property>mig29/instrumentation/RV-21/altitude</property>
+     <value>1500</value>
+    </greater-than>
+    <and>
+     <less-than>
+      <property>mig29/systems/RV-21/on</property>
+      <value>1</value>
+     </less-than>
+     <greater-than>
+      <property>mig29/systems/RV-21/on</property>
+      <value>0</value>
+     </greater-than>
+    </and>
+   </or>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>RV-21.cz2</object-name>
+  <visible>false</visible>
+   <action>
+    <button>0</button>
+    <repeatable>true</repeatable>
+    <binding>
+     <command>property-adjust</command>
+     <property>mig29/controls/RV-21/DAMarker</property>
+     <step>-1</step>
+     <min>1</min>
+     <max>291</max>
+    </binding>
+   </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>RV-21.cz3</object-name>
+  <visible>false</visible>
+   <action>
+    <button>0</button>
+    <repeatable>true</repeatable>
+    <binding>
+     <command>property-adjust</command>
+     <property>mig29/controls/RV-21/DAMarker</property>
+     <step>1</step>
+     <min>1</min>
+     <max>291</max>
+    </binding>
+   </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>RV-21.cz1</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/RV-21/test</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/RV-21/test</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+</PropertyList>

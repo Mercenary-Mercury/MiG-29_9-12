@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+
+<!-- ARK-19 - automatic direction finder -->
+
+<PropertyList>
+
+<path>ARK-19.ac</path>
+
+<animation>
+ <type>material</type>
+ <object-name>ARK-19.case</object-name>
+ <object-name>ARK-19.knob1</object-name>
+ <object-name>ARK-19.knob2</object-name>
+ <object-name>ARK-19.baselever1</object-name>
+ <object-name>ARK-19.baselever2</object-name>
+ <object-name>ARK-19.lever1</object-name>
+ <object-name>ARK-19.lever2</object-name>
+ <object-name>ARK-19.basebutton</object-name>
+ <object-name>ARK-19.button</object-name>
+ <emission>
+  <red>0.8</red>
+  <green>0.8</green>
+  <blue>0.8</blue>
+  <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+ </emission>
+</animation>
+
+<!-- Channel selector -->
+<animation>
+ <type>rotate</type>
+ <object-name>ARK-19.knob1</object-name>
+ <property>mig29/instrumentation/ARK-19/channel</property>
+ <interpolation>
+  <entry><ind>1</ind><dep> 47</dep></entry>
+  <entry><ind>5</ind><dep>133</dep></entry>
+ </interpolation>
+ <center>
+  <x-m>-0.015</x-m>
+  <y-m> 0.000</y-m>
+  <z-m> 0.000</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>0</y>
+  <z>-1</z>
+ </axis>
+</animation>
+
+<!-- TLG/TLF switch -->
+<animation>
+ <type>rotate</type>
+ <object-name>ARK-19.lever1</object-name>
+ <property>mig29/instrumentation/ARK-19/tlg-tlf</property>
+ <interpolation>
+  <entry><ind>0</ind><dep>-20</dep></entry>
+  <entry><ind>1</ind><dep>20</dep></entry>
+ </interpolation>
+ <center>
+  <x-m> 0.0114</x-m>
+  <y-m>-0.0125</y-m>
+  <z-m> 0.0005</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>-1</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+<!-- KOMP/ANT switch -->
+<animation>
+ <type>rotate</type>
+ <object-name>ARK-19.lever2</object-name>
+ <property>mig29/instrumentation/ARK-19/komp-ant</property>
+ <interpolation>
+  <entry><ind>0</ind><dep>-20</dep></entry>
+  <entry><ind>1</ind><dep>20</dep></entry>
+ </interpolation>
+ <center>
+  <x-m>0.0114</x-m>
+  <y-m>0.0125</y-m>
+  <z-m>0.0005</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>-1</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+<!-- Audio volume -->
+<animation>
+ <type>rotate</type>
+ <object-name>ARK-19.knob2</object-name>
+ <property>mig29/instrumentation/ARK-19/volume</property>
+ <factor>360</factor>
+ <center>
+  <x-m> 0.0410</x-m>
+  <y-m>-0.0125</y-m>
+  <z-m> 0.0000</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>0</y>
+  <z>1</z>
+ </axis>
+</animation>
+
+<!-- Loop button -->
+<animation>
+ <type>translate</type>
+ <object-name>ARK-19.button</object-name>
+ <property>mig29/instrumentation/ARK-19/ramka</property>
+ <factor>0.002</factor>
+ <axis>
+  <x>0</x>
+  <y>0</y>
+  <z>-1</z>
+ </axis>
+</animation>
+
+
+<animation>
+ <type>pick</type>
+ <object-name>ARK-19.cz1</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-adjust</command>
+   <property>mig29/instrumentation/ARK-19/channel</property>
+   <step>-1</step>
+   <min>1</min>
+   <max>5</max>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>ARK-19.cz2</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-adjust</command>
+   <property>mig29/instrumentation/ARK-19/channel</property>
+   <step>1</step>
+   <min>1</min>
+   <max>5</max>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>ARK-19.cz3</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/instrumentation/ARK-19/tlg-tlf</property>
+   <value>1</value>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>ARK-19.cz4</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/instrumentation/ARK-19/tlg-tlf</property>
+   <value>0</value>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>ARK-19.cz5</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/instrumentation/ARK-19/komp-ant</property>
+   <value>1</value>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>ARK-19.cz6</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/instrumentation/ARK-19/komp-ant</property>
+   <value>0</value>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>ARK-19.cz7</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-adjust</command>
+   <property>mig29/instrumentation/ARK-19/volume</property>
+   <step>-0.05</step>
+   <min>0.0</min>
+   <max>1.0</max>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>ARK-19.cz8</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-adjust</command>
+   <property>mig29/instrumentation/ARK-19/volume</property>
+   <step>0.05</step>
+   <min>0.0</min>
+   <max>1.0</max>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>ARK-19.cz9</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-toggle</command>
+   <property>mig29/instrumentation/ARK-19/ramka</property>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>textranslate</type>
+ <object-name>ARK-19.case</object-name>
+ <object-name>ARK-19.knob1</object-name>
+ <object-name>ARK-19.knob2</object-name>
+ <object-name>ARK-19.baselever1</object-name>
+ <object-name>ARK-19.baselever2</object-name>
+ <object-name>ARK-19.lever1</object-name>
+ <object-name>ARK-19.lever2</object-name>
+ <object-name>ARK-19.basebutton</object-name>
+ <object-name>ARK-19.button</object-name>
+ <property>mig29/systems/cockpitlighting/texturep</property>
+ <factor>0.5</factor>
+ <step>1</step>
+ <axis>
+  <x>1</x>
+  <y>0</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+<!-- Debuging animation-->
+<animation>
+ <type>translate</type>
+ <object-name>ARK-19.case</object-name>
+ <property>mig29/o/snv1</property>
+ <factor>0.01</factor>
+ <axis>
+  <x>0</x>
+  <y>0</y>
+  <z>-1</z>
+ </axis>
+</animation>
+
+</PropertyList>

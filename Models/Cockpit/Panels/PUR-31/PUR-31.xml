@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>PUR-31.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>PUR-31.case</object-name>
+  <object-name>PUR-31.knob1</object-name>
+  <object-name>PUR-31.knob2</object-name>
+  <object-name>PUR-31.baselever1</object-name>
+  <object-name>PUR-31.baselever2</object-name>
+  <object-name>PUR-31.baselever3</object-name>
+  <object-name>PUR-31.baselever4</object-name>
+  <object-name>PUR-31.lever1</object-name>
+  <object-name>PUR-31.lever2</object-name>
+  <object-name>PUR-31.lever3</object-name>
+  <object-name>PUR-31.lever4</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>PUR-31.PTA</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-R-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PUR-31.knob1</object-name>
+  <property>mig29/controls/RLPK/dH</property>
+  <interpolation>
+   <entry><ind>-3</ind><dep>-120</dep></entry>
+   <entry><ind> 0</ind><dep>   0</dep></entry>
+   <entry><ind> 6</ind><dep> 180</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.000</x-m>
+   <y-m>-0.010</y-m>
+   <z-m> 0.0363</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PUR-31.knob2</object-name>
+  <property>mig29/controls/RLPK/mode_I</property>
+  <interpolation>
+   <entry><ind>0</ind><dep> 48</dep></entry>
+   <entry><ind>1</ind><dep> 60</dep></entry>
+   <entry><ind>2</ind><dep> 90</dep></entry>
+   <entry><ind>3</ind><dep>135</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.000</x-m>
+   <y-m>-0.010</y-m>
+   <z-m>-0.002</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PUR-31.lever1</object-name>
+  <property>mig29/controls/RLPK/Izl</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-15</dep></entry>
+   <entry><ind>1</ind><dep>  0</dep></entry>
+   <entry><ind>2</ind><dep> 15</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.000</x-m>
+   <y-m>-0.0285</y-m>
+   <z-m>-0.0295</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PUR-31.lever2</object-name>
+  <property>mig29/controls/RLPK/komp</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-15</dep></entry>
+   <entry><ind>1</ind><dep> 15</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.000</x-m>
+   <y-m>-0.0085</y-m>
+   <z-m>-0.0355</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PUR-31.lever3</object-name>
+  <property>mig29/controls/RLPK/SNP</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-15</dep></entry>
+   <entry><ind>1</ind><dep> 15</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.000</x-m>
+   <y-m> 0.0085</y-m>
+   <z-m>-0.0355</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PUR-31.lever4</object-name>
+  <property>mig29/controls/RLPK/f</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-15</dep></entry>
+   <entry><ind>1</ind><dep>  0</dep></entry>
+   <entry><ind>2</ind><dep> 15</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.000</x-m>
+   <y-m> 0.0285</y-m>
+   <z-m>-0.0295</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>PUR-31.cz01</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/RLPK/dH</property>
+    <step>-1</step>
+    <min>-4</min>
+    <max> 6</max>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PUR-31.cz02</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/RLPK/dH</property>
+    <step>1</step>
+    <min>-4</min>
+    <max> 6</max>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>PUR-31.cz03</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/RLPK/mode_I</property>
+    <step>-1</step>
+    <min>0</min>
+    <max>3</max>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PUR-31.cz04</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/RLPK/mode_I</property>
+    <step>1</step>
+    <min>0</min>
+    <max>3</max>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>PUR-31.cz05</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/RLPK/Izl</property>
+    <value>2</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PUR-31.cz06</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/RLPK/Izl</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PUR-31.cz07</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/RLPK/Izl</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>PUR-31.cz08</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/RLPK/komp</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PUR-31.cz09</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/RLPK/komp</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>PUR-31.cz10</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/RLPK/SNP</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PUR-31.cz11</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/RLPK/SNP</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>PUR-31.cz12</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/RLPK/f</property>
+    <value>2</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PUR-31.cz13</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/RLPK/f</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>PUR-31.cz14</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/RLPK/f</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>PUR-31.case</object-name>
+  <object-name>PUR-31.knob1</object-name>
+  <object-name>PUR-31.knob2</object-name>
+  <object-name>PUR-31.baselever1</object-name>
+  <object-name>PUR-31.baselever2</object-name>
+  <object-name>PUR-31.baselever3</object-name>
+  <object-name>PUR-31.baselever4</object-name>
+  <object-name>PUR-31.lever1</object-name>
+  <object-name>PUR-31.lever2</object-name>
+  <object-name>PUR-31.lever3</object-name>
+  <object-name>PUR-31.lever4</object-name>
+  <property>mig29/systems/cockpitlighting/texturep</property>
+  <factor>0.5</factor>
+  <step>1</step>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

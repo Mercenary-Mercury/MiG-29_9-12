@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+
+<!-- Индикатор прямого видения - ИПВ -->
+<!-- 2011, Сергей "Mercenary_Mercury" Салов -->
+
+<PropertyList>
+
+ <path>IPV.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>IPV.case</object-name>
+  <object-name>IPV.baselever1</object-name>
+  <object-name>IPV.baselever2</object-name>
+  <object-name>IPV.lever1</object-name>
+  <object-name>IPV.lever2</object-name>
+  <object-name>IPV.Ps1</object-name>
+  <object-name>IPV.Ps2</object-name>
+  <!--object-name>IPV.Ps2G</object-name-->
+  <object-name>IPV.knob</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>IPV.ekran</object-name>
+  <emission>
+   <red>0.1</red>
+   <green>0.1</green>
+   <blue>0.1</blue>
+   <factor-prop>mig29/controls/IPV/bright-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <effect>
+  <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/model-transparent</inherits-from>
+  <object-name>IPV.Ps2G</object-name>
+ </effect>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>IPV.lever1</object-name>
+  <property>mig29/controls/IPV/metka-trassa</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-10</dep></entry>
+   <entry><ind>1</ind><dep> 10</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.1000</x-m>
+   <y-m>-0.0500</y-m>
+   <z-m> 0.0583</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>IPV.lever2</object-name>
+  <property>mig29/controls/IPV/takt-dubl</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-10</dep></entry>
+   <entry><ind>1</ind><dep> 10</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.1000</x-m>
+   <y-m>0.0160</y-m>
+   <z-m>0.0583</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>IPV.knob</object-name>
+  <property>mig29/controls/IPV/bright-norm</property>
+  <factor>360</factor>
+  <center>
+   <x-m> 0.0896</x-m>
+   <y-m> 0.0072</y-m>
+   <z-m>-0.0654</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>IPV.cz1</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/IPV/metka-trassa</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>IPV.cz2</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/IPV/metka-trassa</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>IPV.cz3</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/IPV/takt-dubl</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>IPV.cz4</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/IPV/takt-dubl</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>IPV.cz5</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/IPV/bright-norm</property>
+    <step>-0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding> 
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>IPV.cz6</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/IPV/bright-norm</property>
+    <step>0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+
+</PropertyList>

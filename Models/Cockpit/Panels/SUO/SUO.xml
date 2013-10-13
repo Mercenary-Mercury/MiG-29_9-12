@@ -1,0 +1,366 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>SUO.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>SUO.case</object-name>
+  <object-name>SUO.basebutton1</object-name>
+  <object-name>SUO.basebutton2</object-name>
+  <object-name>SUO.button1</object-name>
+  <object-name>SUO.button2</object-name>
+  <object-name>SUO.button2b</object-name>
+  <object-name>SUO.baselever1</object-name>
+  <object-name>SUO.baselever2</object-name>
+  <object-name>SUO.baselever3</object-name>
+  <object-name>SUO.baselever4</object-name>
+  <object-name>SUO.lever1</object-name>
+  <object-name>SUO.lever2</object-name>
+  <object-name>SUO.lever3</object-name>
+  <object-name>SUO.lever4</object-name>
+  <object-name>SUO.screws</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>SUO.PTA</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-R-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>SUO.button1</object-name>
+  <property>mig29/controls/SUO/a</property>
+  <factor>-0.004</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>SUO.lever1</object-name>
+  <property>mig29/controls/SUO/b</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>15</dep></entry>
+   <entry><ind>1</ind><dep>-15</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.015</x-m>
+   <y-m> 0.003</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>SUO.lever2</object-name>
+  <property>mig29/controls/SUO/c</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>15</dep></entry>
+   <entry><ind>1</ind><dep>-15</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.015</x-m>
+   <y-m> 0.030</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>SUO.lever3</object-name>
+  <property>mig29/controls/SUO/d</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>15</dep></entry>
+   <entry><ind>1</ind><dep>-15</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.019</x-m>
+   <y-m>-0.037</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>SUO.lever4</object-name>
+  <property>mig29/controls/SUO/e</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>15</dep></entry>
+   <entry><ind>1</ind><dep>-15</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.019</x-m>
+   <y-m>-0.010</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>SUO.button2</object-name>
+  <property>mig29/controls/SUO/f</property>
+  <factor>-0.004</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>SUO.button2b</object-name>
+  <object-name>SUO.cz11</object-name>
+  <property>mig29/controls/SUO/g</property>
+  <factor>90</factor>
+  <center>
+   <x-m> 0.013</x-m>
+   <y-m> 0.025</y-m>
+   <z-m> 0.009</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>SUO.cz01</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SUO/a</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/SUO/a</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>SUO.cz02</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SUO/b</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>SUO.cz03</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SUO/b</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>SUO.cz04</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SUO/c</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>SUO.cz05</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SUO/c</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>SUO.cz06</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SUO/d</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>SUO.cz07</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SUO/d</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>SUO.cz08</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SUO/e</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>SUO.cz09</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SUO/e</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>SUO.cz10</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SUO/f</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/SUO/f</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>SUO.cz11</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>mig29/controls/SUO/g</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>SUO.case</object-name>
+  <object-name>SUO.basebutton1</object-name>
+  <object-name>SUO.basebutton2</object-name>
+  <object-name>SUO.button1</object-name>
+  <object-name>SUO.button2</object-name>
+  <object-name>SUO.button2b</object-name>
+  <object-name>SUO.baselever1</object-name>
+  <object-name>SUO.baselever2</object-name>
+  <object-name>SUO.baselever3</object-name>
+  <object-name>SUO.baselever4</object-name>
+  <object-name>SUO.lever1</object-name>
+  <object-name>SUO.lever2</object-name>
+  <object-name>SUO.lever3</object-name>
+  <object-name>SUO.lever4</object-name>
+  <object-name>SUO.screws</object-name>
+  <property>mig29/systems/cockpitlighting/texturep</property>
+  <factor>0.5</factor>
+  <step>1</step>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

@@ -1,0 +1,832 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>pde.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>pde.case</object-name>
+  <object-name>pde.o2</object-name>
+  <object-name>pde.basebutton</object-name>
+  <object-name>pde.button</object-name>
+  <object-name>pde.baselever01</object-name>
+  <object-name>pde.baselever02</object-name>
+  <object-name>pde.baselever03</object-name>
+  <object-name>pde.baselever04</object-name>
+  <object-name>pde.baselever05</object-name>
+  <object-name>pde.baselever06</object-name>
+  <object-name>pde.baselever07</object-name>
+  <object-name>pde.baselever08</object-name>
+  <object-name>pde.baselever09</object-name>
+  <object-name>pde.baselever10</object-name>
+  <object-name>pde.baselever11</object-name>
+  <object-name>pde.baselever12</object-name>
+  <object-name>pde.lever01</object-name>
+  <object-name>pde.lever01block</object-name>
+  <object-name>pde.lever02</object-name>
+  <object-name>pde.lever03</object-name>
+  <object-name>pde.lever04</object-name>
+  <object-name>pde.lever05</object-name>
+  <object-name>pde.lever06</object-name>
+  <object-name>pde.lever07</object-name>
+  <object-name>pde.lever08</object-name>
+  <object-name>pde.lever09</object-name>
+  <object-name>pde.lever10</object-name>
+  <object-name>pde.lever11</object-name>
+  <object-name>pde.lever12</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>pde.PTA</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-R-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <!-- Э/Узел / Запуск / Прокрутка двиг / Прокрутка ТС -->
+ <animation>
+  <type>rotate</type>
+  <object-name>pde.lever01</object-name>
+  <property>mig29/controls/engines/espz</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-25</dep></entry>
+   <entry><ind>1</ind><dep>  0</dep></entry>
+   <entry><ind>2</ind><dep> 25</dep></entry>
+   <entry><ind>3</ind><dep> 25</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.081</x-m>
+   <y-m> 0.020</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>pde.lever01</object-name>
+  <property>mig29/controls/engines/espz</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>  0</dep></entry>
+   <entry><ind>2</ind><dep>  0</dep></entry>
+   <entry><ind>3</ind><dep> 25</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.081</x-m>
+   <y-m> 0.020</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <!---->
+ <animation>
+  <type>rotate</type>
+  <object-name>pde.lever01block</object-name>
+  <property>mig29/controls/engines/msb</property>
+  <interpolation>
+   <entry><ind>0</ind><dep> 0</dep></entry>
+   <entry><ind>1</ind><dep>90</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.081</x-m>
+   <y-m> 0.008</y-m>
+   <z-m> 0.006</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+  </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>pde.button</object-name>
+  <property>mig29/controls/engines/start</property>
+  <factor>-0.002</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <!-- Запуск двигателя: левый, оба или правый -->
+ <animation>
+  <type>rotate</type>
+  <object-name>pde.lever02</object-name>
+  <property>mig29/controls/engines/engine_start_select</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep>  0</dep></entry>
+   <entry><ind>2</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.042</x-m>
+   <y-m> 0.046</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- Радио -->
+ <animation>
+  <type>rotate</type>
+  <object-name>pde.lever03</object-name>
+  <property>mig29/switches/radio</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.0475</x-m>
+   <y-m>-0.078</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- Борт сист -->
+ <animation>
+  <type>rotate</type>
+  <object-name>pde.lever04</object-name>
+  <property>mig29/switches/bortsyst</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.0475</x-m>
+   <y-m>-0.055</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- КВ осн  -->
+ <animation>
+  <type>rotate</type>
+  <object-name>pde.lever05</object-name>
+  <property>mig29/switches/KVosn</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.0475</x-m>
+   <y-m>-0.032</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- КВ зап  -->
+ <animation>
+  <type>rotate</type>
+  <object-name>pde.lever06</object-name>
+  <property>mig29/switches/KVzap</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.0475</x-m>
+   <y-m>-0.009</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- Навигация -->
+ <animation>
+  <type>rotate</type>
+  <object-name>pde.lever07</object-name>
+  <property>mig29/switches/navigation</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.0475</x-m>
+   <y-m>0.014</y-m>
+   <z-m>0.000</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- САУ  -->
+ <animation>
+  <type>rotate</type>
+  <object-name>pde.lever08</object-name>
+  <property>mig29/switches/SAU</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.100</x-m>
+   <y-m>-0.078</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- СРО СО -->
+ <animation>
+  <type>rotate</type>
+  <object-name>pde.lever09</object-name>
+  <property>mig29/switches/SRO_SO</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.100</x-m>
+   <y-m>-0.009</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- Регист -->
+ <animation>
+  <type>rotate</type>
+  <object-name>pde.lever10</object-name>
+  <property>mig29/switches/regist</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.100</x-m>
+   <y-m>-0.032</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- Оружие -->
+ <animation>
+  <type>rotate</type>
+  <object-name>pde.lever11</object-name>
+  <property>mig29/switches/weapon</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.100</x-m>
+   <y-m>-0.055</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <!-- СУВ -->
+ <animation>
+  <type>rotate</type>
+  <object-name>pde.lever12</object-name>
+  <property>mig29/switches/SUV</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.100</x-m>
+   <y-m>0.014</y-m>
+   <z-m>0.000</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz01</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/engines/espz</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz02</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/engines/espz</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz03</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/engines/espz</property>
+    <value>2</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz05</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/engines/espz</property>
+    <value>3</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz04</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>mig29/controls/engines/msb</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz06</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/engines/start</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/engines/start</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz07</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/engines/engine_start_select</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz08</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/engines/engine_start_select</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz09</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/engines/engine_start_select</property>
+    <value>2</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz10</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/radio</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz11</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+   <command>property-assign</command>
+    <property>mig29/switches/radio</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz12</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/bortsyst</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz13</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/bortsyst</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz14</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/KVosn</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz15</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/KVosn</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz16</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/KVzap</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz17</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/KVzap</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz18</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/navigation</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz19</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/navigation</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz20</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/SAU</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz21</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/SAU</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz22</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/SRO_SO</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz23</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/SRO_SO</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz24</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/regist</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz25</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/regist</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz26</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/weapon</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz27</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/weapon</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz28</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/SUV</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pde.cz29</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/switches/SUV</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>pde.case</object-name>
+  <object-name>pde.o2</object-name>
+  <object-name>pde.basebutton</object-name>
+  <object-name>pde.button</object-name>
+  <object-name>pde.baselever01</object-name>
+  <object-name>pde.baselever02</object-name>
+  <object-name>pde.baselever03</object-name>
+  <object-name>pde.baselever04</object-name>
+  <object-name>pde.baselever05</object-name>
+  <object-name>pde.baselever06</object-name>
+  <object-name>pde.baselever07</object-name>
+  <object-name>pde.baselever08</object-name>
+  <object-name>pde.baselever09</object-name>
+  <object-name>pde.baselever10</object-name>
+  <object-name>pde.baselever11</object-name>
+  <object-name>pde.baselever12</object-name>
+  <object-name>pde.lever01</object-name>
+  <object-name>pde.lever01block</object-name>
+  <object-name>pde.lever02</object-name>
+  <object-name>pde.lever03</object-name>
+  <object-name>pde.lever04</object-name>
+  <object-name>pde.lever05</object-name>
+  <object-name>pde.lever06</object-name>
+  <object-name>pde.lever07</object-name>
+  <object-name>pde.lever08</object-name>
+  <object-name>pde.lever09</object-name>
+  <object-name>pde.lever10</object-name>
+  <object-name>pde.lever11</object-name>
+  <object-name>pde.lever12</object-name>
+  <property>mig29/systems/cockpitlighting/texturep</property>
+  <factor>0.5</factor>
+  <step>1</step>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

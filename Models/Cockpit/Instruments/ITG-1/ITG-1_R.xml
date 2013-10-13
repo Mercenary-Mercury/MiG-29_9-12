@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<!-- Индикатор температуры газов - ИТГ-1 -->
+<!-- 2011, Сергей "Mercenary_Mercury" Салов -->
+
+<PropertyList>
+
+ <path>ITG-1.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>ITG-1.needle</object-name>
+  <object-name>ITG-1.face</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>screws</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>shader</type>
+  <shader>chrome</shader>
+  <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <object-name>glass</object-name>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>ITG-1.needle</object-name>
+  <property>/engines/engine[1]/egt-degf</property>
+  <interpolation>
+   <entry><ind> 392</ind><dep>  0</dep></entry>
+   <entry><ind>2012</ind><dep>230</dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

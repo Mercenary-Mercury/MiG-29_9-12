@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>SRO.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>SRO.case</object-name>
+  <object-name>SRO.baselever1</object-name>
+  <object-name>SRO.baselever2</object-name>
+  <object-name>SRO.lever1</object-name>
+  <object-name>SRO.lever2</object-name>
+  <object-name>SRO.blockbase1</object-name>
+  <object-name>SRO.blockbase2</object-name>
+  <object-name>SRO.block1</object-name>
+  <object-name>SRO.block2</object-name>
+  <object-name>SRO.basebutton</object-name>
+  <object-name>SRO.button</object-name>
+  <object-name>SRO.buttonblock</object-name>
+  <object-name>SRO.knob</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>SRO.PTA</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-R-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>SRO.button</object-name>
+  <property>mig29/controls/SRO/stiranie</property>
+  <factor>0.002</factor>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+</animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>SRO.lever1</object-name>
+  <property>mig29/controls/ko/betdstv</property>
+  <interpolation>
+   <entry><ind>0</ind><dep> 20</dep></entry>
+   <entry><ind>1</ind><dep>-20</dep></entry>
+  </interpolation>
+  <center>
+    <x-m> 0.051</x-m>
+    <y-m>-0.010</y-m>
+    <z-m> 0.003</z-m>
+  </center>
+  <axis>
+    <x>0</x>
+    <y>1</y>
+    <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>SRO.lever2</object-name>
+  <property>mig29/controls/ko/wave1-2</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.051</x-m>
+   <y-m>-0.017</y-m>
+   <z-m> 0.003</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>SRO.knob</object-name>
+  <property>mig29/controls/SRO/c</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-45</dep></entry>
+   <entry><ind>1</ind><dep>-15</dep></entry>
+   <entry><ind>2</ind><dep> 15</dep></entry>
+   <entry><ind>3</ind><dep> 45</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.0925</x-m>
+   <y-m>0.010</y-m>
+   <z-m>0.000</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>SRO.buttonblock</object-name>
+  <object-name>SRO.cz10</object-name>
+  <property>mig29/controls/SRO/stiranie_block</property>
+  <interpolation>
+   <entry><ind>0</ind><dep> 0</dep></entry>
+   <entry><ind>1</ind><dep>90</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.0805</x-m>
+   <y-m>0.037</y-m>
+   <z-m>0.010</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>SRO.cz01</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/ko/betdstv</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>SRO.cz02</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/ko/betdstv</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>SRO.cz03</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>mig29/controls/ko/betdstv_block</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>SRO.cz04</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/ko/wave1-2</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>SRO.cz05</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/ko/wave1-2</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>SRO.cz06</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>mig29/controls/ko/wave1-2_block</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>SRO.cz07</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/SRO/c</property>
+    <step>-1</step>
+    <min>0</min>
+    <max>3</max>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>SRO.cz08</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/SRO/c</property>
+    <step>1</step>
+    <min>0</min>
+    <max>3</max>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>SRO.cz09</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SRO/stiranie</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/SRO/stiranie</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>SRO.cz10</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>mig29/controls/SRO/stiranie_block</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>SRO.case</object-name>
+  <object-name>SRO.baselever1</object-name>
+  <object-name>SRO.baselever2</object-name>
+  <object-name>SRO.lever1</object-name>
+  <object-name>SRO.lever2</object-name>
+  <object-name>SRO.blockbase1</object-name>
+  <object-name>SRO.blockbase2</object-name>
+  <object-name>SRO.block1</object-name>
+  <object-name>SRO.block2</object-name>
+  <object-name>SRO.basebutton</object-name>
+  <object-name>SRO.button</object-name>
+  <object-name>SRO.buttonblock</object-name>
+  <object-name>SRO.knob</object-name>
+  <property>mig29/systems/cockpitlighting/texturep</property>
+  <factor>0.5</factor>
+  <step>1</step>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

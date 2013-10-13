@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>poo.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>poo.case</object-name>
+  <object-name>poo.baselever</object-name>
+  <object-name>poo.lever</object-name>
+  <object-name>poo.basebutton</object-name>
+  <object-name>poo.button</object-name>
+  <object-name>poo.knob1</object-name>
+  <object-name>poo.knob2</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>poo.PTA</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-R-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <!-- АНО - пробл., 10%, откл., 100%. -->
+ <animation>
+  <type>rotate</type>
+  <object-name>poo.lever</object-name>
+  <property>mig29/controls/lighting/ano</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>  0</dep></entry>
+   <entry><ind>1</ind><dep>-20</dep></entry>
+   <entry><ind>2</ind><dep> 20</dep></entry>
+   <entry><ind>3</ind><dep>  0</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.042</x-m>
+   <y-m> 0.001</y-m>
+   <z-m>-0.025</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>poo.lever</object-name>
+  <property>mig29/controls/lighting/ano</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep>  0</dep></entry>
+   <entry><ind>2</ind><dep>  0</dep></entry>
+   <entry><ind>3</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.042</x-m>
+   <y-m> 0.001</y-m>
+   <z-m>-0.025</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>poo.button</object-name>
+  <property>mig29/controls/lighting/kontr_lamp</property>
+  <factor>0.003</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>poo.knob1</object-name>
+  <property>mig29/controls/lighting/annunciators-norm</property>
+  <factor>350</factor>
+  <center>
+   <x-m>0.054</x-m>
+   <y-m>0.000</y-m>
+   <z-m>0.022</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>poo.knob2</object-name>
+  <property>mig29/controls/lighting/floodlight-norm</property>
+  <factor>100</factor>
+  <center>
+   <x-m> 0.099</x-m>
+   <y-m> 0.000</y-m>
+   <z-m>-0.018</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>poo.cz1</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/lighting/annunciators-norm</property>
+    <step>-0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>poo.cz2</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/lighting/annunciators-norm</property>
+    <step>0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>poo.cz3</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/lighting/kontr_lamp</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>poo.cz4</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/lighting/ano</property>
+    <value>3</value><!-- проблесковый режим -->
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>poo.cz5</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/lighting/ano</property>
+    <value>2</value><!-- 100% -->
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>poo.cz6</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/lighting/ano</property>
+    <value>1</value><!-- 10% -->
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>poo.cz7</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/lighting/ano</property>
+    <value>0</value><!-- отключены -->
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>poo.cz8</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/lighting/floodlight-norm</property>
+    <step>-0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>poo.cz9</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/lighting/floodlight-norm</property>
+    <step>0.05</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>poo.case</object-name>
+  <object-name>poo.baselever</object-name>
+  <object-name>poo.lever</object-name>
+  <object-name>poo.basebutton</object-name>
+  <object-name>poo.button</object-name>
+  <object-name>poo.knob1</object-name>
+  <object-name>poo.knob2</object-name>
+  <property>mig29/systems/cockpitlighting/texturep</property>
+  <factor>0.5</factor>
+  <step>1</step>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

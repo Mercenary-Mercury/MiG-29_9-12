@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+
+<!-- Индикатор комбинированный жизнеобеспечения - ИКЖ-1 -->
+<!-- 2011, Сергей "Mercenary_Mercury" Салов -->
+
+<PropertyList>
+
+ <path>IKZh-1.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>IKZh-1.needle1</object-name>
+  <object-name>IKZh-1.needle2</object-name>
+  <object-name>IKZh-1.needle3</object-name>
+  <object-name>IKZh-1.needle4</object-name>
+  <object-name>Seg1</object-name>
+  <object-name>Seg2</object-name>
+  <object-name>Seg3</object-name>
+  <object-name>Seg4</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>/mig29/systems/cockpitlighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>screws</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <effect>
+  <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/model-transparent</inherits-from>
+  <object-name>glass</object-name>
+ </effect>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>IKZh-1.needle1</object-name>
+  <property>/mig29/instrumentation/IKZh/altitude</property>
+  <interpolation>
+   <entry><ind>    0</ind><dep> 0</dep></entry>
+   <entry><ind>13000</ind><dep>36</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.06</x-m>
+   <y-m> 0.00</y-m>
+   <z-m> 0.00</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>IKZh-1.needle2</object-name>
+  <property>/mig29/instrumentation/IKZh/o2_reserve</property>
+  <interpolation>
+   <entry><ind>  0</ind><dep> 0</dep></entry>
+   <entry><ind>110</ind><dep>36</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.06</x-m>
+   <y-m> 0.00</y-m>
+   <z-m> 0.00</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>IKZh-1.needle3</object-name>
+  <property>/mig29/instrumentation/IKZh/o2_feed</property>
+  <interpolation>
+   <entry><ind>0</ind><dep> 0</dep></entry>
+   <entry><ind>1</ind><dep>36</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.06</x-m>
+   <y-m> 0.00</y-m>
+   <z-m> 0.00</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>IKZh-1.needle4</object-name>
+  <property>/mig29/instrumentation/IKZh/P</property>
+  <interpolation>
+   <entry><ind>  0</ind><dep> 0</dep></entry>
+   <entry><ind>100</ind><dep>36</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.06</x-m>
+   <y-m> 0.00</y-m>
+   <z-m> 0.00</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

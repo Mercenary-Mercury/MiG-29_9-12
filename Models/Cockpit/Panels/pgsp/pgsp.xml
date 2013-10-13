@@ -1,0 +1,529 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>pgsp.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>pgsp.case</object-name>
+  <object-name>pgsp.basebutton1</object-name>
+  <object-name>pgsp.basebutton2</object-name>
+  <object-name>pgsp.basebutton3</object-name>
+  <object-name>pgsp.basebutton4</object-name>
+  <object-name>pgsp.basebutton5</object-name>
+  <object-name>pgsp.basebutton6</object-name>
+  <object-name>pgsp.basebutton7</object-name>
+  <object-name>pgsp.basebutton8</object-name>
+  <object-name>pgsp.basebutton9</object-name>
+  <object-name>pgsp.basebutton10</object-name>
+  <object-name>pgsp.baselever1</object-name>
+  <object-name>pgsp.baselever2</object-name>
+  <object-name>pgsp.button1</object-name>
+  <object-name>pgsp.button2</object-name>
+  <object-name>pgsp.button3</object-name>
+  <object-name>pgsp.button4</object-name>
+  <object-name>pgsp.button5</object-name>
+  <object-name>pgsp.button6</object-name>
+  <object-name>pgsp.button7</object-name>
+  <object-name>pgsp.button8</object-name>
+  <object-name>pgsp.button9</object-name>
+  <object-name>pgsp.button10</object-name>
+  <object-name>pgsp.lever1</object-name>
+  <object-name>pgsp.lever2</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>pgsp.PTA</object-name>
+  <object-name>pgsp.PTL</object-name>
+  <emission>
+   <red> 0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-R-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>pgsp.button1</object-name>
+  <property>mig29/controls/n</property>
+  <factor>0.002</factor>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>pgsp.lever1</object-name>
+  <property>mig29/controls/n</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.025</x-m>
+   <y-m>-0.022</y-m>
+   <z-m> 0.002</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>pgsp.button2</object-name>
+  <property>mig29/controls/n</property>
+  <factor>0.002</factor>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>pgsp.button3</object-name>
+  <property>mig29/controls/SVS/control</property>
+  <factor>0.002</factor>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>pgsp.lever2</object-name>
+  <property>mig29/controls/SN/rabota-podgotovka</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.025</x-m>
+   <y-m> 0.032</y-m>
+   <z-m> 0.002</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>pgsp.button4</object-name>
+  <property>mig29/controls/SO-69/control</property>
+  <factor>0.002</factor>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>pgsp.button5</object-name>
+  <property>mig29/controls/COC/control</property>
+  <factor>0.002</factor>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>pgsp.button6</object-name>
+  <property>mig29/controls/RPM/control</property>
+  <factor>0.002</factor>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>pgsp.button7</object-name>
+  <property>mig29/controls/ARU/control</property>
+  <factor>0.002</factor>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>pgsp.button8</object-name>
+  <property>mig29/controls/Ekran/control</property>
+  <factor>0.002</factor>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>pgsp.button9</object-name>
+  <property>mig29/controls/n</property>
+  <factor>0.002</factor>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>pgsp.button10</object-name>
+  <property>mig29/controls/n</property>
+  <factor>0.002</factor>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pgsp.cz01</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/n</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/n</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pgsp.cz02</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/n</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pgsp.cz03</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/n</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pgsp.cz04</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/n</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/n</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pgsp.cz05</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SVS/control</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/SVS/control</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pgsp.cz06</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SN/rabota-podgotovka</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>pgsp.cz07</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SN/rabota-podgotovka</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pgsp.cz08</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SO-69/control</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/SO-69/control</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pgsp.cz09</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/COC/control</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/COC/control</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pgsp.cz10</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/RPM/control</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/RPM/control</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pgsp.cz11</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/ARU/control</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/ARU/control</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pgsp.cz12</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/Ekran/control</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/Ekran/control</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pgsp.cz13</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/n</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/n</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>pgsp.cz14</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/n</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/n</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>pgsp.case</object-name>
+  <object-name>pgsp.basebutton1</object-name>
+  <object-name>pgsp.basebutton2</object-name>
+  <object-name>pgsp.basebutton3</object-name>
+  <object-name>pgsp.basebutton4</object-name>
+  <object-name>pgsp.basebutton5</object-name>
+  <object-name>pgsp.basebutton6</object-name>
+  <object-name>pgsp.basebutton7</object-name>
+  <object-name>pgsp.basebutton8</object-name>
+  <object-name>pgsp.basebutton9</object-name>
+  <object-name>pgsp.basebutton10</object-name>
+  <object-name>pgsp.baselever1</object-name>
+  <object-name>pgsp.baselever2</object-name>
+  <object-name>pgsp.button1</object-name>
+  <object-name>pgsp.button2</object-name>
+  <object-name>pgsp.button3</object-name>
+  <object-name>pgsp.button4</object-name>
+  <object-name>pgsp.button5</object-name>
+  <object-name>pgsp.button6</object-name>
+  <object-name>pgsp.button7</object-name>
+  <object-name>pgsp.button8</object-name>
+  <object-name>pgsp.button9</object-name>
+  <object-name>pgsp.button10</object-name>
+  <object-name>pgsp.lever1</object-name>
+  <object-name>pgsp.lever2</object-name>
+  <property>mig29/systems/cockpitlighting/texturep</property>
+  <factor>0.5</factor>
+  <step>1</step>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

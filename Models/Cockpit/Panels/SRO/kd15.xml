@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>kd15.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>kd15.case</object-name>
+  <object-name>kd15.knob</object-name>
+  <object-name>kd15.baselever</object-name>
+  <object-name>kd15.lever</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>kd15.KDLampOn</object-name>
+  <object-name>kd15.KPLampOn</object-name>
+  <emission>
+   <red>  1.0</red>
+   <green>1.0</green>
+   <blue> 1.0</blue>
+   <factor-prop>mig29/systems/cockpitlighting/annunciators-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>kd15.knob</object-name>
+  <property>mig29/instrumentation/SRO/selmod</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-30</dep></entry>
+   <entry><ind>1</ind><dep>-10</dep></entry>
+   <entry><ind>2</ind><dep> 10</dep></entry>
+   <entry><ind>3</ind><dep> 30</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.020</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.000</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>kd15.lever</object-name>
+  <property>mig29/instrumentation/SRO/rabochiy-zapas</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.010</x-m>
+   <y-m>0.000</y-m>
+   <z-m>0.002</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>kd15.KDLampOn</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <equals>
+      <property>mig29/instrumentation/SRO/KD</property>
+      <value>1</value>
+     </equals>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>kd15.KPLampOn</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+    <or>
+     <equals>
+      <property>mig29/controls/lighting/kontr_lamp</property>
+      <value>1</value>
+     </equals>
+     <equals>
+      <property>mig29/instrumentation/SRO/KP</property>
+      <value>1</value>
+     </equals>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>kd15.cz1</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/instrumentation/SRO/selmod</property>
+    <step>-1</step>
+    <min>0</min>
+    <max>3</max>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>kd15.cz2</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/instrumentation/SRO/selmod</property>
+    <step>1</step>
+    <min>0</min>
+    <max>3</max>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>kd15.cz3</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/instrumentation/SRO/rabochiy-zapas</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>kd15.cz4</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/instrumentation/SRO/rabochiy-zapas</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>kd15.case</object-name>
+  <object-name>kd15.knob</object-name>
+  <object-name>kd15.baselever</object-name>
+  <object-name>kd15.lever</object-name>
+  <property>mig29/systems/cockpitlighting/texturep</property>
+  <factor>0.5</factor>
+  <step>1</step>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

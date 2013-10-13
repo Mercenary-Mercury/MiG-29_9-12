@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+
+<!-- Указатель остатка ЛТЦ -->
+<!-- 2011, Сергей "Mercenary_Mercury" Салов -->
+
+<PropertyList>
+
+ <path>LTTs_counter.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>bezel</object-name>
+  <object-name>face</object-name>
+  <object-name>LTTs.Blenker</object-name>
+  <object-name>LTTs.D1</object-name>
+  <object-name>LTTs.D2</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>screws</object-name>
+  <emission>
+   <red>0.8</red>
+   <green>0.8</green>
+   <blue>0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>shader</type>
+  <shader>chrome</shader>
+  <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <object-name>glass</object-name>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>LTTs.D1</object-name>
+  <property>mig29/instrumentation/LTTs/count1</property>
+  <factor>0.1</factor>
+  <step>1</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>LTTs.D2</object-name>
+  <property>mig29/instrumentation/LTTs/count2</property>
+  <factor>0.1</factor>
+  <step>1</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>LTTs.Blenker</object-name>
+  <condition>
+   <equals>
+    <property>mig29/o/snv</property>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+
+</PropertyList>

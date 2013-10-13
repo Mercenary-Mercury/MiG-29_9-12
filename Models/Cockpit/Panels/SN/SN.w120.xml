@@ -1,0 +1,941 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>SN.w120.ac</path>
+
+<animation>
+ <type>material</type>
+ <object-name>SN.case</object-name>
+ <emission>
+  <red>1.0</red>
+  <green>1.0</green>
+  <blue>1.0</blue>
+  <factor-prop>mig29/controls/lighting/panel-norm</factor-prop>
+ </emission>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>SN.T1</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/systems/SN/d40</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>SN.T2</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/systems/SN/korr</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>SN.Buttonon1</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/instrumentation/SN/PPM_Aer1</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>SN.Buttonon2</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/instrumentation/SN/PPM_Aer2</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>SN.Buttonon3</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/instrumentation/SN/PPM_Aer3</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>SN.Buttonon4</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/instrumentation/SN/mayak1</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>SN.Buttonon5</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/instrumentation/SN/mayak2</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>SN.Buttonon6</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/instrumentation/SN/mayak3</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>SN.Buttonon7</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/instrumentation/SN/sbros</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>SN.Buttonon8</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/instrumentation/SN/VK_obnul</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>SN.Buttonon9</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/instrumentation/SN/return</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>SN.Knob1</object-name>
+ <property>mig29/controls/SN/navigat</property>
+ <factor>36</factor>
+ <center>
+  <x-m> 0.0000</x-m>
+  <y-m>-0.0147</y-m>
+  <z-m> 0.0637</z-m>
+ </center>
+ <axis>
+  <x>-1</x>
+  <y> 0</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>SN.Knob2</object-name>
+ <property>mig29/controls/SN/pos</property>
+ <factor>36</factor>
+ <center>
+  <x-m>0.0000</x-m>
+  <y-m>0.0283</y-m>
+  <z-m>0.0637</z-m>
+ </center>
+ <axis>
+  <x>-1</x>
+  <y> 0</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+<!-- ИКВ -->
+<animation>
+ <type>rotate</type>
+ <object-name>SN.lever1</object-name>
+ <property>mig29/controls/SN/IKV</property>
+ <interpolation>
+  <entry><ind>0</ind><dep>-20</dep></entry>
+  <entry><ind>1</ind><dep> 20</dep></entry>
+ </interpolation>
+ <center>
+  <x-m> 0.001</x-m>
+  <y-m>-0.0306</y-m>
+  <z-m> 0.0751</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>0</y>
+  <z>1</z>
+ </axis>
+</animation>
+
+<!-- Каналы -->
+<animation>
+ <type>rotate</type>
+ <object-name>SN.lever2</object-name>
+ <property>mig29/controls/SN/channels</property>
+ <interpolation>
+  <entry><ind>0</ind><dep>-20</dep></entry>
+  <entry><ind>1</ind><dep> 20</dep></entry>
+ </interpolation>
+ <center>
+  <x-m>0.001</x-m>
+  <y-m>0.0306</y-m>
+  <z-m>0.0751</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>0</y>
+  <z>1</z>
+ </axis>
+</animation>
+
+<!-- ППМ - АЭР -->
+<animation>
+ <type>rotate</type>
+ <object-name>SN.lever3</object-name>
+ <property>mig29/controls/SN/PPM_Aer</property>
+ <interpolation>
+  <entry><ind>0</ind><dep>-20</dep></entry>
+  <entry><ind>1</ind><dep> 20</dep></entry>
+ </interpolation>
+ <center>
+  <x-m> 0.001</x-m>
+  <y-m>-0.0453</y-m>
+  <z-m> 0.0569</z-m>
+ </center>
+ <axis>
+  <x> 0</x>
+  <y>-1</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+<!-- КУР -->
+<animation>
+ <type>rotate</type>
+ <object-name>SN.lever4</object-name>
+ <property>mig29/controls/SN/kur</property>
+ <interpolation>
+  <entry><ind>0</ind><dep>-20</dep></entry>
+  <entry><ind>1</ind><dep> 20</dep></entry>
+ </interpolation>
+ <center>
+  <x-m>0.001</x-m>
+  <y-m>0.0430</y-m>
+  <z-m>0.0569</z-m>
+ </center>
+ <axis>
+  <x> 0</x>
+  <y>-1</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+<!-- Курс -->
+<animation>
+ <type>rotate</type>
+ <object-name>SN.lever5</object-name>
+ <property>mig29/controls/SN/kurs</property>
+ <interpolation>
+  <entry><ind>0</ind><dep>-20</dep></entry>
+  <entry><ind>1</ind><dep> 20</dep></entry>
+ </interpolation>
+ <center>
+  <x-m> 0.001</x-m>
+  <y-m> 0.000</y-m>
+  <z-m>-0.004189</z-m>
+ </center>
+ <axis>
+  <x> 0</x>
+  <y>-1</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+<!-- Круг -->
+<animation>
+ <type>rotate</type>
+ <object-name>SN.lever6</object-name>
+ <property>mig29/controls/SN/krug</property>
+ <interpolation>
+  <entry><ind>0</ind><dep>-20</dep></entry>
+  <entry><ind>1</ind><dep> 20</dep></entry>
+ </interpolation>
+ <center>
+  <x-m> 0.001</x-m>
+  <y-m> 0.0306</y-m>
+  <z-m>-0.004189</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>0</y>
+  <z>1</z>
+ </axis>
+</animation>
+
+<!-- Посадка -->
+<animation>
+ <type>rotate</type>
+ <object-name>SN.lever7</object-name>
+ <property>mig29/controls/SN/landing</property>
+ <interpolation>
+  <entry><ind>0</ind><dep>-20</dep></entry>
+  <entry><ind>1</ind><dep> 20</dep></entry>
+ </interpolation>
+ <center>
+  <x-m> 0.001</x-m>
+  <y-m> 0.0453</y-m>
+  <z-m>-0.0354</z-m>
+ </center>
+ <axis>
+  <x> 0</x>
+  <y>-1</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz01</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/IKV</property>
+   <value>0</value>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz02</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/IKV</property>
+   <value>1</value>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz03</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/channels</property>
+   <value>0</value>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz04</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/channels</property>
+   <value>1</value>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz05</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/PPM_Aer</property>
+   <value>1</value>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz06</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/PPM_Aer</property>
+   <value>0</value>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz10</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/kur</property>
+   <value>1</value>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz11</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/kur</property>
+   <value>0</value>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz18</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/kurs</property>
+   <value>1</value>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz19</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/kurs</property>
+   <value>0</value>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz20</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/krug</property>
+   <value>0</value>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz21</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/krug</property>
+   <value>1</value>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz22</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/landing</property>
+   <value>1</value>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz23</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/landing</property>
+   <value>0</value>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz07</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/PPM_Aer1</property>
+   <value>1</value>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SN/PPM_Aer1</property>
+    <value>0</value>
+   </binding>
+  </mod-up>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz08</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/PPM_Aer2</property>
+   <value>1</value>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SN/PPM_Aer2</property>
+    <value>0</value>
+   </binding>
+  </mod-up>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz09</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/PPM_Aer3</property>
+   <value>1</value>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SN/PPM_Aer3</property>
+    <value>0</value>
+   </binding>
+  </mod-up>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz12</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/mayak1</property>
+   <value>1</value>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SN/mayak1</property>
+    <value>0</value>
+   </binding>
+  </mod-up>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz13</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/mayak2</property>
+   <value>1</value>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SN/mayak2</property>
+    <value>0</value>
+   </binding>
+  </mod-up>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz14</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/mayak3</property>
+   <value>1</value>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SN/mayak3</property>
+    <value>0</value>
+   </binding>
+  </mod-up>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz15</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/sbros</property>
+   <value>1</value>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SN/sbros</property>
+    <value>0</value>
+   </binding>
+  </mod-up>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz16</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/VK_obnul</property>
+   <value>1</value>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SN/VK_obnul</property>
+    <value>0</value>
+   </binding>
+  </mod-up>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz17</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/return</property>
+   <value>1</value>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SN/return</property>
+    <value>0</value>
+   </binding>
+  </mod-up>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz24</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>false</repeatable>
+  <binding>
+   <command>property-assign</command>
+   <property>mig29/controls/SN/opozn</property>
+   <value>1</value>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SN/opozn</property>
+    <value>0</value>
+   </binding>
+  </mod-up>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz25</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>true</repeatable>
+  <binding>
+   <command>property-adjust</command>
+   <property>mig29/controls/SN/navigat</property>
+   <step>1</step>
+   <min>0</min>
+   <max>9999</max>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz26</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>true</repeatable>
+  <binding>
+   <command>property-adjust</command>
+   <property>mig29/controls/SN/navigat</property>
+   <step>-1</step>
+   <min>0</min>
+   <max>9999</max>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz27</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>true</repeatable>
+  <binding>
+   <command>property-adjust</command>
+   <property>mig29/controls/SN/pos</property>
+   <step>-1</step>
+   <min>0</min>
+   <max>99</max>
+  </binding>
+ </action>
+</animation>
+<animation>
+ <type>pick</type>
+ <object-name>SN.cz28</object-name>
+ <visible>false</visible>
+ <action>
+  <button>0</button>
+  <repeatable>true</repeatable>
+  <binding>
+   <command>property-adjust</command>
+   <property>mig29/controls/SN/pos</property>
+   <step>1</step>
+   <min>0</min>
+   <max>99</max>
+  </binding>
+ </action>
+</animation>
+
+</PropertyList>
