@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <sim>
+  <model>
+   <livery>
+    <name type="string">Russian Air Force 2</name>
+    <texture-fuselage>Liveries/MiG-29_1.RuAF_2.png</texture-fuselage>
+    <texture-wings>Liveries/MiG-29_2.RuAF_2.png</texture-wings>
+   </livery>
+  </model>
+ </sim>
+
+</PropertyList>

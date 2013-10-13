@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>TailLamp.ac</path>
+
+ <nasal>
+  <load>
+   ##############################################################################
+   # The on-load Nasal is not executed when this file is loaded as the user
+   # aircraft.
+   ##############################################################################
+   var rplayer = cmdarg();
+   # Set up property aliases for animations.
+   rplayer.getNode("mig29/systems/lighting/ANO", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[9]"));
+   rplayer.getNode("mig29/systems/lighting/ANObright", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[10]"));
+   ##############################################################################
+  </load>
+ </nasal>
+
+ <effect>
+  <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/model-transparent</inherits-from>
+  <object-name>TailLamp</object-name>
+ </effect>
+
+  <animation>
+   <type>noshadow</type>
+   <object-name>TailLamp</object-name>
+  </animation>
+
+  <animation>
+   <type>alpha-test</type>
+   <alpha-factor>0.01</alpha-factor>
+  </animation>
+
+  <animation>
+   <type>billboard</type>
+   <object-name>TailLamp</object-name>
+   <spherical type="bool">true</spherical>
+  </animation>
+
+  <animation>
+   <type>material</type>
+   <object-name>TailLamp</object-name>
+   <emission>
+    <red>   1.0 </red>
+    <green> 1.0 </green>
+    <blue>  1.0 </blue>
+    <factor-prop>mig29/systems/lighting/ANObright</factor-prop>
+   </emission>
+  </animation>
+
+  <animation>
+   <type>dist-scale</type>
+   <object-name>TailLamp</object-name>
+   <interpolation>
+    <entry><ind>    0 </ind><dep> 0.6 </dep></entry>
+    <entry><ind>   20 </ind><dep> 1.0 </dep></entry>
+    <entry><ind> 1500 </ind><dep> 5.00 </dep></entry>
+   </interpolation>
+  </animation>
+
+  <animation>
+   <type>select</type>
+   <object-name>TailLamp</object-name>
+   <condition>
+    <and>
+     <equals>
+      <property>mig29/systems/lighting/ANO</property>
+      <value>1</value>
+     </equals>
+     <equals>
+      <property>mig29/systems/lighting/ANOmode</property>
+      <value>1</value>
+     </equals>
+     <greater-than>
+      <property>mig29/instrumentation/electrical/v27</property>
+      <value>24</value>
+     </greater-than>
+    </and>
+   </condition>
+  </animation>
+
+</PropertyList>

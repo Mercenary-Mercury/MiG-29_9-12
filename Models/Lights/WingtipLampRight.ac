@@ -1,0 +1,27 @@
+AC3Db
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "Light" rgb 0.8 0.8 0.8 amb 1 1 1 emis 1 1 1 spec 1 1 1 shi 64 trans 0
+OBJECT world
+kids 1
+OBJECT poly
+name "WingtipLampRight"
+loc 0 0 -0
+data 16
+WingtipLampRight
+texture "Lights.png"
+texrep 1 1
+crease 179.000000
+numvert 4
+0.5 0.5 -0
+-0.5 0.5 -0
+0.5 -0.5 -0
+-0.5 -0.5 -0
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+2 0.999999940395 0.999999880791
+3 0.5 0.999999880791
+1 0.500000059605 0.499999970198
+0 1 0.499999970198
+kids 0
