@@ -1,0 +1,1833 @@
+<?xml version="1.0"?>
+
+<!-- MiG-29 (9-12) -->
+<!-- Sergey "Mercenary_Mercury" Salov, 2011 -->
+
+<PropertyList>
+
+ <path>cockpit_9-12.ac</path>
+
+ <model>
+  <name>K-36DM</name>
+  <path>Aircraft/MiG-29_9-12/Models/Submodels/K-36DM/K-36DM.xml</path>
+  <offsets>
+   <x-m>-3.210</x-m>
+   <y-m> 0.000</y-m>
+   <z-m>-0.049</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Pilot</name>
+  <path>Aircraft/MiG-29_9-12/Models/Submodels/Pilot/Pilot.xml</path>
+  <offsets>
+   <x-m>-3.300</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.566</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Instruments</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments.xml</path>
+ </model>
+
+ <model>
+  <name>Panels</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Panels.xml</path>
+ </model>
+
+ <model>
+  <name>Tablo</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Tablo/Tablo.xml</path>
+ </model>
+
+ <model>
+  <name>InternalLighting</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/InternalLighting.xml</path>
+ </model>
+
+ <animation>
+  <type>noshadow</type>
+  <object-name>agra</object-name>
+  <object-name>asf_b</object-name>
+  <object-name>asf_m</object-name>
+  <object-name>asftext</object-name>
+  <object-name>air_lever</object-name>
+  <object-name>avartorm</object-name>
+  <object-name>avvsh</object-name>
+  <object-name>bp</object-name>
+  <object-name>drag_chute_button</object-name>
+  <object-name>cedlever</object-name>
+  <object-name>cedtext</object-name>
+  <object-name>cabin_air_lever</object-name>
+  <object-name>cabin_air_text</object-name>
+  <object-name>ILS31Len</object-name>
+  <object-name>ILSGlass</object-name>
+  <object-name>ILSlowbase</object-name>
+  <object-name>ILSup</object-name>
+  <object-name>mizf.case</object-name>
+  <object-name>mizf.pintle</object-name>
+  <object-name>pitkab</object-name>
+  <object-name>oxygenflow</object-name>
+  <object-name>rrtr</object-name>
+  <object-name>RUD1</object-name>
+  <object-name>RUD1.wsr</object-name>
+  <object-name>RUD1.BTlock</object-name>
+  <object-name>RUD1.FTlock</object-name>
+  <object-name>RUD2</object-name>
+  <object-name>RUD2.RSbut</object-name>
+  <object-name>RUD2.BTlock</object-name>
+  <object-name>RUD2.FTlock</object-name>
+  <object-name>RUD2.ZahvatMRK</object-name>
+  <object-name>RUDrails</object-name>
+  <object-name>RUDrailsd</object-name>
+  <object-name>RUF</object-name>
+  <object-name>RUFcase</object-name>
+  <object-name>RUFway</object-name>
+  <object-name>RUS</object-name>
+  <object-name>RUS.OtklSAU</object-name>
+  <object-name>RUS.PrivGor</object-name>
+  <object-name>RUS.PrivGorOn</object-name>
+  <object-name>RUS.RST</object-name>
+  <object-name>RUS.RTK</object-name>
+  <object-name>RUS.RTKs</object-name>
+  <object-name>RUS.RTKsa</object-name>
+  <object-name>RUS.SAUt</object-name>
+  <object-name>RUS.StrobMarker</object-name>
+  <object-name>RUS.TrimStabRV</object-name>
+  <object-name>RUS.Trigger1</object-name>
+  <object-name>RUS.Zapros</object-name>
+  <object-name>Schel_pr</object-name>
+  <object-name>shp</object-name>
+  <object-name>tpk</object-name>
+  <object-name>tnktext</object-name>
+  <object-name>ventlever</object-name>
+  <object-name>VSS-1-4kStack</object-name>
+  <object-name>zttext</object-name>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>PanelLeft</object-name>
+  <object-name>PanelCentral1</object-name>
+  <object-name>PanelRight</object-name>
+  <object-name>sta</object-name>
+  <object-name>mig29cd1</object-name>
+  <object-name>mig29cc1</object-name>
+  <object-name>SNbase</object-name>
+  <object-name>mig29ca3c</object-name>
+  <object-name>mig29cb1</object-name>
+  <object-name>mig29cb1a</object-name>
+  <object-name>tnkt</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+  <texture-prop>mig29/systems/cockpitlighting/texture1</texture-prop>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>oftextoz</object-name>
+  <object-name>sta.cov</object-name>
+  <object-name>mig29c</object-name>
+  <object-name>LowerPanel</object-name>
+  <object-name>mig29c.int</object-name>
+  <object-name>mig29da</object-name>
+  <object-name>LMSPanel</object-name>
+  <object-name>LFSPanel</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+  <texture-prop>mig29/systems/cockpitlighting/texture2</texture-prop>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>ZaBE</object-name>
+  <object-name>fuselagea</object-name>
+  <object-name>bp3</object-name>
+  <object-name>cable</object-name>
+  <object-name>RUFcase</object-name>
+  <object-name>RUFway</object-name>
+  <object-name>RUF</object-name>
+  <object-name>drag_chute_button</object-name>
+  <object-name>PedalLeft</object-name>
+  <object-name>PedalRight</object-name>
+  <object-name>PedalC</object-name>
+  <object-name>PedalLeftC</object-name>
+  <object-name>PedalRightC</object-name>
+  <object-name>avvsh</object-name>
+  <object-name>avartorm</object-name>
+  <object-name>tpk</object-name>
+  <object-name>agra</object-name>
+  <object-name>RUDrailsd</object-name>
+  <object-name>RUDrails</object-name>
+  <object-name>rrtr</object-name>
+  <object-name>cedtext</object-name>
+  <object-name>cedlever</object-name>
+  <object-name>ventlever</object-name>
+  <object-name>oxygen_flow</object-name>
+  <object-name>asftext</object-name>
+  <object-name>ASF_base</object-name>
+  <object-name>ASF_b</object-name>
+  <object-name>ASF_m</object-name>
+  <object-name>mizf.case</object-name>
+  <object-name>mizf.pintle</object-name>
+  <object-name>air_lever</object-name>
+  <object-name>cabin_air_lever</object-name>
+  <object-name>cabin_air_text</object-name>
+  <object-name>RUS.P1</object-name>
+  <object-name>RUS.P2</object-name>
+  <object-name>RUS.P3</object-name>
+  <object-name>RUS.P4</object-name>
+  <object-name>RUS.P5</object-name>
+  <object-name>RUS.P6</object-name>
+  <object-name>Cylinder</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+  <texture-prop>mig29/systems/cockpitlighting/texture3</texture-prop>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>RUD1</object-name>
+  <object-name>RUD1.wsr</object-name>
+  <object-name>RUD1.FTLock</object-name>
+  <object-name>RUD1.BTLock</object-name>
+  <object-name>RUD2</object-name>
+  <object-name>RUD2.FTLock</object-name>
+  <object-name>RUD2.BTLock</object-name>
+  <object-name>RUD2.ZahvatMRK</object-name>
+  <object-name>RUD2.RSbut</object-name>
+  <object-name>RUD2.sbc</object-name>
+  <object-name>RUD2.LTC</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+  <texture-prop>mig29/systems/cockpitlighting/texture4</texture-prop>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>RUS</object-name>
+  <object-name>RUS.Trigger1</object-name>
+  <object-name>RUS.StrobMarker</object-name>
+  <object-name>RUS.OtklSAU</object-name>
+  <object-name>RUS.Trim</object-name>
+  <object-name>RUS.PrivGor</object-name>
+  <object-name>RUS.Zo</object-name>
+  <object-name>RUS.Zapros</object-name>
+  <object-name>RUS.SAUt</object-name>
+  <object-name>RUS.RTK</object-name>
+  <object-name>RUS.RST</object-name>
+  <object-name>RUS.RTKs</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+  <texture-prop>mig29/systems/cockpitlighting/texture5</texture-prop>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>ILSlowbase</object-name>
+  <object-name>ILSup</object-name>
+  <object-name>ILS31Len</object-name>
+  <object-name>Schel_pr</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+  </emission>
+  <texture-prop>mig29/systems/cockpitlighting/texture6</texture-prop>
+ </animation>
+
+ <effect>
+  <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/model-transparent</inherits-from>
+  <object-name>ILSGlass</object-name>
+  <object-name>ILS31Len</object-name>
+  <object-name>Schel_pr_g</object-name>
+ </effect>
+
+<!-- РУДы (throttle's) -->
+
+ <animation>
+  <type>translate</type>
+  <object-name>RUD1</object-name>
+  <object-name>RUD1.wsr</object-name>
+  <object-name>RUD1.BTLock</object-name>
+  <object-name>RUD1.FTLock</object-name>
+  <property>controls/engines/engine[0]/throttle</property>
+  <factor>0.18</factor>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RUD2</object-name>
+  <object-name>RUD2.RSbut</object-name>
+  <object-name>RUD2.BTLock</object-name>
+  <object-name>RUD2.FTLock</object-name>
+  <object-name>RUD2.sbc</object-name>
+  <object-name>RUD2.LTC</object-name>
+  <object-name>RUD2.ZahvatMRK</object-name>
+  <object-name>RUD2.cz2</object-name>
+  <property>controls/engines/engine[1]/throttle</property>
+  <factor>0.18</factor>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RUD2.ZahvatMRK</object-name>
+  <property>mig29/controls/RUD/ZahvatMRK</property>
+  <factor>0.00129</factor>
+  <axis>
+   <x> 1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>RUD2.ZahvatMRK</object-name>
+  <property>mig29/controls/RUD/ZahvatMRK</property>
+  <factor>0.00153</factor>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+<!-- Кнопка радиостанции -->
+ <animation>
+  <type>translate</type>
+  <object-name>RUD2.RSbut</object-name>
+  <property>/instrumentation/comm/ptt</property>
+  <factor>0.003</factor>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>RUD2.RSbut</object-name>
+  <visible>true</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/comm/ptt</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/comm/ptt</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RUD2.sbc</object-name>
+  <property>/controls/flight/speedbrake</property>
+  <factor>0.002</factor>
+  <axis>
+   <x> 1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>RUD2.cz2</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/RUD/ZahvatMRK</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/RUD/ZahvatMRK</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+  <action>
+   <button>1</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>mig29/controls/RUD/ZahvatMRK</property>
+   </binding>
+  </action>
+ </animation>
+
+<!-- Ручка открытия/закрытия фонаря -->
+ <animation>
+  <type>rotate</type>
+  <object-name>RUF</object-name>
+  <property>fdm/jsbsim/fcs/canopy-cmd-norm</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-25</dep></entry>
+   <entry><ind>1</ind><dep> 33</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-3.805651</x1-m>
+   <y1-m>-0.35354</y1-m>
+   <z1-m> 0.6885</z1-m>
+   <x2-m>-3.805581</x2-m>
+   <y2-m>-0.34954</y2-m>
+   <z2-m> 0.6885</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz5</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/fcs/canopy-cmd-norm</property>
+    <value>1.0</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz6</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/fcs/canopy-cmd-norm</property>
+    <value>0.05</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz7</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/fcs/canopy-cmd-norm</property>
+    <value>0.0</value>
+   </binding>
+  </action>
+ </animation>
+
+<!-- Аварийное торможение -->
+ <animation>
+  <type>pick</type>
+  <object-name>cz8</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/gear/emer_brake</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz9</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/gear/emer_brake</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+<!-- Авариный выпуск шасси -->
+ <animation>
+  <type>translate</type>
+  <object-name>avvsh</object-name>
+  <property>mig29/controls/gear/emer_raise</property>
+  <interpolation>
+   <entry><ind>0.0 </ind><dep>0.00</dep></entry>
+   <entry><ind>0.45</ind><dep>0.06</dep></entry>
+   <entry><ind>0.75</ind><dep>0.06</dep></entry>
+   <entry><ind>1.0 </ind><dep>0.09</dep></entry>
+  </interpolation>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>avvsh</object-name>
+  <property>mig29/controls/gear/emer_raise</property>
+  <interpolation>
+   <entry><ind>0.0 </ind><dep> 0</dep></entry>
+   <entry><ind>0.45</ind><dep> 0</dep></entry>
+   <entry><ind>0.75</ind><dep>45</dep></entry>
+   <entry><ind>1.0 </ind><dep>45</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-4.11 </x1-m>
+   <y1-m>-0.27 </y1-m>
+   <z1-m> 0.443</z1-m>
+   <x2-m>-3.99 </x2-m>
+   <y2-m>-0.27 </y2-m>
+   <z2-m> 0.443</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz12</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>system.EGEfunc()</script>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+
+<!-- Ручка аварийного сброса фонаря -->
+ <animation>
+  <type>rotate</type>
+  <object-name>ASF_b</object-name>
+  <object-name>ASF_m</object-name>
+  <property>mig29/controls/Canopy/ASF-a</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>  0</dep></entry>
+   <entry><ind>0.5</ind><dep>  0</dep></entry>
+   <entry><ind>1.0</ind><dep>-90</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-3.62178</x1-m>
+   <y1-m> 0.36284</y1-m>
+   <z1-m> 0.731</z1-m>
+   <x2-m>-3.62206</x2-m>
+   <y2-m> 0.37883</y2-m>
+   <z2-m> 0.731</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>ASF_m</object-name>
+  <property>mig29/controls/Canopy/ASF-a</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep> 0</dep></entry>
+   <entry><ind>0.5</ind><dep>90</dep></entry>
+   <entry><ind>1.0</ind><dep>90</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-3.711</x1-m>
+   <y1-m> 0.35778</y1-m>
+   <z1-m> 0.740</z1-m>
+   <x2-m>-3.711</x2-m>
+   <y2-m> 0.35778</y2-m>
+   <z2-m> 0.722</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz15</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/Canopy/ASF</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+
+<!-- Механический индикатор закрытия фонаря -->
+ <animation>
+  <type>translate</type>
+  <object-name>mizf.pintle</object-name>
+  <property>fdm/jsbsim/fcs/canopy-pos-norm</property>
+  <interpolation>
+   <entry><ind>0.00</ind><dep>-0.02</dep></entry>
+   <entry><ind>0.05</ind><dep> 0.00</dep></entry>
+   <entry><ind>1.00</ind><dep> 0.00</dep></entry>
+  </interpolation>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+<!-- Ручка Управления Самолётом -->
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS</object-name>
+  <object-name>RUS.OtklSAU</object-name>
+  <object-name>RUS.PrivGor</object-name>
+  <object-name>RUS.PrivGorOn</object-name>
+  <object-name>RUS.RST</object-name>
+  <object-name>RUS.RTK</object-name>
+  <object-name>RUS.RTKs</object-name>
+  <object-name>RUS.RTKsa</object-name>
+  <object-name>RUS.SAUt</object-name>
+  <object-name>RUS.StrobMarker</object-name>
+  <object-name>RUS.Trim</object-name>
+  <object-name>RUS.Trigger1</object-name>
+  <object-name>RUS.Zapros</object-name>
+  <object-name>RUS.Zo</object-name>
+  <object-name>RUS.cz1</object-name>
+  <object-name>RUS.cz2</object-name>
+  <object-name>RUS.cz3</object-name>
+  <object-name>RUS.cz4</object-name>
+  <object-name>RUS.cz5</object-name>
+  <object-name>RUS.cz6</object-name>
+  <object-name>RUS.cz7</object-name>
+  <object-name>RUS.cz8</object-name>
+  <object-name>RUS.cz9</object-name>
+  <object-name>RUS.cz10</object-name>
+  <object-name>RUS.cz11</object-name>
+  <object-name>RUS.cz12</object-name>
+  <object-name>RUS.cz13</object-name>
+  <property>controls/flight/elevator</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep> 23.0</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep>-11.5</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.810</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.181</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS</object-name>
+  <object-name>RUS.OtklSAU</object-name>
+  <object-name>RUS.PrivGor</object-name>
+  <object-name>RUS.PrivGorOn</object-name>
+  <object-name>RUS.RST</object-name>
+  <object-name>RUS.RTK</object-name>
+  <object-name>RUS.RTKs</object-name>
+  <object-name>RUS.RTKsa</object-name>
+  <object-name>RUS.SAUt</object-name>
+  <object-name>RUS.StrobMarker</object-name>
+  <object-name>RUS.Trim</object-name>
+  <object-name>RUS.Trigger1</object-name>
+  <object-name>RUS.Zapros</object-name>
+  <object-name>RUS.Zo</object-name>
+  <object-name>RUS.cz1</object-name>
+  <object-name>RUS.cz2</object-name>
+  <object-name>RUS.cz3</object-name>
+  <object-name>RUS.cz4</object-name>
+  <object-name>RUS.cz5</object-name>
+  <object-name>RUS.cz6</object-name>
+  <object-name>RUS.cz7</object-name>
+  <object-name>RUS.cz8</object-name>
+  <object-name>RUS.cz9</object-name>
+  <object-name>RUS.cz10</object-name>
+  <object-name>RUS.cz11</object-name>
+  <object-name>RUS.cz12</object-name>
+  <object-name>RUS.cz13</object-name>
+  <property>controls/flight/aileron</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep>-17.5</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep> 17.5</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.810</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.181</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RUS.OtklSAU</object-name>
+  <property>mig29/controls/SAU/vrSAU</property>
+  <factor>0.00148672</factor>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>RUS.OtklSAU</object-name>
+  <property>mig29/controls/SAU/vrSAU</property>
+  <factor>0.000547232</factor>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>RUS.OtklSAU</object-name>
+  <property>mig29/controls/SAU/vrSAU</property>
+  <factor>0.000261088</factor>
+  <axis>
+   <x> 0</x>
+   <y> 0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>RUS.PrivGorOn</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/instrumentation/electrical/v27</property>
+     <value>18</value>
+    </greater-than>
+     <equals>
+      <property>fdm/jsbsim/ap/control/PrivGor</property>
+      <value>1</value>
+     </equals>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.Trim</object-name>
+  <property>mig29/controls/flight/elevator-trim</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep>-10.0</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep> 10.0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-3.81415</x1-m>
+   <y1-m>-0.006533</y1-m>
+   <z1-m> 0.70380</z1-m>
+   <x2-m>-3.81599</x2-m>
+   <y2-m>-0.001459</y2-m>
+   <z2-m> 0.70380</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.Trim</object-name>
+  <property>mig29/controls/flight/aileron-trim</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep>-10.0</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep> 10.0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-3.81463</x1-m>
+   <y1-m>-0.003836</y1-m>
+   <z1-m> 0.70114</z1-m>
+   <x2-m>-3.81551</x2-m>
+   <y2-m>-0.004156</y2-m>
+   <z2-m> 0.70646</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>RUS.cz2</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/controls/flight/elevator-trim</property>
+    <step>-0.02</step>
+    <min>-1</min>
+    <max> 1</max>
+   </binding>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/flight/elevator-trim</property>
+    <value>-1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/flight/elevator-trim</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>RUS.cz4</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/controls/flight/elevator-trim</property>
+    <step>0.02</step>
+    <min>-1</min>
+    <max> 1</max>
+   </binding>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/flight/elevator-trim</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/flight/elevator-trim</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>RUS.cz5</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/controls/flight/aileron-trim</property>
+    <step>-0.02</step>
+    <min>-1</min>
+    <max> 1</max>
+   </binding>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/flight/aileron-trim</property>
+    <value>-1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/flight/aileron-trim</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>RUS.cz3</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/controls/flight/aileron-trim</property>
+    <step>0.02</step>
+    <min>-1</min>
+    <max> 1</max>
+   </binding>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/flight/aileron-trim</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/flight/aileron-trim</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>RUS.cz1</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SAU/vrSAU</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/SAU/vrSAU</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>RUS.cz6</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SAU/PrivGor</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/SAU/PrivGor</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>RUS.cz7</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/SUV/strob-v</property>
+    <step>-0.02</step>
+    <min>-1</min>
+    <max> 1</max>
+   </binding>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SUV/strob-va</property>
+    <value>-1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/SUV/strob-va</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>RUS.cz8</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/SUV/strob-v</property>
+    <step>0.02</step>
+    <min>-1</min>
+    <max> 1</max>
+   </binding>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SUV/strob-va</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/SUV/strob-va</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>RUS.cz9</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/SUV/strob-h</property>
+    <step>-0.02</step>
+    <min>-1</min>
+    <max> 1</max>
+   </binding>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SUV/strob-ha</property>
+    <value>-1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/SUV/strob-ha</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>RUS.cz10</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>mig29/controls/SUV/strob-h</property>
+    <step>0.02</step>
+    <min>-1</min>
+    <max> 1</max>
+   </binding>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SUV/strob-ha</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/SUV/strob-ha</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>RUS.cz11</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/SRZ/zapros</property>
+    <value>1</value>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>mig29/controls/SRZ/zapros</property>
+     <value>0</value>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>RUS.cz12</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>weapon.PTB_jettison()</script>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>RUS.cz13</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>mig29/controls/SAU/KVRUS</property>
+   </binding>
+  </action>
+ </animation>
+
+<!-- Педали -->
+ <animation>
+  <type>translate</type>
+  <object-name>PedalLeft</object-name>
+  <object-name>PedalLeftC</object-name>
+  <property>/controls/flight/rudder</property>
+  <factor>0.045</factor>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>PedalRight</object-name>
+  <object-name>PedalRightC</object-name>
+  <property>/controls/flight/rudder</property>
+  <factor>0.045</factor>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>PedalC</object-name>
+  <property>/controls/flight/rudder</property>
+  <factor>12.5</factor>
+  <center>
+   <x-m>-4.300</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.119</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Кран подачи кислорода -->
+ <animation>
+  <type>rotate</type>
+  <object-name>oxygen_flow</object-name>
+  <property>/mig29/controls/oxygensystem/on</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-20</dep></entry>
+   <entry><ind>1</ind><dep> 20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.23168</x-m>
+   <y-m>-0.31802</y-m>
+   <z-m> 0.439</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz01</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/controls/oxygensystem/on", 1.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz02</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+     interpolate("/mig29/controls/oxygensystem/on", 0.0, 0.1 );
+    </script>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>ventlever</object-name>
+  <property>mig29/controls/consys/vent</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>  0</dep></entry>
+   <entry><ind>1</ind><dep>-35</dep></entry>
+   <entry><ind>2</ind><dep> 35</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.341</x-m>
+   <y-m>-0.405</y-m>
+   <z-m> 0.498</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Кран аварийной разгерметизации кабины -->
+ <animation>
+  <type>rotate</type>
+  <object-name>cedlever</object-name>
+  <property>mig29/controls/pneumosys/ced</property>
+  <interpolation>
+   <entry><ind>0</ind><dep> 20</dep></entry>
+   <entry><ind>1</ind><dep>140</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.404</x-m>
+   <y-m> 0.394</y-m>
+   <z-m> 0.532</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz03</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/pneumosys/ced</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz04</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/pneumosys/ced</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+
+<!-- Кран обдува -->
+ <animation>
+  <type>rotate</type>
+  <object-name>air_lever</object-name>
+  <property>mig29/controls/consys/air</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-15</dep></entry>
+   <entry><ind>1</ind><dep> 15</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.770</x-m>
+   <y-m> 0.284</y-m>
+   <z-m> 0.351</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz19</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/consys/air</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz20</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/consys/air</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+
+<!-- Кран питания кабины -->
+ <animation>
+  <type>rotate</type>
+  <object-name>cabin_air_lever</object-name>
+  <property>mig29/controls/consys/cabin_air</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-15</dep></entry>
+   <entry><ind>1</ind><dep> 15</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.549</x-m>
+   <y-m> 0.285</y-m>
+   <z-m> 0.376</z-m>
+  </center>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz21</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/consys/cabin_air</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz22</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/consys/cabin_air</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+<!-- Рукоятка переключения ПВД - "рабоч-авар" -->
+ <animation>
+  <type>rotate</type>
+  <object-name>agra</object-name>
+  <!--property>mig29/controls/SVS/PVD_select</property-->
+  <property>fdm/jsbsim/systems/SVS/PVD_select</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-90</dep></entry>
+   <entry><ind>1</ind><dep> 90</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.963</x-m>
+   <y-m> 0.010</y-m>
+   <z-m> 0.432</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz13</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <!--property>mig29/controls/SVS/PVD_select</property-->
+    <property>fdm/jsbsim/systems/SVS/PVD_select</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz14</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <!--property>mig29/controls/SVS/PVD_select</property-->
+    <property>fdm/jsbsim/systems/SVS/PVD_select</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+
+<!-- Рукоятка включения-выключения тормоза переднего колеса -->
+ <animation>
+  <type>rotate</type>
+  <object-name>tpk</object-name>
+  <property>mig29/controls/gear/nwb</property>
+  <interpolation>
+   <entry><ind>0</ind><dep> 0</dep></entry>
+   <entry><ind>1</ind><dep>90</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.787</x-m>
+   <y-m>-0.009</y-m>
+   <z-m> 0.748</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz10</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/gear/nwb</property>
+    <value>1</value>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cz11</object-name>
+  <visible>false</visible>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>mig29/controls/gear/nwb</property>
+    <value>0</value>
+   </binding>
+  </action>
+ </animation>
+
+<!-- Рычаг торможения колес -->
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.RTK</object-name>
+  <object-name>RUS.RTKs</object-name>
+  <object-name>RUS.RST</object-name>
+  <property>fdm/jsbsim/fcs/brake-cmd-norm</property>
+  <interpolation>
+   <entry><ind>0</ind><dep> 0</dep></entry>
+   <entry><ind>1</ind><dep>10</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-3.844</x1-m>
+   <y1-m>-0.01601</y1-m>
+   <z1-m> 0.409</z1-m>
+   <x2-m>-3.832</x2-m>
+   <y2-m>-0.0263</y2-m>
+   <z2-m> 0.409</z2-m>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.RTKs</object-name>
+  <property>fdm/jsbsim/fcs/brake-cmd-norm</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>-9.0</dep></entry>
+   <entry><ind>1</ind><dep> 1.0</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-3.848</x1-m>
+   <y1-m>-0.05036</y1-m>
+   <z1-m> 0.404</z1-m>
+   <x2-m>-3.865</x2-m>
+   <y2-m>-0.03621</y2-m>
+   <z2-m> 0.404</z2-m>
+  </axis>
+ </animation>
+
+<!-- Рычаг стартового торможения колес -->
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.RST</object-name>
+  <property>/controls/gear/brake-parking</property>
+  <interpolation>
+   <entry><ind>0</ind><dep> 0</dep></entry>
+   <entry><ind>1</ind><dep>20</dep></entry>
+  </interpolation>
+  <axis>
+   <x1-m>-3.868</x1-m>
+   <y1-m>-0.05092</y1-m>
+   <z1-m> 0.460</z1-m>
+   <x2-m>-3.862</x2-m>
+   <y2-m>-0.05607</y2-m>
+   <z2-m> 0.460</z2-m>
+  </axis>
+ </animation>
+
+<!-- Анимация пыльника -->
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.P1</object-name>
+  <property>controls/flight/elevator</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep>  2.0</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep> -1.0</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.810</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.181</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.P1</object-name>
+  <property>controls/flight/aileron</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep> -1.5</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep>  1.5</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.810</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.181</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.P2</object-name>
+  <property>controls/flight/elevator</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep>  4.6</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep> -2.3</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.810</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.181</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.P2</object-name>
+  <property>controls/flight/aileron</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep> -3.5</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep>  3.5</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.810</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.181</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.P3</object-name>
+  <property>controls/flight/elevator</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep>  9.2</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep> -4.6</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.810</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.181</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.P3</object-name>
+  <property>controls/flight/aileron</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep> -7.0</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep>  7.0</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.810</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.181</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.P4</object-name>
+  <property>controls/flight/elevator</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep> 13.8</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep> -6.9</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.810</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.181</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.P4</object-name>
+  <property>controls/flight/aileron</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep>-10.5</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep> 10.5</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.810</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.181</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.P5</object-name>
+  <property>controls/flight/elevator</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep> 18.4</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep> -9.2</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.810</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.181</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.P5</object-name>
+  <property>controls/flight/aileron</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep>-14.0</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep> 14.0</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.810</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.181</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.P6</object-name>
+  <property>controls/flight/elevator</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep> 23.0</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep>-11.5</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.810</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.181</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RUS.P6</object-name>
+  <property>controls/flight/aileron</property>
+  <interpolation>
+   <entry><ind>-1.0</ind><dep>-17.5</dep></entry>
+   <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+   <entry><ind> 1.0</ind><dep> 17.5</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-3.810</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 0.181</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>g1</object-name>
+  <object-name>g2</object-name>
+  <property>fdm/jsbsim/fcs/canopy-pos-norm</property>
+  <interpolation>
+   <entry><ind> 0.0</ind><dep>  0.0 </dep></entry>
+   <entry><ind> 0.1</ind><dep>  2.2 </dep></entry>
+   <entry><ind> 0.2</ind><dep>  4.36</dep></entry>
+   <entry><ind> 0.3</ind><dep>  6.46</dep></entry>
+   <entry><ind> 0.4</ind><dep>  8.53</dep></entry>
+   <entry><ind> 0.5</ind><dep> 10.6 </dep></entry>
+   <entry><ind> 0.6</ind><dep> 12.6 </dep></entry>
+   <entry><ind> 0.7</ind><dep> 14.6 </dep></entry>
+   <entry><ind> 0.8</ind><dep> 16.5 </dep></entry>
+   <entry><ind> 0.9</ind><dep> 18.5 </dep></entry>
+   <entry><ind> 1.0</ind><dep> 20.4 </dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-2.3</x-m>
+   <y-m> 0.0</y-m>
+   <z-m> 0.837</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>g2</object-name>
+  <property>fdm/jsbsim/fcs/canopy-pos-norm</property>
+  <interpolation>
+   <entry><ind> 0.0</ind><dep> 0.0    </dep></entry><!-- 34.6 -->
+   <entry><ind> 0.1</ind><dep> 0.02395</dep></entry><!-- 36.995 -->
+   <entry><ind> 0.2</ind><dep> 0.04677</dep></entry><!-- 39.277 -->
+   <entry><ind> 0.3</ind><dep> 0.06965</dep></entry><!-- 41.565 -->
+   <entry><ind> 0.4</ind><dep> 0.09215</dep></entry><!-- 43.815 -->
+   <entry><ind> 0.5</ind><dep> 0.11425</dep></entry><!-- 46.025 -->
+   <entry><ind> 0.6</ind><dep> 0.13594</dep></entry><!-- 48.194 -->
+   <entry><ind> 0.7</ind><dep> 0.15718</dep></entry><!-- 50.318 -->
+   <entry><ind> 0.8</ind><dep> 0.17797</dep></entry><!-- 52.397 -->
+   <entry><ind> 0.9</ind><dep> 0.19827</dep></entry><!-- 54.427 -->
+   <entry><ind> 1.0</ind><dep> 0.21807</dep></entry><!-- 56.407 -->
+  </interpolation>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+</PropertyList>

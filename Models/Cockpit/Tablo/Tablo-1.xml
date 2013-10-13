@@ -1,0 +1,619 @@
+<?xml version="1.0"?>
+
+<!-- Tablo-1                                    -->
+<!-- Sergey "Mercenary_Mercury" Salov, Aug 2011 -->
+
+<PropertyList>
+
+<path>Tablo-1.ac</path>
+
+<animation>
+ <type>noshadow</type>
+ <object-name>Tablo.case</object-name>
+ <object-name>Tablo-1-1</object-name>
+ <object-name>Tablo-1-2</object-name>
+ <object-name>Tablo-1-3a</object-name>
+ <object-name>Tablo-1-3b</object-name>
+</animation>
+
+<animation>
+ <type>material</type>
+ <object-name>Tablo.case</object-name>
+ <object-name>Tablo-1-1</object-name>
+ <object-name>Tablo-1-2</object-name>
+ <object-name>Tablo-1-3a</object-name>
+ <object-name>Tablo-1-3b</object-name>
+ <emission>
+  <red>0.8</red>
+  <green>0.8</green>
+  <blue>0.8</blue>
+  <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+ </emission>
+</animation>
+
+<animation>
+ <type>material</type>
+ <object-name>Tablo-1.FireKSA</object-name>
+ <object-name>Tablo-1.FireLeft</object-name>
+ <object-name>Tablo-1.FireRight</object-name>
+ <object-name>Tablo-1.OilLeft</object-name>
+ <object-name>Tablo-1.OilRight</object-name>
+ <object-name>Tablo-1.OilKSA</object-name>
+ <object-name>Tablo-1.ReduceLeft</object-name>
+ <object-name>Tablo-1.ReduceRight</object-name>
+ <object-name>Tablo-1.Fuel550</object-name>
+ <object-name>Tablo-1.BGF</object-name>
+ <object-name>Tablo-1.OtkazCOC</object-name>
+ <object-name>Tablo-1.OtkazAPUS</object-name>
+ <object-name>Tablo-1.DamperOff</object-name>
+ <object-name>Tablo-1.AugLeft</object-name>
+ <object-name>Tablo-1.AugRight</object-name>
+ <object-name>Tablo-1.StartLeft</object-name>
+ <object-name>Tablo-1.StartRight</object-name>
+ <object-name>Tablo-1.TrimRP</object-name>
+ <object-name>Tablo-1.TrimStabil</object-name>
+ <object-name>Tablo-1.TrimAileron</object-name>
+ <object-name>Tablo-1.ARUVZPOS</object-name>
+ <object-name>Tablo-1.Marker</object-name>
+ <object-name>Tablo-1.ANS</object-name>
+ <object-name>Tablo-1.Zapros</object-name>
+ <object-name>Tablo-1.06</object-name>
+ <object-name>Tablo-1.07</object-name>
+ <object-name>Tablo-1.IzlRLS</object-name>
+ <object-name>Tablo-1.09</object-name>
+ <object-name>Tablo-1.10</object-name>
+ <object-name>Tablo-1.11</object-name>
+ <emission>
+  <red>1.0</red>
+  <green>1.0</green>
+  <blue>1.0</blue>
+  <factor-prop>mig29/systems/cockpitlighting/tablo-norm</factor-prop>
+ </emission>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.FireKSA</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/FireKSA</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.FireLeft</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/FireLeft</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.FireRight</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/FireRight</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.OilLeft</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/OilLeft</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.OilRight</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/OilRight</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.OilKSA</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/OilKSA</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.ReduceLeft</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/ReduceLeft</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.ReduceRight</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/ReduceRight</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.Fuel550</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/R550</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.BGF</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/BothHydroFault</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.OtkazCOC</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/COCFailure</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.OtkazAPUS</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/APUSFaulure</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.DamperOff</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/DamperOff</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.StartLeft</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/StartLeft</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.StartRight</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/StartRight</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.AugLeft</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/AugLeft</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.AugRight</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/AugRight</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.TrimRP</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/TrimRP</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.TrimStabil</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/TrimStabil</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.TrimAileron</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/TrimAileron</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.ARUVZPOS</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/ARU</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.Marker</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <or>
+     <equals>
+      <property>instrumentation/marker-beacon/middle</property>
+      <value>1</value>
+     </equals>
+     <equals>
+      <property>instrumentation/marker-beacon/outer</property>
+      <value>1</value>
+     </equals>
+    </or>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.ANS</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/EmergPumpStation</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.Zapros</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/controls/lighting/kontr_lamp</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<!--animation>
+ <type>select</type>
+ <object-name>Tablo-1.05</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/controls/lighting/kontr_lamp</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation-->
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.06</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/controls/lighting/kontr_lamp</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.07</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/controls/lighting/kontr_lamp</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.IzlRLS</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/lamps/IzlRLS</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.09</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/controls/lighting/kontr_lamp</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.10</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/controls/lighting/kontr_lamp</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-1.11</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/controls/lighting/kontr_lamp</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+</PropertyList>

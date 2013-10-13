@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<!-- MiG-29 (9-12) instruments -->
+<!-- Sergey "Mercenary_mercury" Salow, February 2011. Stage 1 -->
+<!-- Sergey "Mercenary_mercury" Salow, Septembr 2011. Stage 2-->
+
+<PropertyList>
+
+ <animation>
+  <type>noshadow</type>
+  <object-name>UAP-7</object-name>
+  <object-name>US-1600</object-name>
+  <object-name>UV-30-3</object-name>
+  <object-name>IP-52</object-name>
+  <object-name>KPP</object-name>
+  <object-name>PNP-72-12</object-name>
+  <object-name>DA-200</object-name>
+  <object-name>UMS-2.5</object-name>
+  <object-name>ACHS-1</object-name>
+  <object-name>Voltmetr</object-name>
+  <object-name>M-2A</object-name>
+  <object-name>LTTs_counter</object-name>
+  <object-name>RV-21</object-name>
+  <object-name>ITE-2</object-name>
+  <object-name>ITG-1_L</object-name>
+  <object-name>ITG-1_R</object-name>
+  <object-name>IKG-1</object-name>
+  <object-name>IKZh-1</object-name>
+  <object-name>ISTR4-2</object-name>
+  <object-name>IPK</object-name>
+  <object-name>UST</object-name>
+  <object-name>SPO-15LM</object-name>
+  <object-name>KI-13</object-name>
+  <object-name>IPV</object-name>
+  <object-name>IPV-31i</object-name>
+  <object-name>ILS-31i</object-name>
+ </animation>
+
+<!-- КСЦ-2 - KSTs-2 -->
+ <model>
+  <name>KSTS-2</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/KSTs-2/KSTs-2.xml</path>
+  <offsets>
+   <x-m>-3.949</x-m>
+   <y-m>-0.158</y-m>
+   <z-m> 0.891</z-m>
+   <heading-deg>16</heading-deg>
+  </offsets>
+ </model>
+
+<!-- UAP-7 - Angel-of-Attack and G-meter -->
+ <model>
+  <name>UAP-7</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/UAP-7/UAP-7.xml</path>
+  <offsets>
+   <x-m>-3.949</x-m>
+   <y-m>-0.183</y-m>
+   <z-m> 0.849</z-m>
+   <heading-deg>16</heading-deg>
+  </offsets>
+ </model>
+
+<!-- US-1600 - airspeed indicator -->
+ <model>
+  <name>US-1600</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/US-1600/US-1600.xml</path>
+  <offsets>
+   <x-m>-3.995318</x-m>
+   <y-m>-0.27324</y-m>
+   <z-m> 0.676</z-m>
+   <heading-deg>10</heading-deg>
+  </offsets>
+ </model>
+
+<!-- UV-30-3 - altimeter -->
+ <model>
+  <name>UV-30-3</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/UV-30-3/UV-30-3.xml</path>
+  <offsets>
+   <x-m>-3.995318</x-m>
+   <y-m>-0.27324</y-m>
+   <z-m> 0.589</z-m>
+   <heading-deg>10</heading-deg>
+  </offsets>
+ </model>
+
+<!-- ИП-52 (IP-52) - gear, flaps, leading edges and speedbrake positions display -->
+ <model>
+  <name>IP-52</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/IP-52/IP-52.xml</path>
+  <offsets>
+   <x-m>-3.995318</x-m>
+   <y-m>-0.27324</y-m>
+   <z-m> 0.506</z-m>
+   <heading-deg>10</heading-deg>
+  </offsets>
+ </model>
+
+<!-- КПП (KPP) -->
+ <model>
+  <name>KPP</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/KPP/KPP.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m>-0.160</y-m>
+   <z-m> 0.691</z-m>
+  </offsets>
+ </model>
+
+<!-- ПНП-72-12 (PNP-72-12) - HSI -->
+ <model>
+  <name>PNP-72-12</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/PNP-72-12/PNP-72-12.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m>-0.160</y-m>
+   <z-m> 0.561</z-m>
+  </offsets>
+ </model>
+
+<!-- ДА-200 (DA-200) - vertical speed, turn and slip indicator -->
+ <model>
+  <name>DA-200</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/DA-200/DA-200.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m>-0.050</y-m>
+   <z-m> 0.691</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>UMS-2.5</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/UMS-2.5/UMS-2.5.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m>-0.050</y-m>
+   <z-m> 0.589</z-m>
+  </offsets>
+ </model>
+
+<!-- ACHS-1 clock. From MiG-15bis model. -->
+ <model>
+  <name>ACHS-1</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/ACHS-1/ACHS-1.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m>-0.050</y-m>
+   <z-m> 0.492</z-m>
+  </offsets>
+ </model>
+
+<!-- РВ-21 (А034-4), radioaltimeter -->
+ <model>
+  <name>RV-21</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/RV-21/RV-21.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m> 0.060</y-m>
+   <z-m> 0.671</z-m>
+  </offsets>
+ </model>
+
+<!-- ИТЭ-2 (ITE-2) - Tachometer -->
+ <model>
+  <name>ITE-2</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/ITE-2/ITE-2.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m> 0.144</y-m>
+   <z-m> 0.671</z-m>
+  </offsets>
+ </model>
+
+<!-- ИТГ-1 (ITG-1) - engine temperature indicator -->
+ <model>
+  <name>ITG-1_L</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/ITG-1/ITG-1_L.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m> 0.089</y-m>
+   <z-m> 0.583</z-m>
+  </offsets>
+ </model>
+ <model>
+  <name>ITG-1_R</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/ITG-1/ITG-1_R.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m> 0.153</y-m>
+   <z-m> 0.583</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>LTTs_counter</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/LTTs_counter/LTTs_counter.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m> 0.026</y-m>
+   <z-m> 0.574</z-m>
+  </offsets>
+ </model>
+
+<!-- ИКГ-1 (IKG-1) - hydroulics and pneumatics systems indicator -->
+ <model>
+  <name>IKG-1</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/IKG-1/IKG-1.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m> 0.126</y-m>
+   <z-m> 0.516</z-m>
+  </offsets>
+ </model>
+
+<!-- ИКЖ-1 (IKZh-1) - lifesupport systems indicator -->
+ <model>
+  <name>IKZh-1</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/IKZh-1/IKZh-1.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m> 0.053</y-m>
+   <z-m> 0.516</z-m>
+  </offsets>
+ </model>
+
+<!-- Voltmeter -->
+ <model>
+  <name>Voltmetr</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/Voltmetr/Voltmetr.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m>-0.040</y-m>
+   <z-m> 0.411</z-m>
+  </offsets>
+ </model>
+
+<!-- Указатель давления в тормозной системе -->
+ <model>
+  <name>M-2A</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/M-2A/M-2A.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m> 0.050</y-m>
+   <z-m> 0.411</z-m>
+  </offsets>
+ </model>
+
+<!-- ИСТР4-2 (ISTR4-2) - fuel display-->
+ <model>
+  <name>ISTR4-2</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/ISTR4-2/ISTR4-2.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m> 0.212</y-m>
+   <z-m> 0.626</z-m>
+  </offsets>
+ </model>
+
+<!-- ИПК (IPK) - ramps indicator -->
+ <model>
+  <name>IPK</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/IPK/IPK.xml</path>
+  <offsets>
+   <x-m>-4.0035</x-m>
+   <y-m> 0.207</y-m>
+   <z-m> 0.516</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>ILS-31i</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/ILS-31i/ILS-31i.xml</path>
+  <offsets>
+   <x-m>-4.000</x-m>
+   <y-m> 0.000</y-m>
+   <z-m> 1.046</z-m>
+  </offsets>
+ </model>
+
+<!-- УСТ (UST) -->
+ <model>
+  <name>UST</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/UST/UST.xml</path>
+  <offsets>
+   <x-m>-3.997238</x-m>
+   <y-m> 0.2804</y-m>
+   <z-m> 0.643</z-m>
+   <heading-deg>-10</heading-deg>
+  </offsets>
+ </model>
+
+<!-- СПО-15ЛМ (SPO-15LM) - radar warning indicator -->
+ <model>
+  <name>SPO-15LM</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/SPO-15LM/SPO-15LM.xml</path>
+  <offsets>
+   <x-m>-3.99483</x-m>
+   <y-m> 0.28312</y-m>
+   <z-m> 0.510</z-m>
+   <heading-deg>-10</heading-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <name>IPV</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/IPV/IPV.xml</path>
+  <offsets>
+   <x-m>-3.995</x-m>
+   <y-m> 0.218</y-m>
+   <z-m> 0.835</z-m>
+   <pitch-deg>-10</pitch-deg>
+  </offsets>
+ </model>
+ <model>
+  <name>IPV-31i</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/IPV/IPV-31i.xml</path>
+  <offsets>
+   <x-m>-3.91942</x-m>
+   <y-m> 0.218</y-m>
+   <z-m> 0.83816</z-m>
+   <pitch-deg>-10</pitch-deg>
+  </offsets>
+ </model>
+
+<!-- КИ-13 (KI-13) - magnetic compass-->
+ <model>
+  <name>KI-13</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/KI-13/KI-13.xml</path>
+  <offsets>
+   <x-m>-3.964</x-m>
+   <y-m> 0.240</y-m>
+   <z-m> 1.046</z-m>
+  </offsets>
+ </model>
+
+</PropertyList>

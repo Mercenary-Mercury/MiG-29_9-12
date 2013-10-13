@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<!-- Tablo 2                                    -->
+<!-- Sergey "Mercenary_Mercury" Salov, Aug 2011 -->
+
+<PropertyList>
+
+<path>Tablo-2.ac</path>
+
+
+<animation>
+ <type>noshadow</type>
+ <object-name>Tablo-2</object-name>
+</animation>
+
+<animation>
+ <type>material</type>
+ <object-name>Tablo-2</object-name>
+ <emission>
+  <red>0.8</red>
+  <green>0.8</green>
+  <blue>0.8</blue>
+  <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+ </emission>
+</animation>
+
+<animation>
+ <type>material</type>
+ <object-name>Tablo-2.ZF</object-name>
+ <emission>
+  <red>1.0</red>
+  <green>1.0</green>
+  <blue>1.0</blue>
+  <factor-prop>mig29/systems/cockpitlighting/tablo-norm</factor-prop>
+ </emission>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-2.ZF</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <equals>
+    <property>mig29/instrumentation/Tablo/LockCanopy</property>
+    <value>1</value>
+   </equals>
+  </and>
+ </condition>
+</animation>
+
+</PropertyList>

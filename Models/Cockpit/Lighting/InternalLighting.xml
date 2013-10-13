@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!-- Светильники внутреннего освещения             -->
+<!-- Сергей "Mercenary_Mercury" Салов, Апрель 2011 -->
+
+<PropertyList>
+
+ <model>
+  <name>ST-1</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/ST-1/ST-1.xml</path>
+ </model>
+
+ <model>
+  <name>SM-1BM</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/SM-1BM/SM-1BM.xml</path>
+ </model>
+
+</PropertyList>

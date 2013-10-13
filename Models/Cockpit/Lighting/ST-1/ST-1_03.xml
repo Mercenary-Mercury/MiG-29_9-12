@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<!-- СТ-1 03                                       -->
+<!-- Сергей "Mercenary_Mercury" Салов, Апрель 2012 -->
+
+<PropertyList>
+
+ <path>ST-1_03.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>ST-1.body</object-name>
+  <emission>
+   <red>  0.8</red>
+   <green>0.8</green>
+   <blue> 0.8</blue>
+   <factor-prop>mig29/systems/cockpitlighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>ST-1.glass</object-name>
+  <emission>
+   <red>  1.0</red>
+   <green>1.0</green>
+   <blue> 1.0</blue>
+   <factor-prop>mig29/systems/cockpitlighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>ST-1.RLight</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/sim/rendering/rembrandt/enabled</property>
+     <value>1</value>
+    </equals>
+    <greater-than>
+     <property>mig29/systems/cockpitlighting/instruments-norm</property>
+     <value>0</value>
+    </greater-than>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>light</type>
+  <light-type>spot</light-type>
+  <name>RLight</name>
+  <object-name>ST-1.RLight</object-name>
+  <nopreview/>
+  <direction>
+   <x>-0.3</x>
+   <y> 0.0</y>
+   <z>-1.0</z>
+  </direction>
+  <position>
+   <x> 0.0</x>
+   <y> 0.0</y>
+   <z> 0.0</z>
+  </position>
+  <ambient>
+   <r>0.9</r>
+   <g>0.9</g>
+   <b>0.9</b>
+   <a>1.0</a>
+  </ambient>
+  <diffuse>
+   <r>0.9</r>
+   <g>0.9</g>
+   <b>0.9</b>
+   <a>1.0</a>
+  </diffuse>
+  <specular>
+   <r>0.9</r>
+   <g>0.9</g>
+   <b>0.9</b>
+   <a>1.0</a>
+  </specular>
+  <dim-factor>
+   <property>mig29/systems/cockpitlighting/instruments-norm</property>
+  </dim-factor>
+  <attenuation>
+   <c>0.5</c>
+   <l>0.07</l>
+   <q>0.0</q>
+  </attenuation>
+  <exponent>15.0</exponent>
+  <cutoff>100</cutoff>
+  <near-m>0.01</near-m>
+  <far-m>0.8</far-m>
+ </animation>
+
+</PropertyList>

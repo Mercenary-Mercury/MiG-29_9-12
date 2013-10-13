@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<!-- Tablo 4                                    -->
+<!-- Sergey "Mercenary_Mercury" Salov, Aug 2011 -->
+
+<PropertyList>
+
+<path>Tablo-4.ac</path>
+
+<animation>
+ <type>noshadow</type>
+ <object-name>Tablo-4</object-name>
+</animation>
+
+<animation>
+ <type>material</type>
+ <object-name>Tablo-4</object-name>
+ <object-name>Tablo-4.sk</object-name>
+ <emission>
+  <red>0.8</red>
+  <green>0.8</green>
+  <blue>0.8</blue>
+  <factor-prop>mig29/systems/cockpitlighting/panel-norm</factor-prop>
+ </emission>
+</animation>
+
+<animation>
+ <type>material</type>
+ <object-name>Tablo-4.Ready</object-name>
+ <object-name>Tablo-4.Dispen</object-name>
+ <emission>
+  <red>1.0</red>
+  <green>1.0</green>
+  <blue>1.0</blue>
+  <factor-prop>mig29/systems/cockpitlighting/tablo-norm</factor-prop>
+ </emission>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-4.Ready</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/lamps/n</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Tablo-4.Dispen</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>mig29/instrumentation/electrical/v27</property>
+    <value>18</value>
+   </greater-than>
+   <or>
+    <equals>
+     <property>mig29/controls/lighting/kontr_lamp</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/lamps/n</property>
+     <value>1</value>
+    </equals>
+   </or>
+  </and>
+ </condition>
+</animation>
+
+</PropertyList>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<!-- СМ-1БМ                                        -->
+<!-- Сергей "Mercenary_Mercury" Салов, Апрель 2011 -->
+
+<PropertyList>
+
+ <model>
+  <name>SM-1BM_1</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/SM-1BM/SM-1BM_1.xml</path>
+  <offsets>
+   <x-m>-3.140</x-m>
+   <y-m>-0.345</y-m>
+   <z-m> 0.655</z-m>
+   <heading-deg>180.0</heading-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <name>SM-1BM_2</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/SM-1BM/SM-1BM_2.xml</path>
+  <offsets>
+   <x-m>-3.140</x-m>
+   <y-m>-0.345</y-m>
+   <z-m> 0.605</z-m>
+   <heading-deg>180.0</heading-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <name>SM-1BM_3</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/SM-1BM/SM-1BM_3.xml</path>
+  <offsets>
+   <x-m>-3.625</x-m>
+   <y-m> 0.393</y-m>
+   <z-m> 0.644</z-m>
+   <heading-deg>-90.0</heading-deg>
+  </offsets>
+ </model>
+
+</PropertyList>

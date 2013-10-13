@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<!-- Табло                                         -->
+<!-- Сергей "Mercenary_Mercury" Салов, Август 2011 -->
+
+<PropertyList>
+
+ <model>
+  <name>Tablo-1</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Tablo/Tablo-1.xml</path>
+  <offsets>
+   <x-m>-3.913</x-m>
+   <y-m> 0.336</y-m>
+   <z-m> 0.742</z-m>
+   <heading-deg>-20.0</heading-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Tablo-2</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Tablo/Tablo-2.xml</path>
+  <offsets>
+   <x-m>-3.758</x-m>
+   <y-m>-0.353</y-m>
+   <z-m> 0.674</z-m>
+   <roll-deg>32.32</roll-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Tablo-3</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Tablo/Tablo-3.xml</path>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m> 0.060</y-m>
+   <z-m> 0.723</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Tablo-4</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Tablo/Tablo-4.xml</path>
+  <offsets>
+   <x-m>-3.741</x-m>
+   <y-m> 0.325</y-m>
+   <z-m> 0.412</z-m>
+   <heading-deg>-30.7</heading-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Tablo-5</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Tablo/Tablo-5.xml</path>
+  <offsets>
+   <x-m>-3.737</x-m>
+   <y-m> 0.387</y-m>
+   <z-m> 0.545</z-m>
+   <roll-deg>27.4</roll-deg>
+   <pitch-deg>35.86</pitch-deg>
+   <heading-deg>-52.0</heading-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Tablo-6</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Tablo/Tablo-6.xml</path>
+  <offsets>
+   <x-m>-3.235</x-m>
+   <y-m> 0.395</y-m>
+   <z-m> 0.487</z-m>
+   <roll-deg>43.7435</roll-deg>
+   <pitch-deg>3.82343</pitch-deg>
+   <heading-deg>-2.5</heading-deg>
+  </offsets>
+ </model>
+
+</PropertyList>

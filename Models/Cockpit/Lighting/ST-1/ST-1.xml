@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+
+<!-- СТ-1                                           -->
+<!-- Сергей "Mercenary_Mercury" Салов, Октябрь 2011 -->
+
+<PropertyList>
+
+ <model><!--A-->
+  <name>ST-1_01</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/ST-1/ST-1_01.xml</path>
+  <offsets>
+   <x-m>-3.5775</x-m>
+   <y-m>-0.4055</y-m>
+   <z-m> 0.4805</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>ST-1_02</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/ST-1/ST-1_02.xml</path>
+  <offsets>
+   <x-m>-3.839</x-m>
+   <y-m>-0.368</y-m>
+   <z-m> 0.640</z-m>
+  </offsets>
+ </model>
+
+ <model><!--A-->
+  <name>ST-1_03</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/ST-1/ST-1_03.xml</path>
+  <offsets>
+   <x-m>-3.945</x-m>
+   <y-m>-0.257</y-m>
+   <z-m> 0.750</z-m>
+   <heading-deg>15</heading-deg>
+  </offsets>
+ </model>
+
+ <model><!--A-->
+  <name>ST-1_04</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/ST-1/ST-1_04.xml</path>
+  <offsets>
+   <x-m>-3.970</x-m>
+   <y-m>-0.175</y-m>
+   <z-m> 0.754</z-m>
+  </offsets>
+ </model>
+
+ <model><!--A-->
+  <name>ST-1_05</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/ST-1/ST-1_05.xml</path>
+  <offsets>
+   <x-m>-3.930</x-m>
+   <y-m>-0.050</y-m>
+   <z-m> 0.796</z-m>
+  </offsets>
+ </model>
+
+ <model><!--A-->
+  <name>ST-1_06</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/ST-1/ST-1_06.xml</path>
+  <offsets>
+   <x-m>-3.930</x-m>
+   <y-m> 0.050</y-m>
+   <z-m> 0.796</z-m>
+  </offsets>
+ </model>
+
+ <model><!--A-->
+  <name>ST-1_07</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/ST-1/ST-1_07.xml</path>
+  <offsets>
+   <x-m>-3.950</x-m>
+   <y-m> 0.220</y-m>
+   <z-m> 0.757</z-m>
+  </offsets>
+ </model>
+
+ <model><!--A-->
+  <name>ST-1_08</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/ST-1/ST-1_08.xml</path>
+  <offsets>
+   <x-m>-3.80256</x-m>
+   <y-m> 0.373</y-m>
+   <z-m> 0.5015</z-m>>
+  </offsets>
+ </model>
+
+ <model><!--A-->
+  <name>ST-1_09</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/ST-1/ST-1_09.xml</path>
+  <offsets>
+   <x-m>-3.525</x-m>
+   <y-m> 0.3915</y-m>
+   <z-m> 0.573</z-m>
+  </offsets>
+ </model>
+
+ <model><!--A-->
+  <name>ST-1_10</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/ST-1/ST-1_10.xml</path>
+  <offsets>
+   <x-m>-3.431</x-m>
+   <y-m> 0.3905</y-m>
+   <z-m> 0.637</z-m>
+  </offsets>
+ </model>
+
+</PropertyList>
