@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<!-- BD3-UMK2                                   -->
+<!-- Sergey "Mercenary_Mercury" Salov, Mar 2013 -->
+
+<PropertyList>
+
+ <path>BD3-UMK2.ac</path>
+
+ <nasal>
+  <load>
+   ##############################################################################
+   # The on-load Nasal is not executed when this file is loaded as the user
+   # aircraft.
+   ##############################################################################
+   var rplayer = cmdarg();
+   # Set up property aliases for animations.
+   rplayer.getNode("mig29/weapons/podv/T1", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[27]"));
+   ##############################################################################
+  </load>
+ </nasal>
+
+ <animation>
+  <type>select</type>
+  <object-name>BD3-UMK2</object-name>
+  <object-name>BD3-UMK2.bz</object-name>
+  <object-name>BD3-UMK2.C1_29</object-name>
+  <object-name>BD3-UMK2.C2_29</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>mig29/weapons/podv/T1</property>
+     <value>6</value>
+    </greater-than>
+    <less-than>
+     <property>mig29/weapons/podv/T1</property>
+     <value>42</value>
+    </less-than>
+   </and>
+  </condition>
+ </animation>
+
+</PropertyList>

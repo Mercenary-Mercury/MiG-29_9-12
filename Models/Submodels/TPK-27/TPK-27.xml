@@ -1,0 +1,36 @@
+<!-- MiG-29 9.12 - Drag Parachute                -->
+<!-- Sergey "Mercenary_Mercury" Salow, Jul 2011  -->
+
+<PropertyList>
+
+<path>TPK-27.ac</path>
+
+<animation>
+ <type>noshadow</type>
+ <object-name>Parachute</object-name>
+ <object-name>tros</object-name>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>Parachute</object-name>
+ <object-name>tros</object-name>
+ <condition>
+  <property>mig29/systems/CS/Parachute/pos-norm</property>
+ </condition>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>Parachute</object-name>
+ <property>orientation/alpha-deg</property>
+ <offset-deg>4</offset-deg>
+ <factor>1</factor>
+ <axis>
+  <x> 0</x>
+  <y>-1</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+</PropertyList>

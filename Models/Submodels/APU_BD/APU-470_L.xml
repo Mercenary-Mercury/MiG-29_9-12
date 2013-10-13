@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<!-- APU-470                                    -->
+<!-- Sergey "Mercenary_Mercury" Salov, Dec 2012 -->
+
+<PropertyList>
+
+ <path>APU-470.ac</path>
+
+ <nasal>
+  <load>
+   ##############################################################################
+   # The on-load Nasal is not executed when this file is loaded as the user
+   # aircraft.
+   ##############################################################################
+   var rplayer = cmdarg();
+   # Set up property aliases for animations.
+   rplayer.getNode("mig29/weapons/podv/T1", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[27]"));
+   ##############################################################################
+  </load>
+ </nasal>
+
+ <animation>
+  <type>select</type>
+  <object-name>APU-470.Body</object-name>
+  <object-name>APU-470.Contact</object-name>
+  <object-name>APU-470.ContactMiG29</object-name>
+  <object-name>APU-470.PeredObtek</object-name>
+  <object-name>APU-470.ZadObtek</object-name>
+  <condition>
+   <or>
+    <equals>
+     <property>mig29/weapons/podv/T1</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>mig29/weapons/podv/T1</property>
+     <value>2</value>
+    </equals>
+   </or>
+  </condition>
+ </animation>
+
+</PropertyList>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<!-- PTB-1500                                   -->
+<!-- Sergey "Mercenary_Mercury" Salow, Aug 2011 -->
+
+<PropertyList>
+
+ <path>PTB-1500.ac</path>
+
+ <animation>
+  <type>noshadow</type>
+  <object-name>PTB-1500</object-name>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>PTB-1500</object-name>
+  <condition>
+   <equals>
+    <property>mig29/weapons/podv/PTB</property>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+
+</PropertyList>

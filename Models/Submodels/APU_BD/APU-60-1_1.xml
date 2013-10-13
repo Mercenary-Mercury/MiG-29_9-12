@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<!-- APU-60-1                                   -->
+<!-- Sergey "Mercenary_Mercury" Salov, Jan 2013 -->
+
+<PropertyList>
+
+ <path>APU-60-1.ac</path>
+
+ <nasal>
+  <load>
+   ##############################################################################
+   # The on-load Nasal is not executed when this file is loaded as the user
+   # aircraft.
+   ##############################################################################
+   var rplayer = cmdarg();
+   # Set up property aliases for animations.
+   rplayer.getNode("mig29/weapons/podv/T1", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[27]"));
+   ##############################################################################
+  </load>
+ </nasal>
+
+ <animation>
+  <type>select</type>
+  <object-name>APU-60-1</object-name>
+  <object-name>APU-60-1.Contact29</object-name>
+  <condition>
+   <or>
+    <equals>
+     <property>mig29/weapons/podv/T1</property>
+     <value>3</value>
+    </equals>
+    <equals>
+     <property>mig29/weapons/podv/T1</property>
+     <value>4</value>
+    </equals>
+   </or>
+  </condition>
+ </animation>
+
+</PropertyList>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<!-- FAB-500 M-62                               -->
+<!-- Sergey "Mercenary_Mercury" Salov, Mar 2013 -->
+
+<PropertyList>
+
+ <path>FAB-500_M-62.ac</path>
+
+ <nasal>
+  <load>
+   ##############################################################################
+   # The on-load Nasal is not executed when this file is loaded as the user
+   # aircraft.
+   ##############################################################################
+   var rplayer = cmdarg();
+   # Set up property aliases for animations.
+   rplayer.getNode("mig29/weapons/podv/T2", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[28]"));
+   ##############################################################################
+  </load>
+ </nasal>
+
+ <animation>
+  <type>select</type>
+  <object-name>FAB-500_M-62</object-name>
+  <object-name>FAB-500_M-62.Wings</object-name>
+  <object-name>FAB-500_M-62.Ring</object-name>
+  <object-name>FAB-500_M-62.CT</object-name>
+  <object-name>FAB-500_M-62.Vz</object-name>
+  <condition>
+   <equals>
+    <property>mig29/weapons/podv/T2</property>
+    <value>13</value>
+   </equals>
+  </condition>
+ </animation>
+
+</PropertyList>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<!-- R-60M                                      -->
+<!-- Sergey "Mercenary_Mercury" Salov, Jan 2013 -->
+
+<PropertyList>
+
+<path>R-60M.ac</path>
+
+<animation>
+ <type>noshadow</type>
+ <object-name>R-60M</object-name>
+ <object-name>R-60M.Destabs</object-name>
+ <object-name>R-60M.RuliLV</object-name>
+ <object-name>R-60M.RuliPV</object-name>
+ <object-name>R-60M.N</object-name>
+ <object-name>R-60M.Wings</object-name>
+ <object-name>R-60M.RDisc1</object-name>
+ <object-name>R-60M.RDisc2</object-name>
+ <object-name>R-60M.RDisc3</object-name>
+ <object-name>R-60M.RDisc4</object-name>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>R-60M</object-name>
+ <object-name>R-60M.Destabs</object-name>
+ <object-name>R-60M.RuliLV</object-name>
+ <object-name>R-60M.RuliPV</object-name>
+ <object-name>R-60M.N</object-name>
+ <object-name>R-60M.Wings</object-name>
+ <object-name>R-60M.RDisc1</object-name>
+ <object-name>R-60M.RDisc2</object-name>
+ <object-name>R-60M.RDisc3</object-name>
+ <object-name>R-60M.RDisc4</object-name>
+ <condition>
+  <equals>
+   <property>mig29/weapons/podv/R-60M</property>
+   <value>1</value>
+  </equals>
+ </condition>
+</animation>
+
+</PropertyList>

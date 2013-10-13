@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<!-- Модель летчика истребителя (примитивная) -->
+<!-- Февраль 2013, Сергей "Mercenary_Mercury" Салов -->
+
+<PropertyList>
+
+ <path>fighter_pilot_proto.ac</path>
+
+ <animation>
+  <type>noshadow</type>
+  <object-name>ZSh</object-name>
+  <object-name>head2</object-name>
+  <object-name>ZaStkl</object-name>
+  <object-name>KM</object-name>
+  <object-name>Shlang</object-name>
+  <object-name>body</object-name>
+  <object-name>A7L</object-name>
+  <object-name>A7R</object-name>
+  <object-name>handAL</object-name>
+  <object-name>handBL</object-name>
+  <object-name>handCL</object-name>
+  <object-name>handAR</object-name>
+  <object-name>handBR</object-name>
+  <object-name>handCR</object-name>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>ZSh</object-name>
+  <object-name>head2</object-name>
+  <object-name>ZaStkl</object-name>
+  <object-name>KM</object-name>
+  <object-name>Shlang</object-name>
+  <object-name>body</object-name>
+  <object-name>A7L</object-name>
+  <object-name>A7R</object-name>
+  <object-name>handAL</object-name>
+  <object-name>handBL</object-name>
+  <object-name>handCL</object-name>
+  <object-name>handAR</object-name>
+  <object-name>handBR</object-name>
+  <object-name>handCR</object-name>
+  <condition>
+   <not>
+    <or>
+     <equals>
+      <property>/sim/current-view/view-number</property>
+      <value>0</value>
+     </equals>
+     <equals>
+      <property>/sim/current-view/view-number</property>
+      <value>8</value>
+     </equals>
+     <equals>
+      <property>/sim/current-view/view-number</property>
+      <value>9</value>
+     </equals>
+     <equals>
+      <property>/sim/current-view/view-number</property>
+      <value>10</value>
+     </equals>
+    </or>
+   </not>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>KM</object-name>
+  <object-name>Shlang</object-name>
+  <condition>
+   <and>
+    <greater-than>
+     <property>/position/altitude-ft</property>
+     <value>3000</value>
+    </greater-than>
+    <not>
+     <or>
+      <equals>
+       <property>/sim/current-view/view-number</property>
+       <value>0</value>
+      </equals>
+      <equals>
+       <property>/sim/current-view/view-number</property>
+       <value>8</value>
+      </equals>
+      <equals>
+       <property>/sim/current-view/view-number</property>
+       <value>9</value>
+      </equals>
+      <equals>
+       <property>/sim/current-view/view-number</property>
+       <value>10</value>
+      </equals>
+     </or>
+    </not>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>handAL</object-name>
+  <object-name>handBL</object-name>
+  <object-name>handCL</object-name>
+  <property>controls/engines/engine/throttle</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep>-36.0</dep></entry>
+   <entry><ind>1.0</ind><dep> 27.0</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0.04811</x-m>
+   <y-m>-0.10387</y-m>
+   <z-m> 0.24894</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>handBL</object-name>
+  <object-name>handCL</object-name>
+  <property>controls/engines/engine/throttle</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep> 31.5</dep></entry>
+   <entry><ind>1.0</ind><dep>-51.0</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>-0.08916</x-m>
+   <y-m>-0.29060</y-m>
+   <z-m> 0.07645</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!--
+ <animation>
+  <type>rotate</type>
+  <object-name>ZaStkl</object-name>
+  <property>controls/engines/engine/throttle</property>
+  <interpolation>
+   <entry><ind>0.0</ind><dep> 0</dep></entry>
+   <entry><ind>1.0</ind><dep>51.0</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.06</x-m>
+   <y-m>0.0 </y-m>
+   <z-m>0.5 </z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+-->
+
+</PropertyList>

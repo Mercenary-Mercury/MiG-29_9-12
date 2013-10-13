@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<!-- OFAB-250-270                               -->
+<!-- Sergey "Mercenary_Mercury" Salov, Jul 2013 -->
+
+<PropertyList>
+
+ <path>OFAB-250-270.ac</path>
+
+ <nasal>
+  <load>
+   ##############################################################################
+   # The on-load Nasal is not executed when this file is loaded as the user
+   # aircraft.
+   ##############################################################################
+   var rplayer = cmdarg();
+   # Set up property aliases for animations.
+   rplayer.getNode("mig29/weapons/podv/T1", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[27]"));
+   ##############################################################################
+  </load>
+ </nasal>
+
+ <animation>
+  <type>select</type>
+  <object-name>OFAB-250-270</object-name>
+  <object-name>OFAB-250-270.Wings</object-name>
+  <object-name>OFAB-250-270.Rings</object-name>
+  <object-name>OFAB-250-270.CT</object-name>
+  <object-name>OFAB-250-270.BRV2</object-name>
+  <condition>
+   <equals>
+    <property>mig29/weapons/podv/T1</property>
+    <value>19</value>
+   </equals>
+  </condition>
+ </animation>
+
+</PropertyList>

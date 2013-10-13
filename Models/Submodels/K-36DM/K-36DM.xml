@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<!-- K-36DM                                     -->
+<!-- Sergey "Mercenary_Mercury" Salow, Aug 2011 -->
+
+<PropertyList>
+
+<path>K-36DM.ac</path>
+
+<animation>
+ <type>noshadow</type>
+ <object-name>simple</object-name>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>ORR</object-name>
+ <property>mig29/controls/K-36/a</property>
+ <factor>65</factor>
+ <center>
+  <x-m>0.08</x-m>
+  <y-m>0.00</y-m>
+  <z-m>0.58</z-m>
+ </center>
+ <axis>
+  <x> 0</x>
+  <y>-1</y>
+  <z> 0</z>
+ </axis>
+</animation>
+
+<!--animation>
+ <type>translate</type>
+ <object-name>Plane</object-name>
+ <property>mig29/controls/K-36/b</property>
+ <factor>0.1</factor>
+ <axis>
+  <x>1</x>
+  <y>0</y>
+  <z>0</z>
+ </axis>
+</animation-->
+
+</PropertyList>
