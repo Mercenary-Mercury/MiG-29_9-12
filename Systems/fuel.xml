@@ -1,0 +1,688 @@
+<?xml version="1.0"?>  
+
+<!--
+	Топливная система для МиГ-29 (9-12)
+	Автор: Сергей "Mercenary_Mercury" Салов
+        07 2012
+
+        Fuel system for MiG-29 (9-12)
+        Author: Sergey "Mercenary_Mercury" Salov
+-->
+
+<system name="fuel">
+
+<property>propulsion/tank[0]/external-flow-rate/refuel</property>
+<property>propulsion/tank[1]/external-flow-rate/refuel</property>
+<property>propulsion/tank[2]/external-flow-rate/refuel</property>
+<property>propulsion/tank[3]/external-flow-rate/refuel</property>
+<property>propulsion/tank[4]/external-flow-rate/refuel</property>
+<property>propulsion/tank[5]/external-flow-rate/refuel</property>
+<property>propulsion/tank[6]/external-flow-rate/refuel</property>
+<property>propulsion/tank[7]/external-flow-rate/refuel</property>
+
+<property>propulsion/tank[0]/external-flow-rate/tank_PTB</property>
+<property>propulsion/tank[0]/external-flow-rate/tank_2</property>
+
+<property>propulsion/tank[1]/external-flow-rate/tank_1</property>
+<property>propulsion/tank[1]/external-flow-rate/tank_3</property>
+<property>propulsion/tank[1]/external-flow-rate/accum_1</property>
+<property>propulsion/tank[1]/external-flow-rate/accum_2</property>
+
+<property>propulsion/tank[2]/external-flow-rate/tank_1</property>
+<property>propulsion/tank[2]/external-flow-rate/tank_2</property>
+<property>propulsion/tank[2]/external-flow-rate/tank_3AL</property>
+<property>propulsion/tank[2]/external-flow-rate/tank_3AP</property>
+<property>propulsion/tank[2]/external-flow-rate/tank_KrL</property>
+<property>propulsion/tank[2]/external-flow-rate/tank_KrP</property>
+
+<property>propulsion/tank[3]/external-flow-rate/tank_3</property>
+
+<property>propulsion/tank[4]/external-flow-rate/tank_3</property>
+
+<property>propulsion/tank[5]/external-flow-rate/tank_3</property>
+
+<property>propulsion/tank[6]/external-flow-rate/tank_3</property>
+
+<property>propulsion/tank[7]/external-flow-rate/tank_1</property>
+
+<property>propulsion/tank[0]/external-flow-rate/jettison</property>
+<property>propulsion/tank[1]/external-flow-rate/jettison</property>
+<property>propulsion/tank[2]/external-flow-rate/jettison</property>
+<property>propulsion/tank[3]/external-flow-rate/jettison</property>
+<property>propulsion/tank[4]/external-flow-rate/jettison</property>
+<property>propulsion/tank[5]/external-flow-rate/jettison</property>
+<property>propulsion/tank[6]/external-flow-rate/jettison</property>
+<property>propulsion/tank[7]/external-flow-rate/jettison</property>
+
+<!-- Для индикации количества топлива -->
+ <channel name="fuel a">
+
+<!-- Бак №1 -->
+  <switch name="systems/fuel/csN1"><!-- 26,160667327 LBS --><!--1124,908692798338-->
+   <default value="0"/>
+   <test logic="AND" value="1">
+    propulsion/tank[0]/contents-lbs lt 26.160667327
+    propulsion/tank[0]/contents-lbs gt 0.0
+   </test>
+   <test logic="AND" value="2">
+    propulsion/tank[0]/contents-lbs gt 26.160667327
+    propulsion/tank[0]/contents-lbs lt 120.828692798
+   </test>
+   <test logic="AND" value="3">
+    propulsion/tank[0]/contents-lbs gt 120.828692798
+    propulsion/tank[0]/contents-lbs lt 605.408692798
+   </test>
+   <test logic="AND" value="4">
+    propulsion/tank[0]/contents-lbs gt 605.408692798
+    propulsion/tank[0]/contents-lbs lt 1124.9
+   </test>
+   <test value="5">
+    propulsion/tank[0]/contents-lbs gt 1124.9
+   </test>
+  </switch>
+
+<!-- Бак №2 - расходный -->
+  <switch name="systems/fuel/csN2"><!-- 35,015047037 LBS -->
+   <default value="0"/>
+   <test logic="AND" value="1">
+    propulsion/tank[1]/contents-lbs lt 35.015047037
+    propulsion/tank[1]/contents-lbs gt 0.0
+   </test>
+   <test logic="AND" value="2">
+    propulsion/tank[1]/contents-lbs gt 35.015047037
+    propulsion/tank[1]/contents-lbs lt 1490.6
+   </test>
+   <test logic="AND" value="3">
+    propulsion/tank[1]/contents-lbs gt 1490.6
+    propulsion/tank[1]/contents-lbs lt 1505.6
+   </test>
+   <test value="4">
+    propulsion/tank[1]/contents-lbs gt 1505.6
+   </test>
+  </switch>
+
+<!-- Бак №3 -->
+  <switch name="systems/fuel/csN3"><!-- 72,84739671 LBS --><!--3132,438052253832-->
+   <default value="0"/>
+   <test logic="AND" value="1">
+    propulsion/tank[2]/contents-lbs lt 72.84739671
+    propulsion/tank[2]/contents-lbs gt 0.0
+   </test>
+   <test logic="AND" value="2">
+    propulsion/tank[2]/contents-lbs gt 72.84739671
+    propulsion/tank[2]/contents-lbs lt 1747.928052254
+   </test>
+   <test logic="AND" value="3">
+    propulsion/tank[2]/contents-lbs gt 1747.928052254
+    propulsion/tank[2]/contents-lbs lt 2766.0
+   </test>
+   <test logic="AND" value="4">
+    propulsion/tank[2]/contents-lbs gt 2766.0
+    propulsion/tank[2]/contents-lbs lt 2786.308052254
+   </test>
+   <test logic="AND" value="5">
+    propulsion/tank[2]/contents-lbs gt 2786.308052254
+    propulsion/tank[2]/contents-lbs lt 3132.4
+   </test>
+   <test logic="AND" value="6">
+    propulsion/tank[2]/contents-lbs gt 3132.4
+   </test>
+  </switch>
+
+<!-- Бак №3А - левый -->
+  <switch name="systems/fuel/csN3AL"><!-- 6,238312978 LBS -->
+   <default value="0"/>
+   <test logic="AND" value="1">
+    propulsion/tank[3]/contents-lbs lt 6.238312978
+    propulsion/tank[3]/contents-lbs gt 0.0
+   </test>
+   <test logic="AND" value="2">
+    propulsion/tank[3]/contents-lbs gt 6.238312978
+    propulsion/tank[3]/contents-lbs lt 268.2
+   </test>
+   <test value="3">
+    propulsion/tank[3]/contents-lbs gt 268.2
+   </test>
+  </switch>
+
+<!-- Бак №3А - правый -->
+  <switch name="systems/fuel/csN3AP"><!-- 6,238312978 LBS -->
+   <default value="0"/>
+   <test logic="AND" value="1">
+    propulsion/tank[4]/contents-lbs lt 6.238312978
+    propulsion/tank[4]/contents-lbs gt 0.0
+   </test>
+   <test logic="AND" value="2">
+    propulsion/tank[4]/contents-lbs gt 6.238312978
+    propulsion/tank[4]/contents-lbs lt 268.2
+   </test>
+   <test value="3">
+    propulsion/tank[4]/contents-lbs gt 268.2
+   </test>
+  </switch>
+
+<!-- Крыльевой бак - левый -->
+  <switch name="systems/fuel/csKrL"><!-- 13,281569566 LBS -->
+   <default value="0"/>
+   <test logic="AND" value="1">
+    propulsion/tank[5]/contents-lbs lt 13.281569566
+    propulsion/tank[5]/contents-lbs gt 0.0
+   </test>
+   <test logic="AND" value="2">
+    propulsion/tank[5]/contents-lbs gt 13.281569566
+    propulsion/tank[5]/contents-lbs lt 571.1
+   </test>
+   <test value="3">
+    propulsion/tank[5]/contents-lbs gt 571.1
+   </test>
+  </switch>
+
+<!-- Крыльевой бак - правый -->
+  <switch name="systems/fuel/csKrP"><!-- 13,281569566 LBS -->
+   <default value="0"/>
+   <test logic="AND" value="1">
+    propulsion/tank[6]/contents-lbs lt 13.281569566
+    propulsion/tank[6]/contents-lbs gt 0.0
+   </test>
+   <test logic="AND" value="2">
+    propulsion/tank[6]/contents-lbs gt 13.281569566
+    propulsion/tank[6]/contents-lbs lt 571.1
+   </test>
+   <test value="3">
+    propulsion/tank[6]/contents-lbs gt 571.1
+   </test>
+  </switch>
+
+<!-- Подвесной топливный бак -->
+  <switch name="systems/fuel/csPTB"><!-- 34,612575163 LBS -->
+   <default value="0"/>
+   <test logic="AND" value="1">
+    propulsion/tank[7]/contents-lbs lt 34.612575163
+    propulsion/tank[7]/contents-lbs gt 0.0
+   </test>
+   <test logic="AND" value="2">
+    propulsion/tank[7]/contents-lbs gt 34.612575163
+    propulsion/tank[7]/contents-lbs lt 2630.5
+   </test>
+   <test value="3">
+    propulsion/tank[7]/contents-lbs gt 2630.5
+   </test>
+  </switch>
+
+<!-- Топливный аккумулятор -->
+  <switch name="systems/fuel/csAccumL">
+   <default value="0"/>
+   <test value="1">
+    propulsion/tank[8]/contents-lbs lt 35.8
+   </test>
+  </switch>
+  <switch name="systems/fuel/csAccumP">
+   <default value="0"/>
+   <test value="1">
+    propulsion/tank[9]/contents-lbs lt 35.8
+   </test>
+  </switch>
+
+ </channel>
+
+ <channel name="fuel b">
+
+  <summer name="systems/fuel/sum1">
+   <!-- In -->
+   <input>propulsion/tank[0]/external-flow-rate/refuel</input>
+   <input>propulsion/tank[0]/external-flow-rate/tank_PTB</input>
+   <!-- Out -->
+   <input>propulsion/tank[0]/external-flow-rate/tank_2</input>
+   <input>propulsion/tank[0]/external-flow-rate/jettison</input>
+   <output>propulsion/tank[0]/external-flow-rate-pps</output>
+  </summer>
+
+  <summer name="systems/fuel/sum2">
+   <!-- In -->
+   <input>propulsion/tank[1]/external-flow-rate/refuel</input>
+   <input>propulsion/tank[1]/external-flow-rate/tank_1</input>
+   <input>propulsion/tank[1]/external-flow-rate/tank_3</input>
+   <!-- Out -->
+   <input>propulsion/tank[1]/external-flow-rate/accum_1</input>
+   <input>propulsion/tank[1]/external-flow-rate/accum_1</input>
+   <input>propulsion/tank[1]/external-flow-rate/jettison</input>
+   <output>propulsion/tank[1]/external-flow-rate-pps</output>
+  </summer>
+
+  <summer name="systems/fuel/sum3">
+   <!-- In -->
+   <input>propulsion/tank[2]/external-flow-rate/refuel</input>
+   <input>propulsion/tank[2]/external-flow-rate/tank_3AL</input>
+   <input>propulsion/tank[2]/external-flow-rate/tank_3AP</input>
+   <input>propulsion/tank[2]/external-flow-rate/tank_KrL</input>
+   <input>propulsion/tank[2]/external-flow-rate/tank_KrP</input>
+   <!-- Out -->
+   <input>propulsion/tank[2]/external-flow-rate/tank_1</input>
+   <input>propulsion/tank[2]/external-flow-rate/tank_2</input>
+   <input>propulsion/tank[2]/external-flow-rate/jettison</input>
+   <output>propulsion/tank[2]/external-flow-rate-pps</output>
+  </summer>
+
+  <summer name="systems/fuel/sum3AL">
+   <!-- In -->
+   <input>propulsion/tank[3]/external-flow-rate/refuel</input>
+   <!-- Out -->
+   <input>propulsion/tank[3]/external-flow-rate/tank_3</input>
+   <input>propulsion/tank[3]/external-flow-rate/jettison</input>
+   <output>propulsion/tank[3]/external-flow-rate-pps</output>
+  </summer>
+
+  <summer name="systems/fuel/sum3AP">
+   <!-- In -->
+   <input>propulsion/tank[4]/external-flow-rate/refuel</input>
+   <!-- Out -->
+   <input>propulsion/tank[4]/external-flow-rate/tank_3</input>
+   <input>propulsion/tank[4]/external-flow-rate/jettison</input>
+   <output>propulsion/tank[4]/external-flow-rate-pps</output>
+  </summer>
+
+  <summer name="systems/fuel/sumKrL">
+   <!-- In -->
+   <input>propulsion/tank[5]/external-flow-rate/refuel</input>
+   <!-- Out -->
+   <input>propulsion/tank[5]/external-flow-rate/tank_3</input>
+   <input>propulsion/tank[5]/external-flow-rate/jettison</input>
+   <output>propulsion/tank[5]/external-flow-rate-pps</output>
+  </summer>
+
+  <summer name="systems/fuel/sumKrP">
+   <!-- In -->
+   <input>propulsion/tank[6]/external-flow-rate/refuel</input>
+   <!-- Out -->
+   <input>propulsion/tank[6]/external-flow-rate/tank_3</input>
+   <input>propulsion/tank[6]/external-flow-rate/jettison</input>
+   <output>propulsion/tank[6]/external-flow-rate-pps</output>
+  </summer>
+
+  <summer name="systems/fuel/sumPTB">
+   <!-- In -->
+   <input>propulsion/tank[7]/external-flow-rate/refuel</input>
+   <!-- Out -->
+   <input>propulsion/tank[7]/external-flow-rate/tank_1</input>
+   <input>propulsion/tank[7]/external-flow-rate/jettison</input>
+   <output>propulsion/tank[7]/external-flow-rate-pps</output>
+  </summer>
+
+  <summer name="systems/fuel/sumEngs">
+   <input>propulsion/engine[0]/fuel-used-lbs</input>
+   <input>propulsion/engine[1]/fuel-used-lbs</input>
+   <input>propulsion/engine[2]/fuel-used-lbs</input>
+  </summer>
+
+  <fcs_function name="systems/fuel/total-fuel-kg">
+   <description>Суммирование вырабатываемых весов топлива</description>
+   <function>
+    <product>
+     <sum>
+      <product>
+       <sum>
+        <property>propulsion/tank[0]/contents-lbs</property>
+        <property>propulsion/tank[1]/contents-lbs</property>
+        <property>propulsion/tank[2]/contents-lbs</property>
+        <property>propulsion/tank[3]/contents-lbs</property>
+        <property>propulsion/tank[4]/contents-lbs</property>
+        <property>propulsion/tank[5]/contents-lbs</property>
+        <property>propulsion/tank[6]/contents-lbs</property>
+       </sum>
+       <value>0.976744186</value>
+      </product>
+      <product>
+       <property>propulsion/tank[7]/contents-lbs</property>
+       <value>0.986842105</value>
+      </product>
+     </sum>
+     <value>0.45359237</value>
+    </product>
+   </function>
+  </fcs_function>
+
+ </channel>
+
+ <channel name="fuel c">
+
+<!-- 1 очередь -->
+ <switch name="systems/fuel/order-1">
+  <default value="0"/>
+  <test logic="AND" value="1">
+   systems/fuel/on eq 1
+   systems/fuel/serviceable eq 1
+   systems/fuel/csN1 gt 3
+   systems/fuel/csN2 lt 3
+   systems/fuel/csN3 eq 6
+  </test>
+ </switch>
+
+<!-- 2 очередь -->
+ <switch name="systems/fuel/order-2">
+  <default value="0"/>
+  <test logic="AND" value="1">
+   systems/fuel/on eq 1
+   systems/fuel/serviceable eq 1
+   systems/fuel/csN1 eq 3
+   systems/fuel/csN2 lt 3
+   systems/fuel/csN3 gt 3
+   systems/fuel/csPTB lt 2
+  </test>
+ </switch>
+
+<!-- 3 очередь -->
+ <switch name="systems/fuel/order-3">
+  <default value="0"/>
+  <test logic="AND" value="1">
+   systems/fuel/on eq 1
+   systems/fuel/serviceable eq 1
+   systems/fuel/csN3 eq 4
+   systems/fuel/csN3AL gt 1
+   systems/fuel/csN3AP gt 1
+   systems/fuel/csKrL eq 3
+   systems/fuel/csKrP eq 3
+   systems/fuel/csPTB lt 2
+  </test>
+ </switch>
+
+<!-- 4 очередь -->
+ <switch name="systems/fuel/order-4">
+  <default value="0"/>
+  <test logic="AND" value="1">
+   systems/fuel/on eq 1
+   systems/fuel/serviceable eq 1
+   systems/fuel/csN3 eq 4
+   systems/fuel/csN3AL eq 1
+   systems/fuel/csN3AP eq 1
+   systems/fuel/csKrL gt 1
+   systems/fuel/csKrP gt 1
+   systems/fuel/csPTB lt 2
+  </test>
+ </switch>
+
+<!-- 5 очередь -->
+ <switch name="systems/fuel/order-5">
+  <default value="0"/>
+  <test logic="AND" value="1">
+   systems/fuel/on eq 1
+   systems/fuel/serviceable eq 1
+   systems/fuel/csN1 eq 3
+   systems/fuel/csN2 lt 3
+   systems/fuel/csN3 eq 3
+   systems/fuel/csN3AL eq 1
+   systems/fuel/csN3AP eq 1
+   systems/fuel/csKrL eq 1
+   systems/fuel/csKrP eq 1
+   systems/fuel/csPTB lt 2
+  </test>
+ </switch>
+
+<!-- 6 очередь -->
+ <switch name="systems/fuel/order-6">
+  <default value="0"/>
+  <test logic="AND" value="1">
+   systems/fuel/on eq 1
+   systems/fuel/serviceable eq 1
+   systems/fuel/csN1 eq 3
+   systems/fuel/csN2 lt 3
+   systems/fuel/csN3 eq 2
+   systems/fuel/csN3AL eq 1
+   systems/fuel/csN3AP eq 1
+   systems/fuel/csKrL eq 1
+   systems/fuel/csKrP eq 1
+   systems/fuel/csPTB lt 2
+  </test>
+ </switch>
+
+<!-- 7 очередь -->
+ <switch name="systems/fuel/order-7">
+  <default value="0"/>
+  <test logic="AND" value="1">
+   systems/fuel/on eq 1
+   systems/fuel/serviceable eq 1
+   systems/fuel/csN1 eq 2
+   systems/fuel/csN2 lt 3
+   systems/fuel/csN3 eq 2
+   systems/fuel/csN3AL eq 1
+   systems/fuel/csN3AP eq 1
+   systems/fuel/csKrL eq 1
+   systems/fuel/csKrP eq 1
+   systems/fuel/csPTB lt 2
+  </test>
+ </switch>
+
+<!-- 8 очередь -->
+ <switch name="systems/fuel/order-8">
+  <default value="0"/>
+  <test logic="AND" value="1">
+   systems/fuel/on eq 1
+   systems/fuel/serviceable eq 1
+   systems/fuel/csN1 eq 2
+   systems/fuel/csN2 lt 3
+   systems/fuel/csN3 eq 1
+   systems/fuel/csN3AL eq 1
+   systems/fuel/csN3AP eq 1
+   systems/fuel/csKrL eq 1
+   systems/fuel/csKrP eq 1
+   systems/fuel/csPTB lt 2
+  </test>
+ </switch>
+
+<!-- 9 очередь -->
+ <switch name="systems/fuel/order-9">
+  <default value="0"/>
+  <test logic="AND" value="1">
+   systems/fuel/on eq 1
+   systems/fuel/serviceable eq 1
+   systems/fuel/csN1 eq 1
+   systems/fuel/csN2 eq 2
+   systems/fuel/csN3 eq 1
+   systems/fuel/csN3AL eq 1
+   systems/fuel/csN3AP eq 1
+   systems/fuel/csKrL eq 1
+   systems/fuel/csKrP eq 1
+   systems/fuel/csPTB lt 2
+  </test>
+ </switch>
+
+<!-- ПТБ очередь -->
+ <switch name="systems/fuel/order-PTB">
+  <default value="0"/>
+  <test logic="AND" value="1">
+   systems/fuel/on eq 1
+   systems/fuel/serviceable eq 1
+   systems/fuel/csN1 gt 1
+   systems/fuel/order-1 gt 0
+   systems/fuel/csPTB gt 1
+   calculations/KSA/n2 gt 50
+  </test>
+ </switch>
+
+<!-- Аккум очередь -->
+ <switch name="systems/fuel/order-AccumL">
+  <default value="0"/>
+  <test logic="AND" value="1">
+   systems/fuel/on eq 1
+   systems/fuel/serviceable eq 1
+   systems/fuel/csN2 gt 1
+   systems/fuel/csAccumL eq 1
+  </test>
+ </switch>
+ <switch name="systems/fuel/order-AccumP">
+  <default value="0"/>
+  <test logic="AND" value="1">
+   systems/fuel/on eq 1
+   systems/fuel/serviceable eq 1
+   systems/fuel/csN2 gt 1
+   systems/fuel/csAccumP eq 1
+  </test>
+ </switch>
+
+<!-- 1 (6-8) очередь -->
+
+ <switch name="systems/fuel/fo1i">
+  <default value="0"/>
+  <test logic="OR" value="9.508">
+   systems/fuel/order-1 eq 1
+   systems/fuel/order-6 eq 1
+   systems/fuel/order-8 eq 1
+  </test>
+  <output>propulsion/tank[1]/external-flow-rate/tank_1</output>
+ </switch>
+ <switch name="systems/fuel/fo1o">
+  <default value="0"/>
+  <test logic="OR" value="-9.508">
+   systems/fuel/order-1 eq 1
+   systems/fuel/order-6 eq 1
+   systems/fuel/order-8 eq 1
+  </test>
+  <output>propulsion/tank[0]/external-flow-rate/tank_2</output>
+ </switch>
+
+<!-- 2 (3-4-5-7) очередь -->
+ <switch name="systems/fuel/fo2i">
+  <default value="0"/>
+  <test logic="OR" value="9.508">
+   systems/fuel/order-2 eq 1
+   systems/fuel/order-5 eq 1
+   systems/fuel/order-7 eq 1
+  </test>
+  <output>propulsion/tank[1]/external-flow-rate/tank_3</output>
+ </switch>
+ <switch name="systems/fuel/fo2o">
+  <default value="0"/>
+  <test logic="OR" value="-9.508">
+   systems/fuel/order-2 eq 1
+   systems/fuel/order-5 eq 1
+   systems/fuel/order-7 eq 1
+  </test>
+  <output>propulsion/tank[2]/external-flow-rate/tank_2</output>
+ </switch>
+
+<!-- 3 очередь -->
+ <switch name="systems/fuel/fo3i">
+  <default value="0"/>
+  <test value="4.754">
+   systems/fuel/order-3 eq 1
+  </test>
+  <output>propulsion/tank[2]/external-flow-rate/tank_3AL</output>
+  <output>propulsion/tank[2]/external-flow-rate/tank_3AP</output>
+ </switch>
+ <switch name="systems/fuel/fo3o">
+  <default value="0"/>
+  <test value="-4.754">
+   systems/fuel/order-3 eq 1
+  </test>
+  <output>propulsion/tank[3]/external-flow-rate/tank_3</output>
+  <output>propulsion/tank[4]/external-flow-rate/tank_3</output>
+ </switch>
+
+<!-- 4 очередь -->
+ <switch name="systems/fuel/fo4i">
+  <default value="0"/>
+  <test value="4.754">
+   systems/fuel/order-4 eq 1
+  </test>
+  <output>propulsion/tank[2]/external-flow-rate/tank_KrL</output>
+  <output>propulsion/tank[2]/external-flow-rate/tank_KrP</output>
+ </switch>
+ <switch name="systems/fuel/fo4o">
+  <default value="0"/>
+  <test value="-4.754">
+   systems/fuel/order-4 eq 1
+  </test>
+  <output>propulsion/tank[5]/external-flow-rate/tank_3</output>
+  <output>propulsion/tank[6]/external-flow-rate/tank_3</output>
+ </switch>
+
+<!-- ПТБ очередь -->
+ <switch name="systems/fuel/foPTBo">
+  <default value="0"/>
+  <test value="-9.508">
+   systems/fuel/order-PTB eq 1
+  </test>
+  <output>propulsion/tank[7]/external-flow-rate/tank_1</output>
+ </switch>
+ <switch name="systems/fuel/foPTBi">
+  <default value="0"/>
+  <test value="9.508">
+   systems/fuel/order-PTB eq 1
+  </test>
+  <output>propulsion/tank[0]/external-flow-rate/tank_PTB</output>
+ </switch>
+
+<!-- Аккум очередь -->
+ <switch name="systems/fuel/foAccumLo">
+  <default value="0"/>
+  <test value="-9.508">
+   systems/fuel/order-AccumL eq 1
+  </test>
+  <output>propulsion/tank[1]/external-flow-rate/accum_1</output>
+ </switch>
+ <switch name="systems/fuel/foAccumLi">
+  <default value="0"/>
+  <test value="9.508">
+   systems/fuel/order-AccumL eq 1
+  </test>
+  <output>propulsion/tank[8]/external-flow-rate-pps</output>
+ </switch>
+ <switch name="systems/fuel/foAccumPo">
+  <default value="0"/>
+  <test value="-9.508">
+   systems/fuel/order-AccumP eq 1
+  </test>
+  <output>propulsion/tank[1]/external-flow-rate/accum_2</output>
+ </switch>
+ <switch name="systems/fuel/foAccumPi">
+  <default value="0"/>
+  <test value="9.508">
+   systems/fuel/order-AccumP eq 1
+  </test>
+  <output>propulsion/tank[9]/external-flow-rate-pps</output>
+ </switch>
+
+ <switch name="systems/fuel/t550kg">
+  <default value="0"/>
+  <test value="1">
+   propulsion/total-fuel-lbs le 1240.79
+  </test>
+ </switch>
+
+ </channel>
+
+ <channel name="STRtek">
+
+  <fcs_function name="systems/fuel/tek">
+    <description>Расчет дальности полета при текущем расходе топлива</description>
+    <function>
+     <product>
+      <quotient>
+       <property>propulsion/total-fuel-lbs</property>
+       <product>
+        <sum>
+         <property>propulsion/engine/fuel-flow-rate-pps</property>
+         <property>propulsion/engine[1]/fuel-flow-rate-pps</property>
+        </sum>
+        <value>3600</value>
+       </product>
+      </quotient>
+      <property>systems/SVS/true-airspeed-kmh</property>
+     </product>
+    </function>
+   </fcs_function>
+
+ </channel>
+
+</system>
+<!--
+1 - N1 - 519.5
+2 - N3 - 346.13
+3 - N3A - complete
+4 - Wing - complete
+5 - N3 - 1038.38
+6 - N1 - 484.58
+7 - N3 - complete
+8 - N1 - complete
+9 - N2 - complete
+10 - accum - complete
+-->

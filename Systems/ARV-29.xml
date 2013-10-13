@@ -1,0 +1,431 @@
+<!-- ARV-29 -->
+<!-- Jule 2011 -->
+
+<system name="ARV-29">
+
+ <fileheader>
+  <author> Sergey Salow </author>
+  <filecreationdate> 2011-24-07 </filecreationdate>
+  <version>$Revision: 1.00 $</version>
+  <description> Intake </description>
+ </fileheader>
+
+ <!--fdm>
+  <jsbsim>
+   <systems>
+    <intake>
+      <serviceable type="bool">1</serviceable>
+      <serviceable_rl type="bool">1</serviceable_rl> <!- - Left Ramp - ->
+      <serviceable_rr type="bool">1</serviceable_rr> <!- - Right Ramp - ->
+      <serviceable_ol type="bool">1</serviceable_ol> <!- - Left Enter Guard - ->
+      <serviceable_or type="bool">1</serviceable_or> <!- - Right Enter Guard - ->
+      <serviceable_ul type="bool">1</serviceable_ul> <!- - Left Upper Enter - ->
+      <serviceable_ur type="bool">1</serviceable_ur> <!- - Right Upper Enter - ->
+      <!- -command_left type="float">0</command_left>
+      <command_right type="float">0</command_right>
+      <pos_left type="float">0</pos_left>
+      <pos_right type="float">0</pos_right- ->
+     </intake>
+    </systems>
+   </jsbsim>
+  </fdm-->
+
+  <property>systems/ARV/command_left</property>
+  <property>systems/ARV/command_right</property>
+  <property>systems/intake/command_left_norm</property>
+  <property>systems/intake/command_right_norm</property>
+  <property value="1">systems/ARV/autocontrol_switch</property>
+  <property value="1">systems/ARV/autocontrol_ramp</property>
+  <property value="1.0">systems/ARV/t1ksl</property>
+  <property value="1.0">systems/ARV/t1ksr</property>
+  <property value="1.0">systems/ARV/left-serviceable</property>
+  <property value="0.0">systems/ARV/left-55-sd</property>
+  <property value="1.0">systems/ARV/right-serviceable</property>
+  <property value="0.0">systems/ARV/right-55-sd</property>
+  
+  <channel name="ARVLeft">
+  
+   <fcs_function name="systems/ARV/tat-k">
+    <description>Conversion temperature, from Celsion to Kelvin</description>
+    <function>
+     <sum>
+      <value>273.15</value>
+      <property>propulsion/tat-c</property>
+     </sum>
+    </function>
+   </fcs_function>
+
+   <fcs_function name="systems/ARV/pppl">
+    <description>a</description>
+    <function>
+      <quotient>
+       <value>288</value>
+       <product>
+        <property>systems/ARV/tat-k</property>
+        <sum>
+         <value>1</value>
+         <product>
+          <property>velocities/mach</property>
+          <value>0.2</value>
+         </product>
+        </sum>
+       </product>
+      </quotient>
+    </function>
+   </fcs_function>
+
+   <scheduled_gain name="Intake ppl ">
+      <input>systems/ARV/pppl</input>
+      <table>
+       <independentVar lookup="row">systems/ARV/pppl</independentVar>
+       <tableData>
+             1.0         1.0
+             2.0         0.707106781
+             3.0         0.577350269
+             4.0         0.5
+             5.0         0.447213596
+             6.0         0.40824829
+             7.0         0.377964473
+             8.0         0.353553391
+             9.0         0.333333333
+            10.0         0.316227766
+            11.0         0.30151134
+            15.0         0.25819889
+            16.0         0.25
+            20.0         0.223606798
+            30.0         0.182574186
+            40.0         0.158113883
+            50.0         0.141421356
+            60.0         0.129099445
+            70.0         0.119522861
+            80.0         0.111803399
+            90.0         0.105409255
+           100.0         0.1
+           200.0         0.070710678
+           250.0         0.063245553
+           300.0         0.057735027
+           312.5         0.056568542
+           400.0         0.05
+           500.0         0.04472136
+           600.0         0.040824829
+           625.0         0.04
+           700.0         0.037796447
+           800.0         0.035355339
+           900.0         0.033333333
+          1000.0         0.031622777
+          1250.0         0.028284271
+          2000.0         0.02236068
+          2500.0         0.02
+          3000.0         0.018257419
+          4000.0         0.015811388
+          5000.0         0.014142136
+          6000.0         0.012909944
+          7000.0         0.011952286
+          8000.0         0.01118
+          9000.0         0.01054
+         10000.0         0.01000
+       </tableData>
+      </table>
+     <output>systems/ARV/ppli</output>
+   </scheduled_gain>
+
+   <fcs_function name="systems/ARV/ppl">
+    <description>a</description>
+    <function>
+     <product>
+      <property>propulsion/engine/n1</property>
+      <property>systems/ARV/ppli</property>
+     </product>
+    </function>
+    <clipto>
+      <min>    0 </min>
+      <max>  100 </max>
+    </clipto>
+    <output>systems/ARV/pla</output>
+   </fcs_function>
+
+   <!--summer name="PPL Sum">
+      <input>systems/ARV/ppl</input>
+      <clipto>
+        <min>  0 </min>
+        <max>  100 </max>
+      </clipto>
+      <output>systems/ARV/pla</output>
+   </summer-->
+
+   <scheduled_gain name="Intake control programme 1L">
+      <input>systems/ARV/autocontrol_ramp</input>
+      <table>
+       <independentVar lookup="row">systems/ARV/pla</independentVar>
+       <tableData>
+         062        1.00
+         075        0.79
+         100        0.00
+       </tableData>
+      </table>
+     <output>systems/ARV/command_auto1l</output>
+   </scheduled_gain>
+
+   <scheduled_gain name="Intake control programme 2L">
+      <input>systems/ARV/autocontrol_ramp</input>
+      <table>
+       <independentVar lookup="row">systems/ARV/pla</independentVar>
+       <tableData>
+         060        0.60
+         100        0.00
+       </tableData>
+      </table>
+     <output>systems/ARV/command_auto2l</output>
+   </scheduled_gain>
+
+   <scheduled_gain name="Intake control programme 3L">
+      <input>systems/ARV/autocontrol_ramp</input>
+      <table>
+       <independentVar lookup="row">systems/ARV/pla</independentVar>
+       <tableData>
+         053        0.35
+         100        0.00
+       </tableData>
+      </table>
+     <output>systems/ARV/command_auto3l</output>
+   </scheduled_gain>
+
+   <switch name="calculations/ARV/t1ksl">
+    <default value="0.0"/>
+     <test logic="AND" value="1.438679245">
+      systems/SVS/airspeed-kmh lt 200
+      propulsion/engine[0]/n2 gt 35
+      systems/ARV/left-serviceable eq 1
+     </test>
+    <output>systems/ARV/t1ksl</output>
+   </switch>
+
+   <switch name="systems/ARV/ac_programme_switchL">
+    <default value="systems/ARV/command_auto3l"/>
+     <test logic="AND" value="systems/ARV/command_auto1l">
+      velocities/mach ge 1.5
+      gear/gear-pos-norm eq 0
+     </test>
+     <test logic="AND" value="systems/ARV/command_auto2l">
+      velocities/mach ge 1.15
+      velocities/mach lt 1.5
+      position/h-sl-meters gt 3000
+      gear/gear-pos-norm eq 0
+     </test>
+     <test value="systems/ARV/t1ksl">
+      gear/gear-pos-norm eq 1
+     </test>
+    <output>systems/ARV/command_autoL</output>
+   </switch>
+
+   <switch name="systems/ARV/ac_left_ramp_sa">
+    <default value="systems/ARV/ac_left_ramp_sa"/>
+     <test value="systems/ARV/command_autoL">
+      systems/ARV/left-serviceable eq 1
+     </test>
+     <test logic="AND" value="0.55">
+      systems/ARV/left-55-sd eq 1
+      systems/ARV/command_autoL lt 0.55
+     </test>
+     <test logic="AND" value="systems/ARV/ac_left_ramp_sa">
+      systems/ARV/left-55-sd eq 1
+      systems/ARV/command_autoL gt 0.55
+     </test>
+   </switch>
+
+   <switch name="systems/ARV/ac_left_ramp_switch">
+    <default value="systems/ARV/command_left"/>
+     <test value="systems/ARV/ac_left_ramp_sa">
+      systems/ARV/autocontrol_switch eq 1
+     </test>
+    <output>systems/ARV/command_left_norm</output>
+   </switch>
+
+  </channel>
+
+  <channel name="ARVRight">
+
+   <fcs_function name="systems/ARV/pppr">
+    <description>a</description>
+    <function>
+      <quotient>
+       <value>288</value>
+       <product>
+        <property>systems/ARV/tat-k</property>
+        <sum>
+         <value>1</value>
+         <product>
+          <property>velocities/mach</property>
+          <value>0.2</value>
+         </product>
+        </sum>
+       </product>
+      </quotient>
+    </function>
+   </fcs_function>
+
+   <scheduled_gain name="Intake ppr ">
+      <input>systems/ARV/pppr</input>
+      <table>
+       <independentVar lookup="row">systems/ARV/pppr</independentVar>
+       <tableData>
+             1.0         1.0
+             2.0         0.707106781
+             3.0         0.577350269
+             4.0         0.5
+             5.0         0.447213596
+             6.0         0.40824829
+             7.0         0.377964473
+             8.0         0.353553391
+             9.0         0.333333333
+            10.0         0.316227766
+            11.0         0.30151134
+            15.0         0.25819889
+            16.0         0.25
+            20.0         0.223606798
+            30.0         0.182574186
+            40.0         0.158113883
+            50.0         0.141421356
+            60.0         0.129099445
+            70.0         0.119522861
+            80.0         0.111803399
+            90.0         0.105409255
+           100.0         0.1
+           200.0         0.070710678
+           250.0         0.063245553
+           300.0         0.057735027
+           312.5         0.056568542
+           400.0         0.05
+           500.0         0.04472136
+           600.0         0.040824829
+           625.0         0.04
+           700.0         0.037796447
+           800.0         0.035355339
+           900.0         0.033333333
+          1000.0         0.031622777
+          1250.0         0.028284271
+          2000.0         0.02236068
+          2500.0         0.02
+          3000.0         0.018257419
+          4000.0         0.015811388
+          5000.0         0.014142136
+          6000.0         0.012909944
+          7000.0         0.011952286
+          8000.0         0.01118
+          9000.0         0.01054
+         10000.0         0.01000
+       </tableData>
+      </table>
+     <output>systems/ARV/ppri</output>
+   </scheduled_gain>
+
+   <fcs_function name="systems/ARV/ppr">
+    <description>a</description>
+    <function>
+     <product>
+      <property>propulsion/engine[1]/n1</property>
+      <property>systems/ARV/ppri</property>
+     </product>
+    </function>
+   </fcs_function>
+
+   <summer name="PPR Sum">
+      <input>systems/ARV/ppr</input>
+      <clipto>
+        <min>  0 </min>
+        <max>  100 </max>
+      </clipto>
+      <output>systems/ARV/pra</output>
+   </summer>
+
+   <scheduled_gain name="Intake control programme 1R">
+      <input>systems/ARV/autocontrol_ramp</input>
+      <table>
+       <independentVar lookup="row">systems/ARV/pra</independentVar>
+       <tableData>
+         062        1.00
+         075        0.79
+         100        0.00
+       </tableData>
+      </table>
+     <output>systems/ARV/command_auto1r</output>
+   </scheduled_gain>
+
+   <scheduled_gain name="Intake control programme 2R">
+      <input>systems/ARV/autocontrol_ramp</input>
+      <table>
+       <independentVar lookup="row">systems/ARV/pra</independentVar>
+       <tableData>
+         060        0.60
+         100        0.00
+       </tableData>
+      </table>
+     <output>systems/ARV/command_auto2r</output>
+   </scheduled_gain>
+
+   <scheduled_gain name="Intake control programme 3R">
+      <input>systems/ARV/autocontrol_ramp</input>
+      <table>
+       <independentVar lookup="row">systems/ARV/pra</independentVar>
+       <tableData>
+         053        0.35
+         100        0.00
+       </tableData>
+      </table>
+     <output>systems/ARV/command_auto3r</output>
+   </scheduled_gain>
+
+   <switch name="calculations/ARV/t1ksr">
+    <default value="0.0"/>
+     <test logic="AND" value="1.438679245">
+      systems/SVS/airspeed-kmh lt 200
+      propulsion/engine[1]/n2 gt 35
+      systems/ARV/right-serviceable eq 1
+     </test>
+    <output>systems/ARV/t1ksr</output>
+   </switch>
+
+   <switch name="systems/ARV/ac_programme_switchR">
+    <default value="systems/ARV/command_auto3r"/>
+     <test logic="AND" value="systems/ARV/command_auto1r">
+      velocities/mach ge 1.5
+      gear/gear-pos-norm eq 0
+     </test>
+      <test logic="AND" value="systems/ARV/command_auto2r">
+       velocities/mach ge 1.15
+       velocities/mach lt 1.5
+       position/h-sl-meters gt 3000
+       gear/gear-pos-norm eq 0
+     </test>
+     <test value="systems/ARV/t1ksr">
+      gear/gear-pos-norm eq 1
+     </test>
+    <output>systems/ARV/command_autoR</output>
+   </switch>
+
+   <switch name="systems/ARV/ac_right_ramp_sa">
+    <default value="systems/ARV/ac_right_ramp_sa"/>
+     <test value="systems/ARV/command_autoR">
+      systems/ARV/right-serviceable eq 1
+     </test>
+     <test logic="AND" value="0.55">
+      systems/ARV/right-55-sd eq 1
+      systems/ARV/command_autoR lt 0.55
+     </test>
+     <test logic="AND" value="systems/ARV/ac_right_ramp_sa">
+      systems/ARV/right-55-sd eq 1
+      systems/ARV/command_autoR gt 0.55
+     </test>
+   </switch>
+
+   <switch name="systems/ARV/ac_right_ramp_switch">
+    <default value="systems/ARV/command_right"/>
+     <test value="systems/ARV/ac_right_ramp_sa">
+      systems/ARV/autocontrol_switch == 1
+     </test>
+    <output>systems/ARV/command_right_norm</output>
+   </switch>
+
+  </channel>
+
+</system>

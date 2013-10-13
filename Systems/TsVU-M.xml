@@ -1,0 +1,437 @@
+<!-- Цифровое Вычислительное Устройство - Модернизированное (2205) -->
+<!-- Автор: Сергей "Mercenary_Mercury" Салов -->
+<!-- Ноябрь 2012 -->
+
+<system name="COC">
+
+  <property value="1">systems/TsVU/on</property>
+  <property value="1">systems/TsVU/serviceable</property>
+  <property value="0">systems/TsVU/RS</property><!-- 1 - инерциальный режим счисления, 2 - курсовоздушный режим счисления -->
+  <property value="0">systems/TsVU/IRS_on</property>
+  <property value="0">systems/TsVU/KRS_on</property>
+
+  <property value="0">systems/TsVU/ShK</property><!-- Широтная коррекция -->
+
+  <property value="0">systems/TsVU/Korr</property>
+
+  <property value="0">systems/TsVU/Coord/TCS_Lat</property><!-- Текущие координаты самолета - Широта -->
+  <property value="0">systems/TsVU/Coord/TCS_Lon</property><!-- Текущие координаты самолета - Долгота -->
+  <property value="0">systems/TsVU/Coord/TCS_Alt</property><!-- Текущие координаты самолета - Высота -->
+
+  <property value="0">systems/TsVU/Coord/IRS_TCS_Lat</property><!-- Текущие координаты самолета - Широта -->
+  <property value="0">systems/TsVU/Coord/IRS_TCS_Lon</property><!-- Текущие координаты самолета - Долгота -->
+  <property value="0">systems/TsVU/Coord/IRS_TCS_Alt</property><!-- Текущие координаты самолета - Высота -->
+                                                                   
+  <property value="0">systems/TsVU/Coord/KRS_TCS_Lat</property><!-- Текущие координаты самолета - Широта -->
+  <property value="0">systems/TsVU/Coord/KRS_TCS_Lon</property><!-- Текущие координаты самолета - Долгота -->
+  <property value="0">systems/TsVU/Coord/KRS_TCS_Alt</property><!-- Текущие координаты самолета - Высота -->
+
+  <property value="0">systems/TsVU/Coord/ICS_Alt</property><!-- Исходные координаты самолета - Высота -->
+  <property value="0">systems/TsVU/Coord/ICS_Lat</property><!-- Исходные координаты самолета - Широта -->
+  <property value="0">systems/TsVU/Coord/ICS_Lon</property><!-- Исходные координаты самолета - Долгота -->
+
+  <property value="0">systems/TsVU/Coord/KCS_Lat</property><!-- Коррекционные координаты самолета - Широта -->
+  <property value="0">systems/TsVU/Coord/KCS_Lon</property><!-- Коррекционные координаты самолета - Долгота -->
+
+  <property value="0">systems/TsVU/pos/sumBarAlt</property>
+  <property value="0">systems/TsVU/pos/BarAltS</property>
+
+  <property value="0">calculations/TsVU/Null</property>
+  <property value="0">calculations/TsVU/err</property>
+  
+  <property>calculations/TsVU/h-deg-norm</property>
+
+ <channel name="TsVU">
+
+  <fcs_function name="calculations/TsVU/IRS_error">
+   <description>Вычисление ошибки счисления - инерциальный режим</description>
+   <function>
+    <quotient>
+     <quotient>
+      <value>5653.71024735</value>
+      <product>
+       <value>111194.444444444</value>
+       <cos>
+        <property>systems/TsVU/Coord/TCS_Lat</property>
+       </cos>
+      </product>
+     </quotient>
+     <value>432000</value>
+    </quotient>
+   </function>
+  </fcs_function>
+
+  <fcs_function name="calculations/TsVU/KRS_1_error">
+   <description>Вычисление ошибки счисления - курсовоздушный режим - широта</description>
+   <function>
+    <quotient>
+     <quotient>
+      <product>
+       <property>systems/SVS/true-airspeed-kmh</property>
+       <cos>
+        <property>calculations/TsVU/h-deg-norm</property>
+       </cos>
+       <value>0.04</value>
+      </product>
+      <product>
+       <value>111.194444444444</value>
+       <cos>
+        <property>systems/TsVU/Coord/TCS_Lat</property>
+       </cos>
+      </product>
+     </quotient>
+     <value>432000</value>
+    </quotient>
+   </function>
+  </fcs_function>
+
+  <fcs_function name="calculations/TsVU/KRS_2_error">
+   <description>Вычисление ошибки счисления - курсовоздушный режим - долгота</description>
+   <function>
+    <quotient>
+     <quotient>
+      <product>
+       <property>systems/SVS/true-airspeed-kmh</property>
+       <sin>
+        <property>calculations/TsVU/h-deg-norm</property>
+       </sin>
+       <value>0.04</value>
+      </product>
+      <product>
+       <value>111.194444444444</value>
+       <cos>
+        <property>systems/TsVU/Coord/TCS_Lat</property>
+       </cos>
+      </product>
+     </quotient>
+     <value>432000</value>
+    </quotient>
+   </function>
+  </fcs_function>
+
+ </channel>
+
+ <channel name="TsVU_Sl">
+
+  <switch name="calculations/TsVU/SlT">
+   <default value="calculations/TsVU/SlTB"/>
+    <test value="0">
+     calculations/TsVU/SlTB eq 2
+    </test>
+   <output>calculations/TsVU/SlTB</output>
+  </switch>
+
+  <fcs_function name="calculations/TsVU/SlT_A">
+   <description>Часть линии задержки</description>
+   <function>
+    <sum>
+     <value>1</value>
+     <property>calculations/TsVU/SlTB</property>
+    </sum>
+   </function>
+   <output>calculations/TsVU/SlTB</output>
+  </fcs_function>
+
+<!-- Lat geod r-1 -->
+  <switch name="calculations/TsVU/SlTLat0">
+   <default value="position/lat-geod-deg"/>
+    <test value="calculations/TsVU/SlTLat0">
+     calculations/TsVU/SlT eq 0
+    </test>
+  </switch>
+
+  <switch name="calculations/TsVU/SlTLat1">
+   <default value="position/lat-geod-deg"/>
+    <test value="calculations/TsVU/SlTLat1">
+     calculations/TsVU/SlT eq 1
+    </test>
+  </switch>
+
+  <switch name="calculations/TsVU/SlTLat">
+   <default value="calculations/TsVU/SlTLat0"/>
+    <test value="calculations/TsVU/SlTLat1">
+     calculations/TsVU/SlT eq 1
+    </test>
+  </switch>
+
+<!-- Lon r-1 -->
+  <switch name="calculations/TsVU/SlTLong0">
+   <default value="position/long-gc-deg"/>
+    <test value="calculations/TsVU/SlTLong0">
+     calculations/TsVU/SlT eq 0
+    </test>
+  </switch>
+
+  <switch name="calculations/TsVU/SlTLong1">
+   <default value="position/long-gc-deg"/>
+    <test value="calculations/TsVU/SlTLong1">
+     calculations/TsVU/SlT eq 1
+    </test>
+  </switch>
+
+  <switch name="calculations/TsVU/SlTLong">
+   <default value="calculations/TsVU/SlTLong0"/>
+    <test value="calculations/TsVU/SlTLong1">
+     calculations/TsVU/SlT eq 1
+    </test>
+  </switch>
+
+<!-- R r-1 -->
+  <switch name="calculations/TsVU/SlTVr0">
+   <default value="systems/TsVU/Coord/TCS_Alt"/>
+    <test value="calculations/TsVU/SlTVr0">
+     calculations/TsVU/SlT eq 0
+    </test>
+  </switch>
+
+  <switch name="calculations/TsVU/SlTVr1">
+   <default value="systems/TsVU/Coord/TCS_Alt"/>
+    <test value="calculations/TsVU/SlTVr1">
+     calculations/TsVU/SlT eq 1
+    </test>
+  </switch>
+
+  <switch name="calculations/TsVU/SlTVr">
+   <default value="calculations/TsVU/SlTVr0"/>
+    <test value="calculations/TsVU/SlTVr1">
+     calculations/TsVU/SlT eq 1
+    </test>
+    <test value="0">
+     systems/TsVU/IRS_on eq 0
+    </test>
+   <output>systems/TsVU/velocities/R_r1</output>
+  </switch>
+
+<!-- Lon-error -->
+  <switch name="calculations/TsVU/SlTN-r1">
+   <default value="0"/>
+    <test logic="AND" value="systems/TsVU/Coord/TCS_Lat">
+     systems/TsVU/on eq 1
+     systems/TsVU/IRS_on eq 1
+    </test>
+    <test logic="AND" value="systems/TsVU/Coord/TCS_Lat">
+     systems/TsVU/on eq 1
+     systems/TsVU/KRS_on eq 1
+    </test>
+   <output>systems/TsVU/Coord/Lat-r1</output>
+  </switch>
+
+  <switch name="calculations/TsVU/err_">
+   <default value="0"/>
+    <test logic="AND" value="0.0000005">
+     systems/TsVU/on eq 1
+     systems/TsVU/IRS_on eq 1
+    </test>
+    <test logic="AND" value="0.01">
+     systems/TsVU/on eq 1
+     systems/TsVU/KRS_on eq 1
+    </test>
+   <output>calculations/TsVU/err</output>
+  </switch>
+
+  <integrator name="calculations/TsVU/Coord/Lon_error">
+   <input>calculations/TsVU/Null</input>
+   <c1>calculations/TsVU/err</c1>
+  </integrator>
+
+ </channel>
+
+ <channel name="TsVU_IRS"><!-- Инерциальный режим счисления -->
+
+  <fcs_function name="calculations/TsVU/pos/sumNorth">
+   <description>Сумматор скорости</description>
+   <function>
+    <sum>
+     <quotient>
+      <property>systems/IK-VK/speed-north-mps</property>
+      <value>120</value>
+     </quotient>
+     <property>systems/TsVU/pos/sumNorth</property>
+    </sum>
+   </function>
+   <output>systems/TsVU/pos/sumNorth</output>
+  </fcs_function>
+
+  <fcs_function name="calculations/TsVU/pos/sumEast">
+   <description>Сумматор скорости</description>
+   <function>
+    <sum>
+     <quotient>
+      <property>systems/IK-VK/speed-east-mps</property>
+      <value>120</value>
+     </quotient>
+     <property>systems/TsVU/pos/sumEast</property>
+    </sum>
+   </function>
+   <output>systems/TsVU/pos/sumEast</output>
+  </fcs_function>
+
+  <fcs_function name="calculations/TsVU/pos/sumAlt">
+   <description>Сумматор высоты</description>
+   <function>
+    <sum>
+     <quotient>
+      <property>systems/IK-VK/speed-up-mps</property>
+      <value>120</value>
+     </quotient>
+     <property>systems/TsVU/pos/sumAlt</property>
+    </sum>
+   </function>
+   <output>systems/TsVU/pos/sumAlt</output>
+  </fcs_function>
+
+  <switch name="calculations/TsVU/speed-north-mps">
+   <default value="0"/>
+   <test value="systems/IK-VK/speed-north-mps">
+    systems/TsVU/IRS_on eq 1
+   </test>
+   <output>systems/TsVU/speed-north-mps</output>
+  </switch>
+
+  <switch name="calculations/TsVU/speed-east-mps">
+   <default value="0"/>
+   <test value="systems/IK-VK/speed-east-mps">
+    systems/TsVU/IRS_on eq 1
+   </test>
+   <output>systems/TsVU/speed-east-mps</output>
+  </switch>
+
+  <fcs_function name="calculations/TsVU/Coord/IRS_Alt">
+   <description>Сумматор высоты</description>
+   <function>
+    <sum>
+     <property>systems/TsVU/Coord/ICS_Alt</property>
+     <property>systems/TsVU/pos/sumAlt</property>
+    </sum>
+   </function>
+   <output>systems/TsVU/Coord/IRS_TCS_Alt</output>
+  </fcs_function>
+
+  <fcs_function name="calculations/TsVU/Coord/IRS_TCS_Lat">
+   <description>Вычисление текущей широты</description>
+   <function>
+    <sum>
+     <difference>
+      <property>position/lat-geod-deg</property>
+      <property>calculations/TsVU/SlTLat</property>
+     </difference>
+     <property>systems/TsVU/Coord/TCS_Lat</property>
+     <!--property>calculations/TsVU/IRS_error</property-->
+    </sum>
+   </function>  
+   <output>systems/TsVU/Coord/IRS_TCS_Lat</output>
+  </fcs_function>
+
+  <fcs_function name="calculations/TsVU/Coord/IRS_TCS_Lon">
+   <description>Вычисление текущей долготы</description>
+   <function>
+    <sum>
+     <difference>
+      <property>position/long-gc-deg</property>
+      <property>calculations/TsVU/SlTLong</property>
+     </difference>
+     <property>systems/TsVU/Coord/TCS_Lon</property>
+     <!--property>calculations/TsVU/IRS_error</property-->
+    </sum>
+   </function>
+   <output>systems/TsVU/Coord/IRS_TCS_Lon</output>
+  </fcs_function>
+
+ </channel>
+
+ <channel name="TsVU_KRS">
+
+  <fcs_function name="calculations/TsVU/pos/sumBarAlt">
+   <description>Сумматор высоты</description>
+   <function>
+    <sum>
+     <property>systems/TsVU/Coord/ICS_Alt</property>
+     <difference>
+      <property>position/h-sl-meters</property>
+      <property>systems/TsVU/pos/BarAltS</property>
+     </difference>
+    </sum>
+   </function>
+   <output>systems/TsVU/pos/sumBarAlt</output>
+  </fcs_function>
+
+  <fcs_function name="calculations/TsVU/Coord/KRS_TCS_Lat">
+   <description>Вычисление текущей широты</description>
+   <function>
+    <sum>
+     <difference>
+      <property>position/lat-geod-deg</property>
+      <property>calculations/TsVU/SlTLat</property>
+     </difference>
+     <property>systems/TsVU/Coord/TCS_Lat</property>
+     <property>calculations/TsVU/KRS_1_error</property>
+    </sum>
+   </function>
+   <output>systems/TsVU/Coord/KRS_TCS_Lat</output>
+  </fcs_function>
+
+  <fcs_function name="calculations/TsVU/Coord/KRS_TCS_Lon">
+   <description>Вычисление текущей долготы</description>
+   <function>
+    <sum>
+     <difference>
+      <property>position/long-gc-deg</property>
+      <property>calculations/TsVU/SlTLong</property>
+     </difference>
+     <property>systems/TsVU/Coord/TCS_Lon</property>
+     <property>calculations/TsVU/KRS_2_error</property>
+    </sum>
+   </function>
+   <output>systems/TsVU/Coord/KRS_TCS_Lon</output>
+  </fcs_function>
+
+ </channel>
+
+ <channel name="TsVU_SRS">
+
+  <switch name="calculations/TsVU/sTCS_Alt">
+   <default value="systems/TsVU/Coord/TCS_Alt"/>
+   <test value="systems/TsVU/Coord/IRS_TCS_Alt">
+    systems/TsVU/RS eq 1
+   </test>
+   <test value="systems/TsVU/Coord/KRS_TCS_Alt">
+    systems/TsVU/RS eq 2
+   </test>
+   <output>systems/TsVU/Coord/TCS_Alt</output>
+  </switch>
+
+  <switch name="calculations/TsVU/sTCS_Lat">
+   <default value="systems/TsVU/Coord/TCS_Lat"/>
+   <test logic="AND" value="systems/TsVU/Coord/IRS_TCS_Lat">
+    systems/TsVU/RS eq 1
+    systems/TsVU/Korr eq 0
+   </test>
+   <test logic="AND" value="systems/TsVU/Coord/KRS_TCS_Lat">
+    systems/TsVU/RS eq 2
+    systems/TsVU/Korr eq 0
+   </test>
+   <test value="systems/TsVU/Coord/KCS_Lat">
+    systems/TsVU/Korr eq 1
+   </test>   
+   <output>systems/TsVU/Coord/TCS_Lat</output>
+  </switch>
+
+  <switch name="calculations/TsVU/sTCS_Lon">
+   <default value="systems/TsVU/Coord/TCS_Lon"/>
+   <test logic="AND" value="systems/TsVU/Coord/IRS_TCS_Lon">
+    systems/TsVU/RS eq 1
+    systems/TsVU/Korr eq 0
+   </test>
+   <test logic="AND" value="systems/TsVU/Coord/KRS_TCS_Lon">
+    systems/TsVU/RS eq 2
+    systems/TsVU/Korr eq 0
+   </test>
+   <test value="systems/TsVU/Coord/KCS_Lon">
+    systems/TsVU/Korr eq 1
+   </test>   
+   <output>systems/TsVU/Coord/TCS_Lon</output>
+  </switch>
+
+ </channel>
+
+</system>

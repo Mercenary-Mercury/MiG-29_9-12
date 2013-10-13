@@ -1,0 +1,133 @@
+<!-- COC -->
+<!-- September 2012 -->
+
+<system name="COC">
+
+ <fileheader>
+  <author> Sergey Salow </author>
+  <filecreationdate> 2011-24-07 </filecreationdate>
+  <version>$Revision: 1.00 $</version>
+  <description> COC </description>
+ </fileheader>
+
+  <property value="1.0">systems/COC/COC1-serviceable</property>
+  <property value="1.0">systems/COC/COC2-serviceable</property>
+  <property>systems/COC/LERX-cmdL</property>
+  <property>systems/COC/LERX-cmdR</property>
+  <property value="0">fcs/LERX-cmd-norm</property>
+  <property>fcs/LERX-pos-norm</property>
+
+  <channel name="COCLeft">
+
+   <switch name="calculations/COC/aes1L">
+    <default value="0.0"/>
+     <test logic="AND" value="1.0">
+      aero/alpha-deg ge 9.0
+      velocities/mach le 0.85
+     </test>
+   </switch>
+   <switch name="calculations/COC/aes2L">
+    <default value="0.0"/>
+     <test logic="AND" value="1.0">
+      fcs/LERX-pos-norm eq 1.0
+      aero/alpha-deg ge 7.0
+      aero/alpha-deg lt 9.0
+      velocities/mach le 0.85
+     </test>
+   </switch>
+   <switch name="calculations/COC/aes3L">
+    <default value="fcs/LERX-cmd-norm"/>
+     <test logic="OR" value="1.0">
+      calculations/COC/aes1L eq 1.0
+      calculations/COC/aes2L eq 1.0
+     </test>
+    <output>systems/COC/LERX-cmdL</output>
+   </switch>
+
+  </channel>
+
+  <channel name="COCRight">
+
+   <switch name="calculations/COC/aes1R">
+    <default value="0.0"/>
+     <test logic="AND" value="1.0">
+      aero/alpha-deg ge 9.0
+      velocities/mach le 0.85
+     </test>
+   </switch>
+   <switch name="calculations/COC/aes2R">
+    <default value="0.0"/>
+     <test logic="AND" value="1.0">
+      fcs/LERX-pos-norm eq 1.0
+      aero/alpha-deg ge 7.0
+      aero/alpha-deg lt 9.0
+      velocities/mach le 0.85
+     </test>
+   </switch>
+   <switch name="calculations/COC/aes3R">
+    <default value="fcs/LERX-cmd-norm"/>
+     <test logic="OR" value="1.0">
+      calculations/COC/aes1R eq 1.0
+      calculations/COC/aes2R eq 1.0
+     </test>
+    <output>systems/COC/LERX-cmdR</output>
+   </switch>
+
+  </channel>
+
+  <channel name="COC">
+
+   <switch name="systems/COC/LERX-cmd-s">
+    <default value="0.0"/>
+     <test logic="AND" value="1.0">
+      fcs/flap-pos-norm eq 0.0
+      systems/COC/LERX-cmdR eq 1.0
+      systems/COC/LERX-cmdR eq 1.0
+     </test>
+     <test logic="AND" value="1.0">
+      fcs/flap-pos-norm eq 0.0
+      systems/COC/COC2-serviceable eq 0.0
+      systems/COC/LERX-cmdL eq 1.0
+     </test>
+     <test logic="AND" value="1.0">
+      fcs/flap-pos-norm eq 0.0
+      systems/COC/COC1-serviceable eq 0.0
+      systems/COC/LERX-cmdR eq 1.0
+     </test>
+     <test value="1.0">
+      fcs/flap-pos-norm eq 1.0
+     </test>
+    <output>systems/COC/LERX-cmd</output>
+   </switch>
+
+   <switch name="systems/COC/LERXFailure">
+    <default value="0.0"/>
+     <test logic="AND" value="1.0">
+      fcs/LERX-pos-norm eq 0.0
+      systems/COC/LERX-cmd eq 1.0
+     </test>
+   </switch>
+
+   <switch name="systems/COC/COCNotReserve">
+    <default value="0.0"/>
+     <test logic="AND" value="1.0">
+      systems/COC/COC1-serviceable eq 1.0
+      systems/COC/COC2-serviceable eq 0.0
+     </test>
+     <test logic="AND" value="1.0">
+      systems/COC/COC1-serviceable eq 0.0
+      systems/COC/COC2-serviceable eq 1.0
+     </test>
+   </switch>
+
+   <switch name="systems/COC/COCFailure">
+    <default value="0.0"/>
+     <test logic="AND" value="1.0">
+      systems/COC/COC1-serviceable eq 0.0
+      systems/COC/COC2-serviceable eq 0.0
+     </test>
+   </switch>
+
+  </channel>
+
+</system>

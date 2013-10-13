@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+
+<!--
+      Система Воздушных Сигналов
+      Автор: Сергей "Mercenary_Mercury" Салов
+      10.2011
+      
+      Air Signal System
+      Author: Sergey "Mercenary_Mercury" Salow
+-->
+
+<system>
+
+ <fileheader>
+  <author> Sergey "Mercenary_Mercury" Salow </author>
+  <filescreationdate> 2011-10-08 </filescreationdate>
+  <version>$Revision: 1.00 $</version>
+  <description> SVS </description>
+ </fileheader>
+
+<!--
+ <property value="0">systems/SVS/PVD_select</property>
+ <property value="0.0">systems/SVS/PVD_output_a</property>
+ <property value="0.0">systems/SVS/PVD_output_s</property>
+ <property value="0.0">systems/SVS/PVD_output_v</property>
+ <property value="0.0">systems/SVS/PVDra</property>
+ <property value="0.0">systems/SVS/PVDrs</property>
+ <property value="0.0">systems/SVS/PVDrv</property>
+ <property value="0.0">systems/SVS/PVDaa</property>
+ <property value="0.0">systems/SVS/PVDas</property>
+ <property value="0.0">systems/SVS/PVDav</property>
+ <property value="1">systems/SVS/PVDr-serviceable</property>
+ <property value="1">systems/SVS/PVDa-serviceable</property>
+ <property value="1">systems/instrumentation/US-30-3-serviceable</property>
+ <property value="1">systems/instrumentation/US-1600-serviceable</property>
+ <property value="1">systems/instrumentation/DA200s-serviceable</property>
+-->
+ <property value="0">systems/SVS/control</property>
+ <property value="0">systems/SVS/pitot-heating</property>
+ <property value="0">systems/SVS/pitot-t</property>
+
+ <channel name="SVS">
+
+  <fcs_function name="calculations/SVS/airspeed">
+   <description>Convert airspeed value</description>
+   <function>
+    <product>
+     <property>velocities/vc-kts</property>
+     <value>1.852</value>
+    </product>
+   </function>
+  </fcs_function>
+  <fcs_function name="calculations/SVS/trueairspeed">
+   <description>Convert true airspeed value</description>
+   <function>
+    <product>
+     <property>velocities/vt-fps</property>
+     <value>1.09728</value>
+    </product>
+   </function>
+  </fcs_function>
+  <fcs_function name="calculations/SVS/vs">
+   <description>Convert vertical speed value</description>
+   <function>
+    <product>
+     <property>velocities/v-down-fps</property>
+     <value>-0.3048</value>
+    </product>
+   </function>
+  </fcs_function>
+
+  <fcs_function name="calculations/SVS/TTT">
+   <description>Conv</description>
+   <function>
+    <sum>
+     <value>273.15</value>
+     <property>propulsion/tat-c</property>
+    </sum>
+   </function>
+  </fcs_function>
+
+  <fcs_function name="calculations/SVS/TT">
+   <description>Примитивное вычисление температуры ПВД</description>
+   <function>
+    <sum>
+     <product>
+      <product>
+       <sum>
+        <value>100</value>
+        <property>velocities/vc-kts</property>
+       </sum>
+       <value>0.000041667</value>
+      </product>
+      <value>-1</value>
+     </product>
+     <product>
+      <property>velocities/vc-kts</property>
+      <value>0.000126089</value>
+     </product>
+     <property>systems/SVS/pitot-heating</property>
+     <property>systems/SVS/pitot-t</property>
+    </sum>
+   </function>
+   <clipto>
+    <min>calculations/SVS/TTT</min>
+    <max>330</max>
+   </clipto>
+   <output>systems/SVS/pitot-t</output>
+  </fcs_function>
+
+  <switch name="calculations/SVS/PVDr_alt">
+   <default value="0.0"/>
+   <test value="position/h-sl-meters">
+    systems/SVS/PVDr-serviceable eq 1
+   </test>
+   <output>systems/SVS/PVDr_alt</output>
+  </switch>
+  <switch name="calculations/SVS/PVDr_as">
+   <default value="0.0"/>
+   <test value="calculations/SVS/airspeed">
+    systems/SVS/PVDr-serviceable eq 1
+   </test>
+   <output>systems/SVS/PVDr_as</output>
+  </switch>
+  <switch name="calculations/SVS/PVDr_tas">
+   <default value="0.0"/>
+   <test value="calculations/SVS/trueairspeed">
+    systems/SVS/PVDr-serviceable eq 1
+   </test>
+   <output>systems/SVS/PVDr_tas</output>
+  </switch>
+  <switch name="calculations/SVS/PVDr_M">
+   <default value="0.0"/>
+   <test value="velocities/mach">
+    systems/SVS/PVDr-serviceable eq 1
+   </test>
+   <output>systems/SVS/PVDr_M</output>
+  </switch>
+  <switch name="calculations/SVS/PVDr_vs">
+   <default value="0.0"/>
+   <test value="calculations/SVS/vs">
+    systems/SVS/PVDr-serviceable eq 1
+   </test>
+   <output>systems/SVS/PVDr_vs</output>
+  </switch>
+
+  <switch name="calculations/SVS/PVDa_alt">
+   <default value="0.0"/>
+   <test value="position/h-sl-meters">
+    systems/SVS/PVDa-serviceable eq 1
+   </test>
+   <output>systems/SVS/PVDa_alt</output>
+  </switch>
+  <switch name="calculations/SVS/PVDa_as">
+   <default value="0.0"/>
+   <test value="calculations/SVS/airspeed">
+    systems/SVS/PVDa-serviceable eq 1
+   </test>
+   <output>systems/SVS/PVDa_as</output>
+  </switch>
+  <switch name="calculations/SVS/PVDa_tas">
+   <default value="0.0"/>
+   <test value="calculations/SVS/trueairspeed">
+    systems/SVS/PVDa-serviceable eq 1
+   </test>
+   <output>systems/SVS/PVDa_tas</output>
+  </switch>
+  <switch name="calculations/SVS/PVDa_M">
+   <default value="0.0"/>
+   <test value="velocities/mach">
+    systems/SVS/PVDa-serviceable eq 1
+   </test>
+   <output>systems/SVS/PVDa_M</output>
+  </switch>
+  <switch name="calculations/SVS/PVDa_vs">
+   <default value="0.0"/>
+   <test value="calculations/SVS/vs">
+    systems/SVS/PVDa-serviceable eq 1
+   </test>
+   <output>systems/SVS/PVDa_vs</output>
+  </switch>
+
+  <switch name="calculations/SVS/PVD_alt_select">
+   <default value="0.0"/>
+   <test logic="AND" value="systems/SVS/PVDr_alt">
+    systems/SVS/PVD_select eq 0
+    systems/SVS/control eq 0
+    systems/SVS/pitot-t gt 275
+   </test>
+   <test logic="AND" value="systems/SVS/PVDa_alt">
+    systems/SVS/PVD_select eq 1
+    systems/SVS/control eq 0
+    systems/SVS/pitot-t gt 275
+   </test>
+   <test value="11900">
+    systems/SVS/control eq 1
+   </test>
+   <output>systems/SVS/altitude-m</output>
+  </switch>
+  <switch name="calculations/SVS/PVD_as_select">
+   <default value="0.0"/>
+   <test logic="AND" value="systems/SVS/PVDr_as">
+    systems/SVS/PVD_select eq 0
+    systems/SVS/control eq 0
+    systems/SVS/pitot-t gt 275
+   </test>
+   <test logic="AND" value="systems/SVS/PVDa_as">
+    systems/SVS/PVD_select eq 1
+    systems/SVS/control eq 0
+    systems/SVS/pitot-t gt 275
+   </test>
+   <test value="900">
+    systems/SVS/control eq 1
+   </test>
+   <output>systems/SVS/airspeed-kmh</output>
+  </switch>
+  <switch name="calculations/SVS/PVD_tas_select">
+   <default value="0.0"/>
+   <test logic="AND" value="systems/SVS/PVDr_tas">
+    systems/SVS/PVD_select eq 0
+    systems/SVS/control eq 0
+    systems/SVS/pitot-t gt 275
+   </test>
+   <test logic="AND" value="systems/SVS/PVDa_tas">
+    systems/SVS/PVD_select eq 1
+    systems/SVS/control eq 0
+    systems/SVS/pitot-t gt 275
+   </test>
+   <test value="800">
+    systems/SVS/control eq 1
+   </test>
+   <output>systems/SVS/true-airspeed-kmh</output>
+  </switch>
+  <switch name="calculations/SVS/PVD_M_select">
+   <default value="0.0"/>
+   <test logic="AND" value="systems/SVS/PVDr_M">
+    systems/SVS/PVD_select eq 0
+    systems/SVS/control eq 0
+    systems/SVS/pitot-t gt 275
+   </test>
+   <test logic="AND" value="systems/SVS/PVDa_M">
+    systems/SVS/PVD_select eq 1
+    systems/SVS/control eq 0
+    systems/SVS/pitot-t gt 275
+   </test>
+   <test value="0.693">
+    systems/SVS/control eq 1
+   </test>
+   <output>systems/SVS/Mach</output>
+  </switch>
+  <switch name="calculations/SVS/PVD_vs_select">
+   <default value="0.0"/>
+   <test logic="AND" value="systems/SVS/PVDr_vs">
+    systems/SVS/PVD_select eq 0
+    systems/SVS/control eq 0
+    systems/SVS/pitot-t gt 275
+   </test>
+   <test logic="AND" value="systems/SVS/PVDa_vs">
+    systems/SVS/PVD_select eq 1
+    systems/SVS/control eq 0
+    systems/SVS/pitot-t gt 275
+   </test>
+   <output>systems/SVS/vertical-speed-mps</output>
+  </switch>
+
+ </channel>
+
+</system>
+ <!-- 1097,28 -->

@@ -1,0 +1,874 @@
+<?xml version="1.0"?>
+<!--
+
+  Author:   Sergey "Mercenary_Mercury" Salow
+  Date:     Feb 2012
+  Function: Hydrosystems for MiG-29
+  License:  GPL
+  Note: Based on hydrosystems for TU-154B
+-->
+<system name="Hydrosystems">
+
+  <!--Hydrosystem vars-->
+<!--
+  <property>hs/arm150m-pitch-1</property>
+  <property>hs/arm150m-pitch-2</property>
+  
+  <property>hs/arm150m-roll-1</property>
+  <property>hs/arm150m-roll-2</property>
+  
+  <property>hs/arm150m-yaw-1</property>
+  <property>hs/arm150m-yaw-2</property>
+
+  <property value="210.0">hs/max-pressure</property>
+--> 
+  <property>hs/hs1-i</property>
+  <property>hs/hs2-i</property>
+  <property>hs/em-brake-i</property>
+  
+  <property>hs/ns58-1-n</property>
+  <property>hs/ns58-2-n</property>
+  <property value="1">hs/ANS</property>
+  <property>systems/hs/ODG</property>
+  
+  <property>hs/hs2-to-1</property>
+  <property>hs/hs1-to-em-brake</property>
+  
+  <property>hs/buster-1-switch</property>
+  <property>hs/buster-2-switch</property>
+
+  <property>fcs/sau-pitch</property>
+  <property>fcs/sau-roll</property>
+  <property>fcs/sau-yaw</property>
+  <property value="0.4">fcs/flap-cmd-static</property>
+  <property value="1">fcs/LERX-cmd-static</property>
+  <property>fcs/intake1-cmd-static</property>
+  <property>fcs/intake2-cmd-static</property>
+  <property>fcs/speedbrake-cmd-static</property>
+  <property>fcs/steer-cmd-static</property>
+  <property>fcs/rudder-pos-static</property>
+  <property value="0.4">fcs/elevator-pos-static</property>
+  <property>fcs/aileron-pos-static</property>
+  <property value="1">gear/gear-cmd-static</property>
+  <property>systems/ARV/command-left-static</property>
+  <property>systems/ARV/command-right-static</property>
+        <channel name="hydrosystems">
+          
+<!--**************************** HYDROSYSTEM STAFF ***************************-->
+
+          <switch name="calculations/KSA/n2">
+            <default value="propulsion/engine[0]/n2"/>
+            <test logic="AND" value="propulsion/engine[1]/n2">
+              propulsion/engine[1]/n2 > propulsion/engine[0]/n2
+              propulsion/engine[1]/n2 > propulsion/engine[2]/n2
+            </test>
+            <test logic="AND" value="propulsion/engine[2]/n2">
+              propulsion/engine[2]/n2 > propulsion/engine[0]/n2
+              propulsion/engine[2]/n2 > propulsion/engine[1]/n2
+            </test>
+          </switch>
+
+          <switch name="calculations/hs/ANS1">
+            <default value="0"/>
+            <test logic="AND" value="100">
+              systems/hs/ODG eq 1
+              hs/ANS eq 1
+              gear/unit[2]/WOW eq 0
+            </test>
+            <output>hs/ns58-1-n</output>
+          </switch>
+
+          <switch name="calculations/hs/ANS2">
+            <default value="0"/>
+            <test logic="AND" value="100">
+              systems/hs/ODG eq 1
+              hs/ANS eq 1
+              gear/unit[2]/WOW eq 0
+            </test>
+            <output>hs/ns58-2-n</output>
+          </switch>
+
+          <!--Hydro pump, driven by engine 1 -->
+          <switch name="hs/sources/np89-1-pressure">
+            <default value="0.0"/>
+            <test value="0.004762"> <!--1/210.0 KG/sm^2-->
+              calculations/KSA/n2 > 20.0
+            </test>
+          </switch>
+          <scheduled_gain name="hs/sources/np89-1-flow">
+            <input>hs/sources/np89-1-pressure</input>
+            <table>
+              <independentVar> calculations/KSA/n2 </independentVar>
+              <tableData>
+                15             0
+                20            4.2 	<!--Min pump flow-->
+                30		  55.0	<!--Max pump flow-->
+              </tableData>
+            </table>
+          </scheduled_gain>
+          <!--Hydro pump, driven by engine 2 -->
+          <switch name="hs/sources/np89-2-pressure">
+            <default value="0.0"/>
+            <test value="0.004762"> <!--1/210.0 KG/sm^2-->
+              calculations/KSA/n2 > 20.0
+            </test>
+          </switch>
+          <scheduled_gain name="hs/sources/np89-2-flow">
+            <input>hs/sources/np89-2-pressure</input>
+            <table>
+              <independentVar> calculations/KSA/n2 </independentVar>
+              <tableData>
+                15             0
+                20            4.2 	<!--Min pump flow-->
+                30		  55.0	<!--Max pump flow-->
+              </tableData>
+            </table>
+          </scheduled_gain>
+          <!--Electrical hydro pump 1 -->
+          <switch name="hs/sources/ns58-1-pressure">
+            <default value="0.0"/>
+            <test value="0.004762"> <!--1/210.0 KG/sm^2-->
+              hs/ns58-1-n > 20.0
+            </test>
+          </switch>
+          <scheduled_gain name="hs/sources/ns58-1-flow">
+            <input>hs/sources/ns58-1-pressure</input>
+            <table>
+              <independentVar> hs/ns58-1-n </independentVar>
+              <tableData>
+                15             0
+                20            2.0 	<!--Min pump flow-->
+                30		  20.0	<!--Max pump flow-->
+              </tableData>
+            </table>
+          </scheduled_gain>
+          
+          <!--Electrical hydro pump 2 -->
+          <switch name="hs/sources/ns58-2-pressure">
+            <default value="0.0"/>
+            <test value="0.004762"> <!--1/210.0 KG/sm^2-->
+              hs/ns58-2-n > 20.0
+            </test>
+          </switch>
+          <scheduled_gain name="hs/sources/ns58-2-flow">
+            <input>hs/sources/ns58-2-pressure</input>
+            <table>
+              <independentVar> hs/ns58-2-n </independentVar>
+              <tableData>
+                15             0
+                20            2.0	<!--Min pump flow-->
+                30		  20.0	<!--Max pump flow-->
+              </tableData>
+            </table>
+          </scheduled_gain>
+          
+          <!--Hydro accumulators-->
+          <integrator name="hs/hs1-pressure">
+            <input>hs/hs1-i</input>
+            <c1>1.5</c1>
+          </integrator>
+          <integrator name="hs/hs2-pressure">
+            <input>hs/hs2-i</input>
+            <c1>1.5</c1>
+          </integrator>
+          <integrator name="hs/emergency-brake-pressure">
+            <input>hs/em-brake-i</input>
+            <c1>1.5</c1>
+          </integrator>
+          
+          <!-- Feed hydrosystem 1 from hydrosystem 2 -->
+          <switch name="hs/hs2-to-1-g">
+            <default value="0.0"/>
+            <test value="0.3">
+              hs/hs2-to-1 == 1
+            </test>
+          </switch>
+          
+          <!-- Emergency brake hydroaccumulator charge -->
+          <switch name="hs/hs1-to-em-brake-g">
+            <default value="0.0"/>
+            <test value="0.3">
+              hs/hs1-to-em-brake == 1
+            </test>
+          </switch>
+          
+          <!--Is hydrosystems OK for busters?-->
+          
+          <switch name="hs/hs1-busters-ok">
+            <default value="0.0"/>
+            <test value="1.0"> 
+              hs/hs1-pressure > 80.0
+            </test>
+          </switch>    
+          <switch name="hs/hs2-busters-ok">
+            <default value="0.0"/>
+            <test value="1.0"> 
+              hs/hs2-pressure > 80.0
+            </test>
+          </switch>     
+          
+          <!--Busters electric valve -->
+          <switch name="hs/buster-1">
+            <default value="0.0"/>
+            <test value="hs/hs1-busters-ok"> 
+              hs/buster-1-switch == 1.0
+            </test>
+          </switch>
+          <switch name="hs/buster-2">
+            <default value="0.0"/>
+            <test value="hs/hs2-busters-ok"> 
+              hs/buster-2-switch == 1.0
+            </test>
+          </switch>
+          
+          <!--Total state of hydro power of control surfaces (0 - all failure, 3 - all ok) -->
+          <summer name="hs/busters-serviceable">
+            <input>hs/buster-1</input>
+            <input>hs/buster-2</input>
+          </summer>
+          <!--For flaps-->
+          <summer name="hs/flaps-serviceable">
+            <input>hs/hs1-busters-ok</input>
+          </summer>
+          <!--For LERX-->
+          <summer name="hs/LERX-serviceable">
+            <input>hs/hs1-busters-ok</input>
+          </summer>
+          <!--For intake-->
+          <summer name="hs/intake1-serviceable">
+            <input>hs/hs1-busters-ok</input>
+          </summer>
+          <summer name="hs/intake2-serviceable">
+            <input>hs/hs1-busters-ok</input>
+          </summer>
+          <!--For speedbrake-->
+          <summer name="hs/speedbrake-serviceable">
+            <input>hs/hs1-busters-ok</input>
+          </summer>
+          <!--For RDM-->
+          <summer name="hs/steer-serviceable">
+            <input>hs/hs1-busters-ok</input>
+          </summer>
+          <!--For gear-->
+          <summer name="hs/gear-serviceable">
+            <input>hs/hs1-busters-ok</input>
+          </summer>
+          
+          <!--ARM-150M switches support-->
+          <!--Pitch-->
+          <pure_gain name="hs/arm-150m-p-1-s"> 
+            <input>hs/hs1-busters-ok</input>
+            <gain>hs/arm150m-pitch-1</gain>
+          </pure_gain>
+          <pure_gain name="hs/arm-150m-p-2-s"> 
+            <input>hs/hs2-busters-ok</input>
+            <gain>hs/arm150m-pitch-2</gain>
+          </pure_gain>
+          <!--Roll-->
+          <pure_gain name="hs/arm-150m-r-1-s"> 
+            <input>hs/hs1-busters-ok</input>
+            <gain>hs/arm150m-roll-1</gain>
+          </pure_gain>
+          <pure_gain name="hs/arm-150m-r-2-s"> 
+            <input>hs/hs2-busters-ok</input>
+            <gain>hs/arm150m-roll-2</gain>
+          </pure_gain>
+          <!--Yaw-->
+          <pure_gain name="hs/arm-150m-y-1-s"> 
+            <input>hs/hs1-busters-ok</input>
+            <gain>hs/arm150m-yaw-1</gain>
+          </pure_gain>
+          <pure_gain name="hs/arm-150m-y-2-s"> 
+            <input>hs/hs2-busters-ok</input>
+            <gain>hs/arm150m-yaw-2</gain>
+          </pure_gain>
+          <!--State of hydro power of ARM-150M (0 - all failure, 3 - all ok) -->
+          <summer name="hs/arm-150m-pitch-serviceable">
+            <input>hs/arm-150m-p-1-s</input>
+            <input>hs/arm-150m-p-2-s</input>
+          </summer>
+          <summer name="hs/arm-150m-roll-serviceable">
+            <input>hs/arm-150m-r-1-s</input>
+            <input>hs/arm-150m-r-2-s</input>
+          </summer>
+          <summer name="hs/arm-150m-yaw-serviceable">
+            <input>hs/arm-150m-y-1-s</input>
+            <input>hs/arm-150m-y-2-s</input>
+          </summer>
+          
+          <!--Some utilite vars-->
+          <switch name="hs/hs1-p-clipped">
+            <default value="100.0"/>
+            <test value="hs/hs1-pressure">
+              hs/hs1-pressure > 100.0
+            </test>
+          </switch>
+          
+          <fcs_function name="hs/hs1-p-rev">
+            <description>1 divide by p-clipped</description>
+            <function>
+              <product>
+                <quotient>
+                  <value>1.0</value>
+                  <property>hs/hs1-p-clipped</property>
+                </quotient>
+                <value>1.0</value>
+              </product>
+            </function>
+          </fcs_function>
+          
+          <switch name="hs/hs2-p-clipped">
+            <default value="100.0"/>
+            <test value="hs/hs2-pressure">
+              hs/hs2-pressure > 100.0
+            </test>
+          </switch>
+          
+          <fcs_function name="hs/hs2-p-rev">
+            <description>1 divide by p-clipped</description>
+            <function>
+              <product>
+                <quotient>
+                  <value>1.0</value>
+                  <property>hs/hs2-p-clipped</property>
+                </quotient>
+                <value>1.0</value>
+              </product>
+            </function>
+          </fcs_function>
+          
+          <!--Hydro power support for hydrosystem 1-->
+          <summer name="hs/hs1-inp-delta">
+            <input>hs/max-pressure</input>
+            <input>-hs/hs1-pressure</input>
+            <clipto>
+              <min>0.0</min>
+              <max>1000.0</max>
+            </clipto>
+          </summer>
+          
+          <pure_gain name="hs/hs1-inp1-flow"> 
+            <input>hs/hs1-inp-delta</input>
+            <gain>hs/sources/np89-1-flow</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-inp2-flow"> 
+            <input>hs/hs1-inp-delta</input>
+            <gain>hs/sources/np89-2-flow</gain>
+          </pure_gain>
+          
+          <!--Cross-feed-->
+          <summer name="hs/hs1-crossfeed-delta">
+            <input>hs/hs2-pressure</input>
+            <input>-hs/hs1-pressure</input>
+            <clipto>
+              <min>0.0</min>
+              <max>1000.0</max>
+            </clipto>
+          </summer>
+          <pure_gain name="hs/hs1-inp3-flow"> 
+            <input>hs/hs1-crossfeed-delta</input>
+            <gain>hs/hs2-to-1-g</gain>
+          </pure_gain>
+          
+          <!--Emergency brake-->
+          <summer name="hs/hs1-em-brake-delta">
+            <input>hs/hs1-pressure</input>
+            <input>-hs/emergency-brake-pressure</input>
+            <clipto>
+              <min>0.0</min>
+              <max>1000.0</max>
+            </clipto>
+          </summer>
+          <pure_gain name="hs/em-brake-inp1-flow"> 
+            <input>hs/hs1-em-brake-delta</input>
+            <gain>hs/hs1-to-em-brake-g</gain>
+          </pure_gain>
+          
+          <!--Hydro power support for hydrosystem 2-->
+          <summer name="hs/hs2-inp-delta">
+            <input>hs/max-pressure</input>
+            <input>-hs/hs2-pressure</input>
+            <clipto>
+              <min>0.0</min>
+              <max>1000.0</max>
+            </clipto>
+          </summer>
+          
+          <pure_gain name="hs/hs2-inp1-flow"> 
+            <input>hs/hs2-inp-delta</input>
+            <gain>hs/sources/np89-2-flow</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs2-inp2-flow"> 
+            <input>hs/hs2-inp-delta</input>
+            <gain>hs/sources/ns58-1-flow</gain>
+          </pure_gain>
+          
+         
+          <!--Consumers-->
+          <!--Elevator -->
+          <washout_filter name="hs/consumers/elevator-speed">
+            <input>fcs/elevator-pos-rad</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          <pure_gain name="hs/consumers/elevator-e"> 
+            <input>hs/consumers/elevator-speed</input>
+            <gain>hs/consumers/elevator-speed</gain>
+          </pure_gain>
+          <!--Aileron-->
+          <washout_filter name="hs/consumers/aileron-speed">
+            <input>fcs/left-aileron-pos-rad</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          <pure_gain name="hs/consumers/aileron-e"> 
+            <input>hs/consumers/aileron-speed</input>
+            <gain>hs/consumers/aileron-speed</gain>
+          </pure_gain>
+          <!--Rudder-->
+          <washout_filter name="hs/consumers/rudder-speed">
+            <input>fcs/rudder-pos-rad</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          <pure_gain name="hs/consumers/rudder-e"> 
+            <input>hs/consumers/rudder-speed</input>
+            <gain>hs/consumers/rudder-speed</gain>
+          </pure_gain>
+          <!--Flaps-->
+          <washout_filter name="hs/consumers/flaps-speed">
+            <input>fcs/flap-pos-norm</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          <pure_gain name="hs/consumers/flaps-e"> 
+            <input>hs/consumers/flaps-speed</input>
+            <gain>hs/consumers/flaps-speed</gain>
+          </pure_gain>
+          <!--LERX-->
+          <washout_filter name="hs/consumers/LERX-speed">
+            <input>fcs/LERX-pos-norm</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          <pure_gain name="hs/consumers/LERX-e"> 
+            <input>hs/consumers/LERX-speed</input>
+            <gain>hs/consumers/LERX-speed</gain>
+          </pure_gain>
+          <!--Gear-->
+          <washout_filter name="hs/consumers/gear-speed">
+            <input>gear/gear-pos-norm</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          <pure_gain name="hs/consumers/gear-e"> 
+            <input>hs/consumers/gear-speed</input>
+            <gain>hs/consumers/gear-speed</gain>
+          </pure_gain>
+          <!--Brake (normal)-->
+          <washout_filter name="hs/consumers/left-brake-speed">
+            <input>fcs/left-brake-cmd-norm</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          
+          <pure_gain name="hs/consumers/left-brake-e"> 
+            <input>hs/consumers/left-brake-speed</input>
+            <gain>hs/consumers/left-brake-speed</gain>
+          </pure_gain>
+          
+          <washout_filter name="hs/consumers/right-brake-speed">
+            <input>fcs/right-brake-cmd-norm</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          
+          <pure_gain name="hs/consumers/right-brake-e"> 
+            <input>hs/consumers/right-brake-speed</input>
+            <gain>hs/consumers/right-brake-speed</gain>
+          </pure_gain>
+        <!--Intake-->
+          <washout_filter name="hs/consumers/left-intake-speed">
+            <input>systems/ARV/command_left_norm</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          
+          <pure_gain name="hs/consumers/left-intake-e"> 
+            <input>hs/consumers/left-intake-speed</input>
+            <gain>hs/consumers/left-intake-speed</gain>
+          </pure_gain>
+          
+          <washout_filter name="hs/consumers/right-intake-speed">
+              <input>systems/ARV/command_right_norm</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          
+          <pure_gain name="hs/consumers/right-intake-e"> 
+            <input>hs/consumers/right-intake-speed</input>
+            <gain>hs/consumers/right-intake-speed</gain>
+          </pure_gain>
+
+          <!--Speedbrake-->
+          <washout_filter name="hs/consumers/speedbrake-speed">
+            <input>fcs/speedbrake-cmd</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          
+          <pure_gain name="hs/consumers/speedbrake-e"> 
+            <input>hs/consumers/speedbrake-speed</input>
+            <gain>hs/consumers/speedbrake-speed</gain>
+          </pure_gain>
+
+          <!--RDM-->
+          <washout_filter name="hs/consumers/steer-speed">
+            <input>fcs/steer-cmd-norm</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          
+          <pure_gain name="hs/consumers/steer-e"> 
+            <input>hs/consumers/steer-speed</input>
+            <gain>hs/consumers/steer-speed</gain>
+          </pure_gain>
+
+          <!--ARM-150M-pitch-->
+          <washout_filter name="hs/consumers/arm150m-pitch-speed">
+            <input>fcs/sau-pitch</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          <pure_gain name="hs/consumers/arm150m-pitch-e"> 
+            <input>hs/consumers/arm150m-pitch-speed</input>
+            <gain>hs/consumers/arm150m-pitch-speed</gain>
+          </pure_gain>
+          <!--ARM-150M-roll-->
+          <washout_filter name="hs/consumers/arm150m-roll-speed">
+            <input>fcs/sau-roll</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          <pure_gain name="hs/consumers/arm150m-roll-e"> 
+            <input>hs/consumers/arm150m-roll-speed</input>
+            <gain>hs/consumers/arm150m-roll-speed</gain>
+          </pure_gain>
+          <!--ARm-150M-yaw-->
+          <washout_filter name="hs/consumers/arm150m-yaw-speed">
+            <input>fcs/sau-yaw</input>
+            <c1> 1.0 </c1>
+          </washout_filter>
+          <pure_gain name="hs/consumers/arm150m-yaw-e"> 
+            <input>hs/consumers/arm150m-yaw-speed</input>
+            <gain>hs/consumers/arm150m-yaw-speed</gain>
+          </pure_gain>
+          
+          <!--Elevator driven by 1-st hydrosystem-->
+          <pure_gain name="hs/hs1-e-g">
+            <input>hs/consumers/elevator-e</input>
+            <gain>hs/hs1-p-rev</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-elevator-g">
+            <input>hs/hs1-e-g</input>
+            <gain>200.0</gain><!--Power consumption coeft for elevator buster by hydrosys 1-->
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-elevator-g-switched">
+            <input>hs/hs1-elevator-g</input>
+            <gain>hs/buster-1</gain>
+          </pure_gain>
+          <!--Elevator driven by 2-st hydrosystem-->
+          <pure_gain name="hs/hs2-e-g">
+            <input>hs/consumers/elevator-e</input>
+            <gain>hs/hs2-p-rev</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs2-elevator-g">
+            <input>hs/hs2-e-g</input>
+            <gain>200.0</gain><!--Power consumption coeft for elevator buster by hydrosys 2-->
+          </pure_gain>
+          
+          <pure_gain name="hs/hs2-elevator-g-switched">
+            <input>hs/hs2-elevator-g</input>
+            <gain>hs/buster-2</gain>
+          </pure_gain>
+          
+          <!--Ailerons driven by 1-st hydrosystem-->
+          <pure_gain name="hs/hs1-a-g">
+            <input>hs/consumers/aileron-e</input>
+            <gain>hs/hs1-p-rev</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-aileron-g">
+            <input>hs/hs1-a-g</input>
+            <gain>200.0</gain><!--Power consumption coeft-->
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-aileron-g-switched">
+            <input>hs/hs1-aileron-g</input>
+            <gain>hs/buster-1</gain>
+          </pure_gain>
+          <!--Ailerons driven by 2-st hydrosystem-->
+          <pure_gain name="hs/hs2-a-g">
+            <input>hs/consumers/aileron-e</input>
+            <gain>hs/hs2-p-rev</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs2-aileron-g">
+            <input>hs/hs2-a-g</input>
+            <gain>200.0</gain><!--Power consumption coeft-->
+          </pure_gain>
+          
+          <pure_gain name="hs/hs2-aileron-g-switched">
+            <input>hs/hs2-aileron-g</input>
+            <gain>hs/buster-2</gain>
+          </pure_gain>
+          
+          <!--Rudder driven by 1-st hydrosystem-->
+          <pure_gain name="hs/hs1-r-g">
+            <input>hs/consumers/rudder-e</input>
+            <gain>hs/hs1-p-rev</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-rudder-g">
+            <input>hs/hs1-r-g</input>
+            <gain>120.0</gain><!--Power consumption coeft--> 
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-rudder-g-switched">
+            <input>hs/hs1-rudder-g</input>
+            <gain>hs/buster-1</gain>
+          </pure_gain>
+          <!--Rudder driven by hydrosystem 2-->
+          <pure_gain name="hs/hs2-r-g">
+            <input>hs/consumers/rudder-e</input>
+            <gain>hs/hs2-p-rev</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs2-rudder-g">
+            <input>hs/hs2-r-g</input>
+            <gain>120.0</gain><!--Power consumption coeft--> 
+          </pure_gain>
+          
+          <pure_gain name="hs/hs2-rudder-g-switched">
+            <input>hs/hs2-rudder-g</input>
+            <gain>hs/buster-2</gain>
+          </pure_gain>
+          
+          <!--Flaps driven by hydrosystem 1-->
+          <pure_gain name="hs/hs1-f-g">
+            <input>hs/consumers/flaps-e</input>
+            <gain>hs/hs1-p-rev</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-flap-g">
+            <input>hs/hs1-f-g</input>
+            <gain>200.0</gain><!--Power consumption coeft--> 
+          </pure_gain>
+          
+          <!--LERX driven by hydrosystem 1-->
+          <pure_gain name="hs/hs1-L-g">
+            <input>hs/consumers/LERX-e</input>
+            <gain>hs/hs1-p-rev</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-LERX-g">
+            <input>hs/hs1-L-g</input>
+            <gain>100.0</gain><!--Power consumption coeft--> 
+          </pure_gain>
+          
+          <!--Gear driven by hydrosystem 1-->
+          <pure_gain name="hs/hs1-g-g">
+            <input>hs/consumers/gear-e</input>
+            <gain>hs/hs1-p-rev</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-gear-g">
+            <input>hs/hs1-g-g</input>
+            <gain>2000.0</gain><!--Power consumption coeft--> 
+          </pure_gain>
+          <!--Brake driven by hydrosystem 1-->
+          <pure_gain name="hs/hs1-lb-g">
+            <input>hs/consumers/left-brake-e</input>
+            <gain>hs/hs1-p-rev</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-left-brake-g">
+            <input>hs/hs1-lb-g</input>
+            <gain>50.0</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-rb-g">
+            <input>hs/consumers/right-brake-e</input>
+            <gain>hs/hs1-p-rev</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-right-brake-g">
+            <input>hs/hs1-rb-g</input>
+            <gain>50.0</gain><!--50-->
+          </pure_gain>
+
+          <!--Intake driven by hydrosystem 1-->
+          <pure_gain name="hs/hs1-it1-g">
+            <input>hs/consumers/left-intake-e</input>
+            <gain>hs/hs1-p-rev</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-intake1-g">
+            <input>hs/hs1-it1-g</input>
+            <gain>100.0</gain><!--Power consumption coeft--> 
+          </pure_gain>
+
+          <pure_gain name="hs/hs1-it2-g">
+            <input>hs/consumers/right-intake-e</input>
+            <gain>hs/hs1-p-rev</gain>
+          </pure_gain>
+          
+          <pure_gain name="hs/hs1-intake2-g">
+            <input>hs/hs1-it2-g</input>
+            <gain>100.0</gain><!--Power consumption coeft--> 
+          </pure_gain>
+
+          <!--ARM-150M-pitch driven by hydrosystem 1-->
+          <pure_gain name="hs/hs1-arm150m-p-g">
+            <input>hs/consumers/arm150m-pitch-e</input>
+            <gain>hs/hs1-p-rev</gain>
+          </pure_gain>
+          <pure_gain name="hs/hs1-arm150m-pitch-g">
+            <input>hs/hs1-arm150m-p-g</input>
+            <gain>30.0</gain><!--Power consumption coeft--> 
+          </pure_gain>
+          <pure_gain name="hs/hs1-arm150m-pitch-g-switched">
+            <input>hs/hs1-arm150m-pitch-g</input>
+            <gain>hs/arm150m-pitch-1</gain>
+          </pure_gain>
+          <!--ARM-150M-pitch driven by hydrosystem 2-->
+          <pure_gain name="hs/hs2-arm150m-p-g">
+            <input>hs/consumers/arm150m-pitch-e</input>
+            <gain>hs/hs2-p-rev</gain>
+          </pure_gain>
+          <pure_gain name="hs/hs2-arm150m-pitch-g">
+            <input>hs/hs2-arm150m-p-g</input>
+            <gain>30.0</gain><!--Power consumption coeft--> 
+          </pure_gain>
+          <pure_gain name="hs/hs2-arm150m-pitch-g-switched">
+            <input>hs/hs2-arm150m-pitch-g</input>
+            <gain>hs/arm150m-pitch-2</gain>
+          </pure_gain>
+          
+          <!--ARM-150M-roll driven by hydrosystem 1-->
+          <pure_gain name="hs/hs1-arm150m-r-g">
+            <input>hs/consumers/arm150m-roll-e</input>
+            <gain>hs/hs1-p-rev</gain>
+          </pure_gain>
+          <pure_gain name="hs/hs1-arm150m-roll-g">
+            <input>hs/hs1-arm150m-r-g</input>
+            <gain>30.0</gain><!--Power consumption coeft--> 
+          </pure_gain>
+          <pure_gain name="hs/hs1-arm150m-roll-g-switched">
+            <input>hs/hs1-arm150m-roll-g</input>
+            <gain>hs/arm150m-roll-1</gain>
+          </pure_gain>
+          <!--ARM-150M-roll driven by hydrosystem 2-->
+          <pure_gain name="hs/hs2-arm150m-r-g">
+            <input>hs/consumers/arm150m-roll-e</input>
+            <gain>hs/hs2-p-rev</gain>
+          </pure_gain>
+          <pure_gain name="hs/hs2-arm150m-roll-g">
+            <input>hs/hs2-arm150m-r-g</input>
+            <gain>30.0</gain><!--Power consumption coeft--> 
+          </pure_gain>
+          <pure_gain name="hs/hs2-arm150m-roll-g-switched">
+            <input>hs/hs2-arm150m-roll-g</input>
+            <gain>hs/arm150m-roll-2</gain>
+          </pure_gain>
+          
+          <!--ARM-150M-yaw driven by hydrosystem 1-->
+          <pure_gain name="hs/hs1-arm150m-y-g">
+            <input>hs/consumers/arm150m-yaw-e</input>
+            <gain>hs/hs1-p-rev</gain>
+          </pure_gain>
+          <pure_gain name="hs/hs1-arm150m-yaw-g">
+            <input>hs/hs1-arm150m-y-g</input>
+            <gain>30.0</gain><!--Power consumption coeft--> 
+          </pure_gain>
+          <pure_gain name="hs/hs1-arm150m-yaw-g-switched">
+            <input>hs/hs1-arm150m-yaw-g</input>
+            <gain>hs/arm150m-yaw-1</gain>
+          </pure_gain>
+          <!--ARM-150M-yaw driven by hydrosystem 2-->
+          <pure_gain name="hs/hs2-arm150m-y-g">
+            <input>hs/consumers/arm150m-yaw-e</input>
+            <gain>hs/hs2-p-rev</gain>
+          </pure_gain>
+          <pure_gain name="hs/hs2-arm150m-yaw-g">
+            <input>hs/hs2-arm150m-y-g</input>
+            <gain>30.0</gain><!--Power consumption coeft--> 
+          </pure_gain>
+          <pure_gain name="hs/hs2-arm150m-yaw-g-switched">
+            <input>hs/hs2-arm150m-yaw-g</input>
+            <gain>hs/arm150m-yaw-2</gain>
+          </pure_gain>
+          
+          <!--All consumers of hydro system 1-->
+          <summer name="hs/hs1-g">
+            <input>hs/hs1-elevator-g-switched</input>
+            <input>hs/hs1-aileron-g-switched</input>
+            <input>hs/hs1-rudder-g-switched</input>
+            <input>hs/hs1-arm150m-pitch-g-switched</input>
+            <input>hs/hs1-arm150m-roll-g-switched</input>
+            <input>hs/hs1-arm150m-yaw-g-switched</input>
+            <input>hs/hs1-flap-g</input>
+            <input>hs/hs1-gear-g</input>
+            <input>hs/hs1-LERX-g</input>
+            <input>hs/hs1-left-brake-g</input>
+            <input>hs/hs1-right-brake-g</input>
+          </summer>
+          
+          <pure_gain name="hs/hs1-outp-flow"> 
+            <input>hs/hs1-pressure</input>
+            <gain>hs/hs1-g</gain>
+          </pure_gain>
+          
+          <!--All consumers of hydro system 2-->
+          <summer name="hs/hs2-g">
+            <input>hs/hs2-elevator-g-switched</input>
+            <input>hs/hs2-aileron-g-switched</input>
+            <input>hs/hs2-rudder-g-switched</input>
+            <input>hs/hs2-arm150m-pitch-g-switched</input>
+            <input>hs/hs2-arm150m-roll-g-switched</input>
+            <input>hs/hs2-arm150m-yaw-g-switched</input>
+          </summer>
+          
+          <pure_gain name="hs/hs2-outp-flow"> 
+            <input>hs/hs2-pressure</input>
+            <gain>hs/hs2-g</gain>
+          </pure_gain>
+          
+          <!--Flow balance hydrosystem 1-->
+          <summer name="hs/hs1-flow-balance">
+            <input>hs/hs1-inp1-flow</input> <!--NP-89 by eng. 1-->
+            <input>hs/hs1-inp2-flow</input> <!--NP-89 by eng. 2-->
+            <input>hs/hs1-inp3-flow</input> <!--Cross-feed if enabled-->
+            <input>-hs/em-brake-inp1-flow</input><!--Emergency brake charge if enabled-->
+            <input>-hs/hs1-outp-flow</input><!--Consumers-->
+            <output>hs/hs1-i</output>
+          </summer>
+          
+          <!--Flow balance hydrosystem 2-->
+          <summer name="hs/hs2-flow-balance">
+            <input>hs/hs2-inp1-flow</input> <!--NP-89 by eng. 2-->
+            <input>hs/hs2-inp2-flow</input> <!--NS-58-1-->
+            <input>-hs/hs1-inp3-flow</input> <!--Cross-feed if enabled-->
+            <input>-hs/hs2-outp-flow</input><!--Consumers-->
+            <output>hs/hs2-i</output>
+          </summer>
+          
+          <!--Flow balance emergency brake system-->
+          <summer name="hs/em-brake-flow-balance">
+            <input>hs/em-brake-inp1-flow</input><!--Emergency brake charge if enabled-->
+            <!--<input>-hs/em-brake-leak-flow</input>--><!-- Leak-->
+            <output>hs/em-brake-i</output>
+          </summer>
+          
+          <switch name="calculations/hs/ODG">
+              <default value="0"/>
+              <test logic="AND" value="1">
+               hs/hs1-pressure lt 100
+               hs/hs2-pressure lt 100
+              </test>
+              <output>systems/hs/ODG</output>
+          </switch>
+<!--**************************** END HYDROSYSTEM STAFF ***************************-->
+        </channel>
+</system>

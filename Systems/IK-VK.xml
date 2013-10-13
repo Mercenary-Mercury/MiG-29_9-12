@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+
+<!--
+      Информационный Комплекс Вертикали и Курса ИК-ВК
+      Автор: Сергей "Mercenary_Mercury" Салов
+      09.2012
+-->
+
+<system>
+
+ <fileheader>
+  <author> Sergey "Mercenary_Mercury" Salow </author>
+  <filescreationdate> 2011-10-08 </filescreationdate>
+  <version>$Revision: 1.00 $</version>
+  <description> IK-VK </description>
+ </fileheader>
+
+ <property value="0">systems/IK-VK/KV_select</property>
+ <property value="0">systems/IK-VK/IK-VK-on</property>
+ <property value="0">systems/IK-VK/KVosn-cmd-on</property>
+ <property value="0">systems/IK-VK/KVzap-cmd-on</property>
+ <property value="1">systems/IK-VK/KVosn-serviceable</property>
+ <property value="1">systems/IK-VK/KVzap-serviceable</property>
+
+ <channel name="IK-VK">
+
+  <switch name="systems/IK-VK/KVosn-on">
+   <default value="0"/>
+   <test logic="AND" value="1">
+    systems/IK-VK/KVosn-cmd-on eq 1
+    systems/IK-VK/KVosn-serviceable eq 1
+   </test>
+  </switch>
+
+  <switch name="systems/IK-VK/KVzap-on">
+   <default value="0"/>
+   <test logic="AND" value="1">
+    systems/IK-VK/KVzap-cmd-on eq 1
+    systems/IK-VK/KVzap-serviceable eq 1
+   </test>
+  </switch>
+
+  <switch name="calculations/IK-VK/on">
+   <default value="0"/>
+   <test logic="AND" value="1">
+    systems/IK-VK/KVosn-on eq 1
+    systems/IK-VK/KVzap-on eq 0
+   </test>
+   <test logic="AND" value="1">
+    systems/IK-VK/KVosn-on eq 0
+    systems/IK-VK/KVzap-on eq 1
+   </test>
+   <test logic="AND" value="1">
+    systems/IK-VK/KVosn-on eq 1
+    systems/IK-VK/KVzap-on eq 1
+   </test>
+   <output>systems/IK-VK/IK-VK-on</output>
+  </switch>
+
+  <fcs_function name="calculations/IK-VK/heading">
+   <description>Convert heading - radian to degree</description>
+   <function>
+    <product>
+     <property>attitude/heading-true-rad</property>
+     <value>57.295779</value>
+    </product>
+   </function>
+  </fcs_function>
+  <fcs_function name="calculations/IK-VK/pitch">
+   <description>Convert pitch - radian to degree</description>
+   <function>
+    <product>
+     <property>attitude/pitch-rad</property>
+     <value>57.295779</value>
+    </product>
+   </function>
+  </fcs_function>
+    <fcs_function name="calculations/IK-VK/roll">
+   <description>Convert roll - radian to degree</description>
+   <function>
+    <product>
+     <property>attitude/roll-rad</property>
+     <value>57.295779</value>
+    </product>
+   </function>
+  </fcs_function>
+  <fcs_function name="calculations/IK-VK/vd">
+   <description>Convert linear speed</description>
+   <function>
+    <product>
+     <property>velocities/v-down-fps</property>
+     <value>-0.328084</value>
+    </product>
+   </function>
+  </fcs_function>
+  <fcs_function name="calculations/IK-VK/ve">
+   <description>Convert linear speed</description>
+   <function>
+    <product>
+     <property>velocities/v-east-fps</property>
+     <value>0.328084</value>
+    </product>
+   </function>
+  </fcs_function>
+  <fcs_function name="calculations/IK-VK/vn">
+   <description>Convert linear speed</description>
+   <function>
+    <product>
+     <property>velocities/v-north-fps</property>
+     <value>0.328084</value>
+    </product>
+   </function>
+  </fcs_function>
+
+  <switch name="calculations/IK-VK/KVosn_h">
+   <default value="calculations/IK-VK/KVosn_h"/>
+   <test logic="AND" value="calculations/IK-VK/heading">
+    systems/IK-VK/KVosn-on eq 1
+    systems/IK-VK/KVosn-serviceable eq 1
+    systems/IK-VK/IK-VK-on eq 1
+   </test>
+  </switch>
+  <switch name="calculations/IK-VK/KVosn_p">
+   <default value="calculations/IK-VK/KVosn_p"/>
+   <test logic="AND" value="calculations/IK-VK/pitch">
+    systems/IK-VK/KVosn-on eq 1
+    systems/IK-VK/KVosn-serviceable eq 1
+    systems/IK-VK/IK-VK-on eq 1
+   </test>
+  </switch>
+  <switch name="calculations/IK-VK/KVosn_r">
+   <default value="calculations/IK-VK/KVosn_r"/>
+   <test logic="AND" value="calculations/IK-VK/roll">
+    systems/IK-VK/KVosn-on eq 1
+    systems/IK-VK/KVosn-serviceable eq 1
+    systems/IK-VK/IK-VK-on eq 1
+   </test>
+  </switch>
+  <switch name="calculations/IK-VK/KVosn_vd">
+   <default value="calculations/IK-VK/KVosn_vd"/>
+   <test logic="AND" value="calculations/IK-VK/vd">
+    systems/IK-VK/KVosn-on eq 1
+    systems/IK-VK/KVosn-serviceable eq 1
+    systems/IK-VK/IK-VK-on eq 1
+   </test>
+  </switch>
+  <switch name="calculations/IK-VK/KVosn_ve">
+   <default value="calculations/IK-VK/KVosn_ve"/>
+   <test logic="AND" value="calculations/IK-VK/ve">
+    systems/IK-VK/KVosn-on eq 1
+    systems/IK-VK/KVosn-serviceable eq 1
+    systems/IK-VK/IK-VK-on eq 1
+   </test>
+  </switch>
+  <switch name="calculations/IK-VK/KVosn_vn">
+   <default value="calculations/IK-VK/KVosn_vn"/>
+   <test logic="AND" value="calculations/IK-VK/vn">
+    systems/IK-VK/KVosn-on eq 1
+    systems/IK-VK/KVosn-serviceable eq 1
+    systems/IK-VK/IK-VK-on eq 1
+   </test>
+  </switch>
+
+  <switch name="calculations/IK-VK/KVzap_h">
+   <default value="calculations/IK-VK/KVzap_h"/>
+   <test logic="AND" value="calculations/IK-VK/heading">
+    systems/IK-VK/KVzap-on eq 1
+    systems/IK-VK/KVzap-serviceable eq 1
+    systems/IK-VK/IK-VK-on eq 1
+   </test>
+  </switch>
+  <switch name="calculations/IK-VK/KVzap_p">
+   <default value="calculations/IK-VK/KVzap_p"/>
+   <test logic="AND" value="calculations/IK-VK/pitch">
+    systems/IK-VK/KVzap-on eq 1
+    systems/IK-VK/KVzap-serviceable eq 1
+    systems/IK-VK/IK-VK-on eq 1
+   </test>
+  </switch>
+  <switch name="calculations/IK-VK/KVzap_r">
+   <default value="calculations/IK-VK/KVzap_r"/>
+   <test logic="AND" value="calculations/IK-VK/roll">
+    systems/IK-VK/KVzap-on eq 1
+    systems/IK-VK/KVzap-serviceable eq 1
+    systems/IK-VK/IK-VK-on eq 1
+   </test>
+  </switch>
+  <switch name="calculations/IK-VK/KVzap_vd">
+   <default value="calculations/IK-VK/KVzap_vd"/>
+   <test logic="AND" value="calculations/IK-VK/vd">
+    systems/IK-VK/KVzap-on eq 1
+    systems/IK-VK/KVzap-serviceable eq 1
+    systems/IK-VK/IK-VK-on eq 1
+   </test>
+  </switch>
+  <switch name="calculations/IK-VK/KVzap_ve">
+   <default value="calculations/IK-VK/KVzap_ve"/>
+   <test logic="AND" value="calculations/IK-VK/ve">
+    systems/IK-VK/KVzap-on eq 1
+    systems/IK-VK/KVzap-serviceable eq 1
+    systems/IK-VK/IK-VK-on eq 1
+   </test>
+  </switch>
+  <switch name="calculations/IK-VK/KVzap_vn">
+   <default value="calculations/IK-VK/KVzap_vn"/>
+   <test logic="AND" value="calculations/IK-VK/vn">
+    systems/IK-VK/KVzap-on eq 1
+    systems/IK-VK/KVzap-serviceable eq 1
+    systems/IK-VK/IK-VK-on eq 1
+   </test>
+  </switch>
+
+  <switch name="calculations/IK-VK/KV_h_select">
+   <default value="calculations/IK-VK/KVosn_h"/>
+   <test value="calculations/IK-VK/KVzap_h">
+    systems/IK-VK/KV_select eq 1
+   </test>
+   <output>systems/IK-VK/heading-deg</output>
+  </switch>
+  <switch name="calculations/IK-VK/KV_p_select">
+   <default value="calculations/IK-VK/KVosn_p"/>
+   <test value="calculations/IK-VK/KVzap_p">
+    systems/IK-VK/KV_select eq 1
+   </test>
+   <output>systems/IK-VK/pitch-deg</output>
+  </switch>
+  <switch name="calculations/IK-VK/KV_r_select">
+   <default value="calculations/IK-VK/KVosn_r"/>
+   <test value="calculations/IK-VK/KVzap_r">
+    systems/IK-VK/KV_select eq 1
+   </test>
+   <output>systems/IK-VK/roll-deg</output>
+  </switch>
+  <switch name="calculations/IK-VK/KV_vd_select">
+   <default value="calculations/IK-VK/KVosn_vd"/>
+   <test value="calculations/IK-VK/KVzap_vd">
+    systems/IK-VK/KV_select eq 1
+   </test>
+   <output>systems/IK-VK/speed-up-mps</output>
+  </switch>
+  <switch name="calculations/IK-VK/KV_ve_select">
+   <default value="calculations/IK-VK/KVosn_ve"/>
+   <test value="calculations/IK-VK/KVzap_ve">
+    systems/IK-VK/KV_select eq 1
+   </test>
+   <output>systems/IK-VK/speed-east-mps</output>
+  </switch>
+  <switch name="calculations/IK-VK/KV_vn_select">
+   <default value="calculations/IK-VK/KVosn_vn"/>
+   <test value="calculations/IK-VK/KVzap_vn">
+    systems/IK-VK/KV_select eq 1
+   </test>
+   <output>systems/IK-VK/speed-north-mps</output>
+  </switch>
+
+ </channel>
+
+</system>

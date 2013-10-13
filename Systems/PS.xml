@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+
+<!--
+      Пневматическая система
+      Автор: Сергей "Mercenary_Mercury" Салов
+      07.2012
+      
+      Aircraft pneumatic system
+      Author: Sergey "Mercenary_Mercury" Salow19,833352421
+-->
+
+<system>
+
+ <fileheader>
+  <author> Sergey "Mercenary_Mercury" Salow </author>
+  <filescreationdate> 2011-10-08 </filescreationdate>
+  <version>$Revision: 1.00 $</version>
+  <description> Aircraft pneumatic system </description>
+ </fileheader>
+
+ <property value="0">calculations/PS/CL1</property>
+ <property value="0">calculations/PS/CL2</property>
+ <property value="0">calculations/PS/CL3</property>
+ <property value="20">calculations/PS/Ohos</property>
+ <property value="20">calculations/PS/Ahos</property>
+ <property value="0">systems/PS/EGE</property>  <!-- Включение аварийного выпуска шасси -->
+
+<!-- Основная воздушная система -->
+ <channel name="OVS">
+
+   <summer name="PS Brake Sum">
+      <!-- <input>fcs/nose-brake-cmd-norm</input> -->
+      <input>fcs/left-brake-cmd-norm</input>
+      <input>fcs/right-brake-cmd-norm</input>
+      <clipto>
+        <min>  0 </min>
+        <max>  2 </max>
+      </clipto>
+      <output>calculations/PS/brake-cmd-norm</output>
+   </summer>
+
+   <aerosurface_scale name="PS brake scale">
+      <input>calculations/PS/brake-cmd-norm</input>
+      <domain>
+        <min>  0 </min>
+        <max>  2 </max>
+      </domain>
+      <range>
+        <min> 0.0 </min>
+        <max> 0.04 </max>
+      </range>
+      <output>calculations/PS/brake-norm</output>
+   </aerosurface_scale>
+
+   <aerosurface_scale name="PS pcr scale">
+      <input>calculations/PS/CL2</input>
+      <domain>
+        <min>  0 </min>
+        <max>  1 </max>
+      </domain>
+      <range>
+        <min> 0.0 </min>
+        <max> 0.1 </max>
+      </range>
+      <output>calculations/PS/pcr-norm</output>
+   </aerosurface_scale>
+
+  <fcs_function name="calculations/PS/OVS_capf">
+   <description>C</description>
+   <function>
+    <sum>
+     <product>
+      <sum>
+       <property>calculations/PS/CL1</property>
+       <property>calculations/PS/pcr-norm</property>
+       <property>calculations/PS/CL3</property>
+      </sum>
+      <value>-1</value>
+     </product>
+     <property>calculations/PS/Ohos</property>
+    </sum>
+   </function>
+  </fcs_function>
+
+  <switch name="calculations/PS/Ohoss">
+   <default value="calculations/PS/OVS_capf"/>
+   <test value="calculations/PS/Ohos">
+    calculations/PS/Ohos eq calculations/PS/OVS_capf
+   </test>
+   <output>calculations/PS/Ohos</output>
+  </switch>
+
+  <switch name="calculations/PS/cb">
+   <default value="0.0"/>
+   <test value="calculations/PS/OVS_capf">
+    calculations/PS/OVS_capf gt 0.0
+   </test>
+   <output>systems/PS/OVS_cap</output>
+  </switch>
+
+ </channel>
+
+<!-- Аварийная воздушная система -->
+ <channel name="AVS">
+
+  <fcs_function name="calculations/PS/AVS_capf">
+   <description>C</description>
+   <function>
+    <sum>
+     <product>
+      <sum>
+       <property>calculations/PS/CL1</property>
+       <property>calculations/PS/pcr-norm</property>
+       <property>calculations/PS/CL3</property>
+      </sum>
+      <value>-1</value>
+     </product>
+     <property>calculations/PS/Ahos</property>
+    </sum>
+   </function>
+  </fcs_function>
+
+  <switch name="calculations/PS/Ahoss">
+   <default value="calculations/PS/AVS_capf"/>
+   <test value="calculations/PS/Ahos">
+    calculations/PS/Ahos eq calculations/PS/AVS_capf
+   </test>
+   <output>calculations/PS/Ahos</output>
+  </switch>
+
+  <switch name="calculations/PS/Acb">
+   <default value="0.0"/>
+   <test value="calculations/PS/AVS_capf">
+    calculations/PS/AVS_capf gt 0.0
+   </test>
+   <output>systems/PS/AVS_cap</output>
+  </switch>
+
+ </channel>
+
+</system>

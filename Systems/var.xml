@@ -1,0 +1,616 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!-- Управление -->
+ <controls>
+  <ARK-19>
+   <daln-blizhn type="bool" arhcive="y">false</daln-blizhn>
+  </ARK-19>
+  <ARU>
+   <control type="bool" arhcive="y">false</control>
+  </ARU>
+  <BVP>
+   <emerg_release type="bool" arhcive="y">false</emerg_release>
+   <threat type="int" arhcive="y">2</threat>
+  </BVP>
+  <Biryuza>
+   <avt type="bool" arhcive="y">false</avt>
+   <raznos type="int" arhcive="y">1</raznos>
+   <ruch type="bool" arhcive="y">false</ruch>
+   <shifr type="int" arhcive="y">1</shifr>
+   <vk type="bool" arhcive="y">false</vk>
+   <volna type="int" arhcive="y">1</volna>
+  </Biryuza>
+  <Canopy>
+   <ASF type="bool" archive="y">false</ASF>
+   <ASF-a type="float" archive="y">0</ASF-a>
+  </Canopy>
+  <COC>
+   <control type="bool" arhcive="y">false</control>
+  </COC>
+  <engines>
+   <engine_start_select type="int" archive="y">1</engine_start_select>
+   <espz type="double" archive="y">1</espz>
+   <msb type="bool" archive="y">false</msb>
+  </engines>
+  <ILS-31>
+   <bright type="double">1</bright>
+   <test type="bool">false</test>
+   <view-mode type="int" archive="y">2</view-mode>
+  </ILS-31>
+  <ISTR4>
+   <OPT-TEK type="bool" arhcive="y">true</OPT-TEK>
+   <T-R type="bool" arhcive="y">false</T-R>
+  </ISTR4>
+  <lighting>
+   <annunciators-norm type="double" archive="y">1.0</annunciators-norm>
+   <ano type="double" archive="y">0</ano>
+   <floodlight-norm type="double" archive="y">0</floodlight-norm>
+   <instruments-norm type="double">0.0</instruments-norm>
+   <kontr_lamp type="bool" archive="y">false</kontr_lamp>
+   <map-norm type="double">0.0</map-norm>
+   <panel-norm type="double">0.0</panel-norm>
+   <panel-R-norm type="double" archive="y">0</panel-R-norm>
+   <tablo-norm type="double">1.0</tablo-norm>
+  </lighting>
+  <OEPrNK>
+   <base type="int" arhcive="y">0</base>
+   <kompl type="bool" arhcive="y">false</kompl>
+   <main type="bool" arhcive="y">false</main>
+   <modes type="int" arhcive="y">1</modes>
+   <podgot type="bool" arhcive="y">false</podgot>
+   <usiltp_yarkshl type="double" arhcive="y">0.5</usiltp_yarkshl>
+   <zone type="int" arhcive="y">0</zone>
+  </OEPrNK>
+  <R-862>
+   <AM_FM type="bool" arhcive="y">false</AM_FM>
+  </R-862>
+  <RI>
+   <check type="bool" arhcive="y">false</check>
+   <repeat type="bool" arhcive="y">false</repeat>
+  </RI>
+  <RLPK>
+  
+  </RLPK>
+  <RPM>
+   <control type="bool" arhcive="y">false</control>
+  </RPM>
+  <RUD>
+   <ZahvatMRK type="bool" arhcive="y">false</ZahvatMRK>
+  </RUD>
+  <SAU>
+   <damp type="bool" archive="y">false</damp>
+   <uvod type="bool" archive="y">false</uvod>
+   <stabvys type="bool" archive="y">false</stabvys>
+   <ap type="bool" archive="y">false</ap>
+   <traek_upr type="bool" archive="y">false</traek_upr>
+   <povt_zahod type="bool" archive="y">false</povt_zahod>
+   <vrSAU type="bool" arhcive="y">false</vrSAU>
+  </SAU>
+  <SO-69>
+   <control type="bool" arhcive="y">false</control>
+   <uvd type="int" arhcive="y">0</uvd>
+   <volna_1-2 type="bool" arhcive="y">false</volna_1-2>
+   <znak type="bool" arhcive="y">false</znak>
+  </SO-69>
+  <SPO-15LM>
+   <bright type="double">1.0</bright>
+   <ruchn-kontr-avt type="int" arhcive="y">0</ruchn-kontr-avt>
+   <scan type="bool" arhcive="y">false</scan>
+   <spo type="bool" arhcive="y">false</spo>
+   <volume type="double">1.0</volume>
+  </SPO-15LM>
+  <SRO>
+   <c type="int" arhcive="y">0</c>
+   <stiranie type="bool" arhcive="y">false</stiranie>
+   <stiranie_block type="bool" arhcive="y">false</stiranie_block>
+  </SRO>
+  <SVS>
+   <control type="bool" arhcive="y">false</control>
+  </SVS>
+  <Weapons>
+   <podv>
+    <pylon1 type="string">none</pylon1>
+    <pylon2 type="string">none</pylon2>
+    <pylon3 type="string">none</pylon3>
+    <pylon4 type="string">none</pylon4>
+    <pylon5 type="string">none</pylon5>
+    <pylon6 type="string">none</pylon6>
+    <PTB type="string">PTB</PTB>
+   </podv>
+  </Weapons>
+ </controls>
+<!-- Индикация -->
+ <instrumentation>
+  <ARK-19>
+   <channel type="int" arhcive="y">1</channel>
+   <channel-1 type="float" arhcive="y">1</channel-1>
+   <channel-2 type="float" arhcive="y">1</channel-2>
+   <channel-3 type="float" arhcive="y">1</channel-3>
+   <channel-4 type="float" arhcive="y">1</channel-4>
+   <komp-ant type="bool" arhcive="y">false</komp-ant>
+   <ramka type="bool" arhcive="y">false</ramka>
+   <tlg-tlf type="bool" arhcive="y">false</tlg-tlf>
+   <volume type="float" arhcive="y">0</volume>
+  </ARK-19>
+  <DA-200>
+   <vertical-speed type="double" archive="y">0.0</vertical-speed>
+   <vertical-speed-mps type="double" archive="y">0.0</vertical-speed-mps>
+   <v-factor type="double" archive="y">0.0</v-factor>
+   <speed_m1 type="double" archive="y">0</speed_m1>
+   <speed_m2 type="double" archive="y">0</speed_m2>
+   <speed_m3 type="double" archive="y">0</speed_m3>
+   <serviceable type="bool" archive="y">true</serviceable>
+  </DA-200>
+  <electrical>
+   <v27 type="double" archive="y">0</v27>
+   <v115 type="double" archive="y">0</v115>
+   <v200 type="double" archive="y">0</v200>
+  </electrical>
+  <IKG>
+   <general type="double" archive="y">0.0</general>
+   <booster type="double" archive="y">0.0</booster>
+   <main type="double" archive="y">0.0</main>
+   <emergency type="double" archive="y">0.0</emergency>
+  </IKG>
+  <IKZh>
+   <altitude type="double" archive="y">0.0</altitude>
+   <o2_feed type="double" archive="y">0.0</o2_feed>
+   <o2_reserve type="double" archive="y">0.0</o2_reserve>
+   <P type="double" archive="y">0.0</P>
+  </IKZh>
+  <IP-52>
+   <rl type="bool" archive="y">false</rl>
+  </IP-52>
+  <IPK>
+   <pos-left type="float" archive="y">0.0</pos-left>
+   <pos-right type="float" archive="y">0.0</pos-right>
+  </IPK>
+  <ISTR4-2>
+   <total-fuel-kg type="float" archive="y">0.0</total-fuel-kg>
+   <total-fuel-kg-t type="float" archive="y">0.0</total-fuel-kg-t>
+  </ISTR4-2>
+  <KPP>
+   <altitude-director type="double" archive="y">0.0</altitude-director>
+   <course-director type="double" archive="y">0.0</course-director>
+   <serviceable type="bool" archive="y">true</serviceable>
+  </KPP>
+  <KSTs>
+   <signal type="bool" archive="y">false</signal>
+  </KSTs>
+  <PNP-72-12>
+   <bearing-indicated-deg type="double" archive="y">0</bearing-indicated-deg>
+   <course type="double" archive="y">0</course>
+   <course-delayed type="double" archive="y">0</course-delayed>
+   <dist_1 type="int" archive="y">0</dist_1>
+   <dist_10 type="int" archive="y">0</dist_10>
+   <dist_100 type="int" archive="y">0</dist_100>
+   <heading-indicated type="double" archive="y">0</heading-indicated>
+   <oGRM type="double" archive="y">0</oGRM>
+   <oKRM type="double" archive="y">0</oKRM>
+   <serviceable type="bool" archive="y">false</serviceable>
+   <ZPU type="double" archive="y">0</ZPU>
+   <ZPU_1 type="int" archive="y">0</ZPU_1>
+   <ZPU_10 type="int" archive="y">0</ZPU_10>
+   <ZPU_100 type="int" archive="y">0</ZPU_100>
+  </PNP-72-12>
+  <R-862>
+   <AMFM type="bool" arhcive="y">false</AMFM>
+   <AP type="bool" arhcive="y">false</AP>
+   <APsignal type="bool" arhcive="y">false</APsignal>
+   <channel type="int" arhcive="y">1</channel>
+   <channel-1 type="float" arhcive="y"> 120.5  </channel-1>
+   <channel-2 type="float" arhcive="y"> 118.85 </channel-2>
+   <channel-3 type="float" arhcive="y"> 118.3  </channel-3>
+   <channel-4 type="float" arhcive="y"> 133.775</channel-4>
+   <channel-5 type="float" arhcive="y"> 120.0  </channel-5>
+   <channel-6 type="float" arhcive="y"> 120.0  </channel-6>
+   <channel-7 type="float" arhcive="y"> 120.0  </channel-7>
+   <channel-8 type="float" arhcive="y"> 120.0  </channel-8>
+   <channel-9 type="float" arhcive="y"> 120.0  </channel-9>
+   <channel-10 type="float" arhcive="y">120.0  </channel-10>
+   <channel-11 type="float" arhcive="y">120.0  </channel-11>
+   <channel-12 type="float" arhcive="y">120.0  </channel-12>
+   <channel-13 type="float" arhcive="y">120.0  </channel-13>
+   <channel-14 type="float" arhcive="y">120.0  </channel-14>
+   <channel-15 type="float" arhcive="y">120.0  </channel-15>
+   <channel-16 type="float" arhcive="y">120.0  </channel-16>
+   <channel-17 type="float" arhcive="y">130.0  </channel-17>
+   <channel-18 type="float" arhcive="y">130.0  </channel-18>
+   <channel-19 type="float" arhcive="y">130.0  </channel-19>
+   <channel-20 type="float" arhcive="y">130.0  </channel-20>
+   <PSh type="bool" arhcive="y">false</PSh>
+   <RK type="bool" arhcive="y">false</RK>
+   <volume type="float" archive="y">0</volume>
+  </R-862>
+  <RPM>
+   <BPRM type="bool" archive="y">false</BPRM>
+   <DPRM type="bool" archive="y">false</DPRM>
+   <marker type="bool" archive="y">false</marker>
+   <serviceable type="bool" archive="y">true</serviceable>
+  </RPM>
+  <RV-21>
+   <altitude type="double" archive="y">0.0</altitude>
+   <danger_altitude type="bool" archive="y">false</danger_altitude>
+   <DAMarker type="double" archive="y">50.0</DAMarker>
+   <DATest type="bool" archive="y">false</DATest>
+   <indicated-altitude type="double" archive="y">0.0</indicated-altitude>
+   <indicated-serviceable type="bool" archive="y">true</indicated-serviceable>
+   <serviceable type="bool" archive="y">true</serviceable>
+  </RV-21>
+  <SEI-31>
+   <G type="bool" archive="y">false</G>
+   <indicated_airspeed type="double" archive="y">0.0</indicated_airspeed>
+   <indicated_altitude type="double" archive="y">0.0</indicated_altitude>
+   <indicated-mode type="int" archive="y">0</indicated-mode>
+   <indicated-nav-mode type="int" archive="y">0</indicated-nav-mode>
+   <indicated_tangage_L type="double" archive="y">0.0</indicated_tangage_L>
+   <K type="bool" archive="y">false</K>
+   <MetkaG type="float" archive="y">0</MetkaG>
+   <MetkaK type="float" archive="y">0</MetkaK>
+   <PPM_Aer_dist type="double" archive="y">0.0</PPM_Aer_dist>
+   <PPM_Aer_dist_0 type="int" archive="y">0</PPM_Aer_dist_0>
+   <PPM_Aer_dist_1 type="int" archive="y">0</PPM_Aer_dist_1>
+   <PPM_Aer_dist_10 type="int" archive="y">0</PPM_Aer_dist_10>
+   <PPM_Aer_dist_100 type="int" archive="y">0</PPM_Aer_dist_100>
+   <R type="bool" archive="y">false</R>
+   <RIS type="int" archive="y">0</RIS>
+   <VisorMetkaG type="float" archive="y">0</VisorMetkaG>
+   <VisorMetkaV type="float" archive="y">0</VisorMetkaV>
+   <Combat>
+    <AP type="bool" archive="y">false</AP>
+    <PP type="bool" archive="y">false</PP>
+    <AftBurn type="bool" archive="y">false</AftBurn>
+    <Atack type="bool" archive="y">false</Atack>
+    <E1 type="int" archive="y">0</E1>
+    <E2 type="int" archive="y">0</E2>
+    <E3 type="int" archive="y">0</E3>
+    <E4 type="int" archive="y">0</E4>
+    <E5 type="int" archive="y">0</E5>
+    <E6 type="int" archive="y">0</E6>
+    <E7 type="int" archive="y">0</E7>
+    <E8 type="int" archive="y">0</E8>
+    <E9 type="int" archive="y">0</E9>
+    <E10 type="int" archive="y">0</E10>
+    <E1G type="double" archive="y">0.0</E1G>
+    <E2G type="double" archive="y">0.0</E2G>
+    <E3G type="double" archive="y">0.0</E3G>
+    <E4G type="double" archive="y">0.0</E4G>
+    <E5G type="double" archive="y">0.0</E5G>
+    <E6G type="double" archive="y">0.0</E6G>
+    <E7G type="double" archive="y">0.0</E7G>
+    <E8G type="double" archive="y">0.0</E8G>
+    <E9G type="double" archive="y">0.0</E9G>
+    <E10G type="double" archive="y">0.0</E10G>
+    <E1V type="double" archive="y">0.0</E1V>
+    <E2V type="double" archive="y">0.0</E2V>
+    <E3V type="double" archive="y">0.0</E3V>
+    <E4V type="double" archive="y">0.0</E4V>
+    <E5V type="double" archive="y">0.0</E5V>
+    <E6V type="double" archive="y">0.0</E6V>
+    <E7V type="double" archive="y">0.0</E7V>
+    <E8V type="double" archive="y">0.0</E8V>
+    <E9V type="double" archive="y">0.0</E9V>
+    <E10V type="double" archive="y">0.0</E10V>
+    <E1P type="bool" archive="y">false</E1P>
+    <E2P type="bool" archive="y">false</E2P>
+    <E3P type="bool" archive="y">false</E3P>
+    <E4P type="bool" archive="y">false</E4P>
+    <E5P type="bool" archive="y">false</E5P>
+    <E6P type="bool" archive="y">false</E6P>
+    <E7P type="bool" archive="y">false</E7P>
+    <E8P type="bool" archive="y">false</E8P>
+    <E9P type="bool" archive="y">false</E9P>
+    <E10P type="bool" archive="y">false</E10P>
+    <Friend type="bool" archive="y">false</Friend>
+    <Gorka type="bool" archive="y">false</Gorka>
+    <OTV type="bool" archive="y">false</OTV>
+    <PR type="bool" archive="y">false</PR>
+    <Prn type="bool" archive="y">false</Prn>
+    <Range type="double" archive="y">0.0</Range>
+    <Range_M type="bool" archive="y">false</Range_M>
+    <Range_N type="int" archive="y">0</Range_N>
+    <Range_O type="bool" archive="y">false</Range_O>
+    <Range_scale type="bool" archive="y">false</Range_scale>
+    <ReAiming type="bool" archive="y">false</ReAiming>
+    <RLSAzObz type="bool" archive="y">false</RLSAzObz>
+    <RLSAzObzM type="double" archive="y">0.0</RLSAzObzM>
+    <Strob type="bool" archive="y">false</Strob>
+    <StrobG type="double" archive="y">0.0</StrobG>
+    <StrobV type="double" archive="y">0.0</StrobV>
+    <VK type="int" archive="y">0</VK>
+    <Vertical type="bool" archive="y">false</Vertical>
+    <PLA type="int" archive="y">0</PLA>
+    <Rakurs type="double" archive="y">0.0</Rakurs>
+    <RakursA type="bool" archive="y">false</RakursA>
+    <VPU type="bool" archive="y">false</VPU>
+    <VPU_N type="int" archive="y">0</VPU_N>
+    <WeaponReady1 type="bool" archive="y">false</WeaponReady1>
+    <WeaponReady2 type="bool" archive="y">false</WeaponReady2>
+    <WeaponReady3 type="bool" archive="y">false</WeaponReady3>
+    <WeaponReady4 type="bool" archive="y">false</WeaponReady4>
+    <WeaponReady5 type="bool" archive="y">false</WeaponReady5>
+    <WeaponReady6 type="bool" archive="y">false</WeaponReady6>
+    <WeaponReady1O type="bool" archive="y">false</WeaponReady1O>
+    <WeaponReady2O type="bool" archive="y">false</WeaponReady2O>
+    <WeaponReady3O type="bool" archive="y">false</WeaponReady3O>
+    <WeaponReady4O type="bool" archive="y">false</WeaponReady4O>
+    <WeaponReady5O type="bool" archive="y">false</WeaponReady5O>
+    <WeaponReady6O type="bool" archive="y">false</WeaponReady6O>
+    <WeaponReady1P type="bool" archive="y">false</WeaponReady1P>
+    <WeaponReady2P type="bool" archive="y">false</WeaponReady2P>
+    <WeaponReady3P type="bool" archive="y">false</WeaponReady3P>
+    <WeaponReady4P type="bool" archive="y">false</WeaponReady4P>
+    <WeaponReady5P type="bool" archive="y">false</WeaponReady5P>
+    <WeaponReady6P type="bool" archive="y">false</WeaponReady6P>
+    <WeaponType type="int" archive="y">0</WeaponType>
+   </Combat>
+  </SEI-31>
+  <SN>
+   <d40 type="bool" arhcive="y">false</d40>
+   <korr type="bool" arhcive="y">false</korr>
+  </SN>
+  <SPO-15LM>
+   <fire type="bool" archive="y">true</fire>
+   <lockon type="bool" archive="y">true</lockon>
+   <losig type="bool" arhcive="y">false</losig>
+   <PsN type="bool" arhcive="y">false</PsN>
+   <PsV type="bool" arhcive="y">false</PsV>
+   <serviceable type="bool" archive="y">true</serviceable>
+  </SPO-15LM>
+  <SRO>
+   <KD type="bool" arhcive="y">false</KD>
+   <KP type="bool" arhcive="y">false</KP>
+   <rabochiy-zapas type="bool" arhcive="y">false</rabochiy-zapas>
+   <selmod type="bool" arhcive="y">false</selmod>
+  </SRO>
+  <Tablo>
+   <AccelReady type="bool" archive="y">false</AccelReady>
+   <APUSFaulure type="bool" archive="y">false</APUSFaulure>
+   <ARU type="bool" archive="y">false</ARU>
+   <AugLeft type="bool" archive="y">false</AugLeft>
+   <AugRight type="bool" archive="y">false</AugRight>
+   <BothHydroFault type="bool" archive="y">false</BothHydroFault>
+   <COCFailure type="bool" archive="y">false</COCFailure>
+   <COCNotReserve type="bool" archive="y">false</COCNotReserve>
+   <ControlIntakeLeft type="bool" archive="y">false</ControlIntakeLeft>
+   <ControlIntakeRight type="bool" archive="y">false</ControlIntakeRight>
+   <DamperOff type="bool" archive="y">false</DamperOff>
+   <DangerAltitude type="bool" archive="y">false</DangerAltitude>
+   <EmergPumpStation type="bool" archive="y">false</EmergPumpStation>
+   <FireLeft type="bool" archive="y">false</FireLeft>
+   <FireRight type="bool" archive="y">false</FireRight>
+   <FireKSA type="bool" archive="y">false</FireKSA>
+   <NavigReady type="bool" archive="y">false</NavigReady>
+   <OilKSA type="bool" archive="y">false</OilKSA>
+   <OilLeft type="bool" archive="y">false</OilLeft>
+   <OilRight type="bool" archive="y">false</OilRight>
+   <R550 type="bool" archive="y">false</R550>
+   <ReduceLeft type="bool" archive="y">false</ReduceLeft>
+   <ReduceRight type="bool" archive="y">false</ReduceRight>
+   <SROFailure type="bool" archive="y">false</SROFailure>
+   <SROReserve type="bool" archive="y">false</SROReserve>
+   <StartLeft type="bool" archive="y">false</StartLeft>
+   <StartRight type="bool" archive="y">false</StartRight>
+   <TransformerFailure type="bool" archive="y">false</TransformerFailure>
+   <TrimAileron type="bool" archive="y">false</TrimAileron>
+   <TrimRP type="bool" archive="y">false</TrimRP>
+   <TrimStabil type="bool" archive="y">false</TrimStabil>
+  </Tablo>
+  <UAP>
+   <pilot-g-max type="double" archive="y">0</pilot-g-max>
+   <serviceable type="bool" archive="y">true</serviceable>
+  </UAP>
+  <US-1600>
+   <airspeed-kmh type="double" archive="y">0.0</airspeed-kmh>
+   <serviceable type="bool" archive="y">true</serviceable>
+  </US-1600>
+  <UV-30-3>
+   <indicated-altitude-m type="double" archive="y">0.0</indicated-altitude-m>
+   <setting-mmhg type="double" archive="y">0.0</setting-mmhg>
+   <setting-mmhg-1 type="double" archive="y">0.0</setting-mmhg-1>
+   <setting-mmhg-2 type="double" archive="y">0.0</setting-mmhg-2>
+   <setting-mmhg-3 type="double" archive="y">0.0</setting-mmhg-3>
+   <setting-mmhg-3a type="double" archive="y">0.0</setting-mmhg-3a>
+  </UV-30-3>
+ </instrumentation>
+<!-- Особое -->
+ <o>
+  <snv type="double" archive="y">0.0</snv>
+  <snv1 type="double" archive="y">0.0</snv1>
+  <sv1 type="float" archive="y">1</sv1>
+ </o>
+<!-- Системные -->
+ <systems>
+  <!--IG2Hz5 type="bool">false</IG2Hz5-->
+  <BN>
+   <T type="string" archive="y">BortNum1Blue.png</T>
+  </BN>
+  <Ekran>
+   <BusterHydro type="bool" archive="y">false</BusterHydro>
+   <CanopyOpen type="bool" archive="y">false</CanopyOpen>
+   <COC_Failure type="bool" archive="y">false</COC_Failure>
+   <COC_Not_Reserve type="bool" archive="y">false</COC_Not_Reserve>
+   <DangerAltitude type="bool" archive="y">false</DangerAltitude>
+   <FireLeft type="bool" archive="y">false</FireLeft>
+   <FireRight type="bool" archive="y">false</FireRight>
+   <FireKSA type="bool" archive="y">false</FireKSA>
+   <MainHydro type="bool" archive="y">false</MainHydro>
+   <OilKSA type="bool" archive="y">false</OilKSA>
+   <OilLeft type="bool" archive="y">false</OilLeft>
+   <OilRight type="bool" archive="y">false</OilRight>
+   <Overheat_Left type="bool" archive="y">false</Overheat_Left>
+   <Overheat_Right type="bool" archive="y">false</Overheat_Right>
+   <R550 type="bool" archive="y">false</R550>
+  </Ekran>
+  <engines>
+   <n2 type="double" archive="y">0.0</n2>
+   <s type="bool" archive="y">false</s>
+   <Sn2_Left type="double" archive="y">0.0</Sn2_Left>
+   <Sn2_Right type="double" archive="y">0.0</Sn2_Right>
+   <Sn2_GTDE type="double" archive="y">0.0</Sn2_GTDE>
+   <SEC type="int" archive="n">0</SEC>
+  </engines>
+  <fuelsystem>
+   <PTBenable type="bool" archive="y">true</PTBenable>
+   <PTBjv type="double" archive="y">0</PTBjv>
+  </fuelsystem>
+  <ltc>
+   <count1 type="int" archive="y">0</count1>
+   <count2 type="int" archive="y">0</count2>
+  </ltc>
+  <SEI-31>
+   <texture type="string" archive="y">ILS-31_day.png</texture>
+  </SEI-31>
+  <cockpitlighting>
+   <annunciators-norm type="double" archive="y">0</annunciators-norm>
+   <floodlight-norm type="double" archive="y">0</floodlight-norm>
+   <instruments-norm type="double" archive="y">0</instruments-norm>
+   <map-norm type="double" archive="y">0</map-norm>
+   <panel-norm type="double" archive="y">0</panel-norm>
+   <panel-R-norm type="double" archive="y">0</panel-R-norm>
+   <tablo-norm type="double" archive="y">0</tablo-norm>
+   <texture1 type="string" archive="y">cockpit_9-12_1.png</texture1>
+   <texture2 type="string" archive="y">cockpit_9-12_2.png</texture2>
+   <texture3 type="string" archive="y">cockpit_9-12_3.png</texture3>
+   <texture4 type="string" archive="y">cockpit_9-12_4.png</texture4>
+   <texture5 type="string" archive="y">cockpit_9-12_5.png</texture5>
+   <texture6 type="string" archive="y">ILS-31c.png</texture6>
+  </cockpitlighting>
+  <SAU>
+   <KVRUS type="bool" archive="y">false</KVRUS>
+   <serviceable type="bool" archive="y">false</serviceable>
+  </SAU>
+  <CS>
+   <Canopy>
+    <pos-norm type="double" archive="y">0</pos-norm>
+   </Canopy>
+   <Inlet>
+    <left-pos-norm type="double" archive="y">0</left-pos-norm>
+    <right-pos-norm type="double" archive="y">0</right-pos-norm>
+   </Inlet>
+   <LERX>
+    <pos-norm type="double" archive="y">0</pos-norm>
+   </LERX>
+   <Parachute>
+    <pos-norm type="double" archive="y">0</pos-norm>
+   </Parachute>
+   <Stabilator>
+    <left-pos-norm type="double" archive="y">0</left-pos-norm>
+    <right-pos-norm type="double" archive="y">0</right-pos-norm>
+   </Stabilator>
+  </CS>
+ </systems>
+<!-- Оружие -->
+  <weapons>
+   <!--gun>
+    <bullet type="int" archive="y">150</bullet>
+    <trigger type="bool" archive="y">false</trigger>
+   </gun-->
+   <podv>
+    <PTB type="bool" archive="y">true</PTB>
+<!-- Точки 1 и 2. Значения:
+      0 - нет.
+      1 - АПУ-470.
+      2 - АПУ-470+Р-27Р.
+      3 - АПУ-60-1.
+      4 - АПУ-60-1+Р-60М.
+      5 - АПУ-73-1.
+      6 - АПУ-73-1+Р-73Л.
+      7 - БД3-УМК2.
+      8 - БД3-УМК2+БетАБ-500.
+      9 - БД3-УМК2+БетАБ-500ШП
+     10 - БД3-УМК2+ФАБ-250 М-62.
+     11 - БД3-УМК2+ФАБ-250ТС.
+     12 - БД3-УМК2+ФАБ-250ШЛ.
+     13 - БД3-УМК2+ФАБ-500 М-62.
+     14 - БД3-УМК2+ФАБ-500ТС.
+     15 - БД3-УМК2+ФАБ-500ШЛ.
+     16 - БД3-УМК2+ФАБ-500ШН.
+     17 - БД3-УМК2+ОДАБ-500ПМ.
+     18 - БД3-УМК2+ОФАБ-100-120.
+     19 - БД3-УМК2+ОФАБ-250-270.
+     20 - БД3-УМК2+ОФАБ-250ШЛ.
+     21 - БД3-УМК2+ОФАБ-250ШН.
+     22 - БД3-УМК2+ОФАБ-500У.
+     23 - БД3-УМК2+ОФАБ-500ШР.
+     24 - БД3-УМК2+ОФЗАБ-500.
+     25 - БД3-УМК2+КМГУ-2
+     26 - БД3-УМК2+РБК-250 АО-1.
+     27 - БД3-УМК2+РБК-250 ПТАБ-2.5
+     28 - БД3-УМК2+РБК-500 АО-2.5РТ.
+     29 - БД3-УМК2+РБК-500 ПТАБ-1М.
+     30 - БД3-УМК2+ЗБ-500АСМ.
+     31 - БД3-УМК2+ЗБ-500ГД.
+     32 - БД3-УМК2+ЗБ-500ШМ.
+     33 - БД3-УМК2+Б8М1.
+     34 - БД3-УМК2+Б8М1+С-8БМ.
+     35 - БД3-УМК2+Б8М1+С-8ДМ.
+     36 - БД3-УМК2+Б8М1+С-8КОМ.
+     37 - БД3-УМК2+Б8М1+С-8ОМ.
+     38 - БД3-УМК2+Б8М1+С-8ПМ.
+     39 - БД3-УМК2+АПУ-68.
+     40 - БД3-УМК2+АПУ-68+С-24Б.
+     41 - БД3-УМК2+МБД3-67У.
+     42 - БД3-УМК2+МБД3-67У+4xОФАБ-100-120.
+       -->
+    <T1 type="int" archive="y">0</T1>
+    <T2 type="int" archive="y">0</T2>
+<!-- Точки 3 и 4. Значения:
+      0 - нет.
+      1 - АПУ-60-1.
+      2 - АПУ-60-1+Р-60М.
+      3 - АПУ-73-1.
+      4 - АПУ-73-1+Р-73Л.
+      5 - БД3-УМК2.
+      6 - БД3-УМК2+БетАБ-500.
+      7 - БД3-УМК2+БетАБ-500ШП.
+      8 - БД3-УМК2+ФАБ-250 М-62.
+      9 - БД3-УМК2+ФАБ-250ТС.
+     10 - БД3-УМК2+ФАБ-250ШЛ.
+     11 - БД3-УМК2+ФАБ-500 М-62.
+     12 - БД3-УМК2+ФАБ-500ТС.
+     13 - БД3-УМК2+ФАБ-500ШЛ.
+     14 - БД3-УМК2+ФАБ-500ШН.
+     15 - БД3-УМК2+ОДАБ-500ПМ.
+     16 - БД3-УМК2+ОФАБ-100-120.
+     17 - БД3-УМК2+ОФАБ-250-270.
+     18 - БД3-УМК2+ОФАБ-250ШЛ.
+     19 - БД3-УМК2+ОФАБ-250ШН.
+     20 - БД3-УМК2+ОФАБ-500У.
+     21 - БД3-УМК2+ОФАБ-500ШР.
+     22 - БД3-УМК2+ОФЗАБ-500.
+     23 - БД3-УМК2+КМГУ-2.
+     24 - БД3-УМК2+РБК-250 АО-1.
+     25 - БД3-УМК2+РБК-250 ПТАБ-2.5
+     26 - БД3-УМК2+РБК-500 АО-2.5РТ.
+     27 - БД3-УМК2+РБК-500 ПТАБ-1М.
+     28 - БД3-УМК2+ЗБ-500АСМ.
+     29 - БД3-УМК2+ЗБ-500ГД.
+     30 - БД3-УМК2+ЗБ-500ШМ.
+     31 - БД3-УМК2+Б8М1.
+     32 - БД3-УМК2+Б8М1+С-8БМ.
+     33 - БД3-УМК2+Б8М1+С-8ДМ.
+     34 - БД3-УМК2+Б8М1+С-8КОМ.
+     35 - БД3-УМК2+Б8М1+С-8ОМ.
+     36 - БД3-УМК2+Б8М1+С-8ПМ.
+     37 - БД3-УМК2+АПУ-68.
+     38 - БД3-УМК2+АПУ-68+С-24Б.
+     39 - БД3-УМК2+МБД3-67У.
+     40 - БД3-УМК2+МБД3-67У+4xОФАБ-100-120.
+       -->
+    <T3 type="int" archive="y">0</T3>
+    <T4 type="int" archive="y">0</T4>
+<!-- Точки 5 и 6. Значения:
+      0 - нет.
+      1 - АПУ-60-1.
+      2 - АПУ-60-1+Р-60М.
+      3 - АПУ-73-1.
+      4 - АПУ-73-1+Р-73Л. -->
+    <T5 type="int" archive="y">0</T5>
+    <T6 type="int" archive="y">0</T6>
+   </podv>
+  </weapons>
+
+</PropertyList>

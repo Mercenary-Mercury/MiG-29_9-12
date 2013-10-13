@@ -1,0 +1,118 @@
+<!--
+    Фонарь
+    Сергей "Mercenary_Mercury" Салов
+    21 сентября 2012
+-->
+
+<system name="Canopy">
+
+ <property value="0">systems/pneumo/emerg-depress</property>
+
+ <channel name="Canopy">
+
+  <switch name="fcs/canopy-cmd-switched">
+   <default value="fcs/canopy-cmd-switched"/>
+    <test value="fcs/canopy-cmd-norm">
+     systems/canopy/serviceable eq 1
+    </test>
+  </switch>
+
+ <kinematic name="Canopy Control">
+     <input>fcs/canopy-cmd-switched</input>
+     <traverse>
+       <setting>
+          <position>  0 </position>
+          <time>      0 </time>
+       </setting>
+       <setting>
+          <position>  1 </position>
+          <time>      2 </time>
+       </setting>
+     </traverse>
+     <output>systems/canopy/canopy-pos-a-norm</output>
+   </kinematic>
+
+ <kinematic name="Canopy Emerg Control">
+     <input>fcs/canopy-emerg-cmd</input>
+     <traverse>
+       <setting>
+          <position>  0 </position>
+          <time>      0 </time>
+       </setting>
+       <setting>
+          <position>  1 </position>
+          <time>      0.15 </time>
+       </setting>
+     </traverse>
+     <output>systems/canopy/canopy-pos-b-norm</output>
+   </kinematic>
+
+  <switch name="systems/canopy/norm-emerg-switch">
+   <default value="systems/canopy/canopy-pos-a-norm"/>
+    <test value="fcs/canopy-pos-norm">
+     fcs/canopy-emerg-cmd eq 0
+     fcs/canopy-pos-norm gt 0
+     velocities/vc-kts gt 30
+    </test>
+    <test value="systems/canopy/canopy-pos-b-norm">
+     fcs/canopy-emerg-cmd eq 1
+    </test>
+   <output>fcs/canopy-pos-norm</output>
+  </switch>
+
+ <kinematic name="Canopy Germ Control">
+     <input>fcs/canopy-germ-cmd</input>
+     <traverse>
+       <setting>
+          <position>  0 </position>
+          <time>      0 </time>
+       </setting>
+       <setting>
+          <position>  1 </position>
+          <time>      0.1 </time>
+       </setting>
+     </traverse>
+     <output>fcs/canopy-germ-norm</output>
+   </kinematic>
+
+  <switch name="calculations/canopy-cmd-switched">
+   <default value="0"/>
+    <test value="fcs/canopy-cmd-switched"><!-- Закрытие -->
+     fcs/canopy-cmd-switched eq 0
+    </test>
+    <test logic="AND" value="fcs/canopy-cmd-switched"><!-- Открытие -->
+     fcs/canopy-cmd-switched gt 0
+     fcs/canopy-germ-norm eq 0
+    </test>
+    <test logic="AND" value="0"><!-- Открытие -->
+     fcs/canopy-cmd-switched gt 0
+     fcs/canopy-germ-norm eq 1
+     fcs/canopy-pos-norm eq 0
+    </test>
+  </switch>
+
+  <switch name="calculations/canopy-germ-cmd-switched">
+   <default value="0"/>
+    <test logic="AND" value="1"><!-- Закрытие -->
+     fcs/canopy-cmd-switched eq 0
+     fcs/canopy-pos-norm eq 0
+     systems/pneumo/emerg-depress eq 0
+    </test>
+    <test logic="AND" value="0"><!-- Открытие -->
+     fcs/canopy-cmd-switched gt 0
+     fcs/canopy-germ-norm eq 1
+     systems/pneumo/emerg-depress eq 0
+    </test>
+    <test logic="AND" value="0"><!-- Открытие -->
+     fcs/canopy-emerg-cmd eq 1
+     systems/pneumo/emerg-depress eq 0
+    </test>
+    <test value="0">
+     systems/pneumo/emerg-depress eq 1
+    </test>
+   <output>fcs/canopy-germ-cmd</output>
+  </switch>
+
+ </channel>
+
+</system>

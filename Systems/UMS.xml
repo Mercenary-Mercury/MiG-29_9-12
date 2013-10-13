@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<!--
+      УМС-2.5. Указатель числа М и истинной воздушной скорости
+      Автор: Сергей "Mercenary_Mercury" Салов
+      11.2011
+      
+      Author: Sergey "Mercenary_Mercury" Salow
+-->
+
+<system>
+
+ <fileheader>
+  <author> Sergey "Mercenary_Mercury" Salow </author>
+  <filescreationdate> 2011-11-02 </filescreationdate>
+  <version>$Revision: 1.00 $</version>
+  <description> UMS-2.5 </description>
+ </fileheader>
+
+ <channel name="UMS">
+
+  <switch name="calculations/UMS/TAS-serviceable">
+   <default value="0.0"/>
+   <test value="systems/SVS/true-airspeed-kmh">
+    systems/instrumentation/UMS/UMS-2.5-serviceable eq 1
+   </test>
+   <output>systems/instrumentation/UMS/TAS-kmh</output>
+  </switch>
+  <switch name="calculations/UMS/Mach-serviceable">
+   <default value="0.0"/>
+   <test value="systems/SVS/Mach">
+    systems/instrumentation/UMS/UMS-2.5-serviceable eq 1
+   </test>
+   <output>systems/instrumentation/UMS/Mach</output>
+  </switch>
+
+ </channel>
+
+</system>
+ <!-- 1097,28 -->

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <key n="67">
+  <name>C</name>
+  <desc>Toggle Canopy</desc>
+  <binding>
+   <command>nasal</command>
+   <script>system.canopy_pos_switch()</script>
+  </binding>
+ </key>
+
+ <key n="75"> 
+  <name>K</name>
+  <desc>Retract Speedbrakes</desc>
+  <binding> 
+   <command>property-toggle</command>
+   <property>/controls/flight/speedbrake</property>
+  </binding>
+ </key>
+ <key n="107"> 
+  <name>k</name>
+  <desc>Extend Speedbrakes</desc>
+  <binding> 
+   <command>property-assign</command>
+   <property>/controls/flight/speedbrake</property>
+   <value type="double">1.0</value>
+  </binding>
+  <mod-up>
+   <binding> 
+    <command>property-assign</command>
+    <property>/controls/flight/speedbrake</property>
+    <value type="double">0.0</value>
+   </binding>
+  </mod-up>
+ </key>
+
+ <key n="74"> 
+  <name>J</name>
+  <desc>Jettison Drag Parachute</desc>
+  <binding> 
+   <command>property-assign</command>
+   <property>/fdm/jsbsim/systems/parachute/drop_cmd</property>
+   <value type="double">1.0</value>
+  </binding>
+ </key>
+ <key n="106"> 
+  <name>j</name>
+  <desc>Deploy Drag Parachute</desc>
+  <binding> 
+   <command>property-assign</command>
+   <property>/fdm/jsbsim/fcs/parachute_reef-cmd-norm</property>
+   <value type="double">1.0</value>
+  </binding>
+ </key>
+
+ <key n="101">
+  <name>e</name>
+  <desc>Gun Trigger</desc>
+  <binding>
+   <command>nasal</command>
+   <script>weapon.press_fire()</script>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>nasal</command>
+    <script>weapon.unpress_fire()</script>
+   </binding>
+  </mod-up>
+ </key>
+
+ <key n="111">
+  <name>o</name>
+  <desc>KVRUS</desc>
+   <binding>
+   <command>property-toggle</command>
+   <property>mig29/controls/SAU/KVRUS</property>
+  </binding>
+ </key>
+
+</PropertyList>
