@@ -1,0 +1,500 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <name>PVP</name>
+ <layout>vbox</layout>
+ <resizable>false</resizable>
+
+<group>
+ <layout>hbox</layout>
+
+  <text>
+   <label>Console input programs</label>
+  </text>
+
+</group>
+
+<hrule/>
+
+  <text>
+   <label>Aerodromes</label>
+  </text>
+
+<group>
+ <layout>hbox</layout>
+
+<group>
+ <layout>vbox</layout>
+
+  <text>
+   <label>Aerodrome 1: Latitude</label>
+  </text>
+
+  <text>
+   <label>Aerodrome 1: Longitude</label>
+  </text>
+
+  <text>
+   <label>Aerodrome 1: Course</label>
+  </text>
+
+  <text>
+   <label>Aerodrome 1: ILS channels</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <input>
+   <name>input-aer1-lat</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/Aer1_Lat</property>
+  </input>
+
+  <input>
+   <name>input-aer1-lon</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/Aer1_Lon</property>
+  </input>
+
+  <input>
+   <name>input-aer1-course</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Aer/Aer1_Course</property>
+  </input>
+
+  <group>
+   <layout>hbox</layout>
+
+   <input>
+   <name>input-aer1-ILS_ChKK1</name>
+   <stretch>false</stretch>
+   <pref-width>40</pref-width>
+   <property>mig29/systems/TsVU/Aer/Aer1_ILS_ChKK1</property>
+  </input>
+
+  <input>
+   <name>input-aer1-ILS_ChKK2</name>
+   <stretch>false</stretch>
+   <pref-width>40</pref-width>
+   <property>mig29/systems/TsVU/Aer/Aer1_ILS_ChKK2</property>
+  </input>
+
+  </group>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <text>
+   <label>Aerodrome 2: Latitude</label>
+  </text>
+
+  <text>
+   <label>Aerodrome 2: Longitude</label>
+  </text>
+
+  <text>
+   <label>Aerodrome 2: Course</label>
+  </text>
+
+  <text>
+   <label>Aerodrome 2: ILS channels</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <input>
+   <name>input-aer2-lat</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/Aer2_Lat</property>
+  </input>
+
+  <input>
+   <name>input-aer2-lon</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/Aer2_Lon</property>
+  </input>
+
+  <input>
+   <name>input-aer2-course</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Aer/Aer2_Course</property>
+  </input>
+
+  <group>
+   <layout>hbox</layout>
+
+   <input>
+   <name>input-aer2-ILS_ChKK1</name>
+   <stretch>false</stretch>
+   <pref-width>40</pref-width>
+   <property>mig29/systems/TsVU/Aer/Aer2_ILS_ChKK1</property>
+  </input>
+
+  <input>
+   <name>input-aer2-ILS_ChKK2</name>
+   <stretch>false</stretch>
+   <pref-width>40</pref-width>
+   <property>mig29/systems/TsVU/Aer/Aer2_ILS_ChKK2</property>
+  </input>
+
+  </group>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <text>
+   <label>Aerodrome 3: Latitude</label>
+  </text>
+
+  <text>
+   <label>Aerodrome 3: Longitude</label>
+  </text>
+
+  <text>
+   <label>Aerodrome 3: Course</label>
+  </text>
+
+  <text>
+   <label>Aerodrome 3: ILS channels</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <input>
+   <name>input-aer3-lat</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/Aer3_Lat</property>
+  </input>
+
+  <input>
+   <name>input-aer3-lon</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/Aer3_Lon</property>
+  </input>
+
+  <input>
+   <name>input-aer3-course</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Aer/Aer3_Course</property>
+  </input>
+
+  <group>
+   <layout>hbox</layout>
+
+   <input>
+   <name>input-aer3-ILS_ChKK1</name>
+   <stretch>false</stretch>
+   <pref-width>40</pref-width>
+   <property>mig29/systems/TsVU/Aer/Aer3_ILS_ChKK1</property>
+  </input>
+
+  <input>
+   <name>input-aer3-ILS_ChKK2</name>
+   <stretch>false</stretch>
+   <pref-width>40</pref-width>
+   <property>mig29/systems/TsVU/Aer/Aer3_ILS_ChKK2</property>
+  </input>
+
+  </group>
+
+</group>
+
+</group>
+
+<hrule/>
+
+  <text>
+   <label>Waypoints</label>
+  </text>
+
+<group>
+ <layout>hbox</layout>
+
+<group>
+ <layout>vbox</layout>
+
+  <text>
+   <label>Waypoint 1: Latitude</label>
+  </text>
+
+  <text>
+   <label>Waypoint 1: Longitude</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <input>
+   <name>input-ppm1-lat</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/PPM1_Lat</property>
+  </input>
+
+  <input>
+   <name>input-ppm1-lon</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/PPM1_Lon</property>
+  </input>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <text>
+   <label>Waypoint 2: Latitude</label>
+  </text>
+
+  <text>
+   <label>Waypoint 2: Longitude</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <input>
+   <name>input-ppm2-lat</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/PPM2_Lat</property>
+  </input>
+
+  <input>
+   <name>input-ppm2-lon</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/PPM2_Lon</property>
+  </input>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <text>
+   <label>Waypoint 3: Latitude</label>
+  </text>
+
+  <text>
+   <label>Waypoint 3: Longitude</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <input>
+   <name>input-ppm3-lat</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/PPM3_Lat</property>
+  </input>
+
+  <input>
+   <name>input-ppm3-lon</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/PPM3_Lon</property>
+  </input>
+
+</group>
+
+</group>
+
+<hrule/>
+
+  <text>
+   <label>Beacons - RSBN</label>
+  </text>
+
+<group>
+ <layout>hbox</layout>
+
+<group>
+ <layout>vbox</layout>
+
+  <text>
+   <label>Beacon 1: Latitude</label>
+  </text>
+
+  <text>
+   <label>Beacon 1: Longitude</label>
+  </text>
+
+  <text>
+   <label>Beacon 1: Channel</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <input>
+   <name>input-mayak1-lat</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/Mayak1_Lat</property>
+  </input>
+
+  <input>
+   <name>input-mayak1-lon</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/Mayak1_Lon</property>
+  </input>
+
+  <input>
+   <name>input-mayak1-channel</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/systems/TsVU/Mayak/Mayak1_Channel</property>
+  </input>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <text>
+   <label>Beacon 2: Latitude</label>
+  </text>
+
+  <text>
+   <label>Beacon 2: Longitude</label>
+  </text>
+
+  <text>
+   <label>Beacon 2: Channel</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <input>
+   <name>input-mayak2-lat</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/Mayak2_Lat</property>
+  </input>
+
+  <input>
+   <name>input-mayak2-lon</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/Mayak2_Lon</property>
+  </input>
+
+  <input>
+   <name>input-mayak2-channel</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/systems/TsVU/Mayak/Mayak2_Channel</property>
+  </input>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <text>
+   <label>Beacon 3: Latitude</label>
+  </text>
+
+  <text>
+   <label>Beacon 3: Longitude</label>
+  </text>
+
+  <text>
+   <label>Beacon 3: Channel</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <input>
+   <name>input-mayak3-lat</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/Mayak3_Lat</property>
+  </input>
+
+  <input>
+   <name>input-mayak3-lon</name>
+   <stretch>false</stretch>
+   <pref-width>100</pref-width>
+   <property>mig29/systems/TsVU/Coord/Mayak3_Lon</property>
+  </input>
+
+  <input>
+   <name>input-mayak3-channel</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/systems/TsVU/Mayak/Mayak3_Channel</property>
+  </input>
+
+</group>
+
+</group>
+
+<group>
+ <layout>hbox</layout>
+
+  <button>
+   <legend>Apply</legend>
+   <equal>true</equal>
+   <default>true</default>
+   <binding>
+    <command>dialog-apply</command>
+   </binding>
+   <!--<binding>
+    <command>dialog-close</command>
+   </binding>-->
+  </button>
+
+  <button>
+   <legend>Close</legend>
+   <equal>true</equal>
+   <default>true</default>
+   <binding>
+    <command>dialog-close</command>
+   </binding>
+  </button>
+
+</group>
+
+</PropertyList>

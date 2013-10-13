@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <name>BoardNum</name>
+ <layout>vbox</layout>
+ <resizable>false</resizable>
+
+<group>
+ <layout>hbox</layout>
+
+  <text>
+   <label>Board number dialog</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>hbox</layout>
+
+  <text>
+   <label>Board number</label>
+  </text>
+
+  <input>
+   <name>input-board-number</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/controls/BN/N</property>
+  </input>
+
+  <text>
+   <label>Number type</label>
+  </text>
+
+  <combo>
+   <live>true</live>
+   <property>mig29/controls/BN/T</property>
+   <value>1-Black</value>
+   <value>1-Blue</value>
+   <value>1-Red</value>
+   <value>1-Yellow</value>
+   <binding>
+    <command>dialog-apply</command>
+   </binding>
+  </combo>
+
+</group>
+
+<group>
+ <layout>hbox</layout>
+
+  <button>
+   <legend>Apply</legend>
+   <equal>true</equal>
+   <default>true</default>
+   <binding>
+    <command>dialog-apply</command>
+   </binding>
+  </button>
+
+  <button>
+   <legend>Close</legend>
+   <equal>true</equal>
+   <default>true</default>
+   <binding>
+    <command>dialog-close</command>
+   </binding>
+  </button>
+
+</group>
+
+</PropertyList>

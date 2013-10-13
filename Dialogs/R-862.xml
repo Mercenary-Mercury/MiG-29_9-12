@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <name>R-862</name>
+ <width>340</width>
+ <layout>vbox</layout>
+ <resizable>false</resizable>
+
+<group>
+ <layout>hbox</layout>
+
+  <text>
+   <label>R-862 frequencies tuning dialog</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>hbox</layout>
+
+<group>
+ <layout>vbox</layout>
+
+  <text>
+   <label>Channel  1</label>
+  </text>
+
+  <text>
+   <label>Channel  2</label>
+  </text>
+
+  <text>
+   <label>Channel  3</label>
+  </text>
+
+  <text>
+   <label>Channel  4</label>
+  </text>
+
+  <text>
+   <label>Channel  5</label>
+  </text>
+
+  <text>
+   <label>Channel  6</label>
+  </text>
+
+  <text>
+   <label>Channel  7</label>
+  </text>
+
+  <text>
+   <label>Channel  8</label>
+  </text>
+
+  <text>
+   <label>Channel  9</label>
+  </text>
+
+  <text>
+   <label>Channel 10</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <input>
+   <name>input-channel-1</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-1</property>
+  </input>
+
+  <input>
+   <name>input-channel-2</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-2</property>
+  </input>
+
+  <input>
+   <name>input-channel-3</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-3</property>
+  </input>
+
+  <input>
+   <name>input-channel-4</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-4</property>
+  </input>
+
+  <input>
+   <name>input-channel-5</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-5</property>
+  </input>
+
+  <input>
+   <name>input-channel-6</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-6</property>
+  </input>
+
+  <input>
+   <name>input-channel-7</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-7</property>
+  </input>
+
+  <input>
+   <name>input-channel-8</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-8</property>
+  </input>
+
+  <input>
+   <name>input-channel-9</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-9</property>
+  </input>
+
+  <input>
+   <name>input-channel-10</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-10</property>
+  </input>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <text>
+   <label>Channel 11</label>
+  </text>
+
+  <text>
+   <label>Channel 12</label>
+  </text>
+
+  <text>
+   <label>Channel 18</label>
+  </text>
+
+  <text>
+   <label>Channel 19</label>
+  </text>
+
+  <text>
+   <label>Channel 20</label>
+  </text>
+
+  <text>
+   <label>Channel 15</label>
+  </text>
+
+  <text>
+   <label>Channel 16</label>
+  </text>
+
+  <text>
+   <label>Channel 17</label>
+  </text>
+
+  <text>
+   <label>Channel 13</label>
+  </text>
+
+  <text>
+   <label>Channel 14</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <input>
+   <name>input-channel-11</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-11</property>
+  </input>
+
+  <input>
+   <name>input-channel-12</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-12</property>
+  </input>
+
+  <input>
+   <name>input-channel-13</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-13</property>
+  </input>
+
+  <input>
+   <name>input-channel-14</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-14</property>
+  </input>
+
+  <input>
+   <name>input-channel-15</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-15</property>
+  </input>
+
+  <input>
+   <name>input-channel-16</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-16</property>
+  </input>
+
+  <input>
+   <name>input-channel-17</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-17</property>
+  </input>
+
+  <input>
+   <name>input-channel-18</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-18</property>
+  </input>
+
+  <input>
+   <name>input-channel-19</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-19</property>
+  </input>
+
+  <input>
+   <name>input-channel-20</name>
+   <stretch>false</stretch>
+   <pref-width>50</pref-width>
+   <property>mig29/instrumentation/R-862/channel-20</property>
+  </input>
+
+</group>
+
+</group>
+
+<group>
+ <layout>hbox</layout>
+
+  <button>
+   <legend>Apply</legend>
+   <equal>true</equal>
+   <default>true</default>
+   <binding>
+    <command>dialog-apply</command>
+   </binding>
+   <binding>
+    <command>dialog-close</command>
+   </binding>
+  </button>
+
+  <button>
+   <legend>Close</legend>
+   <equal>true</equal>
+   <default>true</default>
+   <binding>
+    <command>dialog-close</command>
+   </binding>
+  </button>
+
+</group>
+
+</PropertyList>

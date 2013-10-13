@@ -1,0 +1,365 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <name>EL</name>
+ <layout>vbox</layout>
+ <resizable>true</resizable>
+
+<group>
+ <layout>hbox</layout>
+
+  <text>
+   <label>External loads</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>hbox</layout>
+
+<group>
+ <layout>vbox</layout>
+
+  <text>
+   <label>Tank No 1</label>
+  </text>
+
+  <text>
+   <label>Tank No 2</label>
+  </text>
+
+  <text>
+   <label>Tank No 3</label>
+  </text>
+
+  <text>
+   <label>Tank No 3A</label>
+  </text>
+
+  <text>
+   <label>Wing tanks</label>
+  </text>
+
+  <text>
+   <label>Drop tank</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <text>
+   <label>xxxxxxxxxx</label>
+   <live>true</live>
+   <format>%.0f kg</format>
+   <property>/consumables/fuel/tank[0]/level-kg</property>
+  </text>
+
+  <text>
+   <label>xxxxxxxxxx</label>
+   <live>true</live>
+   <format>%.0f kg</format>
+   <property>/consumables/fuel/tank[1]/level-kg</property>
+  </text>
+
+  <text>
+   <label>xxxxxxxxxx</label>
+   <live>true</live>
+   <format>%.0f kg</format>
+   <property>/consumables/fuel/tank[2]/level-kg</property>
+  </text>
+
+  <text>
+   <label>xxxxxxxxxx</label>
+   <live>true</live>
+   <format>%.0f kg</format>
+   <property>mig29/systems/weight/tank_3A-level-kg</property>
+  </text>
+
+  <text>
+   <label>xxxxxxxxxx</label>
+   <live>true</live>
+   <format>%.0f kg</format>
+   <property>mig29/systems/weight/wing_tanks-level-kg</property>
+  </text>
+
+  <text>
+   <label>xxxxxxxxxx</label>
+   <live>true</live>
+   <format>%.0f kg</format>
+   <property>/consumables/fuel/tank[7]/level-kg</property>
+  </text>
+
+</group>
+
+<vrule/>
+
+<group>
+ <layout>vbox</layout>
+
+  <text>
+   <label>Pylon 5</label>
+  </text>
+
+  <text>
+   <label>Pylon 3</label>
+  </text>
+
+  <text>
+   <label>Pylon 1</label>
+  </text>
+
+  <text>
+   <label>Pylon PTB</label>
+  </text>
+
+  <text>
+   <label>Pylon 2</label>
+  </text>
+
+  <text>
+   <label>Pylon 4</label>
+  </text>
+
+  <text>
+   <label>Pylon 6</label>
+  </text>
+
+</group>
+
+<group>
+ <layout>vbox</layout>
+
+  <combo>
+   <property>mig29/controls/Weapons/podv/pylon5</property>
+   <value>none</value>
+   <value>R-60M</value>
+   <value>R-73</value>
+   <binding>
+    <command>dialog-update</command>
+   </binding>
+  </combo>
+
+  <combo>
+   <property>mig29/controls/Weapons/podv/pylon3</property>
+   <value>none</value>
+   <value>R-60M</value>
+   <value>R-73</value>
+   <value>FAB-500 M-62</value>
+   <!--<value>OFAB-100-120</value>-->
+   <value>OFAB-250-270</value>
+   <binding>
+    <command>dialog-update</command>
+   </binding>
+  </combo>
+
+  <combo>
+   <property>mig29/controls/Weapons/podv/pylon1</property>
+   <value>none</value>
+   <value>R-27R</value>
+   <value>R-60M</value>
+   <value>R-73</value>
+   <value>FAB-500 M-62</value>
+   <!--<value>OFAB-100-120</value>-->
+   <value>OFAB-250-270</value>
+   <binding>
+    <command>dialog-update</command>
+   </binding>
+  </combo>
+
+  <combo>
+   <property>mig29/controls/Weapons/podv/PTB</property>
+   <value>none</value>
+   <value>PTB</value>
+   <binding>
+    <command>dialog-update</command>
+   </binding>
+  </combo>
+
+  <combo>
+   <property>mig29/controls/Weapons/podv/pylon2</property>
+   <value>none</value>
+   <value>R-27R</value>
+   <value>R-60M</value>
+   <value>R-73</value>
+   <value>FAB-500 M-62</value>
+   <!--<value>OFAB-100-120</value>-->
+   <value>OFAB-250-270</value>
+   <binding>
+    <command>dialog-update</command>
+   </binding>
+  </combo>
+
+  <combo>
+   <property>mig29/controls/Weapons/podv/pylon4</property>
+   <value>none</value>
+   <value>R-60M</value>
+   <value>R-73</value>
+   <value>FAB-500 M-62</value>
+   <!--<value>OFAB-100-120</value>-->
+   <value>OFAB-250-270</value>
+   <binding>
+    <command>dialog-update</command>
+   </binding>
+  </combo>
+
+  <combo>
+   <property>mig29/controls/Weapons/podv/pylon6</property>
+   <value>none</value>
+   <value>R-60M</value>
+   <value>R-73</value>
+   <binding>
+    <command>dialog-update</command>
+   </binding>
+  </combo>
+
+</group>
+
+</group>
+
+ <group>
+  <layout>hbox</layout>
+
+ <group>
+  <layout>vbox</layout>
+
+ <group>
+  <layout>hbox</layout>
+  <default-padding>0</default-padding>
+  <halign>left</halign>
+  <text>
+   <label>Internal fuel, % : </label>
+  </text>
+  <text>
+   <label>xxxx</label>
+   <live>true</live>
+   <format>%.0f</format>
+   <property>mig29/systems/weight/internal_tanks_level-ip</property>
+  </text>
+ </group>
+
+ <group>
+  <layout>hbox</layout>
+  <default-padding>0</default-padding>
+  <halign>left</halign>
+  <text>
+   <label>Total fuel, % : </label>
+  </text>
+  <text>
+   <label>xxxx</label>
+   <live>true</live>
+   <format>%.0f</format>
+   <property>mig29/systems/weight/all_tanks_level-ip</property>
+  </text>
+ </group>
+
+ <group>
+  <layout>hbox</layout>
+  <default-padding>0</default-padding>
+  <halign>left</halign>
+  <text>
+   <label>Internal fuel, kg : </label>
+  </text>
+  <text>
+   <label>xxxx</label>
+   <live>true</live>
+   <format>%.0f</format>
+   <property>mig29/systems/weight/internal_tanks_level-kg</property>
+  </text>
+ </group>
+
+ <group>
+  <layout>hbox</layout>
+  <default-padding>0</default-padding>
+  <halign>left</halign>
+  <text>
+   <label>Total Fuel kg : </label>
+  </text>
+  <text>
+   <label>xxxx</label>
+   <live>true</live>
+   <format>%.0f</format>
+   <property>mig29/instrumentation/ISTR4-2/total-fuel-kg</property>
+  </text>
+ </group>
+
+ </group>
+
+ <group>
+  <layout>vbox</layout>
+
+ <group>
+  <layout>hbox</layout>
+  <default-padding>0</default-padding>
+  <halign>left</halign>
+  <text>
+   <label>Cannon : </label>
+  </text>
+  <text>
+   <label>xxx</label>
+   <live>true</live>
+   <format>%.0f</format>
+   <property>/ai/submodels/submodel[0]/count</property>
+  </text>
+ </group>
+
+ <group>
+  <layout>hbox</layout>
+  <default-padding>0</default-padding>
+  <halign>left</halign>
+  <text>
+   <label>Weapon, kg : </label>
+  </text>
+  <text>
+   <label>xxxxx</label>
+   <live>true</live>
+   <format>%.0f</format>
+   <property>mig29/systems/weight/weapon-kg</property>
+  </text>
+ </group>
+
+</group>
+
+</group>
+
+<group>
+ <layout>hbox</layout>
+ <default-padding>0</default-padding>
+ <halign>left</halign>
+ <text>
+  <label>Gross Weight, kg : </label>
+ </text>
+ <text>
+  <label>xxxxx</label>
+  <live>true</live>
+  <format>%.0f</format>
+  <property>mig29/systems/weight/total_weight-kg</property>
+ </text>
+</group>
+
+<group>
+ <layout>hbox</layout>
+
+  <button>
+   <legend>Apply</legend>
+   <equal>true</equal>
+   <default>true</default>
+   <binding>
+    <command>dialog-apply</command>
+   </binding>
+  </button>
+
+  <button>
+   <legend>Close</legend>
+   <equal>true</equal>
+   <default>true</default>
+   <binding>
+    <command>dialog-close</command>
+   </binding>
+  </button>
+
+</group>
+
+</PropertyList>
