@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <submodel>
+   <name>gun-bullet</name>
+   <model>Aircraft/MiG-29_9-12/Models/Submodels/GSh-301/tracer.xml</model>
+   <trigger>controls/armament/trigger</trigger>
+   <speed>2952</speed>
+   <repeat>true</repeat>
+   <delay>0.04</delay>
+   <count>150</count>
+   <x-offset>-13.78 </x-offset>
+   <y-offset>-2.044 </y-offset>
+   <z-offset> 0.0164</z-offset>
+   <pitch-offset>0</pitch-offset>
+   <life>10.0</life>
+   <wind>false</wind>
+   <weight>0.86</weight>
+   <cd>0.2</cd>
+   <eda>0.00760855993</eda>
+   <collision>true</collision>
+   <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
+   <impact>true</impact>
+   <impact-reports>ai/models/model-impact</impact-reports>
+   <submodel-path>Aircraft/MiG-29_9-12/Models/Submodels/GSh-301/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+   <name>droptank</name>
+   <model>Aircraft/MiG-29_9-12/Models/Submodels/PTB-1500/PTB-1500.ac</model>
+   <trigger>controls/armament/station[0]/jettison-all</trigger>
+   <speed>0</speed>
+   <repeat>false</repeat>
+   <count>1</count>
+   <x-offset>-8.69</x-offset>
+   <y-offset> 0.0 </y-offset>
+   <z-offset>-2.82</z-offset>
+   <yaw-offset>0</yaw-offset>
+   <pitch-offset>0</pitch-offset>
+   <wind>false</wind>
+   <eda>2</eda>
+   <weight>200</weight>
+   <cd>0.05</cd>
+   <contents>mig29/systems/fuelsystem/PTBjv</contents>
+  </submodel>
+
+  <submodel>
+   <name>LTC_Left</name>
+   <model>Aircraft/MiG-29_9-12/Models/Submodels/LTTs/LTTs.xml</model>
+   <trigger>mig29/systems/BVP/release</trigger>
+   <speed>100.0</speed>
+   <repeat>true</repeat>
+   <delay>0.2</delay>
+   <count>30</count>
+   <x-offset>-5.821981627</x-offset>
+   <y-offset>-5.534317585</y-offset>
+   <z-offset> 1.104041995</z-offset>
+   <pitch-offset>95</pitch-offset>
+   <yaw-offset>90</yaw-offset>
+   <life>60.0</life>
+   <wind>true</wind>
+   <weight>0.2</weight>
+   <cd>0.02</cd>
+   <eda>0.007</eda>
+   <submodel-path>Aircraft/MiG-29_9-12/Models/Submodels/LTTs/LTTs.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+   <name>LTC_Right</name>
+   <model>Aircraft/MiG-29_9-12/Models/Submodels/LTTs/LTTs.xml</model>
+   <trigger>mig29/systems/BVP/release</trigger>
+   <speed>100.0</speed>
+   <repeat>true</repeat>
+   <delay>0.2</delay>
+   <count>30</count>
+   <x-offset>-5.821981627</x-offset>
+   <y-offset> 5.534317585</y-offset>
+   <z-offset> 1.104041995</z-offset>
+   <pitch-offset>95</pitch-offset>
+   <yaw-offset>-90</yaw-offset>
+   <life>60.0</life>
+   <wind>true</wind>
+   <weight>0.2</weight>
+   <cd>0.02</cd>
+   <eda>0.007</eda>
+   <submodel-path>Aircraft/MiG-29_9-12/Models/Submodels/LTTs/LTTs.xml</submodel-path>
+  </submodel>
+
+<!-- Weapon -->
+<!-- Missiles -->
+
+<!-- R-27R -->
+<!--  <submodel>
+   <name>missile_R-27R_1</name>
+   <model>Aircraft/MiG-29_9-12/Models/Submodels/R-27R/R-27R.ac</model>
+   <trigger>/controls/armament/station[3]/release-all</trigger>
+   <speed>0</speed>
+   <repeat>false</repeat>
+   <count>1</count>
+   <x-offset> 3.1167979</x-offset>
+   <y-offset>-8.005249344</y-offset>
+   <z-offset>-1.673228346</z-offset>
+   <yaw-offset>0</yaw-offset>
+   <pitch-offset>0</pitch-offset>
+   <wind>false</wind>
+   <eda>2</eda>
+   <weight>557.77</weight>
+   <cd>0.0024</cd>
+   <external-force>true</external-force>
+   <force-path>mig29/weapons/R-27R_1/force_path</force-path>
+   <force-stabilised>true</force-stabilised>
+   <impact>true</impact>
+   <impact-reports>sim/ai/aircraft/impact/bomb</impact-reports>
+   <collision>true</collision>
+   <collision-report>sim/ai/aircraft/collision/bomb</collision-report>
+   <submodel-path>Aircraft/MiG-29_9-12/Models/Submodels/R-27R/R-27R_L.xml</submodel-path>
+  </submodel>-->
+
+  <submodel>
+   <name>bomb FAB-500 M-62</name>
+   <model>Aircraft/MiG-29_9-12/Models/Submodels/AB-500/FAB-500_M-62.ac</model>
+   <trigger>/controls/armament/station[3]/release-all</trigger>
+   <speed>0</speed>
+   <repeat>false</repeat>
+   <count>1</count>
+   <x-offset> 3.1167979</x-offset>
+   <y-offset>-8.005249344</y-offset>
+   <z-offset>-1.673228346</z-offset>
+   <yaw-offset>0</yaw-offset>
+   <pitch-offset>0</pitch-offset>
+   <wind>false</wind>
+   <eda>2</eda>
+   <weight>1102.31</weight>
+   <cd>0.0024</cd>
+   <impact>true</impact>
+   <impact-reports>sim/ai/aircraft/impact/bomb</impact-reports>
+   <collision>true</collision>
+   <collision-report>sim/ai/aircraft/collision/bomb</collision-report>
+  </submodel>
+
+</PropertyList>

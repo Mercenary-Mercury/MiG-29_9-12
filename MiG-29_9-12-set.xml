@@ -1,0 +1,563 @@
+<?xml version="1.0"?>
+<!--
+  MiG 29 (9-12)
+  February 2011   Sergey "Mercenary_Mercury" Salov - JSBSIM version. Stage 1
+  October 2011  Stage 2
+-->
+
+<PropertyList>
+
+ <sim>
+
+  <description>MiG-29 (9-12) - lightweight frontline fighter</description>
+  <author>Sergey "Mercenary_Mercury" Salov (FDM, cockpit, submodels, systems), Enrique Laso Leon (external model)</author>
+
+  <flight-model>jsb</flight-model>
+  <aero>MiG-29</aero>
+
+  <aircraft-version>0.6</aircraft-version>
+
+  <status>beta</status>
+  <rating>
+   <FDM>1</FDM>
+   <systems>1</systems>
+   <cockpit>3</cockpit>
+   <model>4</model>
+  </rating>
+
+  <startup>
+   <splash-texture>Aircraft/MiG-29_9-12/splash.png</splash-texture>
+  </startup>
+
+  <sound>
+   <path>Aircraft/MiG-29_9-12/Sounds/sound.xml</path>
+  </sound>
+
+  <model>
+   <path>Aircraft/MiG-29_9-12/Models/MiG-29.xml</path>
+   <livery>
+    <file type="string">RuAF_1</file>
+   </livery>
+  </model>
+
+  <submodels>
+   <serviceable type="bool">true</serviceable>
+   <path>Aircraft/MiG-29_9-12/MiG-29-submodels.xml</path>
+  </submodels>
+
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+  <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
+  <view n="0"> <!-- Cockpit view -->
+   <internal archive="y">true</internal>
+   <config>
+    <x-offset-m archive="y" type="double"> 0.0</x-offset-m>
+    <y-offset-m archive="y" type="double"> 1.046</y-offset-m>
+    <z-offset-m archive="y" type="double">-3.3</z-offset-m>
+    <pitch-offset-deg>-8.0</pitch-offset-deg>
+    <default-field-of-view-deg type="double">64.0</default-field-of-view-deg>
+   </config>
+  </view>
+
+  <view n="1">
+   <config>
+    <target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="2">
+   <config>
+    <target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="3">
+   <config>
+    <target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="4">
+   <config>
+    <target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="5">
+   <config>
+    <target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="6">
+   <config>
+    <target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="101">
+   <name>Right Panel View</name>
+   <type>lookfrom</type>
+   <internal type="bool">true</internal>
+   <config>
+    <from-model type="bool">true</from-model>
+    <from-model-idx type="int">0</from-model-idx>
+    <x-offset-m type="double">-0.0</x-offset-m>
+    <y-offset-m type="double"> 1.046</y-offset-m>
+    <z-offset-m type="double">-3.3</z-offset-m>
+    <pitch-offset-deg type="double">-49</pitch-offset-deg>
+    <heading-offset-deg type="double">-60</heading-offset-deg>
+    <default-field-of-view-deg type="double">60</default-field-of-view-deg>
+   </config>
+  </view>
+
+  <view n="102">
+   <name>Left Panel View</name>
+   <type>lookfrom</type>
+   <internal type="bool">true</internal>
+   <config>
+    <from-model type="bool">true</from-model>
+    <from-model-idx type="int">0</from-model-idx>
+    <x-offset-m type="double"> 0.0</x-offset-m>
+    <y-offset-m type="double"> 1.046</y-offset-m>
+    <z-offset-m type="double">-3.3</z-offset-m>
+    <pitch-offset-deg type="double">-49</pitch-offset-deg>
+    <heading-offset-deg type="double">60</heading-offset-deg>
+    <default-field-of-view-deg type="double">60</default-field-of-view-deg>
+   </config>
+  </view>
+
+  <view n="103">
+   <name>Instruments View</name>
+   <type>lookfrom</type>
+   <internal type="bool">true</internal>
+   <config>
+    <from-model type="bool">true</from-model>
+    <from-model-idx type="int">0</from-model-idx>
+    <x-offset-m type="double"> 0.0</x-offset-m>
+    <y-offset-m type="double"> 1.046</y-offset-m>
+    <z-offset-m type="double">-3.3</z-offset-m>
+    <pitch-offset-deg type="double">-20</pitch-offset-deg>
+    <default-field-of-view-deg type="double">52</default-field-of-view-deg>
+   </config>
+  </view>
+
+  <flaps>
+   <setting>0.00</setting>
+   <setting>1.00</setting>
+  </flaps>
+
+  <gui>
+   <dialogs>
+    <ARK-19>
+     <dialog include="Dialogs/ARK-19.xml"/>
+    </ARK-19>
+    <R-862>
+     <dialog include="Dialogs/R-862.xml"/>
+    </R-862>
+   </dialogs>
+  </gui>
+
+  <menubar>
+   <default>
+    <menu n="100">
+     <label>MiG-29</label>
+     <enabled type="bool">true</enabled>
+     <item>
+      <label>Autostart</label>
+      <binding>
+       <command>nasal</command>
+       <script>control.autostart()</script>
+      </binding>
+     </item>
+     <item>
+      <label>External loads</label>
+      <binding>
+       <command>dialog-show</command>
+       <dialog-name>EL</dialog-name>
+      </binding>
+     </item>
+     <item>
+      <label>Refuel aircraft</label>
+      <binding>
+       <command>nasal</command>
+       <script>system.refuel_aircraft()</script>
+      </binding>
+     </item>
+     <item>
+      <label>Reload cannon</label>
+      <binding>
+       <command>nasal</command>
+       <script>weapon.cannon_rearm()</script>
+      </binding>
+     </item>
+     <item>
+      <label>External power On/Off</label>
+      <binding>
+       <command>nasal</command>
+       <script>electrical.SHRAP_shandler()</script>
+      </binding>
+     </item>
+     <item>
+      <label>Console input programms</label>
+      <binding>
+       <command>dialog-show</command>
+       <dialog-name>PVP</dialog-name>
+      </binding>
+     </item>
+     <item>
+      <label>ARK-19 tuning</label>
+      <binding>
+       <command>dialog-show</command>
+       <dialog-name>ARK-19</dialog-name>
+      </binding>
+     </item>
+     <item>
+      <label>R-862 tuning</label>
+      <binding>
+       <command>dialog-show</command>
+       <dialog-name>R-862</dialog-name>
+      </binding>
+     </item>
+     <item>
+      <label>Board number</label>
+      <binding>
+       <command>dialog-show</command>
+       <dialog-name>BoardNum</dialog-name>
+      </binding>
+     </item>
+     <item>
+      <label>Select Livery</label>
+      <binding>
+       <command>nasal</command>
+       <script>aircraft.livery.dialog.open()</script>
+      </binding>
+     </item>
+    </menu>
+   </default>
+  </menubar>
+
+ <multiplay>
+  <generic>
+   <float n="0" alias="mig29/systems/CS/Canopy/pos-norm"/>
+   <float n="1" alias="mig29/systems/CS/Inlet/left-pos-norm"/>
+   <float n="2" alias="mig29/systems/CS/Inlet/right-pos-norm"/>
+   <float n="3" alias="mig29/systems/CS/LERX/pos-norm"/>
+   <float n="4" alias="mig29/systems/CS/Parachute/pos-norm"/>
+   <float n="5" alias="mig29/systems/CS/Stabilator/left-pos-norm"/>
+   <float n="6" alias="mig29/systems/CS/Stabilator/right-pos-norm"/>
+   <int n="7" alias="mig29/systems/lighting/taxi"/>
+   <int n="8" alias="mig29/systems/lighting/landing"/>
+   <int n="9" alias="mig29/systems/lighting/ANO"/>
+   <float n="10" alias="mig29/systems/lighting/ANObright"/>
+   <int type="int" n="11">0</int>
+   <int n="12" alias="mig29/systems/BVP/release"/>
+   <int n="13" alias="/controls/armament/trigger"/>
+   <int n="14" alias="/controls/armament/station[3]/jettison-all"/>
+   <int n="15" alias="/controls/armament/station[3]/release-all"/>
+   <int n="16" alias="/controls/armament/station[4]/jettison-all"/>
+   <int n="17" alias="/controls/armament/station[4]/release-all"/>
+   <int n="18" alias="/controls/armament/station[5]/jettison-all"/>
+   <int n="19" alias="/controls/armament/station[5]/release-all"/>
+   <int n="20" alias="/controls/armament/station[6]/jettison-all"/>
+   <int n="21" alias="/controls/armament/station[6]/release-all"/>
+   <int n="22" alias="/controls/armament/station[7]/jettison-all"/>
+   <int n="23" alias="/controls/armament/station[7]/release-all"/>
+   <int n="24" alias="/controls/armament/station[8]/jettison-all"/>
+   <int n="25" alias="/controls/armament/station[8]/release-all"/>
+   <int n="26" alias="mig29/weapons/podv/PTB"/>
+   <int n="27" alias="mig29/weapons/podv/T1"/>
+   <int n="28" alias="mig29/weapons/podv/T2"/>
+   <int n="29" alias="mig29/weapons/podv/T3"/>
+   <int n="30" alias="mig29/weapons/podv/T4"/>
+   <int n="31" alias="mig29/weapons/podv/T5"/>
+   <int n="32" alias="mig29/weapons/podv/T6"/>
+  </generic>
+ </multiplay>
+
+  <help>
+   <key>
+    <name>C</name>
+    <desc>Canopy toggle</desc>
+   </key>
+   <key>
+    <name>k</name>
+    <desc>Extend Airbrakes (hold on for extend)</desc>
+   </key>
+   <key>
+    <name>K</name>
+    <desc>Extend Airbrakes</desc>
+   </key>
+   <key>
+    <name>j</name>
+    <desc>Deploy Drag Parachute</desc>
+   </key>
+   <key>
+    <name>J</name>
+    <desc>Jettison Drag Parachute</desc>
+   </key>
+   <key>
+    <name>o</name>
+    <desc>AP cut-out lever</desc>
+   </key>
+  </help>
+
+  <rendering>
+   <redout>
+    <parameters>
+     <blackout-complete-g type="double">9.0</blackout-complete-g>
+     <blackout-onset-g type="double">5.0</blackout-onset-g>
+    </parameters>
+   </redout>
+  </rendering>
+
+<!--
+ <checklists include="MiG-29-checklists.xml"/>
+-->
+
+ <flight-recorder>
+  <replay-config type="int">0</replay-config>
+  <config n="0" include="/Aircraft/Generic/flightrecorder/generic-jet.xml">
+   <signal>
+    <type>float</type>
+    <property type="string">/mig29/systems/CS/Canopy/pos-norm</property>
+   </signal>
+   <signal>
+    <type>float</type>
+    <property type="string">/mig29/systems/CS/Stabilator/left-pos-norm</property>
+   </signal>
+   <signal>
+    <type>float</type>
+    <property type="string">/mig29/systems/CS/Stabilator/right-pos-norm</property>
+   </signal>
+  </config>
+ </flight-recorder>
+
+ </sim>
+
+<!-- Engine indexes -->
+
+  <engines>
+   <engine n="0">
+    <running>false</running>
+    <engine-num type="int">0</engine-num>
+    <throttle-norm type="float">0</throttle-norm>
+     <reheat-norm type="float">0</reheat-norm>
+   </engine>
+   <engine n="1">
+    <running>false</running>
+    <engine-num type="int">1</engine-num>
+    <throttle-norm type="float">0</throttle-norm>
+     <reheat-norm type="float">0</reheat-norm>
+   </engine>
+   <engine n="2">
+    <running>false</running>
+    <engine-num type="int">2</engine-num>
+    <throttle-norm type="float">0</throttle-norm>
+   </engine>
+  </engines>
+
+  <instrumentation>
+   <magnetic-compass>
+    <bookmark-heading-deg type="double">43.0</bookmark-heading-deg>
+   </magnetic-compass>
+   <rwr>
+    <display-lighting-intens type="double">0.4</display-lighting-intens>
+    <symbology-lighting-intens type="double">1</symbology-lighting-intens>
+   </rwr>
+   <enav><selected type="int">3</selected></enav>
+   <radar>
+    <range type="int" archive="y">20</range>
+    <range-factor type="double" archive="n">0.001888</range-factor>
+    <minimized type="bool" archive="y">false</minimized>
+    <selected type="int">3</selected>
+    <!-- inicio en pruebas -->
+    <enabled type="bool">true</enabled>
+    <az-field type="double">120</az-field>
+    <range type="double">150</range>
+    <range-selected type="double">20</range-selected>
+    <radar2-range type="double">150</radar2-range>
+    <display-rdr type="bool">true</display-rdr>
+    <radar-standby type="int">0</radar-standby>
+    <mode>
+     <rws type="bool">true</rws>
+     <tws-auto type="bool">false</tws-auto>
+    </mode>
+   </radar>
+   <radar2>
+    <sweep-width-m type="double">0.0844</sweep-width-m>
+    <range-width-m type="double">0.0846</range-width-m>
+    <radius-ppi-display-m type="double">0.0846</radius-ppi-display-m>
+    <hud-eye-dist-m type="double">0.766</hud-eye-dist-m>
+    <hud-radius-m type="double">0.071</hud-radius-m>
+    <hud-vertical-offset-m type="double">-0.025</hud-vertical-offset-m>
+   </radar2>
+  </instrumentation>
+
+  <controls>
+   <engines>
+    <engine n="0">
+     <throttle type="double">0.0</throttle>
+      <reheat type="double">0</reheat>
+    </engine>
+    <engine n="1">
+     <throttle type="double">0.0</throttle>
+      <reheat type="double">0</reheat>
+    </engine>
+    <engine n="2">
+     <throttle type="double">1.0</throttle>
+    </engine>
+   </engines>
+   <gear>
+    <brake-parking type="double">0.0</brake-parking>
+   </gear>
+   <lighting>
+    <nav type="bool">false</nav>
+    <landing type="bool">false</landing>
+   </lighting>
+  </controls>
+
+  <input>
+   <keyboard include="Systems/MiG-29-keyboard.xml"/>
+  </input>
+
+  <mig29 include="Systems/var.xml"/>
+
+<!-- Support scripts -->
+
+  <nasal>
+   <system>
+    <file>Aircraft/MiG-29_9-12/Nasal/init_systems.nas</file>
+    <script>system.init_systems();</script>
+    <file>Aircraft/MiG-29_9-12/Nasal/main.nas</file>
+    <file>Aircraft/MiG-29_9-12/Nasal/PS.nas</file>
+    <file>Aircraft/MiG-29_9-12/Nasal/ARV-29.nas</file>
+    <file>Aircraft/MiG-29_9-12/Nasal/hydrosystems.nas</file>
+    <file>Aircraft/MiG-29_9-12/Nasal/BUANO.nas</file>
+    <file>Aircraft/MiG-29_9-12/Nasal/Ekran.nas</file>
+    <file>Aircraft/MiG-29_9-12/Nasal/IK-VK.nas</file>
+    <file>Aircraft/MiG-29_9-12/Nasal/ARU-29-2.nas</file>
+   </system>
+   <SAU>
+    <file>Aircraft/MiG-29_9-12/Nasal/SAU-451.nas</file>
+   </SAU>
+   <control>
+    <file>Aircraft/MiG-29_9-12/Nasal/controls.nas</file>
+   </control>
+   <electrical>
+    <file>Aircraft/MiG-29_9-12/Nasal/electrical.nas</file>
+   </electrical>
+   <engines>
+    <file>Aircraft/MiG-29_9-12/Nasal/engines.nas</file>
+   </engines>
+   <instrumentation>
+    <file>Aircraft/MiG-29_9-12/Nasal/instrumentation.nas</file>
+    <file>Aircraft/MiG-29_9-12/Nasal/SEI-31.nas</file>
+    <file>Aircraft/MiG-29_9-12/Nasal/Tablo.nas</file>
+   </instrumentation>
+   <navigation>
+    <file>Aircraft/MiG-29_9-12/Nasal/TsVU-M.nas</file>
+   </navigation>
+   <oxygensystem>
+    <file>Aircraft/MiG-29_9-12/Nasal/oxygensystem.nas</file>
+   </oxygensystem>
+   <tyresmoke>
+    <file>Aircraft/MiG-29_9-12/Nasal/tyresmoke.nas</file>
+   </tyresmoke>
+   <weapon>
+    <file>Aircraft/MiG-29_9-12/Nasal/weapons.nas</file>
+   </weapon>
+ 
+   <hud>
+    <file>Aircraft/MiG-29_9-12/Nasal/MiscRwr.nas</file>
+   </hud>
+   <radardist>
+    <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+   </radardist>
+   <radar>
+    <file>Aircraft/MiG-29_9-12/Nasal/radar2.nas</file>
+   </radar>
+  </nasal>
+
+ <fdm>
+  <jsbsim>
+   <calculations>
+    <KSA>
+     <n2 type="double">0</n2>
+    </KSA>
+   </calculations>
+   <fcs>
+    <canopy-cmd-norm type="double">1</canopy-cmd-norm>
+    <canopy-emerg-cmd type="bool">false</canopy-emerg-cmd>
+    <canopy-germ-cmd type="bool">false</canopy-germ-cmd>
+   </fcs>
+   <hs>
+    <max-pressure type="double">210.0</max-pressure>
+    <arm150m-pitch-1 type="double">1.0</arm150m-pitch-1>
+    <arm150m-pitch-2 type="double">1.0</arm150m-pitch-2>
+    <arm150m-roll-1 type="double">1.0</arm150m-roll-1>
+    <arm150m-roll-2 type="double">1.0</arm150m-roll-2>
+    <arm150m-yaw-1 type="double">1.0</arm150m-yaw-1>
+    <arm150m-yaw-2 type="double">1.0</arm150m-yaw-2>
+   </hs>
+   <systems>
+    <canopy>
+     <emerg-command type="bool">0</emerg-command>
+     <serviceable type="bool">1</serviceable>
+    </canopy>
+    <gear>
+     <serviceable type="bool">1</serviceable>
+     <vpr type="bool">1</vpr>
+    </gear>
+    <instrumentation>
+     <DA200s-serviceable type="bool">1</DA200s-serviceable>
+     <US-30-3-serviceable type="bool">1</US-30-3-serviceable>
+     <UMS>
+      <Mach type="double">0.0</Mach>
+      <TAS-kmh type="double">0.0</TAS-kmh>
+      <UMS-2.5-serviceable type="bool">1</UMS-2.5-serviceable>
+     </UMS>
+     <US-1600>
+      <US-1600-serviceable type="bool">1</US-1600-serviceable>
+     </US-1600>
+    </instrumentation>
+    <COC>
+     <LERX-cmd type="bool">false</LERX-cmd>
+    </COC>
+    <PS>
+     <OVS_cap type="float">100</OVS_cap>
+     <AVS_cap type="float">100</AVS_cap>
+    </PS>
+    <SVS>
+     <PVD_select type="bool">0</PVD_select>
+     <altitude-m type="double">0.0</altitude-m>
+     <airspeed-kmh type="double">0.0</airspeed-kmh>
+     <true-airspeed-kmh type="double">0.0</true-airspeed-kmh>
+     <vertical-speed-mps type="double">0.0</vertical-speed-mps>
+     <PVDr_alt type="double">0.0</PVDr_alt>
+     <PVDr_as type="double">0.0</PVDr_as>
+     <PVDr_tas type="double">0.0</PVDr_tas>
+     <PVDr_vs type="double">0.0</PVDr_vs>
+     <PVDa_alt type="double">0.0</PVDa_alt>
+     <PVDa_as type="double">0.0</PVDa_as>
+     <PVDa_tas type="double">0.0</PVDa_tas>
+     <PVDa_vs type="double">0.0</PVDa_vs>
+     <PVDr-serviceable type="bool">1</PVDr-serviceable>
+     <PVDa-serviceable type="bool">1</PVDa-serviceable>
+    </SVS>
+    <fuel>
+     <on type="bool">false</on>
+     <serviceable type="bool">true</serviceable>
+     <flow-rate-in-pps type="float">4.754</flow-rate-in-pps>
+     <flow-rate-out-pps type="float">-2.377</flow-rate-out-pps>
+    </fuel>
+    <intake>
+     <pos-left type="double">0.0</pos-left>
+     <pos-right type="double">0.0</pos-right>
+    </intake>
+    <electrical-ok type="bool">false</electrical-ok>
+   </systems>
+  </jsbsim>
+ </fdm>
+
+</PropertyList>
