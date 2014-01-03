@@ -121,6 +121,11 @@ var tehg = 0;
 var inhg2mmhg = func{
  var inhg = getprop("/instrumentation/altimeter/setting-inhg");
  var mmhg = (inhg * 25.4);
+ setprop("/mig29/instrumentation/UV-30-3/raw-mmhg", mmhg);
+ var tehg = ((mmhg*10)-int(mmhg*10));
+ if (tehg > 0.5) {var mmhg = int(mmhg*10)+1;}
+ else {var mmhg = int(mmhg*10);}
+ var mmhg = mmhg/10;
  var mmhg_1 = int(mmhg/100);
  var tehg = mmhg-(mmhg_1*100);
  var mmhg_2 = int(tehg/10);
