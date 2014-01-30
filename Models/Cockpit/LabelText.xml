@@ -1,0 +1,653 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <text>
+  <name>UAP7_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">AoA / G indicator</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-3.9485</x-m>
+   <y-m>-0.183</y-m>
+   <z-m> 0.849</z-m>
+   <heading-deg>16</heading-deg>
+  </offsets>
+ </text>
+
+ <text>
+  <name>US1600_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Airspeed indicator</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-3.995</x-m>
+   <y-m>-0.27324 </y-m>
+   <z-m> 0.676   </z-m>
+   <heading-deg>10</heading-deg>
+  </offsets>
+ </text>
+
+ <text>
+  <name>UV303_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Altimeter</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-3.995</x-m>
+   <y-m>-0.27324</y-m>
+   <z-m> 0.589</z-m>
+   <heading-deg>10</heading-deg>
+  </offsets>
+ </text>
+
+ <text>
+  <name>IP_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Gear, flaps, LERX and speedbrake display</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-3.992</x-m>
+   <y-m>-0.273</y-m>
+   <z-m> 0.506</z-m>
+   <heading-deg>10</heading-deg>
+  </offsets>
+ </text>
+
+ <text>
+  <name>KPP_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Attitude indicator</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-4.003</x-m>
+   <y-m>-0.160</y-m>
+   <z-m> 0.691</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>PNP_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Horizontal situation indicator</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-4.000</x-m>
+   <y-m>-0.160</y-m>
+   <z-m> 0.561</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>DA200_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Vertical speed, turn and bank indicator</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-4.003</x-m>
+   <y-m>-0.050</y-m>
+   <z-m> 0.691</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>UMS25_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">TAS and M number indicator</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-4.003</x-m>
+   <y-m>-0.050</y-m>
+   <z-m> 0.589</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>AChS1_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Clock</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-3.998</x-m>
+   <y-m>-0.050</y-m>
+   <z-m> 0.492</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>RV21_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Radar altimeter</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-4.004</x-m>
+   <y-m> 0.060</y-m>
+   <z-m> 0.671</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>ITE2_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Tachometer</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-4.002</x-m>
+   <y-m> 0.144</y-m>
+   <z-m> 0.671</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>ITG1L_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Exhaust gas temperature indicator</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-4.003</x-m>
+   <y-m> 0.089</y-m>
+   <z-m> 0.583</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>ITG1R_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Exhaust gas temperature indicator</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-4.003</x-m>
+   <y-m> 0.153</y-m>
+   <z-m> 0.583</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>LTTsCounter_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Flares remainder indicator</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-4.002</x-m>
+   <y-m> 0.026</y-m>
+   <z-m> 0.574</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>IKG1_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Combined pressure indicator</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-4.003</x-m>
+   <y-m> 0.126</y-m>
+   <z-m> 0.516</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>IKZh1_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Combined oxygen indicator</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-4.003</x-m>
+   <y-m> 0.053</y-m>
+   <z-m> 0.516</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>Voltmeter_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Voltmeter</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-3.999</x-m>
+   <y-m>-0.040</y-m>
+   <z-m> 0.411</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>M2A_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Brake pressure indicator</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-4.001</x-m>
+   <y-m> 0.050</y-m>
+   <z-m> 0.411</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>ISTR42_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Fuel display</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-4.001</x-m>
+   <y-m> 0.212</y-m>
+   <z-m> 0.626</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>IPK_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Ramp position indicator</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-4.003</x-m>
+   <y-m> 0.207</y-m>
+   <z-m> 0.516</z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>ILS31_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Head-up display</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-3.8  </x-m>
+   <y-m> 0.0  </y-m>
+   <z-m> 0.91 </z-m>
+  </offsets>
+ </text>
+
+ <text>
+  <name>UST_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Display of "Ekran" system</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-3.991</x-m>
+   <y-m> 0.28 </y-m>
+   <z-m> 0.643</z-m>
+   <heading-deg>-10</heading-deg>
+  </offsets>
+ </text>
+
+ <text>
+  <name>SPO15LM_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">RHWS indication panel</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-3.992</x-m>
+   <y-m> 0.283</y-m>
+   <z-m> 0.510</z-m>
+   <heading-deg>-10</heading-deg>
+  </offsets>
+ </text>
+
+ <text>
+  <name>IPV31_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">The indicator of Direct Vision</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.09</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-3.919</x-m>
+   <y-m> 0.218</y-m>
+   <z-m> 0.83816</z-m>
+   <pitch-deg>-10</pitch-deg>
+  </offsets>
+ </text>
+
+ <text>
+  <name>KI13_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Magnetic compass</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.07</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-3.938</x-m>
+   <y-m> 0.231</y-m>
+   <z-m> 1.046</z-m>
+  </offsets>
+ </text>
+
+ <animation>
+  <type>material</type>
+  <object-name>UAP7_LabelText</object-name>
+  <object-name>US1600_LabelText</object-name>
+  <object-name>UV303_LabelText</object-name>
+  <object-name>IP_LabelText</object-name>
+  <object-name>KPP_LabelText</object-name>
+  <object-name>PNP_LabelText</object-name>
+  <object-name>DA200_LabelText</object-name>
+  <object-name>UMS25_LabelText</object-name>
+  <object-name>AChS1_LabelText</object-name>
+  <object-name>RV21_LabelText</object-name>
+  <object-name>ITE2_LabelText</object-name>
+  <object-name>ITG1L_LabelText</object-name>
+  <object-name>ITG1R_LabelText</object-name>
+  <object-name>LTTsCounter_LabelText</object-name>
+  <object-name>IKG1_LabelText</object-name>
+  <object-name>IKZh1_LabelText</object-name>
+  <object-name>Voltmeter_LabelText</object-name>
+  <object-name>M2A_LabelText</object-name>
+  <object-name>ISTR42_LabelText</object-name>
+  <object-name>IPK_LabelText</object-name>
+  <object-name>ILS31_LabelText</object-name>
+  <object-name>UST_LabelText</object-name>
+  <object-name>SPO15LM_LabelText</object-name>
+  <object-name>IPV31_LabelText</object-name>
+  <object-name>KI13_LabelText</object-name>
+  <emission>
+   <red>  1.0</red>
+   <green>0.8</green>
+   <blue> 0.0</blue>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>UAP7_LabelText</object-name>
+  <object-name>US1600_LabelText</object-name>
+  <object-name>UV303_LabelText</object-name>
+  <object-name>IP_LabelText</object-name>
+  <object-name>KPP_LabelText</object-name>
+  <object-name>PNP_LabelText</object-name>
+  <object-name>DA200_LabelText</object-name>
+  <object-name>UMS25_LabelText</object-name>
+  <object-name>AChS1_LabelText</object-name>
+  <object-name>RV21_LabelText</object-name>
+  <object-name>ITE2_LabelText</object-name>
+  <object-name>ITG1L_LabelText</object-name>
+  <object-name>ITG1R_LabelText</object-name>
+  <object-name>LTTsCounter_LabelText</object-name>
+  <object-name>IKG1_LabelText</object-name>
+  <object-name>IKZh1_LabelText</object-name>
+  <object-name>Voltmeter_LabelText</object-name>
+  <object-name>M2A_LabelText</object-name>
+  <object-name>ISTR42_LabelText</object-name>
+  <object-name>IPK_LabelText</object-name>
+  <object-name>ILS31_LabelText</object-name>
+  <object-name>UST_LabelText</object-name>
+  <object-name>SPO15LM_LabelText</object-name>
+  <object-name>IPV31_LabelText</object-name>
+  <object-name>KI13_LabelText</object-name>
+  <condition>
+   <property>/sim/panel-hotspots</property>
+  </condition>
+ </animation>
+
+</PropertyList>

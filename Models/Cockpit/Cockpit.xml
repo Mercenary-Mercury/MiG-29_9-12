@@ -47,6 +47,11 @@
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Lighting/InternalLighting.xml</path>
  </model>
 
+ <model>
+  <name>LabelText</name>
+  <path>Aircraft/MiG-29_9-12/Models/Cockpit/LabelText.xml</path>
+ </model>
+
  <animation>
   <type>noshadow</type>
   <object-name>agra</object-name>
@@ -263,6 +268,7 @@
   <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/model-transparent</inherits-from>
   <object-name>ILSGlass</object-name>
   <object-name>ILS31Len</object-name>
+  <object-name>ILS-Screen</object-name>
   <object-name>Schel_pr_g</object-name>
  </effect>
 

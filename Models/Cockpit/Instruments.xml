@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!-- MiG-29 (9-12) instruments -->
-<!-- Sergey "Mercenary_mercury" Salow, February 2011. Stage 1 -->
-<!-- Sergey "Mercenary_mercury" Salow, Septembr 2011. Stage 2-->
+<!-- Sergey "Mercenary_mercury" Salov, February 2011. Stage 1 -->
+<!-- Sergey "Mercenary_mercury" Salov, Septembr 2011. Stage 2-->
 
 <PropertyList>
 
@@ -59,7 +59,7 @@
   </offsets>
  </model>
 
-<!-- US-1600 - airspeed indicator -->
+<!-- US-1600 - Airspeed indicator -->
  <model>
   <name>US-1600</name>
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/US-1600/US-1600.xml</path>
@@ -71,7 +71,7 @@
   </offsets>
  </model>
 
-<!-- UV-30-3 - altimeter -->
+<!-- UV-30-3 - Altimeter -->
  <model>
   <name>UV-30-3</name>
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/UV-30-3/UV-30-3.xml</path>
@@ -83,7 +83,7 @@
   </offsets>
  </model>
 
-<!-- ИП-52 (IP-52) - gear, flaps, leading edges and speedbrake positions display -->
+<!-- ИП-52 (IP-52) - Gear, flaps, leading edges and speedbrake positions display -->
  <model>
   <name>IP-52</name>
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/IP-52/IP-52.xml</path>
@@ -117,7 +117,7 @@
   </offsets>
  </model>
 
-<!-- ДА-200 (DA-200) - vertical speed, turn and slip indicator -->
+<!-- ДА-200 (DA-200) - Vertical speed, turn and slip indicator -->
  <model>
   <name>DA-200</name>
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/DA-200/DA-200.xml</path>
@@ -149,7 +149,7 @@
   </offsets>
  </model>
 
-<!-- РВ-21 (А034-4), radioaltimeter -->
+<!-- РВ-21 (А034-4), Radar altimeter -->
  <model>
   <name>RV-21</name>
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/RV-21/RV-21.xml</path>
@@ -171,7 +171,7 @@
   </offsets>
  </model>
 
-<!-- ИТГ-1 (ITG-1) - engine temperature indicator -->
+<!-- ИТГ-1 (ITG-1) - Exhaust gas temperature indicator -->
  <model>
   <name>ITG-1_L</name>
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/ITG-1/ITG-1_L.xml</path>
@@ -201,7 +201,7 @@
   </offsets>
  </model>
 
-<!-- ИКГ-1 (IKG-1) - hydroulics and pneumatics systems indicator -->
+<!-- ИКГ-1 (IKG-1) - Hydroulics and pneumatics systems indicator -->
  <model>
   <name>IKG-1</name>
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/IKG-1/IKG-1.xml</path>
@@ -212,7 +212,7 @@
   </offsets>
  </model>
 
-<!-- ИКЖ-1 (IKZh-1) - lifesupport systems indicator -->
+<!-- ИКЖ-1 (IKZh-1) - Lifesupport systems indicator -->
  <model>
   <name>IKZh-1</name>
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/IKZh-1/IKZh-1.xml</path>
@@ -245,7 +245,7 @@
   </offsets>
  </model>
 
-<!-- ИСТР4-2 (ISTR4-2) - fuel display-->
+<!-- ИСТР4-2 (ISTR4-2) - Fuel display-->
  <model>
   <name>ISTR4-2</name>
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/ISTR4-2/ISTR4-2.xml</path>
@@ -256,7 +256,7 @@
   </offsets>
  </model>
 
-<!-- ИПК (IPK) - ramps indicator -->
+<!-- ИПК (IPK) - Ramps indicator -->
  <model>
   <name>IPK</name>
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/IPK/IPK.xml</path>
@@ -272,7 +272,7 @@
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/ILS-31i/ILS-31i.xml</path>
   <offsets>
    <x-m>-4.000</x-m>
-   <y-m> 0.000</y-m>
+   <y-m>-0.00061</y-m>
    <z-m> 1.046</z-m>
   </offsets>
  </model>
@@ -289,7 +289,7 @@
   </offsets>
  </model>
 
-<!-- СПО-15ЛМ (SPO-15LM) - radar warning indicator -->
+<!-- СПО-15ЛМ (SPO-15LM) - Radar warning indicator -->
  <model>
   <name>SPO-15LM</name>
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/SPO-15LM/SPO-15LM.xml</path>
@@ -322,7 +322,7 @@
   </offsets>
  </model>
 
-<!-- КИ-13 (KI-13) - magnetic compass-->
+<!-- КИ-13 (KI-13) - Magnetic compass-->
  <model>
   <name>KI-13</name>
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/KI-13/KI-13.xml</path>
