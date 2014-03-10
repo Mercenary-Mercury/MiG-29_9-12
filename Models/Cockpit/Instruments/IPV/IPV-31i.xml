@@ -87,11 +87,150 @@
   <object-name>IPV-31i.PDd3</object-name>
   <object-name>IPV-31i.PDd4</object-name>
   <object-name>IPV-31i.PDdzpt</object-name>
+  <object-name>IPV-31i.PD0</object-name>
+  <object-name>IPV-31i.PD5</object-name>
+  <object-name>IPV-31i.PD10</object-name>
+  <object-name>IPV-31i.PD25</object-name>
+  <object-name>IPV-31i.PD50</object-name>
+  <object-name>IPV-31i.PD100</object-name>
+  <object-name>IPV-31i.PPS</object-name>
+  <object-name>IPV-31i.ZPS</object-name>
+  <object-name>IPV-31i.RL</object-name>
+  <object-name>IPV-31i.TP</object-name>
+  <object-name>IPV-31i.AP</object-name>
+  <object-name>IPV-31i.PP</object-name>
+  <object-name>IPV-31i.A</object-name>
+  <object-name>IPV-31i.V</object-name>
+  <object-name>IPV-31i.G</object-name>
+  <object-name>IPV-31i.Prn</object-name>
+  <object-name>IPV-31i.T</object-name>
+  <object-name>IPV-31i.F</object-name>
+  <object-name>IPV-31i.S</object-name>
+  <object-name>IPV-31i.Rakurs</object-name>
+  <object-name>IPV-31i.CDM</object-name>
+  <object-name>IPV-31i.DrKvObz</object-name>
+  <object-name>IPV-31i.DrRuch</object-name>
+  <object-name>IPV-31i.DrMin</object-name>
+  <object-name>IPV-31i.DrMax1</object-name>
+  <object-name>IPV-31i.DrMax2</object-name>
+  <object-name>IPV-31i.StrobD</object-name>
+  <object-name>IPV-31i.RLSAzObz</object-name>
+  <object-name>IPV-31i.RLSAzObzM</object-name>
+  <object-name>IPV-31i.OTV</object-name>
+  <object-name>IPV-31i.PR</object-name>
+  <object-name>IPV-31i.W27R</object-name>
+  <object-name>IPV-31i.W60M</object-name>
+  <object-name>IPV-31i.W73</object-name>
+  <object-name>IPV-31i.WAB</object-name>
+  <object-name>IPV-31i.WKMG</object-name>
+  <object-name>IPV-31i.WS8</object-name>
+  <object-name>IPV-31i.WS24</object-name>
+  <object-name>IPV-31i.PBullet</object-name>
+  <object-name>IPV-31i.PBulletO</object-name>
+  <object-name>IPV-31i.PW1</object-name>
+  <object-name>IPV-31i.PW2</object-name>
+  <object-name>IPV-31i.PW3</object-name>
+  <object-name>IPV-31i.PW4</object-name>
+  <object-name>IPV-31i.PW5</object-name>
+  <object-name>IPV-31i.PW6</object-name>
+  <object-name>IPV-31i.PW1O</object-name>
+  <object-name>IPV-31i.PW2O</object-name>
+  <object-name>IPV-31i.PW3O</object-name>
+  <object-name>IPV-31i.PW4O</object-name>
+  <object-name>IPV-31i.PW5O</object-name>
+  <object-name>IPV-31i.PW6O</object-name>
+  <object-name>IPV-31i.PW1P</object-name>
+  <object-name>IPV-31i.PW2P</object-name>
+  <object-name>IPV-31i.PW3P</object-name>
+  <object-name>IPV-31i.PW4P</object-name>
+  <object-name>IPV-31i.PW5P</object-name>
+  <object-name>IPV-31i.PW6P</object-name>
+  <object-name>IPV-31i.BBline</object-name>
+  <object-name>IPV-31i.E01A</object-name>
+  <object-name>IPV-31i.E01B</object-name>
+  <object-name>IPV-31i.E01C</object-name>
+  <object-name>IPV-31i.E01D</object-name>
+  <object-name>IPV-31i.E01P</object-name>
+  <object-name>IPV-31i.E02A</object-name>
+  <object-name>IPV-31i.E02B</object-name>
+  <object-name>IPV-31i.E02C</object-name>
+  <object-name>IPV-31i.E02D</object-name>
+  <object-name>IPV-31i.E02P</object-name>
+  <object-name>IPV-31i.E03A</object-name>
+  <object-name>IPV-31i.E03B</object-name>
+  <object-name>IPV-31i.E03C</object-name>
+  <object-name>IPV-31i.E03D</object-name>
+  <object-name>IPV-31i.E03P</object-name>
+  <object-name>IPV-31i.E04A</object-name>
+  <object-name>IPV-31i.E04B</object-name>
+  <object-name>IPV-31i.E04C</object-name>
+  <object-name>IPV-31i.E04D</object-name>
+  <object-name>IPV-31i.E04P</object-name>
+  <object-name>IPV-31i.E05A</object-name>
+  <object-name>IPV-31i.E05B</object-name>
+  <object-name>IPV-31i.E05C</object-name>
+  <object-name>IPV-31i.E05D</object-name>
+  <object-name>IPV-31i.E05P</object-name>
+  <object-name>IPV-31i.E06A</object-name>
+  <object-name>IPV-31i.E06B</object-name>
+  <object-name>IPV-31i.E06C</object-name>
+  <object-name>IPV-31i.E06D</object-name>
+  <object-name>IPV-31i.E06P</object-name>
+  <object-name>IPV-31i.E07A</object-name>
+  <object-name>IPV-31i.E07B</object-name>
+  <object-name>IPV-31i.E07C</object-name>
+  <object-name>IPV-31i.E07D</object-name>
+  <object-name>IPV-31i.E07P</object-name>
+  <object-name>IPV-31i.E08A</object-name>
+  <object-name>IPV-31i.E08B</object-name>
+  <object-name>IPV-31i.E08C</object-name>
+  <object-name>IPV-31i.E08D</object-name>
+  <object-name>IPV-31i.E08P</object-name>
+  <object-name>IPV-31i.E09A</object-name>
+  <object-name>IPV-31i.E09B</object-name>
+  <object-name>IPV-31i.E09C</object-name>
+  <object-name>IPV-31i.E09D</object-name>
+  <object-name>IPV-31i.E09P</object-name>
+  <object-name>IPV-31i.E10A</object-name>
+  <object-name>IPV-31i.E10B</object-name>
+  <object-name>IPV-31i.E10C</object-name>
+  <object-name>IPV-31i.E10D</object-name>
+  <object-name>IPV-31i.E10P</object-name>
+  <object-name>IPV-31i.E11A</object-name>
+  <object-name>IPV-31i.E11B</object-name>
+  <object-name>IPV-31i.E11C</object-name>
+  <object-name>IPV-31i.E11D</object-name>
+  <object-name>IPV-31i.E11P</object-name>
+  <object-name>IPV-31i.E12A</object-name>
+  <object-name>IPV-31i.E12B</object-name>
+  <object-name>IPV-31i.E12C</object-name>
+  <object-name>IPV-31i.E12D</object-name>
+  <object-name>IPV-31i.E12P</object-name>
+  <object-name>IPV-31i.E13A</object-name>
+  <object-name>IPV-31i.E13B</object-name>
+  <object-name>IPV-31i.E13C</object-name>
+  <object-name>IPV-31i.E13D</object-name>
+  <object-name>IPV-31i.E13P</object-name>
+  <object-name>IPV-31i.E14A</object-name>
+  <object-name>IPV-31i.E14B</object-name>
+  <object-name>IPV-31i.E14C</object-name>
+  <object-name>IPV-31i.E14D</object-name>
+  <object-name>IPV-31i.E14P</object-name>
+  <object-name>IPV-31i.E15A</object-name>
+  <object-name>IPV-31i.E15B</object-name>
+  <object-name>IPV-31i.E15C</object-name>
+  <object-name>IPV-31i.E15D</object-name>
+  <object-name>IPV-31i.E15P</object-name>
+  <object-name>IPV-31i.E16A</object-name>
+  <object-name>IPV-31i.E16B</object-name>
+  <object-name>IPV-31i.E16C</object-name>
+  <object-name>IPV-31i.E16D</object-name>
+  <object-name>IPV-31i.E16P</object-name>
   <emission>
-   <red>1.0</red>
+   <red>  1.0</red>
    <green>1.0</green>
-   <blue>1.0</blue>
-   <factor-prop>mig29/controls/IPV/bright-norm</factor-prop>
+   <blue> 1.0</blue>
+   <factor-prop>/mig29/controls/IPV/bright-norm</factor-prop>
   </emission>
  </animation>
 
@@ -114,7 +253,7 @@
   <object-name>IPV-31i.PVS1</object-name>
   <condition>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
   </condition>
@@ -124,7 +263,7 @@
  <animation>
   <type>rotate</type>
   <object-name>IPV-31i.Siluet</object-name>
-  <property>mig29/instrumentation/KPP/roll-indicated-deg</property>
+  <property>/mig29/instrumentation/KPP/roll-indicated-deg</property>
   <axis>
    <x>-1</x>
    <y> 0</y>
@@ -136,7 +275,7 @@
  <animation>
   <type>translate</type>
   <object-name>IPV-31i.Pitch</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_tangage_L</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_tangage_L</property>
   <factor>0.001375</factor>
   <axis>
    <x> 0</x>
@@ -187,7 +326,7 @@
   <object-name>IPV-31i.PitchP-80</object-name>
   <object-name>IPV-31i.PitchP-90</object-name>
   <factor>0.001375</factor>
-  <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+  <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
   <axis>
    <x> 0</x>
    <y> 0</y>
@@ -202,15 +341,15 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>17</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-17</value>
     </greater-than>
    </and>
@@ -224,16 +363,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>27</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-7</value>
     </greater-than>
    </and>
@@ -248,16 +387,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>37</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>3</value>
     </greater-than>
    </and>
@@ -272,16 +411,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>47</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>13</value>
     </greater-than>
    </and>
@@ -296,16 +435,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>57</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>23</value>
     </greater-than>
    </and>
@@ -320,16 +459,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>67</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>33</value>
     </greater-than>
    </and>
@@ -344,16 +483,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>77</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>43</value>
     </greater-than>
    </and>
@@ -368,16 +507,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>87</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>53</value>
     </greater-than>
    </and>
@@ -392,16 +531,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>97</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>63</value>
     </greater-than>
    </and>
@@ -416,16 +555,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>107</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>73</value>
     </greater-than>
    </and>
@@ -440,16 +579,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>7</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-27</value>
     </greater-than>
    </and>
@@ -464,16 +603,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-3</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-37</value>
     </greater-than>
    </and>
@@ -488,16 +627,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-13</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-47</value>
     </greater-than>
    </and>
@@ -512,16 +651,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-23</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-57</value>
     </greater-than>
    </and>
@@ -536,16 +675,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-33</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-67</value>
     </greater-than>
    </and>
@@ -560,16 +699,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-43</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-77</value>
     </greater-than>
    </and>
@@ -584,16 +723,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-53</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-87</value>
     </greater-than>
    </and>
@@ -608,16 +747,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-63</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-97</value>
     </greater-than>
    </and>
@@ -632,16 +771,16 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-73</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-107</value>
     </greater-than>
    </and>
@@ -656,11 +795,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <greater-than-equals>
-     <property>mig29/instrumentation/US-1600/airspeed-kmh</property>
+     <property>/mig29/instrumentation/US-1600/airspeed-kmh</property>
      <value>1000</value>
     </greater-than-equals>
    </and>
@@ -673,11 +812,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <greater-than-equals>
-     <property>mig29/instrumentation/US-1600/airspeed-kmh</property>
+     <property>/mig29/instrumentation/US-1600/airspeed-kmh</property>
      <value>100</value>
     </greater-than-equals>
    </and>
@@ -689,7 +828,7 @@
   <object-name>IPV-31i.PS3</object-name>
   <condition>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
   </condition>
@@ -700,7 +839,7 @@
   <object-name>IPV-31i.PS4</object-name>
   <condition>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
   </condition>
@@ -709,7 +848,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PS1</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_airspeed</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_airspeed</property>
   <factor>0.0001</factor>
   <step>1000</step>
   <axis>
@@ -722,7 +861,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PS2</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_airspeed</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_airspeed</property>
   <factor>0.001</factor>
   <step>100</step>
   <axis>
@@ -735,7 +874,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PS3</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_airspeed</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_airspeed</property>
   <factor>0.01</factor>
   <step>10</step>
   <axis>
@@ -748,7 +887,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PS4</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_airspeed</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_airspeed</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -765,11 +904,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <greater-than-equals>
-     <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+     <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
      <value>10000</value>
     </greater-than-equals>
    </and>
@@ -782,11 +921,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <greater-than-equals>
-     <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+     <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
      <value>1000</value>
     </greater-than-equals>
    </and>
@@ -799,11 +938,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <greater-than-equals>
-     <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+     <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
      <value>100</value>
     </greater-than-equals>
    </and>
@@ -815,7 +954,7 @@
   <object-name>IPV-31i.PA4</object-name>
   <condition>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
   </condition>
@@ -826,7 +965,7 @@
   <object-name>IPV-31i.PA5</object-name>
   <condition>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
   </condition>
@@ -835,7 +974,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PA1</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
   <factor>0.00001</factor>
   <step>10000</step>
   <axis>
@@ -848,7 +987,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PA2</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
   <factor>0.0001</factor>
   <step>1000</step>
   <axis>
@@ -861,7 +1000,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PA3</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
   <factor>0.001</factor>
   <step>100</step>
   <axis>
@@ -874,7 +1013,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PA4</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
   <factor>0.01</factor>
   <step>10</step>
   <axis>
@@ -887,7 +1026,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PA5</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -903,11 +1042,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/R</property>
+     <property>/mig29/instrumentation/SEI-31/R</property>
      <value>1</value>
     </equals>
    </and>
@@ -917,7 +1056,7 @@
  <animation>
   <type>translate</type>
   <object-name>IPV-31i.PA2</object-name>
-  <property>mig29/systems/SEI-31/sda10000</property>
+  <property>/mig29/systems/SEI-31/sda10000</property>
   <factor>0.0035</factor>
   <axis>
    <x> 0</x>
@@ -929,7 +1068,7 @@
  <animation>
   <type>translate</type>
   <object-name>IPV-31i.PA3</object-name>
-  <property>mig29/systems/SEI-31/sda1000</property>
+  <property>/mig29/systems/SEI-31/sda1000</property>
   <factor>0.0035</factor>
   <axis>
    <x>0</x>
@@ -943,7 +1082,7 @@
   <object-name>IPV-31i.PA4</object-name>
   <object-name>IPV-31i.PA5</object-name>
   <object-name>IPV-31i.PAR</object-name>
-  <property>mig29/systems/SEI-31/sda100</property>
+  <property>/mig29/systems/SEI-31/sda100</property>
   <factor>0.0035</factor>
   <axis>
    <x> 0</x>
@@ -956,7 +1095,7 @@
  <animation>
   <type>translate</type>
   <object-name>IPV-31i.SMarker</object-name>
-  <property>mig29/instrumentation/SEI-31/RIS</property>
+  <property>/mig29/instrumentation/SEI-31/RIS</property>
   <factor>0.00325</factor>
   <axis>
    <x>0</x>
@@ -971,8 +1110,8 @@
   <object-name>IPV-31i.gr1</object-name>
   <object-name>IPV-31i.PH1</object-name>
   <object-name>IPV-31i.PH2</object-name>
-  <property>mig29/systems/SEI-31/heading1</property>
-  <factor>0.0015</factor>
+  <property>/mig29/systems/SEI-31/heading1</property>
+  <factor>0.001485</factor>
   <axis>
    <x> 0</x>
    <y>-1</y>
@@ -985,8 +1124,8 @@
   <object-name>IPV-31i.gr2</object-name>
   <object-name>IPV-31i.PH3</object-name>
   <object-name>IPV-31i.PH4</object-name>
-  <property>mig29/systems/SEI-31/heading2</property>
-  <factor>0.0015</factor>
+  <property>/mig29/systems/SEI-31/heading2</property>
+  <factor>0.001485</factor>
   <axis>
    <x> 0</x>
    <y>-1</y>
@@ -999,8 +1138,8 @@
   <object-name>IPV-31i.gr3</object-name>
   <object-name>IPV-31i.PH5</object-name>
   <object-name>IPV-31i.PH6</object-name>
-  <property>mig29/systems/SEI-31/heading3</property>
-  <factor>0.0015</factor>
+  <property>/mig29/systems/SEI-31/heading3</property>
+  <factor>0.001485</factor>
   <axis>
    <x> 0</x>
    <y>-1</y>
@@ -1008,34 +1147,10 @@
   </axis>
  </animation>
 
-<!--animation>
- <type>translate</type>
- <object-name>IPV-31i.gr4</object-name>
- <property>mig29/instrumentation/ILS-31/gr4</property>
- <factor>0.0025</factor>
- <axis>
-  <x> 0</x>
-  <y>-1</y>
-  <z> 0</z>
- </axis>
-</animation>
-
-<animation>
- <type>translate</type>
- <object-name>IPV-31i.gr5</object-name>
- <property>mig29/instrumentation/ILS-31/gr5</property>
- <factor>0.0025</factor>
- <axis>
-  <x> 0</x>
-  <y>-1</y>
-  <z> 0</z>
- </axis>
-</animation-->
-
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PH1</object-name>
-  <property>mig29/systems/SEI-31/heading1_num</property>
+  <property>/mig29/systems/SEI-31/heading1_num</property>
   <factor>0.01</factor>
   <step>10</step>
   <axis>
@@ -1047,7 +1162,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PH2</object-name>
-  <property>mig29/systems/SEI-31/heading1_num</property>
+  <property>/mig29/systems/SEI-31/heading1_num</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1060,7 +1175,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PH3</object-name>
-  <property>mig29/systems/SEI-31/heading2_num</property>
+  <property>/mig29/systems/SEI-31/heading2_num</property>
   <factor>0.01</factor>
   <step>10</step>
   <axis>
@@ -1072,7 +1187,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PH4</object-name>
-  <property>mig29/systems/SEI-31/heading2_num</property>
+  <property>/mig29/systems/SEI-31/heading2_num</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1085,7 +1200,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PH5</object-name>
-  <property>mig29/systems/SEI-31/heading3_num</property>
+  <property>/mig29/systems/SEI-31/heading3_num</property>
   <factor>0.01</factor>
   <step>10</step>
   <axis>
@@ -1097,7 +1212,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PH6</object-name>
-  <property>mig29/systems/SEI-31/heading3_num</property>
+  <property>/mig29/systems/SEI-31/heading3_num</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1115,13 +1230,13 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
-    <less-than>
-     <property>mig29/systems/SEI-31/heading2</property>
+    <less-than-equals>
+     <property>/mig29/systems/SEI-31/heading2</property>
      <value>10</value>
-    </less-than>
+    </less-than-equals>
    </and>
   </condition>
  </animation>
@@ -1134,13 +1249,13 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
-    <greater-than>
-     <property>mig29/systems/SEI-31/heading3</property>
+    <greater-than-equals>
+     <property>/mig29/systems/SEI-31/heading3</property>
      <value>-10</value>
-    </greater-than>
+    </greater-than-equals>
    </and>
   </condition>
  </animation>
@@ -1169,11 +1284,11 @@
   <condition>
    <and>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
    <greater-than>
-    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <property>/mig29/instrumentation/SEI-31/indicated-nav-mode</property>
     <value>0</value>
    </greater-than>
    </and>
@@ -1182,7 +1297,7 @@
  <animation>
   <type>translate</type>
   <object-name>IPV-31i.VM</object-name>
-  <property>mig29/instrumentation/SEI-31/VisorMetkaG</property>
+  <property>/mig29/instrumentation/SEI-31/VisorMetkaG</property>
   <factor>0.02225</factor>
   <axis>
    <x>0</x>
@@ -1193,7 +1308,7 @@
  <animation>
   <type>translate</type>
   <object-name>IPV-31i.VM</object-name>
-  <property>mig29/instrumentation/SEI-31/VisorMetkaV</property>
+  <property>/mig29/instrumentation/SEI-31/VisorMetkaV</property>
   <factor>0.02225</factor>
   <axis>
    <x>0</x>
@@ -1209,11 +1324,11 @@
   <condition>
    <and>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
    <equals>
-    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <property>/mig29/instrumentation/SEI-31/indicated-nav-mode</property>
     <value>2</value>
    </equals>
    </and>
@@ -1222,7 +1337,7 @@
  <animation>
   <type>translate</type>
   <object-name>IPV-31i.MKG</object-name>
-  <property>mig29/instrumentation/SEI-31/MetkaK</property>
+  <property>/mig29/instrumentation/SEI-31/MetkaK</property>
   <factor>0.02225</factor>
   <axis>
    <x>0</x>
@@ -1233,7 +1348,7 @@
  <animation>
   <type>translate</type>
   <object-name>IPV-31i.MKG</object-name>
-  <property>mig29/instrumentation/SEI-31/MetkaG</property>
+  <property>/mig29/instrumentation/SEI-31/MetkaG</property>
   <factor>0.02225</factor>
   <axis>
    <x>0</x>
@@ -1250,15 +1365,15 @@
   <condition>
    <and>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
    <equals>
-    <property>mig29/instrumentation/SEI-31/K</property>
+    <property>/mig29/instrumentation/SEI-31/K</property>
     <value>1</value>
    </equals>
    <equals>
-    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <property>/mig29/instrumentation/SEI-31/indicated-nav-mode</property>
     <value>2</value>
    </equals>
    </and>
@@ -1273,15 +1388,15 @@
   <condition>
    <and>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
    <equals>
-    <property>mig29/instrumentation/SEI-31/G</property>
+    <property>/mig29/instrumentation/SEI-31/G</property>
     <value>1</value>
    </equals>
    <equals>
-    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <property>/mig29/instrumentation/SEI-31/indicated-nav-mode</property>
     <value>2</value>
    </equals>
    </and>
@@ -1296,15 +1411,15 @@
   <condition>
    <and>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
    <greater-than-equals>
-    <property>mig29/instrumentation/SEI-31/PPM_Aer_dist</property>
+    <property>/mig29/instrumentation/SEI-31/PPM_Aer_dist</property>
     <value>100</value>
    </greater-than-equals>
    <greater-than>
-    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <property>/mig29/instrumentation/SEI-31/indicated-nav-mode</property>
     <value>0</value>
    </greater-than>
    </and>
@@ -1316,15 +1431,15 @@
   <condition>
    <and>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
    <greater-than-equals>
-    <property>mig29/instrumentation/SEI-31/PPM_Aer_dist</property>
+    <property>/mig29/instrumentation/SEI-31/PPM_Aer_dist</property>
     <value>10</value>
    </greater-than-equals>
    <greater-than>
-    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <property>/mig29/instrumentation/SEI-31/indicated-nav-mode</property>
     <value>0</value>
    </greater-than>
    </and>
@@ -1338,11 +1453,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <greater-than>
-     <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+     <property>/mig29/instrumentation/SEI-31/indicated-nav-mode</property>
      <value>0</value>
     </greater-than>
    </and>
@@ -1352,7 +1467,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PDd1</object-name>
-  <property>mig29/instrumentation/SEI-31/PPM_Aer_dist_100</property>
+  <property>/mig29/instrumentation/SEI-31/PPM_Aer_dist_100</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1364,7 +1479,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PDd2</object-name>
-  <property>mig29/instrumentation/SEI-31/PPM_Aer_dist_10</property>
+  <property>/mig29/instrumentation/SEI-31/PPM_Aer_dist_10</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1376,7 +1491,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PDd3</object-name>
-  <property>mig29/instrumentation/SEI-31/PPM_Aer_dist_1</property>
+  <property>/mig29/instrumentation/SEI-31/PPM_Aer_dist_1</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1388,7 +1503,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>IPV-31i.PDd4</object-name>
-  <property>mig29/instrumentation/SEI-31/PPM_Aer_dist_0</property>
+  <property>/mig29/instrumentation/SEI-31/PPM_Aer_dist_0</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1399,19 +1514,292 @@
  </animation>
 
 <!-- Боевые элементы -->
-
-<!-- Ракурс цели -->
- <!--animation>
+<!-- Шкала дальности -->
+ <animation>
   <type>select</type>
-  <object-name>IPV-31i.RC</object-name>
+  <object-name>IPV-31i.leftline</object-name>
+  <object-name>IPV-31i.leftlineA</object-name>
+  <object-name>IPV-31i.PD0</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/m</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_scale</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- Отметки дальности -->
+<!-- 5 км -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PD5</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_N</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- 10 км -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PD10</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_N</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- 25 км -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PD25</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_N</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- 50 км -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PD50</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_N</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- 100 км -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PD100</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_N</property>
+     <value>5</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- Маркер дальности -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.CDM</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_M</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.CDM</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/Range</property>
+  <factor>0.11</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Дальности разрешенные -->
+<!-- Дальность разрешенная максимальная1 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.DrMax1</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_O</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.DrMax1</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/RangeMax1</property>
+  <factor>0.11</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Дальность разрешенная максимальная2 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.DrMax2</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_O</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.DrMax2</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/RangeMax2</property>
+  <factor>0.11</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Дальность разрешенная минимальная -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.DrMin</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_O</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.DrMin</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/RangeMin</property>
+  <factor>0.11</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Дальность ручная -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.DrRuch</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_O</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.DrRuch</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/RangeManual</property>
+  <factor>0.11</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Дальность Н019 в режиме квазиобзора -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.DrKvObz</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_O</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.DrKvObz</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/RangeQuasiScan</property>
+  <factor>0.11</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Ракурс цели -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.Rakurs</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/RakursA</property>
      <value>1</value>
     </equals>
    </and>
@@ -1419,8 +1807,8 @@
  </animation>
  <animation>
   <type>rotate</type>
-  <object-name>IPV-31i.RC</object-name>
-  <property>mig29/instrumentation/SEI-31/rc</property>
+  <object-name>IPV-31i.Rakurs</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/Rakurs</property>
   <factor>1</factor>
   <center>
    <x-m> 0.0</x-m>
@@ -1429,9 +1817,2556 @@
   </center>
   <axis>
    <x>-1</x>
-   <y>0</y>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+<!-- Зона обзора Н019 по азимуту -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.RLSAzObz</object-name>
+  <object-name>IPV-31i.RLSAzObzM</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/RLSAzObz</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.RLSAzObzM</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/RLSAzObzM</property>
+  <factor>0.1</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
    <z>0</z>
   </axis>
- </animation-->
+ </animation>
+<!-- Полусфера атаки -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PPS</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/PLA</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.ZPS</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/PLA</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <!-- Ведущий канал -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.RL</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/VK</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.TP</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/VK</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- Активная помеха -->
+  <animation>
+  <type>select</type>
+  <object-name>IPV-31i.AP</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/AP</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- Пассивная помеха -->
+  <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PP</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/PP</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- Атака -->
+  <animation>
+  <type>select</type>
+  <object-name>IPV-31i.A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Atack</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- Вертикаль -->
+  <animation>
+  <type>select</type>
+  <object-name>IPV-31i.V</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Vertical</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- Горка -->
+  <animation>
+  <type>select</type>
+  <object-name>IPV-31i.G</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Gorka</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- Перенацеливание -->
+  <animation>
+  <type>select</type>
+  <object-name>IPV-31i.Prn</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Prn</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- Конец наведения -->
+  <animation>
+  <type>select</type>
+  <object-name>IPV-31i.T</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/ReAiming</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- Форсаж -->
+  <animation>
+  <type>select</type>
+  <object-name>IPV-31i.F</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/AftBurn</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <!-- Свой -->
+  <animation>
+  <type>select</type>
+  <object-name>IPV-31i.S</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Friend</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <!-- Отворот -->
+  <animation>
+  <type>select</type>
+  <object-name>IPV-31i.OTV</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Otvorot</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <!-- Пуск разрешон -->
+  <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PR</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/PR</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- Строб дальности -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.StrobD</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/Strob</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.StrobD</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/StrobG</property>
+  <factor>0.47</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+  <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.StrobD</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/StrobV</property>
+  <factor>0.47</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Тип выбраного оружия -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.W27R</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponType</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.W60M</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponType</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.W73</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponType</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.WAB</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponType</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.WKMG</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponType</property>
+     <value>5</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.WS8</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponType</property>
+     <value>6</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.WS24</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponType</property>
+     <value>7</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW1</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady1</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW2</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady2</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW3</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady3</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW4</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady4</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW5</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady5</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW6</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady6</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW1O</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady1O</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW2O</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady2O</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW3O</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady3O</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW4O</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady4O</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW5O</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady5O</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW6O</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady6O</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW1P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady1P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW2P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady2P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW3P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady3P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW4P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady4P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW5P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady5P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PW6P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady6P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+<!-- Боекомплект ВПУ -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.PBullet</object-name>
+  <object-name>IPV-31i.PBulletO</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/VPU</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>textranslate</type>
+  <object-name>IPV-31i.PBullet</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/VPU_N</property>
+  <factor>0.1</factor>
+  <step>1</step>
+  <axis>
+   <x> 0</x>
+   <y>-1</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+<!-- Отметки целей -->
+<!-- 1 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E01A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E1</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E01B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E1</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E01C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E1</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E01D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E1</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E01P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E1P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E01A</object-name>
+  <object-name>IPV-31i.E01B</object-name>
+  <object-name>IPV-31i.E01C</object-name>
+  <object-name>IPV-31i.E01D</object-name>
+  <object-name>IPV-31i.E01P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E1G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E01A</object-name>
+  <object-name>IPV-31i.E01B</object-name>
+  <object-name>IPV-31i.E01C</object-name>
+  <object-name>IPV-31i.E01D</object-name>
+  <object-name>IPV-31i.E01P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E1V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 2 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E02A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E2</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E02B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E2</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E02C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E2</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E02D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E2</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E02P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E2P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E02A</object-name>
+  <object-name>IPV-31i.E02B</object-name>
+  <object-name>IPV-31i.E02C</object-name>
+  <object-name>IPV-31i.E02D</object-name>
+  <object-name>IPV-31i.E02P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E2G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E02A</object-name>
+  <object-name>IPV-31i.E02B</object-name>
+  <object-name>IPV-31i.E02C</object-name>
+  <object-name>IPV-31i.E02D</object-name>
+  <object-name>IPV-31i.E02P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E2V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 3 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E03A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E3</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E03B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E3</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E03C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E3</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E03D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E3</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E03P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E3P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E03A</object-name>
+  <object-name>IPV-31i.E03B</object-name>
+  <object-name>IPV-31i.E03C</object-name>
+  <object-name>IPV-31i.E03D</object-name>
+  <object-name>IPV-31i.E03P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E3G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E03A</object-name>
+  <object-name>IPV-31i.E03B</object-name>
+  <object-name>IPV-31i.E03C</object-name>
+  <object-name>IPV-31i.E03D</object-name>
+  <object-name>IPV-31i.E03P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E3V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 4 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E04A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E4</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E04B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E4</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E04C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E4</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E04D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E4</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E04P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E4P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E04A</object-name>
+  <object-name>IPV-31i.E04B</object-name>
+  <object-name>IPV-31i.E04C</object-name>
+  <object-name>IPV-31i.E04D</object-name>
+  <object-name>IPV-31i.E04P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E4G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E04A</object-name>
+  <object-name>IPV-31i.E04B</object-name>
+  <object-name>IPV-31i.E04C</object-name>
+  <object-name>IPV-31i.E04D</object-name>
+  <object-name>IPV-31i.E04P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E4V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 5 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E05A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E5</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E05B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E5</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E05C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E5</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E05D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E5</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E05P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E5P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E05A</object-name>
+  <object-name>IPV-31i.E05B</object-name>
+  <object-name>IPV-31i.E05C</object-name>
+  <object-name>IPV-31i.E05D</object-name>
+  <object-name>IPV-31i.E05P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E5G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E05A</object-name>
+  <object-name>IPV-31i.E05B</object-name>
+  <object-name>IPV-31i.E05C</object-name>
+  <object-name>IPV-31i.E05D</object-name>
+  <object-name>IPV-31i.E05P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E5V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 6 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E06A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E6</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E06B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E6</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E06C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E6</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E06D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E6</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E06P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E6P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E06A</object-name>
+  <object-name>IPV-31i.E06B</object-name>
+  <object-name>IPV-31i.E06C</object-name>
+  <object-name>IPV-31i.E06D</object-name>
+  <object-name>IPV-31i.E06P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E6G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E06A</object-name>
+  <object-name>IPV-31i.E06B</object-name>
+  <object-name>IPV-31i.E06C</object-name>
+  <object-name>IPV-31i.E06D</object-name>
+  <object-name>IPV-31i.E06P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E6V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 7 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E07A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E7</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E07B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E7</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E07C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E7</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E07D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E7</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E07P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E7P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E07A</object-name>
+  <object-name>IPV-31i.E07B</object-name>
+  <object-name>IPV-31i.E07C</object-name>
+  <object-name>IPV-31i.E07D</object-name>
+  <object-name>IPV-31i.E07P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E7G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E07A</object-name>
+  <object-name>IPV-31i.E07B</object-name>
+  <object-name>IPV-31i.E07C</object-name>
+  <object-name>IPV-31i.E07D</object-name>
+  <object-name>IPV-31i.E07P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E7V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 8 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E08A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E8</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E08B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E8</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E08C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E8</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E08D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E8</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E08P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E8P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E08A</object-name>
+  <object-name>IPV-31i.E08B</object-name>
+  <object-name>IPV-31i.E08C</object-name>
+  <object-name>IPV-31i.E08D</object-name>
+  <object-name>IPV-31i.E08P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E8G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E08A</object-name>
+  <object-name>IPV-31i.E08B</object-name>
+  <object-name>IPV-31i.E08C</object-name>
+  <object-name>IPV-31i.E08D</object-name>
+  <object-name>IPV-31i.E08P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E8V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 9 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E09A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E9</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E09B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E9</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E09C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E9</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E09D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E9</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E09P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E9P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E09A</object-name>
+  <object-name>IPV-31i.E09B</object-name>
+  <object-name>IPV-31i.E09C</object-name>
+  <object-name>IPV-31i.E09D</object-name>
+  <object-name>IPV-31i.E09P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E9G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E09A</object-name>
+  <object-name>IPV-31i.E09B</object-name>
+  <object-name>IPV-31i.E09C</object-name>
+  <object-name>IPV-31i.E09D</object-name>
+  <object-name>IPV-31i.E09P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E9V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 10 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E10A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E10</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E10B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E10</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E10C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E10</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E10D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E10</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E10P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E10P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E10A</object-name>
+  <object-name>IPV-31i.E10B</object-name>
+  <object-name>IPV-31i.E10C</object-name>
+  <object-name>IPV-31i.E10D</object-name>
+  <object-name>IPV-31i.E10P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E10G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E10A</object-name>
+  <object-name>IPV-31i.E10B</object-name>
+  <object-name>IPV-31i.E10C</object-name>
+  <object-name>IPV-31i.E10D</object-name>
+  <object-name>IPV-31i.E10P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E10V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 11 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E11A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E11</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E11B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E11</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E11C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E11</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E11D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E11</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E11P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E11P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E11A</object-name>
+  <object-name>IPV-31i.E11B</object-name>
+  <object-name>IPV-31i.E11C</object-name>
+  <object-name>IPV-31i.E11D</object-name>
+  <object-name>IPV-31i.E11P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E11G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E11A</object-name>
+  <object-name>IPV-31i.E11B</object-name>
+  <object-name>IPV-31i.E11C</object-name>
+  <object-name>IPV-31i.E11D</object-name>
+  <object-name>IPV-31i.E11P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E11V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 12 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E12A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E12</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E12B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E12</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E12C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E12</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E12D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E12</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E12P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E12P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E12A</object-name>
+  <object-name>IPV-31i.E12B</object-name>
+  <object-name>IPV-31i.E12C</object-name>
+  <object-name>IPV-31i.E12D</object-name>
+  <object-name>IPV-31i.E12P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E12G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E12A</object-name>
+  <object-name>IPV-31i.E12B</object-name>
+  <object-name>IPV-31i.E12C</object-name>
+  <object-name>IPV-31i.E12D</object-name>
+  <object-name>IPV-31i.E12P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E12V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 13 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E13A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E13</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E13B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E13</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E13C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E13</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E13D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E13</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E13P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E13P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E13A</object-name>
+  <object-name>IPV-31i.E13B</object-name>
+  <object-name>IPV-31i.E13C</object-name>
+  <object-name>IPV-31i.E13D</object-name>
+  <object-name>IPV-31i.E13P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E13G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E13A</object-name>
+  <object-name>IPV-31i.E13B</object-name>
+  <object-name>IPV-31i.E13C</object-name>
+  <object-name>IPV-31i.E13D</object-name>
+  <object-name>IPV-31i.E13P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E13V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 14 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E14A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E14</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E14B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E14</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E14C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E14</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E14D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E14</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E14P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E14P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E14A</object-name>
+  <object-name>IPV-31i.E14B</object-name>
+  <object-name>IPV-31i.E14C</object-name>
+  <object-name>IPV-31i.E14D</object-name>
+  <object-name>IPV-31i.E14P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E14G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E14A</object-name>
+  <object-name>IPV-31i.E14B</object-name>
+  <object-name>IPV-31i.E14C</object-name>
+  <object-name>IPV-31i.E14D</object-name>
+  <object-name>IPV-31i.E14P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E14V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 15 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E15A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E15</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E15B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E15</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E15C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E15</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E15D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E15</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E15P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E15P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E15A</object-name>
+  <object-name>IPV-31i.E15B</object-name>
+  <object-name>IPV-31i.E15C</object-name>
+  <object-name>IPV-31i.E15D</object-name>
+  <object-name>IPV-31i.E15P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E15G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E15A</object-name>
+  <object-name>IPV-31i.E15B</object-name>
+  <object-name>IPV-31i.E15C</object-name>
+  <object-name>IPV-31i.E15D</object-name>
+  <object-name>IPV-31i.E15P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E15V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 16 -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E16A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E16</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E16B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E16</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E16C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E16</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E16D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E16</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.E16P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E16P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E16A</object-name>
+  <object-name>IPV-31i.E16B</object-name>
+  <object-name>IPV-31i.E16C</object-name>
+  <object-name>IPV-31i.E16D</object-name>
+  <object-name>IPV-31i.E16P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E16G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>IPV-31i.E16A</object-name>
+  <object-name>IPV-31i.E16B</object-name>
+  <object-name>IPV-31i.E16C</object-name>
+  <object-name>IPV-31i.E16D</object-name>
+  <object-name>IPV-31i.E16P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E16V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Линии-границы зоны сканирования в режиме ВС -->
+ <animation>
+  <type>select</type>
+  <object-name>IPV-31i.BBline</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/mode</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
 
 </PropertyList>

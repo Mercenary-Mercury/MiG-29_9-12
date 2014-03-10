@@ -2,7 +2,7 @@
 # Январь 2012, Сергей "Mercenary_Mercury" Салов
 
 var heading = 0;	# Курс
-var heading_int = 0;	# Курс (целое значение, с точностью то демяти градусов)
+var heading_int = 0;	# Курс (целое значение, с точностью то деcяти градусов)
 var heading1 = 0;	# Смещение 1 отметки (центральная)
 var heading2 = 0;	# Смещение 2 отметки (левая)
 var heading3 = 0;	# Смещение 3 отметки (правая)
@@ -12,16 +12,27 @@ var heading3_num = 0;	# Числовое значение 3 отметки (пр
 
  var SEI_31_gyro = func {
   heading = getprop("/mig29/instrumentation/PNP-72-12/heading-indicated-deg");		# Получаем текущий курс
-  heading_int = int(heading/10);				# Делим на 10, и получаем целую часть
-  heading1_num = heading_int;					# Полученое значение будет первым значением курса для отображения
-  heading_int = (heading_int*10);				# Востанавливаем значение курса до полного вида
-  heading1 = (heading-heading_int);				# Получаем смещение первой отметки
-  heading2 = (heading1+10);					# Получаем смещение второй отметки
-  heading3 = (heading1-10);					# Получаем смещение третьей отметки
-  if ( heading_int < 10 ) { heading2_num=35; }			# Получаем отображаемое значение курса для второй отметки
-   else { heading2_num=(heading1_num-1); }
-  if ( heading_int >= 350 ) { heading3_num=0; }		# Получаем отображаемое значение курса для третьей отметки
-   else { heading3_num=(heading1_num+1); }
+  if (heading == nil) {var heading = 0;}
+  if (heading == 0) {
+   var heading1 = 0;
+   var heading2 = 350;
+   var heading3 = 10;
+   var heading1_num = 0;
+   var heading2_num = 35;
+   var heading3_num = 1;
+  }
+  else {
+   var heading_int = int(heading/10);				# Делим на 10, и получаем целую часть
+   var heading1_num = heading_int;				# Полученое значение будет первым значением курса для отображения
+   var heading_int = (heading_int*10);				# Востанавливаем значение курса до полного вида
+   var heading1 = (heading-heading_int);			# Получаем смещение первой отметки
+   var heading2 = (heading1+10);				# Получаем смещение второй отметки
+   var heading3 = (heading1-10);				# Получаем смещение третьей отметки
+   if (heading_int < 10) {var heading2_num=35;}			# Получаем отображаемое значение курса для второй отметки
+    else {var heading2_num=(heading1_num-1);}
+   if (heading_int >= 350) {var heading3_num=0;}		# Получаем отображаемое значение курса для третьей отметки
+    else {var heading3_num=(heading1_num+1);}
+   }
   setprop("/mig29/systems/SEI-31/heading1", heading1);
   setprop("/mig29/systems/SEI-31/heading2", heading2);
   setprop("/mig29/systems/SEI-31/heading3", heading3);

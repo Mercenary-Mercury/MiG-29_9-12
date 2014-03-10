@@ -145,13 +145,94 @@
   <object-name>ILS-31i.PW4P</object-name>
   <object-name>ILS-31i.PW5P</object-name>
   <object-name>ILS-31i.PW6P</object-name>
+  <object-name>ILS-31i.BBline</object-name>
+  <object-name>ILS-31i.E01A</object-name>
+  <object-name>ILS-31i.E01B</object-name>
+  <object-name>ILS-31i.E01C</object-name>
+  <object-name>ILS-31i.E01D</object-name>
+  <object-name>ILS-31i.E01P</object-name>
+  <object-name>ILS-31i.E02A</object-name>
+  <object-name>ILS-31i.E02B</object-name>
+  <object-name>ILS-31i.E02C</object-name>
+  <object-name>ILS-31i.E02D</object-name>
+  <object-name>ILS-31i.E02P</object-name>
+  <object-name>ILS-31i.E03A</object-name>
+  <object-name>ILS-31i.E03B</object-name>
+  <object-name>ILS-31i.E03C</object-name>
+  <object-name>ILS-31i.E03D</object-name>
+  <object-name>ILS-31i.E03P</object-name>
+  <object-name>ILS-31i.E04A</object-name>
+  <object-name>ILS-31i.E04B</object-name>
+  <object-name>ILS-31i.E04C</object-name>
+  <object-name>ILS-31i.E04D</object-name>
+  <object-name>ILS-31i.E04P</object-name>
+  <object-name>ILS-31i.E05A</object-name>
+  <object-name>ILS-31i.E05B</object-name>
+  <object-name>ILS-31i.E05C</object-name>
+  <object-name>ILS-31i.E05D</object-name>
+  <object-name>ILS-31i.E05P</object-name>
+  <object-name>ILS-31i.E06A</object-name>
+  <object-name>ILS-31i.E06B</object-name>
+  <object-name>ILS-31i.E06C</object-name>
+  <object-name>ILS-31i.E06D</object-name>
+  <object-name>ILS-31i.E06P</object-name>
+  <object-name>ILS-31i.E07A</object-name>
+  <object-name>ILS-31i.E07B</object-name>
+  <object-name>ILS-31i.E07C</object-name>
+  <object-name>ILS-31i.E07D</object-name>
+  <object-name>ILS-31i.E07P</object-name>
+  <object-name>ILS-31i.E08A</object-name>
+  <object-name>ILS-31i.E08B</object-name>
+  <object-name>ILS-31i.E08C</object-name>
+  <object-name>ILS-31i.E08D</object-name>
+  <object-name>ILS-31i.E08P</object-name>
+  <object-name>ILS-31i.E09A</object-name>
+  <object-name>ILS-31i.E09B</object-name>
+  <object-name>ILS-31i.E09C</object-name>
+  <object-name>ILS-31i.E09D</object-name>
+  <object-name>ILS-31i.E09P</object-name>
+  <object-name>ILS-31i.E10A</object-name>
+  <object-name>ILS-31i.E10B</object-name>
+  <object-name>ILS-31i.E10C</object-name>
+  <object-name>ILS-31i.E10D</object-name>
+  <object-name>ILS-31i.E10P</object-name>
+  <object-name>ILS-31i.E11A</object-name>
+  <object-name>ILS-31i.E11B</object-name>
+  <object-name>ILS-31i.E11C</object-name>
+  <object-name>ILS-31i.E11D</object-name>
+  <object-name>ILS-31i.E11P</object-name>
+  <object-name>ILS-31i.E12A</object-name>
+  <object-name>ILS-31i.E12B</object-name>
+  <object-name>ILS-31i.E12C</object-name>
+  <object-name>ILS-31i.E12D</object-name>
+  <object-name>ILS-31i.E12P</object-name>
+  <object-name>ILS-31i.E13A</object-name>
+  <object-name>ILS-31i.E13B</object-name>
+  <object-name>ILS-31i.E13C</object-name>
+  <object-name>ILS-31i.E13D</object-name>
+  <object-name>ILS-31i.E13P</object-name>
+  <object-name>ILS-31i.E14A</object-name>
+  <object-name>ILS-31i.E14B</object-name>
+  <object-name>ILS-31i.E14C</object-name>
+  <object-name>ILS-31i.E14D</object-name>
+  <object-name>ILS-31i.E14P</object-name>
+  <object-name>ILS-31i.E15A</object-name>
+  <object-name>ILS-31i.E15B</object-name>
+  <object-name>ILS-31i.E15C</object-name>
+  <object-name>ILS-31i.E15D</object-name>
+  <object-name>ILS-31i.E15P</object-name>
+  <object-name>ILS-31i.E16A</object-name>
+  <object-name>ILS-31i.E16B</object-name>
+  <object-name>ILS-31i.E16C</object-name>
+  <object-name>ILS-31i.E16D</object-name>
+  <object-name>ILS-31i.E16P</object-name>
   <emission>
-   <red>1.0</red>
+   <red>  1.0</red>
    <green>1.0</green>
-   <blue>1.0</blue>
-   <factor-prop>mig29/controls/ILS-31/bright</factor-prop>
+   <blue> 1.0</blue>
+   <factor-prop>/mig29/controls/ILS-31/bright</factor-prop>
   </emission>
-  <texture-prop>mig29/systems/SEI-31/texture</texture-prop>
+  <texture-prop>/mig29/systems/SEI-31/texture</texture-prop>
  </animation>
 
  <animation>
@@ -174,11 +255,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
    </and>
@@ -189,7 +270,7 @@
  <animation>
   <type>rotate</type>
   <object-name>ILS-31i.Siluet</object-name>
-  <property>mig29/instrumentation/KPP/roll-indicated-deg</property>
+  <property>/mig29/instrumentation/KPP/roll-indicated-deg</property>
   <axis>
    <x>-1</x>
    <y> 0</y>
@@ -200,20 +281,8 @@
 <!-- Индикация тангажа -->
  <animation>
   <type>translate</type>
-  <!--condition>
-   <and>
-    <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
-     <value>21</value>
-    </less-than>
-    <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
-     <value>-21</value>
-    </greater-than>
-   </and>
-  </condition-->
   <object-name>ILS-31i.Pitch</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_tangage_L</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_tangage_L</property>
   <factor>0.00275</factor>
   <axis>
    <x> 0</x>
@@ -264,7 +333,7 @@
   <object-name>ILS-31i.PitchP-80</object-name>
   <object-name>ILS-31i.PitchP-90</object-name>
   <factor>0.00275</factor>
-  <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+  <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
   <axis>
    <x> 0</x>
    <y> 0</y>
@@ -279,19 +348,19 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>17</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-17</value>
     </greater-than>
    </and>
@@ -305,20 +374,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>27</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-7</value>
     </greater-than>
    </and>
@@ -333,20 +402,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>37</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>3</value>
     </greater-than>
    </and>
@@ -361,20 +430,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>47</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>13</value>
     </greater-than>
    </and>
@@ -389,20 +458,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>57</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>23</value>
     </greater-than>
    </and>
@@ -417,20 +486,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>67</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>33</value>
     </greater-than>
    </and>
@@ -445,20 +514,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>77</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>43</value>
     </greater-than>
    </and>
@@ -473,20 +542,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>87</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>53</value>
     </greater-than>
    </and>
@@ -501,20 +570,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>97</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>63</value>
     </greater-than>
    </and>
@@ -529,20 +598,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>107</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>73</value>
     </greater-than>
    </and>
@@ -557,20 +626,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>7</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-27</value>
     </greater-than>
    </and>
@@ -585,20 +654,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-3</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-37</value>
     </greater-than>
    </and>
@@ -613,20 +682,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-13</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-47</value>
     </greater-than>
    </and>
@@ -641,20 +710,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-23</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-57</value>
     </greater-than>
    </and>
@@ -669,20 +738,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-33</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-67</value>
     </greater-than>
    </and>
@@ -697,20 +766,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-43</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-77</value>
     </greater-than>
    </and>
@@ -725,20 +794,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-53</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-87</value>
     </greater-than>
    </and>
@@ -753,20 +822,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-63</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-97</value>
     </greater-than>
    </and>
@@ -781,20 +850,20 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <and>
     <less-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-73</value>
     </less-than>
     <greater-than>
-     <property>mig29/instrumentation/KPP/pitch-indicated-deg</property>
+     <property>/mig29/instrumentation/KPP/pitch-indicated-deg</property>
      <value>-107</value>
     </greater-than>
    </and>
@@ -809,15 +878,15 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <greater-than-equals>
-     <property>mig29/instrumentation/US-1600/airspeed-kmh</property>
+     <property>/mig29/instrumentation/US-1600/airspeed-kmh</property>
      <value>1000</value>
     </greater-than-equals>
    </and>
@@ -830,15 +899,15 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <greater-than-equals>
-     <property>mig29/instrumentation/US-1600/airspeed-kmh</property>
+     <property>/mig29/instrumentation/US-1600/airspeed-kmh</property>
      <value>100</value>
     </greater-than-equals>
    </and>
@@ -851,11 +920,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
    </and>
@@ -868,11 +937,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
    </and>
@@ -882,7 +951,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PS1</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_airspeed</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_airspeed</property>
   <factor>0.0001</factor>
   <step>1000</step>
   <axis>
@@ -895,7 +964,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PS2</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_airspeed</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_airspeed</property>
   <factor>0.001</factor>
   <step>100</step>
   <axis>
@@ -908,7 +977,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PS3</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_airspeed</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_airspeed</property>
   <factor>0.01</factor>
   <step>10</step>
   <axis>
@@ -921,7 +990,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PS4</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_airspeed</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_airspeed</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -938,15 +1007,15 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <greater-than-equals>
-     <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+     <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
      <value>10000</value>
     </greater-than-equals>
    </and>
@@ -959,15 +1028,15 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <greater-than-equals>
-     <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+     <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
      <value>1000</value>
     </greater-than-equals>
    </and>
@@ -980,15 +1049,15 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <greater-than-equals>
-     <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+     <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
      <value>100</value>
     </greater-than-equals>
    </and>
@@ -1001,11 +1070,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
    </and>
@@ -1018,11 +1087,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
    </and>
@@ -1032,7 +1101,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PA1</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
   <factor>0.00001</factor>
   <step>10000</step>
   <axis>
@@ -1045,7 +1114,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PA2</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
   <factor>0.0001</factor>
   <step>1000</step>
   <axis>
@@ -1058,7 +1127,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PA3</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
   <factor>0.001</factor>
   <step>100</step>
   <axis>
@@ -1071,7 +1140,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PA4</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
   <factor>0.01</factor>
   <step>10</step>
   <axis>
@@ -1084,7 +1153,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PA5</object-name>
-  <property>mig29/instrumentation/SEI-31/indicated_altitude</property>
+  <property>/mig29/instrumentation/SEI-31/indicated_altitude</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1100,15 +1169,15 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/R</property>
+     <property>/mig29/instrumentation/SEI-31/R</property>
      <value>1</value>
     </equals>
    </and>
@@ -1118,7 +1187,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.PA2</object-name>
-  <property>mig29/systems/SEI-31/sda10000</property>
+  <property>/mig29/systems/SEI-31/sda10000</property>
   <factor>0.007</factor>
   <axis>
    <x> 0</x>
@@ -1130,7 +1199,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.PA3</object-name>
-  <property>mig29/systems/SEI-31/sda1000</property>
+  <property>/mig29/systems/SEI-31/sda1000</property>
   <factor>0.007</factor>
   <axis>
    <x>0</x>
@@ -1144,7 +1213,7 @@
   <object-name>ILS-31i.PA4</object-name>
   <object-name>ILS-31i.PA5</object-name>
   <object-name>ILS-31i.PAR</object-name>
-  <property>mig29/systems/SEI-31/sda100</property>
+  <property>/mig29/systems/SEI-31/sda100</property>
   <factor>0.007</factor>
   <axis>
    <x> 0</x>
@@ -1157,7 +1226,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.SMarker</object-name>
-  <property>mig29/instrumentation/SEI-31/RIS</property>
+  <property>/mig29/instrumentation/SEI-31/RIS</property>
   <factor>0.0065</factor>
   <axis>
    <x>0</x>
@@ -1172,8 +1241,8 @@
   <object-name>ILS-31i.gr1</object-name>
   <object-name>ILS-31i.PH1</object-name>
   <object-name>ILS-31i.PH2</object-name>
-  <property>mig29/systems/SEI-31/heading1</property>
-  <factor>0.003</factor>
+  <property>/mig29/systems/SEI-31/heading1</property>
+  <factor>0.00297</factor>
   <axis>
    <x> 0</x>
    <y>-1</y>
@@ -1186,8 +1255,8 @@
   <object-name>ILS-31i.gr2</object-name>
   <object-name>ILS-31i.PH3</object-name>
   <object-name>ILS-31i.PH4</object-name>
-  <property>mig29/systems/SEI-31/heading2</property>
-  <factor>0.003</factor>
+  <property>/mig29/systems/SEI-31/heading2</property>
+  <factor>0.00297</factor>
   <axis>
    <x> 0</x>
    <y>-1</y>
@@ -1200,8 +1269,8 @@
   <object-name>ILS-31i.gr3</object-name>
   <object-name>ILS-31i.PH5</object-name>
   <object-name>ILS-31i.PH6</object-name>
-  <property>mig29/systems/SEI-31/heading3</property>
-  <factor>0.003</factor>
+  <property>/mig29/systems/SEI-31/heading3</property>
+  <factor>0.00297</factor>
   <axis>
    <x> 0</x>
    <y>-1</y>
@@ -1209,34 +1278,10 @@
   </axis>
  </animation>
 
-<!--animation>
- <type>translate</type>
- <object-name>ILS-31i.gr4</object-name>
- <property>mig29/instrumentation/ILS-31/gr4</property>
- <factor>0.005</factor>
- <axis>
-  <x> 0</x>
-  <y>-1</y>
-  <z> 0</z>
- </axis>
-</animation>
-
-<animation>
- <type>translate</type>
- <object-name>ILS-31i.gr5</object-name>
- <property>mig29/instrumentation/ILS-31/gr5</property>
- <factor>0.005</factor>
- <axis>
-  <x> 0</x>
-  <y>-1</y>
-  <z> 0</z>
- </axis>
-</animation-->
-
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PH1</object-name>
-  <property>mig29/systems/SEI-31/heading1_num</property>
+  <property>/mig29/systems/SEI-31/heading1_num</property>
   <factor>0.01</factor>
   <step>10</step>
   <axis>
@@ -1248,7 +1293,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PH2</object-name>
-  <property>mig29/systems/SEI-31/heading1_num</property>
+  <property>/mig29/systems/SEI-31/heading1_num</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1261,7 +1306,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PH3</object-name>
-  <property>mig29/systems/SEI-31/heading2_num</property>
+  <property>/mig29/systems/SEI-31/heading2_num</property>
   <factor>0.01</factor>
   <step>10</step>
   <axis>
@@ -1273,7 +1318,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PH4</object-name>
-  <property>mig29/systems/SEI-31/heading2_num</property>
+  <property>/mig29/systems/SEI-31/heading2_num</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1286,7 +1331,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PH5</object-name>
-  <property>mig29/systems/SEI-31/heading3_num</property>
+  <property>/mig29/systems/SEI-31/heading3_num</property>
   <factor>0.01</factor>
   <step>10</step>
   <axis>
@@ -1298,7 +1343,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PH6</object-name>
-  <property>mig29/systems/SEI-31/heading3_num</property>
+  <property>/mig29/systems/SEI-31/heading3_num</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1316,17 +1361,17 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
-    <less-than>
-     <property>mig29/systems/SEI-31/heading2</property>
+    <less-than-equals>
+     <property>/mig29/systems/SEI-31/heading2</property>
      <value>10</value>
-    </less-than>
+    </less-than-equals>
    </and>
   </condition>
  </animation>
@@ -1339,17 +1384,17 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
-    <greater-than>
-     <property>mig29/systems/SEI-31/heading3</property>
+    <greater-than-equals>
+     <property>/mig29/systems/SEI-31/heading3</property>
      <value>-10</value>
-    </greater-than>
+    </greater-than-equals>
    </and>
   </condition>
  </animation>
@@ -1360,15 +1405,15 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/ILS-31/m</property>
+     <property>/mig29/instrumentation/ILS-31/m</property>
      <value>1</value>
     </equals>
    </and>
@@ -1382,15 +1427,15 @@
   <condition>
    <and>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
    <equals>
-    <property>mig29/systems/ILS-31/setka</property>
+    <property>/mig29/systems/ILS-31/setka</property>
     <value>0</value>
    </equals>
    <greater-than>
-    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <property>/mig29/instrumentation/SEI-31/indicated-nav-mode</property>
     <value>0</value>
    </greater-than>
    </and>
@@ -1399,7 +1444,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.VM</object-name>
-  <property>mig29/instrumentation/SEI-31/VisorMetkaG</property>
+  <property>/mig29/instrumentation/SEI-31/VisorMetkaG</property>
   <factor>0.0445</factor>
   <axis>
    <x>0</x>
@@ -1410,7 +1455,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.VM</object-name>
-  <property>mig29/instrumentation/SEI-31/VisorMetkaV</property>
+  <property>/mig29/instrumentation/SEI-31/VisorMetkaV</property>
   <factor>0.0445</factor>
   <axis>
    <x>0</x>
@@ -1426,15 +1471,15 @@
   <condition>
    <and>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
    <equals>
-    <property>mig29/systems/ILS-31/setka</property>
+    <property>/mig29/systems/ILS-31/setka</property>
     <value>0</value>
    </equals>
    <equals>
-    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <property>/mig29/instrumentation/SEI-31/indicated-nav-mode</property>
     <value>2</value>
    </equals>
    </and>
@@ -1443,7 +1488,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.MKG</object-name>
-  <property>mig29/instrumentation/SEI-31/MetkaK</property>
+  <property>/mig29/instrumentation/SEI-31/MetkaK</property>
   <factor>0.0445</factor>
   <axis>
    <x>0</x>
@@ -1454,7 +1499,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.MKG</object-name>
-  <property>mig29/instrumentation/SEI-31/MetkaG</property>
+  <property>/mig29/instrumentation/SEI-31/MetkaG</property>
   <factor>0.0445</factor>
   <axis>
    <x>0</x>
@@ -1471,19 +1516,19 @@
   <condition>
    <and>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
    <equals>
-    <property>mig29/systems/ILS-31/setka</property>
+    <property>/mig29/systems/ILS-31/setka</property>
     <value>0</value>
    </equals>
    <equals>
-    <property>mig29/instrumentation/SEI-31/K</property>
+    <property>/mig29/instrumentation/SEI-31/K</property>
     <value>1</value>
    </equals>
    <equals>
-    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <property>/mig29/instrumentation/SEI-31/indicated-nav-mode</property>
     <value>2</value>
    </equals>
    </and>
@@ -1498,19 +1543,19 @@
   <condition>
    <and>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
    <equals>
-    <property>mig29/systems/ILS-31/setka</property>
+    <property>/mig29/systems/ILS-31/setka</property>
     <value>0</value>
    </equals>
    <equals>
-    <property>mig29/instrumentation/SEI-31/G</property>
+    <property>/mig29/instrumentation/SEI-31/G</property>
     <value>1</value>
    </equals>
    <equals>
-    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <property>/mig29/instrumentation/SEI-31/indicated-nav-mode</property>
     <value>2</value>
    </equals>
    </and>
@@ -1525,19 +1570,19 @@
   <condition>
    <and>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
    <equals>
-    <property>mig29/systems/ILS-31/setka</property>
+    <property>/mig29/systems/ILS-31/setka</property>
     <value>0</value>
    </equals>
    <greater-than-equals>
-    <property>mig29/instrumentation/SEI-31/PPM_Aer_dist</property>
+    <property>/mig29/instrumentation/SEI-31/PPM_Aer_dist</property>
     <value>100</value>
    </greater-than-equals>
    <greater-than>
-    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <property>/mig29/instrumentation/SEI-31/indicated-nav-mode</property>
     <value>0</value>
    </greater-than>
    </and>
@@ -1549,19 +1594,19 @@
   <condition>
    <and>
    <equals>
-    <property>mig29/systems/SEI-31/ind-on</property>
+    <property>/mig29/systems/SEI-31/ind-on</property>
     <value>1</value>
    </equals>
    <equals>
-    <property>mig29/systems/ILS-31/setka</property>
+    <property>/mig29/systems/ILS-31/setka</property>
     <value>0</value>
    </equals>
    <greater-than-equals>
-    <property>mig29/instrumentation/SEI-31/PPM_Aer_dist</property>
+    <property>/mig29/instrumentation/SEI-31/PPM_Aer_dist</property>
     <value>10</value>
    </greater-than-equals>
    <greater-than>
-    <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+    <property>/mig29/instrumentation/SEI-31/indicated-nav-mode</property>
     <value>0</value>
    </greater-than>
    </and>
@@ -1575,15 +1620,15 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/systems/ILS-31/setka</property>
+     <property>/mig29/systems/ILS-31/setka</property>
      <value>0</value>
     </equals>
     <greater-than>
-     <property>mig29/instrumentation/SEI-31/indicated-nav-mode</property>
+     <property>/mig29/instrumentation/SEI-31/indicated-nav-mode</property>
      <value>0</value>
     </greater-than>
    </and>
@@ -1593,7 +1638,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PDd1</object-name>
-  <property>mig29/instrumentation/SEI-31/PPM_Aer_dist_100</property>
+  <property>/mig29/instrumentation/SEI-31/PPM_Aer_dist_100</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1605,7 +1650,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PDd2</object-name>
-  <property>mig29/instrumentation/SEI-31/PPM_Aer_dist_10</property>
+  <property>/mig29/instrumentation/SEI-31/PPM_Aer_dist_10</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1617,7 +1662,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PDd3</object-name>
-  <property>mig29/instrumentation/SEI-31/PPM_Aer_dist_1</property>
+  <property>/mig29/instrumentation/SEI-31/PPM_Aer_dist_1</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1629,7 +1674,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PDd4</object-name>
-  <property>mig29/instrumentation/SEI-31/PPM_Aer_dist_0</property>
+  <property>/mig29/instrumentation/SEI-31/PPM_Aer_dist_0</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -1649,11 +1694,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Range_scale</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_scale</property>
      <value>1</value>
     </equals>
    </and>
@@ -1667,11 +1712,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Range_N</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_N</property>
      <value>1</value>
     </equals>
    </and>
@@ -1684,11 +1729,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Range_N</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_N</property>
      <value>2</value>
     </equals>
    </and>
@@ -1701,11 +1746,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Range_N</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_N</property>
      <value>3</value>
     </equals>
    </and>
@@ -1718,11 +1763,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Range_N</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_N</property>
      <value>4</value>
     </equals>
    </and>
@@ -1735,11 +1780,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Range_N</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_N</property>
      <value>5</value>
     </equals>
    </and>
@@ -1752,11 +1797,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Range_M</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_M</property>
      <value>1</value>
     </equals>
    </and>
@@ -1765,7 +1810,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.CDM</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/Range</property>
+  <property>/mig29/instrumentation/SEI-31/Combat/Range</property>
   <factor>0.11</factor>
   <axis>
    <x>0</x>
@@ -1781,11 +1826,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Range_O</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_O</property>
      <value>1</value>
     </equals>
    </and>
@@ -1794,7 +1839,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.DrMax1</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/RangeMax1</property>
+  <property>/mig29/instrumentation/SEI-31/Combat/RangeMax1</property>
   <factor>0.11</factor>
   <axis>
    <x>0</x>
@@ -1809,11 +1854,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Range_O</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_O</property>
      <value>1</value>
     </equals>
    </and>
@@ -1822,7 +1867,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.DrMax2</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/RangeMax2</property>
+  <property>/mig29/instrumentation/SEI-31/Combat/RangeMax2</property>
   <factor>0.11</factor>
   <axis>
    <x>0</x>
@@ -1837,11 +1882,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Range_O</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_O</property>
      <value>1</value>
     </equals>
    </and>
@@ -1850,7 +1895,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.DrMin</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/RangeMin</property>
+  <property>/mig29/instrumentation/SEI-31/Combat/RangeMin</property>
   <factor>0.11</factor>
   <axis>
    <x>0</x>
@@ -1865,11 +1910,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Range_O</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_O</property>
      <value>1</value>
     </equals>
    </and>
@@ -1878,7 +1923,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.DrRuch</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/RangeManual</property>
+  <property>/mig29/instrumentation/SEI-31/Combat/RangeManual</property>
   <factor>0.11</factor>
   <axis>
    <x>0</x>
@@ -1893,11 +1938,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Range_O</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Range_O</property>
      <value>1</value>
     </equals>
    </and>
@@ -1906,7 +1951,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.DrKvObz</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/RangeQuasiScan</property>
+  <property>/mig29/instrumentation/SEI-31/Combat/RangeQuasiScan</property>
   <factor>0.11</factor>
   <axis>
    <x>0</x>
@@ -1921,11 +1966,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/RakursA</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/RakursA</property>
      <value>1</value>
     </equals>
    </and>
@@ -1934,7 +1979,7 @@
  <animation>
   <type>rotate</type>
   <object-name>ILS-31i.Rakurs</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/Rakurs</property>
+  <property>/mig29/instrumentation/SEI-31/Combat/Rakurs</property>
   <factor>1</factor>
   <center>
    <x-m> 0.0</x-m>
@@ -1955,11 +2000,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/RLSAzObz</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/RLSAzObz</property>
      <value>1</value>
     </equals>
    </and>
@@ -1968,7 +2013,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.RLSAzObzM</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/RLSAzObzM</property>
+  <property>/mig29/instrumentation/SEI-31/Combat/RLSAzObzM</property>
   <factor>0.1</factor>
   <axis>
    <x>0</x>
@@ -1983,11 +2028,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/PLA</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/PLA</property>
      <value>1</value>
     </equals>
    </and>
@@ -1999,11 +2044,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/PLA</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/PLA</property>
      <value>2</value>
     </equals>
    </and>
@@ -2016,11 +2061,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/VK</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/VK</property>
      <value>1</value>
     </equals>
    </and>
@@ -2032,11 +2077,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/VK</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/VK</property>
      <value>2</value>
     </equals>
    </and>
@@ -2049,11 +2094,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/AP</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/AP</property>
      <value>1</value>
     </equals>
    </and>
@@ -2066,11 +2111,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/PP</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/PP</property>
      <value>1</value>
     </equals>
    </and>
@@ -2083,11 +2128,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Atack</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Atack</property>
      <value>1</value>
     </equals>
    </and>
@@ -2100,11 +2145,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Vertical</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Vertical</property>
      <value>1</value>
     </equals>
    </and>
@@ -2117,11 +2162,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Gorka</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Gorka</property>
      <value>1</value>
     </equals>
    </and>
@@ -2134,11 +2179,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Prn</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Prn</property>
      <value>1</value>
     </equals>
    </and>
@@ -2151,11 +2196,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/ReAiming</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/ReAiming</property>
      <value>1</value>
     </equals>
    </and>
@@ -2168,11 +2213,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/AftBurn</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/AftBurn</property>
      <value>1</value>
     </equals>
    </and>
@@ -2185,11 +2230,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Friend</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Friend</property>
      <value>1</value>
     </equals>
    </and>
@@ -2202,11 +2247,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Otvorot</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Otvorot</property>
      <value>1</value>
     </equals>
    </and>
@@ -2219,11 +2264,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/PR</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/PR</property>
      <value>1</value>
     </equals>
    </and>
@@ -2236,11 +2281,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/Strob</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/Strob</property>
      <value>1</value>
     </equals>
    </and>
@@ -2249,7 +2294,7 @@
  <animation>
   <type>translate</type>
   <object-name>ILS-31i.StrobD</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/StrobG</property>
+  <property>/mig29/instrumentation/SEI-31/Combat/StrobG</property>
   <factor>0.47</factor>
   <axis>
    <x>0</x>
@@ -2260,7 +2305,7 @@
   <animation>
   <type>translate</type>
   <object-name>ILS-31i.StrobD</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/StrobV</property>
+  <property>/mig29/instrumentation/SEI-31/Combat/StrobV</property>
   <factor>0.47</factor>
   <axis>
    <x>0</x>
@@ -2275,11 +2320,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponType</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponType</property>
      <value>1</value>
     </equals>
    </and>
@@ -2291,11 +2336,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponType</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponType</property>
      <value>2</value>
     </equals>
    </and>
@@ -2307,11 +2352,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponType</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponType</property>
      <value>3</value>
     </equals>
    </and>
@@ -2323,11 +2368,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponType</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponType</property>
      <value>4</value>
     </equals>
    </and>
@@ -2339,11 +2384,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponType</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponType</property>
      <value>5</value>
     </equals>
    </and>
@@ -2355,11 +2400,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponType</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponType</property>
      <value>6</value>
     </equals>
    </and>
@@ -2371,11 +2416,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponType</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponType</property>
      <value>7</value>
     </equals>
    </and>
@@ -2387,11 +2432,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady1</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady1</property>
      <value>1</value>
     </equals>
    </and>
@@ -2403,11 +2448,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady2</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady2</property>
      <value>1</value>
     </equals>
    </and>
@@ -2419,11 +2464,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady3</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady3</property>
      <value>1</value>
     </equals>
    </and>
@@ -2435,11 +2480,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady4</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady4</property>
      <value>1</value>
     </equals>
    </and>
@@ -2451,11 +2496,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady5</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady5</property>
      <value>1</value>
     </equals>
    </and>
@@ -2467,11 +2512,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady6</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady6</property>
      <value>1</value>
     </equals>
    </and>
@@ -2483,11 +2528,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady1O</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady1O</property>
      <value>1</value>
     </equals>
    </and>
@@ -2499,11 +2544,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady2O</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady2O</property>
      <value>1</value>
     </equals>
    </and>
@@ -2515,11 +2560,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady3O</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady3O</property>
      <value>1</value>
     </equals>
    </and>
@@ -2531,11 +2576,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady4O</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady4O</property>
      <value>1</value>
     </equals>
    </and>
@@ -2547,11 +2592,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady5O</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady5O</property>
      <value>1</value>
     </equals>
    </and>
@@ -2563,11 +2608,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady6O</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady6O</property>
      <value>1</value>
     </equals>
    </and>
@@ -2579,11 +2624,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady1P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady1P</property>
      <value>1</value>
     </equals>
    </and>
@@ -2595,11 +2640,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady2P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady2P</property>
      <value>1</value>
     </equals>
    </and>
@@ -2611,11 +2656,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady3P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady3P</property>
      <value>1</value>
     </equals>
    </and>
@@ -2627,11 +2672,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady4P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady4P</property>
      <value>1</value>
     </equals>
    </and>
@@ -2643,11 +2688,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady5P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady5P</property>
      <value>1</value>
     </equals>
    </and>
@@ -2659,11 +2704,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/WeaponReady6P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/WeaponReady6P</property>
      <value>1</value>
     </equals>
    </and>
@@ -2677,11 +2722,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/VPU</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/VPU</property>
      <value>1</value>
     </equals>
    </and>
@@ -2690,7 +2735,7 @@
  <animation>
   <type>textranslate</type>
   <object-name>ILS-31i.PBullet</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/VPU_N</property>
+  <property>/mig29/instrumentation/SEI-31/Combat/VPU_N</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -2703,15 +2748,15 @@
 <!-- 1 -->
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E1A</object-name>
+  <object-name>ILS-31i.E01A</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E1</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E1</property>
      <value>1</value>
     </equals>
    </and>
@@ -2719,15 +2764,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E1B</object-name>
+  <object-name>ILS-31i.E01B</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E1</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E1</property>
      <value>2</value>
     </equals>
    </and>
@@ -2735,15 +2780,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E1C</object-name>
+  <object-name>ILS-31i.E01C</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E1</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E1</property>
      <value>3</value>
     </equals>
    </and>
@@ -2751,15 +2796,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E1D</object-name>
+  <object-name>ILS-31i.E01D</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E1</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E1</property>
      <value>4</value>
     </equals>
    </and>
@@ -2767,15 +2812,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E1P</object-name>
+  <object-name>ILS-31i.E01P</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E1P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E1P</property>
      <value>1</value>
     </equals>
    </and>
@@ -2783,12 +2828,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E1A</object-name>
-  <object-name>ILS-31i.E1B</object-name>
-  <object-name>ILS-31i.E1C</object-name>
-  <object-name>ILS-31i.E1D</object-name>
-  <object-name>ILS-31i.E1P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E1G</property>
+  <object-name>ILS-31i.E01A</object-name>
+  <object-name>ILS-31i.E01B</object-name>
+  <object-name>ILS-31i.E01C</object-name>
+  <object-name>ILS-31i.E01D</object-name>
+  <object-name>ILS-31i.E01P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E1G</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -2798,12 +2843,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E1A</object-name>
-  <object-name>ILS-31i.E1B</object-name>
-  <object-name>ILS-31i.E1C</object-name>
-  <object-name>ILS-31i.E1D</object-name>
-  <object-name>ILS-31i.E1P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E1V</property>
+  <object-name>ILS-31i.E01A</object-name>
+  <object-name>ILS-31i.E01B</object-name>
+  <object-name>ILS-31i.E01C</object-name>
+  <object-name>ILS-31i.E01D</object-name>
+  <object-name>ILS-31i.E01P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E1V</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -2814,15 +2859,15 @@
 <!-- 2 -->
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E2A</object-name>
+  <object-name>ILS-31i.E02A</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E2</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E2</property>
      <value>1</value>
     </equals>
    </and>
@@ -2830,15 +2875,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E2B</object-name>
+  <object-name>ILS-31i.E02B</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E2</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E2</property>
      <value>2</value>
     </equals>
    </and>
@@ -2846,15 +2891,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E2C</object-name>
+  <object-name>ILS-31i.E02C</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E2</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E2</property>
      <value>3</value>
     </equals>
    </and>
@@ -2862,15 +2907,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E2D</object-name>
+  <object-name>ILS-31i.E02D</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E2</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E2</property>
      <value>4</value>
     </equals>
    </and>
@@ -2878,15 +2923,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E2P</object-name>
+  <object-name>ILS-31i.E02P</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E2P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E2P</property>
      <value>1</value>
     </equals>
    </and>
@@ -2894,12 +2939,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E2A</object-name>
-  <object-name>ILS-31i.E2B</object-name>
-  <object-name>ILS-31i.E2C</object-name>
-  <object-name>ILS-31i.E2D</object-name>
-  <object-name>ILS-31i.E2P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E2G</property>
+  <object-name>ILS-31i.E02A</object-name>
+  <object-name>ILS-31i.E02B</object-name>
+  <object-name>ILS-31i.E02C</object-name>
+  <object-name>ILS-31i.E02D</object-name>
+  <object-name>ILS-31i.E02P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E2G</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -2909,12 +2954,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E2A</object-name>
-  <object-name>ILS-31i.E2B</object-name>
-  <object-name>ILS-31i.E2C</object-name>
-  <object-name>ILS-31i.E2D</object-name>
-  <object-name>ILS-31i.E2P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E2V</property>
+  <object-name>ILS-31i.E02A</object-name>
+  <object-name>ILS-31i.E02B</object-name>
+  <object-name>ILS-31i.E02C</object-name>
+  <object-name>ILS-31i.E02D</object-name>
+  <object-name>ILS-31i.E02P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E2V</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -2925,15 +2970,15 @@
 <!-- 3 -->
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E3A</object-name>
+  <object-name>ILS-31i.E03A</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E3</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E3</property>
      <value>1</value>
     </equals>
    </and>
@@ -2941,15 +2986,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E3B</object-name>
+  <object-name>ILS-31i.E03B</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E3</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E3</property>
      <value>2</value>
     </equals>
    </and>
@@ -2957,15 +3002,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E3C</object-name>
+  <object-name>ILS-31i.E03C</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E3</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E3</property>
      <value>3</value>
     </equals>
    </and>
@@ -2973,15 +3018,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E3D</object-name>
+  <object-name>ILS-31i.E03D</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E3</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E3</property>
      <value>4</value>
     </equals>
    </and>
@@ -2989,15 +3034,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E3P</object-name>
+  <object-name>ILS-31i.E03P</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E3P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E3P</property>
      <value>1</value>
     </equals>
    </and>
@@ -3005,12 +3050,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E3A</object-name>
-  <object-name>ILS-31i.E3B</object-name>
-  <object-name>ILS-31i.E3C</object-name>
-  <object-name>ILS-31i.E3D</object-name>
-  <object-name>ILS-31i.E3P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E3G</property>
+  <object-name>ILS-31i.E03A</object-name>
+  <object-name>ILS-31i.E03B</object-name>
+  <object-name>ILS-31i.E03C</object-name>
+  <object-name>ILS-31i.E03D</object-name>
+  <object-name>ILS-31i.E03P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E3G</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3020,12 +3065,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E3A</object-name>
-  <object-name>ILS-31i.E3B</object-name>
-  <object-name>ILS-31i.E3C</object-name>
-  <object-name>ILS-31i.E3D</object-name>
-  <object-name>ILS-31i.E3P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E3V</property>
+  <object-name>ILS-31i.E03A</object-name>
+  <object-name>ILS-31i.E03B</object-name>
+  <object-name>ILS-31i.E03C</object-name>
+  <object-name>ILS-31i.E03D</object-name>
+  <object-name>ILS-31i.E03P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E3V</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3036,15 +3081,15 @@
 <!-- 4 -->
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E4A</object-name>
+  <object-name>ILS-31i.E04A</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E4</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E4</property>
      <value>1</value>
     </equals>
    </and>
@@ -3052,15 +3097,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E4B</object-name>
+  <object-name>ILS-31i.E04B</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E4</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E4</property>
      <value>2</value>
     </equals>
    </and>
@@ -3068,15 +3113,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E4C</object-name>
+  <object-name>ILS-31i.E04C</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E4</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E4</property>
      <value>3</value>
     </equals>
    </and>
@@ -3084,15 +3129,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E4D</object-name>
+  <object-name>ILS-31i.E04D</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E4</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E4</property>
      <value>4</value>
     </equals>
    </and>
@@ -3100,15 +3145,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E4P</object-name>
+  <object-name>ILS-31i.E04P</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E4P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E4P</property>
      <value>1</value>
     </equals>
    </and>
@@ -3116,12 +3161,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E4A</object-name>
-  <object-name>ILS-31i.E4B</object-name>
-  <object-name>ILS-31i.E4C</object-name>
-  <object-name>ILS-31i.E4D</object-name>
-  <object-name>ILS-31i.E4P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E4G</property>
+  <object-name>ILS-31i.E04A</object-name>
+  <object-name>ILS-31i.E04B</object-name>
+  <object-name>ILS-31i.E04C</object-name>
+  <object-name>ILS-31i.E04D</object-name>
+  <object-name>ILS-31i.E04P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E4G</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3131,12 +3176,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E4A</object-name>
-  <object-name>ILS-31i.E4B</object-name>
-  <object-name>ILS-31i.E4C</object-name>
-  <object-name>ILS-31i.E4D</object-name>
-  <object-name>ILS-31i.E4P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E4V</property>
+  <object-name>ILS-31i.E04A</object-name>
+  <object-name>ILS-31i.E04B</object-name>
+  <object-name>ILS-31i.E04C</object-name>
+  <object-name>ILS-31i.E04D</object-name>
+  <object-name>ILS-31i.E04P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E4V</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3147,15 +3192,15 @@
 <!-- 5 -->
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E5A</object-name>
+  <object-name>ILS-31i.E05A</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E5</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E5</property>
      <value>1</value>
     </equals>
    </and>
@@ -3163,15 +3208,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E5B</object-name>
+  <object-name>ILS-31i.E05B</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E5</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E5</property>
      <value>2</value>
     </equals>
    </and>
@@ -3179,15 +3224,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E5C</object-name>
+  <object-name>ILS-31i.E05C</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E5</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E5</property>
      <value>3</value>
     </equals>
    </and>
@@ -3195,15 +3240,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E5D</object-name>
+  <object-name>ILS-31i.E05D</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E5</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E5</property>
      <value>4</value>
     </equals>
    </and>
@@ -3211,15 +3256,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E5P</object-name>
+  <object-name>ILS-31i.E05P</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E5P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E5P</property>
      <value>1</value>
     </equals>
    </and>
@@ -3227,12 +3272,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E5A</object-name>
-  <object-name>ILS-31i.E5B</object-name>
-  <object-name>ILS-31i.E5C</object-name>
-  <object-name>ILS-31i.E5D</object-name>
-  <object-name>ILS-31i.E5P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E5G</property>
+  <object-name>ILS-31i.E05A</object-name>
+  <object-name>ILS-31i.E05B</object-name>
+  <object-name>ILS-31i.E05C</object-name>
+  <object-name>ILS-31i.E05D</object-name>
+  <object-name>ILS-31i.E05P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E5G</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3242,12 +3287,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E5A</object-name>
-  <object-name>ILS-31i.E5B</object-name>
-  <object-name>ILS-31i.E5C</object-name>
-  <object-name>ILS-31i.E5D</object-name>
-  <object-name>ILS-31i.E5P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E5V</property>
+  <object-name>ILS-31i.E05A</object-name>
+  <object-name>ILS-31i.E05B</object-name>
+  <object-name>ILS-31i.E05C</object-name>
+  <object-name>ILS-31i.E05D</object-name>
+  <object-name>ILS-31i.E05P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E5V</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3258,15 +3303,15 @@
 <!-- 6 -->
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E6A</object-name>
+  <object-name>ILS-31i.E06A</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E6</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E6</property>
      <value>1</value>
     </equals>
    </and>
@@ -3274,15 +3319,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E6B</object-name>
+  <object-name>ILS-31i.E06B</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E6</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E6</property>
      <value>2</value>
     </equals>
    </and>
@@ -3290,15 +3335,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E6C</object-name>
+  <object-name>ILS-31i.E06C</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E6</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E6</property>
      <value>3</value>
     </equals>
    </and>
@@ -3306,15 +3351,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E6D</object-name>
+  <object-name>ILS-31i.E06D</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E6</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E6</property>
      <value>4</value>
     </equals>
    </and>
@@ -3322,15 +3367,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E6P</object-name>
+  <object-name>ILS-31i.E06P</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E6P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E6P</property>
      <value>1</value>
     </equals>
    </and>
@@ -3338,12 +3383,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E6A</object-name>
-  <object-name>ILS-31i.E6B</object-name>
-  <object-name>ILS-31i.E6C</object-name>
-  <object-name>ILS-31i.E6D</object-name>
-  <object-name>ILS-31i.E6P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E6G</property>
+  <object-name>ILS-31i.E06A</object-name>
+  <object-name>ILS-31i.E06B</object-name>
+  <object-name>ILS-31i.E06C</object-name>
+  <object-name>ILS-31i.E06D</object-name>
+  <object-name>ILS-31i.E06P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E6G</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3353,12 +3398,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E6A</object-name>
-  <object-name>ILS-31i.E6B</object-name>
-  <object-name>ILS-31i.E6C</object-name>
-  <object-name>ILS-31i.E6D</object-name>
-  <object-name>ILS-31i.E6P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E6V</property>
+  <object-name>ILS-31i.E06A</object-name>
+  <object-name>ILS-31i.E06B</object-name>
+  <object-name>ILS-31i.E06C</object-name>
+  <object-name>ILS-31i.E06D</object-name>
+  <object-name>ILS-31i.E06P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E6V</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3369,15 +3414,15 @@
 <!-- 7 -->
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E7A</object-name>
+  <object-name>ILS-31i.E07A</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E7</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E7</property>
      <value>1</value>
     </equals>
    </and>
@@ -3385,15 +3430,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E7B</object-name>
+  <object-name>ILS-31i.E07B</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E7</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E7</property>
      <value>2</value>
     </equals>
    </and>
@@ -3401,15 +3446,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E7C</object-name>
+  <object-name>ILS-31i.E07C</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E7</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E7</property>
      <value>3</value>
     </equals>
    </and>
@@ -3417,15 +3462,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E7D</object-name>
+  <object-name>ILS-31i.E07D</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E7</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E7</property>
      <value>4</value>
     </equals>
    </and>
@@ -3433,15 +3478,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E7P</object-name>
+  <object-name>ILS-31i.E07P</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E7P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E7P</property>
      <value>1</value>
     </equals>
    </and>
@@ -3449,12 +3494,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E7A</object-name>
-  <object-name>ILS-31i.E7B</object-name>
-  <object-name>ILS-31i.E7C</object-name>
-  <object-name>ILS-31i.E7D</object-name>
-  <object-name>ILS-31i.E7P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E7G</property>
+  <object-name>ILS-31i.E07A</object-name>
+  <object-name>ILS-31i.E07B</object-name>
+  <object-name>ILS-31i.E07C</object-name>
+  <object-name>ILS-31i.E07D</object-name>
+  <object-name>ILS-31i.E07P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E7G</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3464,12 +3509,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E7A</object-name>
-  <object-name>ILS-31i.E7B</object-name>
-  <object-name>ILS-31i.E7C</object-name>
-  <object-name>ILS-31i.E7D</object-name>
-  <object-name>ILS-31i.E7P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E7V</property>
+  <object-name>ILS-31i.E07A</object-name>
+  <object-name>ILS-31i.E07B</object-name>
+  <object-name>ILS-31i.E07C</object-name>
+  <object-name>ILS-31i.E07D</object-name>
+  <object-name>ILS-31i.E07P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E7V</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3480,15 +3525,15 @@
 <!-- 8 -->
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E8A</object-name>
+  <object-name>ILS-31i.E08A</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E8</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E8</property>
      <value>1</value>
     </equals>
    </and>
@@ -3496,15 +3541,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E8B</object-name>
+  <object-name>ILS-31i.E08B</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E8</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E8</property>
      <value>2</value>
     </equals>
    </and>
@@ -3512,15 +3557,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E8C</object-name>
+  <object-name>ILS-31i.E08C</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E8</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E8</property>
      <value>3</value>
     </equals>
    </and>
@@ -3528,15 +3573,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E8D</object-name>
+  <object-name>ILS-31i.E08D</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E8</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E8</property>
      <value>4</value>
     </equals>
    </and>
@@ -3544,15 +3589,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E8P</object-name>
+  <object-name>ILS-31i.E08P</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E8P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E8P</property>
      <value>1</value>
     </equals>
    </and>
@@ -3560,12 +3605,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E8A</object-name>
-  <object-name>ILS-31i.E8B</object-name>
-  <object-name>ILS-31i.E8C</object-name>
-  <object-name>ILS-31i.E8D</object-name>
-  <object-name>ILS-31i.E8P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E8G</property>
+  <object-name>ILS-31i.E08A</object-name>
+  <object-name>ILS-31i.E08B</object-name>
+  <object-name>ILS-31i.E08C</object-name>
+  <object-name>ILS-31i.E08D</object-name>
+  <object-name>ILS-31i.E08P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E8G</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3575,12 +3620,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E8A</object-name>
-  <object-name>ILS-31i.E8B</object-name>
-  <object-name>ILS-31i.E8C</object-name>
-  <object-name>ILS-31i.E8D</object-name>
-  <object-name>ILS-31i.E8P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E8V</property>
+  <object-name>ILS-31i.E08A</object-name>
+  <object-name>ILS-31i.E08B</object-name>
+  <object-name>ILS-31i.E08C</object-name>
+  <object-name>ILS-31i.E08D</object-name>
+  <object-name>ILS-31i.E08P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E8V</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3591,15 +3636,15 @@
 <!-- 9 -->
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E9A</object-name>
+  <object-name>ILS-31i.E09A</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E9</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E9</property>
      <value>1</value>
     </equals>
    </and>
@@ -3607,15 +3652,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E9B</object-name>
+  <object-name>ILS-31i.E09B</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E9</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E9</property>
      <value>2</value>
     </equals>
    </and>
@@ -3623,15 +3668,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E9C</object-name>
+  <object-name>ILS-31i.E09C</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E9</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E9</property>
      <value>3</value>
     </equals>
    </and>
@@ -3639,15 +3684,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E9D</object-name>
+  <object-name>ILS-31i.E09D</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E9</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E9</property>
      <value>4</value>
     </equals>
    </and>
@@ -3655,15 +3700,15 @@
  </animation>
  <animation>
   <type>select</type>
-  <object-name>ILS-31i.E9P</object-name>
+  <object-name>ILS-31i.E09P</object-name>
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E9P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E9P</property>
      <value>1</value>
     </equals>
    </and>
@@ -3671,12 +3716,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E9A</object-name>
-  <object-name>ILS-31i.E9B</object-name>
-  <object-name>ILS-31i.E9C</object-name>
-  <object-name>ILS-31i.E9D</object-name>
-  <object-name>ILS-31i.E9P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E9G</property>
+  <object-name>ILS-31i.E09A</object-name>
+  <object-name>ILS-31i.E09B</object-name>
+  <object-name>ILS-31i.E09C</object-name>
+  <object-name>ILS-31i.E09D</object-name>
+  <object-name>ILS-31i.E09P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E9G</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3686,12 +3731,12 @@
  </animation>
  <animation>
   <type>translate</type>
-  <object-name>ILS-31i.E9A</object-name>
-  <object-name>ILS-31i.E9B</object-name>
-  <object-name>ILS-31i.E9C</object-name>
-  <object-name>ILS-31i.E9D</object-name>
-  <object-name>ILS-31i.E9P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E9V</property>
+  <object-name>ILS-31i.E09A</object-name>
+  <object-name>ILS-31i.E09B</object-name>
+  <object-name>ILS-31i.E09C</object-name>
+  <object-name>ILS-31i.E09D</object-name>
+  <object-name>ILS-31i.E09P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E9V</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3706,11 +3751,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E10</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E10</property>
      <value>1</value>
     </equals>
    </and>
@@ -3722,11 +3767,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E10</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E10</property>
      <value>2</value>
     </equals>
    </and>
@@ -3738,11 +3783,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E10</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E10</property>
      <value>3</value>
     </equals>
    </and>
@@ -3754,11 +3799,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E10</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E10</property>
      <value>4</value>
     </equals>
    </and>
@@ -3770,11 +3815,11 @@
   <condition>
    <and>
     <equals>
-     <property>mig29/systems/SEI-31/ind-on</property>
+     <property>/mig29/systems/SEI-31/ind-on</property>
      <value>1</value>
     </equals>
     <equals>
-     <property>mig29/instrumentation/SEI-31/Combat/E10P</property>
+     <property>/mig29/instrumentation/SEI-31/Combat/E10P</property>
      <value>1</value>
     </equals>
    </and>
@@ -3787,7 +3832,7 @@
   <object-name>ILS-31i.E10C</object-name>
   <object-name>ILS-31i.E10D</object-name>
   <object-name>ILS-31i.E10P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E10G</property>
+  <property>/mig29/instrumentation/SEI-31/Combat/E10G</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
@@ -3802,13 +3847,697 @@
   <object-name>ILS-31i.E10C</object-name>
   <object-name>ILS-31i.E10D</object-name>
   <object-name>ILS-31i.E10P</object-name>
-  <property>mig29/instrumentation/SEI-31/Combat/E10V</property>
+  <property>/mig29/instrumentation/SEI-31/Combat/E10V</property>
   <factor>0.109</factor>
   <axis>
    <x>0</x>
    <y>0</y>
    <z>1</z>
   </axis>
+ </animation>
+<!-- 11 -->
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E11A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E11</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E11B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E11</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E11C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E11</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E11D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E11</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E11P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E11P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>ILS-31i.E11A</object-name>
+  <object-name>ILS-31i.E11B</object-name>
+  <object-name>ILS-31i.E11C</object-name>
+  <object-name>ILS-31i.E11D</object-name>
+  <object-name>ILS-31i.E11P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E11G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>ILS-31i.E11A</object-name>
+  <object-name>ILS-31i.E11B</object-name>
+  <object-name>ILS-31i.E11C</object-name>
+  <object-name>ILS-31i.E11D</object-name>
+  <object-name>ILS-31i.E11P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E11V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 12 -->
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E12A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E12</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E12B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E12</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E12C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E12</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E12D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E12</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E12P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E12P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>ILS-31i.E12A</object-name>
+  <object-name>ILS-31i.E12B</object-name>
+  <object-name>ILS-31i.E12C</object-name>
+  <object-name>ILS-31i.E12D</object-name>
+  <object-name>ILS-31i.E12P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E12G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>ILS-31i.E12A</object-name>
+  <object-name>ILS-31i.E12B</object-name>
+  <object-name>ILS-31i.E12C</object-name>
+  <object-name>ILS-31i.E12D</object-name>
+  <object-name>ILS-31i.E12P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E12V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 13 -->
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E13A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E13</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E13B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E13</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E13C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E13</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E13D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E13</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E13P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E13P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>ILS-31i.E13A</object-name>
+  <object-name>ILS-31i.E13B</object-name>
+  <object-name>ILS-31i.E13C</object-name>
+  <object-name>ILS-31i.E13D</object-name>
+  <object-name>ILS-31i.E13P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E13G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>ILS-31i.E13A</object-name>
+  <object-name>ILS-31i.E13B</object-name>
+  <object-name>ILS-31i.E13C</object-name>
+  <object-name>ILS-31i.E13D</object-name>
+  <object-name>ILS-31i.E13P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E13V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 14 -->
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E14A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E14</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E14B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E14</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E14C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E14</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E14D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E14</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E14P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E14P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>ILS-31i.E14A</object-name>
+  <object-name>ILS-31i.E14B</object-name>
+  <object-name>ILS-31i.E14C</object-name>
+  <object-name>ILS-31i.E14D</object-name>
+  <object-name>ILS-31i.E14P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E14G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>ILS-31i.E14A</object-name>
+  <object-name>ILS-31i.E14B</object-name>
+  <object-name>ILS-31i.E14C</object-name>
+  <object-name>ILS-31i.E14D</object-name>
+  <object-name>ILS-31i.E14P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E14V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 15 -->
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E15A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E15</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E15B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E15</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E15C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E15</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E15D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E15</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E15P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E15P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>ILS-31i.E15A</object-name>
+  <object-name>ILS-31i.E15B</object-name>
+  <object-name>ILS-31i.E15C</object-name>
+  <object-name>ILS-31i.E15D</object-name>
+  <object-name>ILS-31i.E15P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E15G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>ILS-31i.E15A</object-name>
+  <object-name>ILS-31i.E15B</object-name>
+  <object-name>ILS-31i.E15C</object-name>
+  <object-name>ILS-31i.E15D</object-name>
+  <object-name>ILS-31i.E15P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E15V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- 16 -->
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E16A</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E16</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E16B</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E16</property>
+     <value>2</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E16C</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E16</property>
+     <value>3</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E16D</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E16</property>
+     <value>4</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.E16P</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/E16P</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>ILS-31i.E16A</object-name>
+  <object-name>ILS-31i.E16B</object-name>
+  <object-name>ILS-31i.E16C</object-name>
+  <object-name>ILS-31i.E16D</object-name>
+  <object-name>ILS-31i.E16P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E16G</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>ILS-31i.E16A</object-name>
+  <object-name>ILS-31i.E16B</object-name>
+  <object-name>ILS-31i.E16C</object-name>
+  <object-name>ILS-31i.E16D</object-name>
+  <object-name>ILS-31i.E16P</object-name>
+  <property>/mig29/instrumentation/SEI-31/Combat/E16V</property>
+  <factor>0.109</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Линии-границы зоны сканирования в режиме ВС -->
+ <animation>
+  <type>select</type>
+  <object-name>ILS-31i.BBline</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>/mig29/systems/SEI-31/ind-on</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>/mig29/instrumentation/SEI-31/Combat/mode</property>
+     <value>1</value>
+    </equals>
+   </and>
+  </condition>
  </animation>
 
 <!-- Сетка -->
@@ -3819,11 +4548,11 @@
   <condition>
    <and>
    <equals>
-    <property>mig29/systems/SEI-31/on</property>
+    <property>/mig29/systems/SEI-31/on</property>
     <value>1</value>
    </equals>
    <equals>
-    <property>mig29/systems/ILS-31/setka</property>
+    <property>/mig29/systems/ILS-31/setka</property>
     <value>1</value>
    </equals>
    </and>

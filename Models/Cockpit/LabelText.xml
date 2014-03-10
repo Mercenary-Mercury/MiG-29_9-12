@@ -584,6 +584,78 @@
   </offsets>
  </text>
 
+ <text>
+  <name>PU-189_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">AP control panel</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.05</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-3.87 </x-m>
+   <y-m>-0.335</y-m>
+   <z-m> 0.525</z-m>
+   <heading-deg>20.0</heading-deg>
+  </offsets>
+ </text>
+
+ <text>
+  <name>TLP_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Telelight panel</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.05</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-3.8 </x-m>
+   <y-m> 0.28</y-m>
+   <z-m> 0.78</z-m>
+   <heading-deg>-20.0</heading-deg>
+  </offsets>
+ </text>
+
+ <text>
+  <name>SN_LabelText</name>
+  <type type="string">literal</type>
+   <text type="string">Control panel navigation system</text>
+  <draw-text type="bool">true</draw-text>
+  <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <axis-alignment>yz-plane</axis-alignment>
+  <max-height>0.2</max-height>
+  <max-width>0.05</max-width>
+  <font-resolution>
+    <width type="int">32</width>
+    <height type="int">32</height>
+  </font-resolution>
+  <alignment>center-center</alignment>
+  <offsets>
+   <x-m>-3.86 </x-m>
+   <y-m> 0.34 </y-m>
+   <z-m> 0.525</z-m>
+   <heading-deg>-20.0</heading-deg>
+  </offsets>
+ </text>
+
  <animation>
   <type>material</type>
   <object-name>UAP7_LabelText</object-name>
@@ -611,6 +683,9 @@
   <object-name>SPO15LM_LabelText</object-name>
   <object-name>IPV31_LabelText</object-name>
   <object-name>KI13_LabelText</object-name>
+  <object-name>PU-189_LabelText</object-name>
+  <object-name>TLP_LabelText</object-name>
+  <object-name>SN_LabelText</object-name>
   <emission>
    <red>  1.0</red>
    <green>0.8</green>
@@ -645,6 +720,9 @@
   <object-name>SPO15LM_LabelText</object-name>
   <object-name>IPV31_LabelText</object-name>
   <object-name>KI13_LabelText</object-name>
+  <object-name>PU-189_LabelText</object-name>
+  <object-name>TLP_LabelText</object-name>
+  <object-name>SN_LabelText</object-name>
   <condition>
    <property>/sim/panel-hotspots</property>
   </condition>

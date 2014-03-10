@@ -785,15 +785,15 @@ var freq = 0.0;
 voltage = getprop( "mig29/systems/electrical/buses/AC3x200-bus-1/volts" );
 freq = getprop( "mig29/systems/electrical/buses/AC3x200-bus-1/frequency" );
 	
-	if( voltage == nil ) voltage = 0.0;
-	if( freq == nil ) freq = 0.0;
+	if( voltage == nil ) { voltage = 0.0; }
+	if( freq == nil ) { freq = 0.0; }
 	interpolate("mig29/instrumentation/electrical/v200", voltage, UPDATE_PERIOD );
 	interpolate("mig29/instrumentation/electrical/hz200", freq, UPDATE_PERIOD );
 	
 var current = 0.0;
 current = getprop( "mig29/systems/electrical/buses/AC3x200-bus-1/load" );
 	
-	if( current == nil ) current = 0.0;
+	if( current == nil ) { current = 0.0; }
 	
 	interpolate("mig29/instrumentation/electrical/a200", current, UPDATE_PERIOD );
 # AC 115
@@ -802,15 +802,15 @@ var freq = 0.0;
 voltage = getprop( "mig29/systems/electrical/buses/AC1x115-bus-1/volts" );
 freq = getprop( "mig29/systems/electrical/buses/AC1x115-bus-1/frequency" );
 	
-	if( voltage == nil ) voltage = 0.0;
-	if( freq == nil ) freq = 0.0;
+	if( voltage == nil ) { voltage = 0.0; }
+	if( freq == nil ) { freq = 0.0; }
 	interpolate("mig29/instrumentation/electrical/v115", voltage, UPDATE_PERIOD );
 	interpolate("mig29/instrumentation/electrical/hz115", freq, UPDATE_PERIOD );
 	
 var current = 0.0;
 current = getprop( "mig29/systems/electrical/buses/AC1x115-bus-1/load" );
 	
-	if( current == nil ) current = 0.0;
+	if( current == nil ) { current = 0.0; }
 	
 	interpolate("mig29/instrumentation/electrical/a115", current, UPDATE_PERIOD );
 # AC 36
@@ -819,15 +819,15 @@ var freq = 0.0;
 voltage = getprop( "mig29/systems/electrical/suppliers/TSZZOSS4B-1/volts" );
 freq = getprop( "mig29/systems/electrical/suppliers/TSZZOSS4B-1/frequency" );
 	
-	if( voltage == nil ) voltage = 0.0;
-	if( freq == nil ) freq = 0.0;
+	if( voltage == nil ) { voltage = 0.0; }
+	if( freq == nil ) { freq = 0.0; }
 	interpolate("mig29/instrumentation/electrical/v36", voltage, UPDATE_PERIOD );
 	interpolate("mig29/instrumentation/electrical/hz36", freq, UPDATE_PERIOD );
 	
 var current = 0.0;
 current = getprop( "mig29/systems/electrical/buses/AC3x36-bus-1/load" );
 	
-	if( current == nil ) current = 0.0;
+	if( current == nil ) { current = 0.0; }
 	
 	interpolate("mig29/instrumentation/electrical/a36", current, UPDATE_PERIOD );
 # DC
@@ -839,24 +839,24 @@ if( src == 1 )
 	interpolate("mig29/instrumentation/electrical/v27", voltage, UPDATE_PERIOD );
 # Only for demo!
 	current = getprop( "mig29/systems/electrical/buses/DC27-bus/load" );
-	if( current == nil ) current = 0.0;
+	if( current == nil ) { current = 0.0; }
 	interpolate("mig29/instrumentation/electrical/a27", current, UPDATE_PERIOD );
 
 # F
 voltage = getprop( "mig29/systems/electrical/buses/DC27-bus/volts" );
-if( voltage == nil ) voltage = 0.0;
+if( voltage == nil ) { voltage = 0.0; }
 if( voltage > 15.0 )
 	{
 	# Generators
 	if( (getprop( "mig29/systems/electrical/suppliers/GSR/volts" ) > 25) and
-		( getprop( "mig29/switches/generator-1") == 1 ) )
-			setprop("mig29/systems/electrical/gen-1-failure", 0.0);
-	else	setprop("mig29/systems/electrical/gen-1-failure", 1.0);
+		( getprop( "mig29/switches/generator-1") == 1 ) ) {
+			setprop("mig29/systems/electrical/gen-1-failure", 0.0); }
+	else	{ setprop("mig29/systems/electrical/gen-1-failure", 1.0); }
 	
 	if( (getprop( "mig29/systems/electrical/suppliers/GT30-1/volts" ) > 150) and
-		( getprop( "mig29/switches/generator-2") == 1 ) )
-			setprop("mig29/systems/electrical/gen-2-failure", 0.0);
-	else	setprop("mig29/systems/electrical/gen-2-failure", 1.0);
+		( getprop( "mig29/switches/generator-2") == 1 ) ) {
+			setprop("mig29/systems/electrical/gen-2-failure", 0.0); }
+	else	{ setprop("mig29/systems/electrical/gen-2-failure", 1.0); }
 	
 
 	}
@@ -991,7 +991,7 @@ ACBusClass.update_output = func( name, load ) {
 ACBusClass.update_load = func {
     load = 0.0;
     outputs = me.outputs.getChildren();
-    if(outputs == nil) return;
+    if(outputs == nil) {return;}
     foreach( output;  outputs ){
 	load += output.getNode("load").getValue();
     }
@@ -1084,15 +1084,15 @@ DCAlternatorClass.apply_load = func( amps, dt ) {
 
 DCAlternatorClass.rpm_handler = func {
     rpm = me.engine.getNode("n2").getValue();
-    if( rpm < 55.0 ) volts = 0.0;
+    if( rpm < 55.0 ) { volts = 0.0; }
     else volts = me.ideal_volts;
     me.volts.setValue( volts );
-    if( me.bus != nil ) setprop(me.bus.volts, volts );
+    if( me.bus != nil ) { setprop(me.bus.volts, volts ); }
 }
 
 DCAlternatorClass.get_output_amps = func(src ){
     rpm = getprop( src );
-    if( rpm == nil ) rpm = 0;
+    if( rpm == nil ) { rpm = 0; }
     # APU can have 0 rpm
     if (rpm < 55.0 ) {
         factor = 0;
@@ -1143,15 +1143,15 @@ ACAlternatorClass.apply_load = func( amps, dt ) {
 
 ACAlternatorClass.rpm_handler = func {
     rpm = me.engine.getNode("n2").getValue();
-    if( rpm < 55.0 ) volts = 0.0;
-    else volts = me.ideal_volts;
+    if( rpm < 55.0 ) { volts = 0.0; }
+    else { volts = me.ideal_volts; }
     me.volts.setValue( volts );
-    if( me.bus != nil ) setprop(me.bus.volts, volts );
+    if( me.bus != nil ) { setprop(me.bus.volts, volts ); }
 }
 
 ACAlternatorClass.get_output_amps = func(src ){
     rpm = getprop( src );
-    if( rpm == nil ) rpm = 0;
+    if( rpm == nil ) { rpm = 0; }
     if (rpm < 55.0 ) {
         factor = 0;
     } else {
@@ -1201,15 +1201,15 @@ ACAlternator2Class.apply_load = func( amps, dt ) {
 
 ACAlternator2Class.rpm_handler = func {
     rpm = me.engine.getNode("n2").getValue();
-    if( rpm < 55.0 ) volts = 0.0;
-    else volts = me.ideal_volts;
+    if( rpm < 55.0 ) { volts = 0.0; }
+    else { volts = me.ideal_volts; }
     me.volts.setValue( volts );
-    if( me.bus != nil ) setprop(me.bus.volts, volts );
+    if( me.bus != nil ) { setprop(me.bus.volts, volts ); }
 }
 
 ACAlternator2Class.get_output_amps = func(src ){
     rpm = getprop( src );
-    if( rpm == nil ) rpm = 0;
+    if( rpm == nil ) { rpm = 0; }
     if (rpm < 55.0 ) {
         factor = 0;
     } else {
