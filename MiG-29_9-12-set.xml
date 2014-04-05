@@ -15,7 +15,7 @@
   <flight-model>jsb</flight-model>
   <aero>MiG-29</aero>
 
-  <aircraft-version>0.6</aircraft-version>
+  <aircraft-version>0.7</aircraft-version>
 
   <status>beta</status>
   <rating>
@@ -330,10 +330,70 @@
     <type>float</type>
     <property type="string">/mig29/systems/CS/Stabilator/right-pos-norm</property>
    </signal>
+   <signal>
+    <type>bool</type>
+    <property type="string">/engines/engine[0]/augmentation</property>
+   </signal>
+   <signal>
+    <type>bool</type>
+    <property type="string">/engines/engine[1]/augmentation</property>
+   </signal>
+   <signal>
+    <type>float</type>
+    <property type="string">/mig29/systems/engines/jetflameleft-pos</property>
+   </signal>
+   <signal>
+    <type>float</type>
+    <property type="string">/mig29/systems/engines/jetflameright-pos</property>
+   </signal>
+   <signal>
+    <type>float</type>
+    <property type="string">/engines/engine[0]/nozzle-pos-norm</property>
+   </signal>
+   <signal>
+    <type>float</type>
+    <property type="string">/engines/engine[1]/nozzle-pos-norm</property>
+   </signal>
   </config>
  </flight-recorder>
 
+ <dimensions>
+  <radius-m type="double">10.0</radius-m>
+  <parkpos-offset-m type="double">0.0</parkpos-offset-m>
+ </dimensions>
+ <aircraft-class type="string">mil-fighter</aircraft-class>
+ <aircraft-operator></aircraft-operator>
+ <aircraft-data>
+  <path>/sim/dimensions/radius-m</path>
+  <path>/sim/dimensions/parkpos-offset-m</path>
+  <path>/sim/aircraft-class</path>
+  <path>/sim/aircraft-operator</path>
+ </aircraft-data>
+
  </sim>
+
+  <controls>
+   <engines>
+    <engine n="0">
+     <throttle type="double">0.0</throttle>
+      <reheat type="double">0</reheat>
+    </engine>
+    <engine n="1">
+     <throttle type="double">0.0</throttle>
+      <reheat type="double">0</reheat>
+    </engine>
+    <engine n="2">
+     <throttle type="double">1.0</throttle>
+    </engine>
+   </engines>
+   <gear>
+    <brake-parking type="double">0.0</brake-parking>
+   </gear>
+   <lighting>
+    <nav type="bool">false</nav>
+    <landing type="bool">false</landing>
+   </lighting>
+  </controls>
 
 <!-- Engine indexes -->
 
@@ -356,6 +416,10 @@
     <throttle-norm type="float">0</throttle-norm>
    </engine>
   </engines>
+
+  <input>
+   <keyboard include="Systems/MiG-29-keyboard.xml"/>
+  </input>
 
   <instrumentation>
    <magnetic-compass>
@@ -394,32 +458,19 @@
    </radar2>
   </instrumentation>
 
-  <controls>
-   <engines>
-    <engine n="0">
-     <throttle type="double">0.0</throttle>
-      <reheat type="double">0</reheat>
-    </engine>
-    <engine n="1">
-     <throttle type="double">0.0</throttle>
-      <reheat type="double">0</reheat>
-    </engine>
-    <engine n="2">
-     <throttle type="double">1.0</throttle>
-    </engine>
-   </engines>
-   <gear>
-    <brake-parking type="double">0.0</brake-parking>
-   </gear>
-   <lighting>
-    <nav type="bool">false</nav>
-    <landing type="bool">false</landing>
-   </lighting>
-  </controls>
-
-  <input>
-   <keyboard include="Systems/MiG-29-keyboard.xml"/>
-  </input>
+  <limits>
+    <max-flap-extension-speed>
+     <flaps>1</flaps>
+     <speed>500</speed>
+    </max-flap-extension-speed>
+    
+    <vne>1460</vne>
+    
+    <max-gear-extension-speed>405</max-gear-extension-speed>
+    
+    <max-positive-g>20.0</max-positive-g>
+    <max-negative-g>-8.0</max-negative-g>
+  </limits>
 
   <mig29 include="Systems/var.xml"/>
 
@@ -453,6 +504,7 @@
    <instrumentation>
     <file>Aircraft/MiG-29_9-12/Nasal/instrumentation.nas</file>
     <file>Aircraft/MiG-29_9-12/Nasal/SEI-31.nas</file>
+    <!-- <file>Aircraft/MiG-29_9-12/Nasal/ILS-31i.nas</file> -->
     <file>Aircraft/MiG-29_9-12/Nasal/Tablo.nas</file>
    </instrumentation>
    <navigation>
@@ -477,6 +529,9 @@
    <radar>
     <file>Aircraft/MiG-29_9-12/Nasal/radar2.nas</file>
    </radar>
+   <misc>
+    <file>Aircraft/Generic/limits.nas</file>
+   </misc>
   </nasal>
 
  <fdm>
