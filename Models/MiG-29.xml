@@ -243,6 +243,7 @@
   <object-name>Parachute_container</object-name>
   <object-name>Paracont_cover</object-name>
   <property-base>sim/model/livery</property-base>
+  <bn-type>1</bn-type>
   <texture-prop>texture-fuselage</texture-prop>
   <texture>MiG-29_1.png</texture>
  </animation>
@@ -303,7 +304,7 @@
   <object-name>Insignia</object-name>
   <property-base>sim/model/livery</property-base>
   <texture-prop>texture-wings</texture-prop>
-  <texture>MiG-29_1.png</texture>
+  <texture>MiG-29_2.png</texture>
  </animation>
 
  <effect>
@@ -2074,6 +2075,20 @@
   <object-name>MiG-29.BNR1</object-name>
   <object-name>MiG-29.BNR2</object-name>
   <texture-prop>mig29/systems/BN/T</texture-prop>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>MiG-29.BNL1</object-name>
+  <object-name>MiG-29.BNL2</object-name>
+  <object-name>MiG-29.BNR1</object-name>
+  <object-name>MiG-29.BNR2</object-name>
+  <condition>
+   <equals>
+    <property>sim/model/livery/bn-type</property>
+    <value>1</value>
+   </equals>
+  </condition>
  </animation>
 
  <animation>

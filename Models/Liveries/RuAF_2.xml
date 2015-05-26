@@ -6,8 +6,9 @@
   <model>
    <livery>
     <name type="string">Russian Air Force 2</name>
-    <texture-fuselage>Liveries/MiG-29_1.RuAF_2.png</texture-fuselage>
-    <texture-wings>Liveries/MiG-29_2.RuAF_2.png</texture-wings>
+    <bn-type>1</bn-type>
+    <texture-fuselage>Liveries/RuAF_2/MiG-29_1.RuAF_2.png</texture-fuselage>
+    <texture-wings>Liveries/RuAF_2/MiG-29_2.RuAF_2.png</texture-wings>
    </livery>
   </model>
  </sim>
