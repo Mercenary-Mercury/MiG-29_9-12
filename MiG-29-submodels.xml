@@ -49,7 +49,7 @@
    <name>LTC_Left</name>
    <model>Aircraft/MiG-29_9-12/Models/Submodels/LTTs/LTTs.xml</model>
    <trigger>mig29/systems/BVP/release</trigger>
-   <speed>100.0</speed>
+   <speed>20.0</speed>
    <repeat>true</repeat>
    <delay>0.2</delay>
    <count>30</count>
@@ -70,7 +70,7 @@
    <name>LTC_Right</name>
    <model>Aircraft/MiG-29_9-12/Models/Submodels/LTTs/LTTs.xml</model>
    <trigger>mig29/systems/BVP/release</trigger>
-   <speed>100.0</speed>
+   <speed>20.0</speed>
    <repeat>true</repeat>
    <delay>0.2</delay>
    <count>30</count>

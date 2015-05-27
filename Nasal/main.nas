@@ -83,7 +83,9 @@
 }
 
  var pitot_heat = func {
-  if (getprop("/mig29/systems/electrical/buses/AC1x115-bus-glass-pito-heat/volts") > 100)
+  var pitot_heat_voltage = getprop("/mig29/systems/electrical/buses/AC1x115-bus-glass-pito-heat/volts");
+  if (pitot_heat_voltage == nil) {var pitot_heat_voltage = 0;}
+  if (pitot_heat_voltage > 100)
    {setprop("/fdm/jsbsim/systems/SVS/pitot-heating", 0.0275);}
   else {setprop("/fdm/jsbsim/systems/SVS/pitot-heating", 0);}
   settimer(pitot_heat, 1);

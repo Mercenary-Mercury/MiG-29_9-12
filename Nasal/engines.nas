@@ -318,11 +318,34 @@ var t2cmd2 = 0;
  var tstL = func {
   var window = screen.window.new(0, 12, 1, 2);
   window.align = "left";
-  if (getprop("mig29/systems/engines/Lpos") == 1) {window.fg = [1, 1, 1, 1]; window.write("Throttle 1: Stop");}
-  if (getprop("mig29/systems/engines/Lpos") == 2) {window.fg = [0, 1, 0, 1]; window.write("Throttle 1: Idle");}
-  if (getprop("mig29/systems/engines/Lpos") == 3) {window.fg = [1, 1, 0, 1]; window.write("Throttle 1: Max");}
-  if (getprop("mig29/systems/engines/Lpos") == 4) {window.fg = [1, 0.5, 0.3, 1]; window.write("Throttle 1: Min Afb");}
-  if (getprop("mig29/systems/engines/Lpos") == 5) {window.fg = [1, 0, 0, 1]; window.write("Throttle 1: Full Afb");}
+
+  var tstLMA = "A";
+
+  if (getprop("mig29/systems/engines/Lpos") == 1) {
+   var tstLMA = "Stop";
+   window.fg = [1, 1, 1, 1];
+   window.write(sprintf("Throttle 1: %s", tstLMA));
+  }
+  if (getprop("mig29/systems/engines/Lpos") == 2) {
+   var tstLMA = "Idle";
+   window.fg = [0, 1, 0, 1];
+   window.write(sprintf("Throttle 1: %s", tstLMA));
+  }
+  if (getprop("mig29/systems/engines/Lpos") == 3) {
+   var tstLMA = "Max";
+   window.fg = [1, 1, 0, 1];
+   window.write(sprintf("Throttle 1: %s", tstLMA));
+  }
+  if (getprop("mig29/systems/engines/Lpos") == 4) {
+   var tstLMA = "Min Afb";
+   window.fg = [1, 0.5, 0.3, 1];
+   window.write(sprintf("Throttle 1: %s", tstLMA));
+  }
+  if (getprop("mig29/systems/engines/Lpos") == 5) {
+   var tstLMA = "Full Afb";
+   window.fg = [1, 0, 0, 1];
+   window.write(sprintf("Throttle 1: %s", tstLMA));
+  }
 }
 
  var tstR = func {

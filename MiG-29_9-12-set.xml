@@ -372,6 +372,19 @@
 
  </sim>
 
+  <consumables>
+   <fuel>
+    <tank n="0"><name>1</name></tank>
+    <tank n="1"><name>2</name></tank>
+    <tank n="2"><name>3</name></tank>
+    <tank n="3"><name>3A left</name></tank>
+    <tank n="4"><name>3A right</name></tank>
+    <tank n="5"><name>Wing left</name></tank>
+    <tank n="6"><name>Wing right</name></tank>
+    <tank n="7"><name>Drop tank</name></tank>
+   </fuel>
+  </consumables>
+
   <controls>
    <engines>
     <engine n="0">
@@ -479,7 +492,6 @@
   <nasal>
    <system>
     <file>Aircraft/MiG-29_9-12/Nasal/init_systems.nas</file>
-    <script>system.init_systems();</script>
     <file>Aircraft/MiG-29_9-12/Nasal/main.nas</file>
     <file>Aircraft/MiG-29_9-12/Nasal/PS.nas</file>
     <file>Aircraft/MiG-29_9-12/Nasal/ARV-29.nas</file>
@@ -504,7 +516,7 @@
    <instrumentation>
     <file>Aircraft/MiG-29_9-12/Nasal/instrumentation.nas</file>
     <file>Aircraft/MiG-29_9-12/Nasal/SEI-31.nas</file>
-    <!-- <file>Aircraft/MiG-29_9-12/Nasal/ILS-31i.nas</file> -->
+<!--    <file>Aircraft/MiG-29_9-12/Nasal/ILS-31i.nas</file> -->
     <file>Aircraft/MiG-29_9-12/Nasal/Tablo.nas</file>
    </instrumentation>
    <navigation>

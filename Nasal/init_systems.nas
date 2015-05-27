@@ -1,11 +1,6 @@
 # init.nas
 
 var init_systems = func{
- if (getprop("/sim[0]/sceneryloaded") == nil) {settimer(init_systems, 0.5);}
- if (getprop("/sim[0]/sceneryloaded") == 1) {init_systems2();}
-}
-
-var init_systems2 = func{
  print ("Start");
  system.preins();
  system.IG2Hz5();
@@ -30,3 +25,6 @@ var init_systems2 = func{
  PVP_dialog = gui.Dialog.new("/sim/gui/dialogs/PVP/dialog","Aircraft/MiG-29_9-12/Dialogs/PVP.xml");
  EL_dialog = gui.Dialog.new("/sim/gui/dialogs/EL/dialog","Aircraft/MiG-29_9-12/Dialogs/external-loads.xml");
 }
+
+
+setlistener("/sim/signals/fdm-initialized", init_systems);
