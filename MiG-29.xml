@@ -2643,8 +2643,8 @@
  </system>
  <system file="TsVU-M"><!-- Цифровое вычислительное устройство - модернизированное -->
  </system>
- <system file="electrical"><!-- Электрическая система -->
- </system>
+ <!-- <system file="electrical"> --><!-- Электрическая система -->
+ <!-- </system> -->
  <autopilot file="Systems/SAU-451"><!-- Система автоматического управления -->
  </autopilot>
 
