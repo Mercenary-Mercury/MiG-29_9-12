@@ -1,4 +1,4 @@
 MiG-29_9-12
 ===========
 
-Модель МиГ-29 (9-12) для FlightGear
+MiG-29 for FlightGear with damage code by OPRF.
