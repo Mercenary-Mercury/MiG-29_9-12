@@ -500,6 +500,7 @@
     <file>Aircraft/MiG-29_9-12/Nasal/Ekran.nas</file>
     <file>Aircraft/MiG-29_9-12/Nasal/IK-VK.nas</file>
     <file>Aircraft/MiG-29_9-12/Nasal/ARU-29-2.nas</file>
+    <file>Aircraft/MiG-29_9-12/Nasal/damage.nas</file>
    </system>
    <SAU>
     <file>Aircraft/MiG-29_9-12/Nasal/SAU-451.nas</file>
